@@ -74,219 +74,50 @@ function updateStats() {
 
 async function loadPortrait(character, el) {
   el.className = "portrait loading";
-  el.innerHTML = "<span>Recherche du visuel…</span>";
+  el.innerHTML = "<span>Chargement du visuel…</span>";
   el.dataset.characterId = character.id;
 
-  const entry = IMAGE_CATALOG[character.id] || {};
-  const cacheKey = "ccimg-v35:" + character.id;
-  const oldKeys = ["ccimg-v34:" + character.id, "ccimg-v33:" + character.id, "ccimg-v32:" + character.id];
-  const candidates = [];
-  const seen = new Set();
-
-  const addCandidate = (src, source = "") => {
-    if (!src || typeof src !== "string" || seen.has(src)) return;
-    seen.add(src);
-    candidates.push({src, source});
-  };
-
-  // 1) Une image déjà validée est toujours prioritaire.
-  addCandidate(localStorage.getItem(cacheKey), "cache V3.5");
-  for (const k of oldKeys) addCandidate(localStorage.getItem(k), "cache précédent");
-  addCandidate(entry.imageUrl, entry.source || "catalogue");
-
-  const norm = s => (s || "")
+  // V3.6 : les portraits utilisés par le jeu sont UNIQUEMENT ceux du dossier
+  // local /images du dépôt GitHub. On ne lance plus de recherche Wikipedia,
+  // Wikidata ou Commons : cela évite définitivement les acteurs, cosplayers
+  // ou images sans rapport avec le personnage.
+  const slug = (s => (s || "")
     .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+    .replace(/[^A-Za-z0-9]+/g, "_")
+    .replace(/^_+|_+$/g, ""))(character.name);
 
-  const nameNorm = norm(character.name);
-  const universeNorm = norm(character.universe);
-
-  // 2) Wikidata : on cherche d'abord L'ITEM DU PERSONNAGE, pas l'œuvre.
-  // P18 = image du sujet. C'est ce qui évite notamment d'afficher une photo
-  // d'un acteur quand on cherche un personnage fictif.
-  async function fetchWikidataImages(query) {
-    const searchUrl =
-      `https://www.wikidata.org/w/api.php?action=wbsearchentities&search=${encodeURIComponent(query)}` +
-      `&language=fr&uselang=fr&format=json&limit=8&origin=*`;
-    try {
-      const r = await fetch(searchUrl, {signal: AbortSignal.timeout(7000)});
-      if (!r.ok) return [];
-      const d = await r.json();
-      const results = Array.isArray(d.search) ? d.search : [];
-
-      const strong = results.filter(x => {
-        const label = norm(x.label);
-        const desc = norm(x.description);
-        const exact = label === nameNorm || label.includes(nameNorm) || nameNorm.includes(label);
-        const characterLike = /personnage|fictionnel|fictionnelle|character|anime|manga|heros|heroine|protagoniste/.test(desc);
-        return exact && (characterLike || !desc);
-      });
-
-      const ids = [...new Set((strong.length ? strong : results).map(x => x.id).filter(Boolean))].slice(0, 5);
-      if (!ids.length) return [];
-
-      const entityUrl =
-        `https://www.wikidata.org/w/api.php?action=wbgetentities&ids=${ids.join("|")}` +
-        `&props=labels|descriptions|claims&languages=fr|en&format=json&origin=*`;
-      const er = await fetch(entityUrl, {signal: AbortSignal.timeout(7000)});
-      if (!er.ok) return [];
-      const ed = await er.json();
-
-      const out = [];
-      for (const id of ids) {
-        const e = ed.entities?.[id];
-        const claims = e?.claims?.P18 || [];
-        for (const claim of claims.slice(0, 2)) {
-          const file = claim?.mainsnak?.datavalue?.value;
-          if (typeof file !== "string") continue;
-          // Le fichier P18 est hébergé sur Commons. On demande à Commons
-          // sa miniature haute résolution plutôt que de deviner une URL.
-          const cUrl =
-            `https://commons.wikimedia.org/w/api.php?action=query&titles=File:${encodeURIComponent(file)}` +
-            `&prop=imageinfo&iiprop=url|mime|size&iiurlwidth=1400&format=json&origin=*`;
-          try {
-            const cr = await fetch(cUrl, {signal: AbortSignal.timeout(7000)});
-            if (!cr.ok) continue;
-            const cd = await cr.json();
-            const pages = Object.values(cd.query?.pages || {});
-            const info = pages[0]?.imageinfo?.[0];
-            const src = info?.thumburl || info?.url;
-            const w = Number(info?.width || info?.thumbwidth || 0);
-            const h = Number(info?.height || info?.thumbheight || 0);
-            if (src && w >= 250 && h >= 250) out.push({src, source:"Wikidata / Commons", score: 100});
-          } catch (_) {}
-        }
-      }
-      return out;
-    } catch (_) { return []; }
-  }
-
-  // 3) Wikipédia : uniquement une page dont le titre correspond au personnage.
-  async function fetchExactWikipedia(lang, title) {
-    if (!title) return null;
-    const url =
-      `https://${lang}.wikipedia.org/w/api.php?action=query&redirects=1&titles=${encodeURIComponent(title)}` +
-      `&prop=pageimages|description&piprop=thumbnail|original&pilicense=any&pithumbsize=1600` +
-      `&format=json&origin=*`;
-    try {
-      const r = await fetch(url, {signal: AbortSignal.timeout(6500)});
-      if (!r.ok) return null;
-      const d = await r.json();
-      const page = Object.values(d.query?.pages || {}).find(p => !p.missing);
-      if (!page) return null;
-      const titleNorm = norm(page.title);
-      const titleMatches =
-        titleNorm === nameNorm ||
-        titleNorm.includes(nameNorm) ||
-        nameNorm.includes(titleNorm);
-      const desc = norm(page.description || "");
-      const looksLikeCharacter =
-        /personnage|fictionnel|fictionnelle|character|anime|manga|actor|acteur/.test(desc) ||
-        titleMatches;
-      const src = page.original?.source || page.thumbnail?.source;
-      if (src && titleMatches && looksLikeCharacter) return {src, source:`Wikipédia ${lang}`, score:90};
-      return null;
-    } catch (_) { return null; }
-  }
-
-  async function fetchWikipediaSearch(lang, query) {
-    const url =
-      `https://${lang}.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(query)}` +
-      `&gsrnamespace=0&gsrlimit=10&prop=pageimages|description&piprop=thumbnail|original&pilicense=any` +
-      `&pithumbsize=1600&format=json&origin=*`;
-    try {
-      const r = await fetch(url, {signal: AbortSignal.timeout(6500)});
-      if (!r.ok) return [];
-      const d = await r.json();
-      const pages = Object.values(d.query?.pages || {});
-      return pages
-        .sort((a,b) => (a.index ?? 999) - (b.index ?? 999))
-        .filter(p => {
-          const t = norm(p.title);
-          const desc = norm(p.description || "");
-          const titleMatches = t === nameNorm || t.includes(nameNorm) || nameNorm.includes(t);
-          return titleMatches && /personnage|fictionnel|fictionnelle|character|anime|manga/.test(desc);
-        })
-        .map(p => ({src:p.original?.source || p.thumbnail?.source, source:`Wikipédia ${lang}`, score:80}))
-        .filter(x => x.src);
-    } catch (_) { return []; }
-  }
-
-  // 4) Commons, mais avec une recherche stricte et un filtre sur le nom.
-  async function fetchCommonsImages(query) {
-    const url =
-      `https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(query)}` +
-      `&gsrnamespace=6&gsrlimit=20&prop=imageinfo&iiprop=url|mime|size|extmetadata&iiurlwidth=1400` +
-      `&format=json&origin=*`;
-    try {
-      const r = await fetch(url, {signal: AbortSignal.timeout(7500)});
-      if (!r.ok) return [];
-      const d = await r.json();
-      const pages = Object.values(d.query?.pages || {});
-      return pages.map(p => {
-        const info = p?.imageinfo?.[0];
-        const title = norm(p?.title || "");
-        const match = title.includes(nameNorm) || nameNorm.split(" ").filter(Boolean).some(w => w.length > 3 && title.includes(w));
-        const src = info?.thumburl || info?.url;
-        const w = Number(info?.width || 0), h = Number(info?.height || 0);
-        if (!src || !match || w < 250 || h < 250) return null;
-        return {src, source:"Wikimedia Commons", score:60};
-      }).filter(Boolean);
-    } catch (_) { return []; }
-  }
-
-  // 5) Ordre strict : personnage exact > Wikipédia exact > Commons exact.
-  const queries = [
-    `${character.name} ${character.universe}`,
-    `"${character.name}" ${character.universe}`
+  const base = `images/${character.id}_${slug}`;
+  const candidates = [
+    `${base}.jpg`,
+    `${base}.jpeg`,
+    `${base}.JPG`,
+    `${base}.JPEG`
   ];
-
-  const wd = await fetchWikidataImages(`${character.name} ${character.universe}`);
-  wd.forEach(x => addCandidate(x.src, x.source));
-
-  if (candidates.length < 2) {
-    const fr = await fetchExactWikipedia("fr", character.wiki || character.name);
-    if (fr) addCandidate(fr.src, fr.source);
-    const en = await fetchExactWikipedia("en", character.wiki || character.name);
-    if (en) addCandidate(en.src, en.source);
-  }
-
-  if (candidates.length < 2) {
-    for (const lang of ["fr","en"]) {
-      const arr = await fetchWikipediaSearch(lang, queries[0]);
-      arr.forEach(x => addCandidate(x.src, x.source));
-      if (candidates.length >= 3) break;
-    }
-  }
-
-  if (candidates.length < 2) {
-    for (const q of queries) {
-      const arr = await fetchCommonsImages(q);
-      arr.forEach(x => addCandidate(x.src, x.source));
-      if (candidates.length >= 5) break;
-    }
-  }
 
   const tryCandidate = (index) => {
     if (index >= candidates.length) {
       el.className = "portrait unavailable";
-      el.innerHTML = `<span>Visuel introuvable pour ${escapeHtml(character.name)}</span>`;
+      el.innerHTML = `<span>Visuel introuvable pour ${character.name}</span>`;
       return;
     }
-    const item = candidates[index];
+
+    const src = candidates[index];
     const img = new Image();
+    img.alt = character.name;
+    img.loading = "eager";
     img.decoding = "async";
-    img.referrerPolicy = "no-referrer";
+
     img.onload = () => {
-      if ((img.naturalWidth || 0) < 250 || (img.naturalHeight || 0) < 250) {
+      // Les images du catalogue utilisateur sont prioritaires et sont
+      // affichées telles quelles, avec un cadrage uniforme par le CSS.
+      if ((img.naturalWidth || 0) < 150 || (img.naturalHeight || 0) < 150) {
         tryCandidate(index + 1);
         return;
       }
-      localStorage.setItem(cacheKey, item.src);
-      setImage(el, item.src, character, () => tryCandidate(index + 1), item.source);
+      setImage(el, src, character, () => tryCandidate(index + 1), "catalogue local /images");
     };
     img.onerror = () => tryCandidate(index + 1);
-    img.src = item.src;
+    img.src = src;
   };
 
   tryCandidate(0);
