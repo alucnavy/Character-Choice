@@ -22,3 +22,9 @@ La V3.3.1 réactive le chargement automatique des portraits via les pages exacte
 
 ## V3.5 — résolution d'images
 Les images sont recherchées automatiquement par personnage. Priorité : item Wikidata du personnage + image P18, puis page Wikipédia exacte, puis recherche Wikipédia/Commons strictement filtrée sur le nom du personnage. Aucun bouton de recherche manuelle. Les visuels restent la propriété de leurs créateurs/ayants droit.
+
+
+### V3.7
+- En-tête du tournoi réellement fixe au défilement.
+- Portraits affichés sans recadrage CSS forcé (`object-fit: contain`) pour préserver l'image entière fournie dans le catalogue local.
+- Aucun changement au système de correspondance des images locales.
