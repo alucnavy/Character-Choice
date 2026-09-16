@@ -1,9 +1,9 @@
 const CHARACTERS = [{"name":"Truman Burbank","universe":"The Truman Show","media":"Films","id":"c001","wiki":"Truman Burbank"},{"name":"Amélie Poulain","universe":"Le Fabuleux Destin d'Amélie Poulain","media":"Films","id":"c002","wiki":"Amélie Poulain"},{"name":"Mia Wallace","universe":"Pulp Fiction","media":"Films","id":"c003","wiki":"Mia Wallace"},{"name":"Vincent Vega","universe":"Pulp Fiction","media":"Films","id":"c004","wiki":"Vincent Vega"},{"name":"Maximus Decimus Meridius","universe":"Gladiator","media":"Films","id":"c005","wiki":"Maximus Decimus Meridius"},{"name":"Tony Montana","universe":"Scarface","media":"Films","id":"c006","wiki":"Tony Montana"},{"name":"Rick Deckard","universe":"Blade Runner","media":"Films","id":"c007","wiki":"Rick Deckard"},{"name":"Sarah Goldfarb","universe":"Requiem for a Dream","media":"Films","id":"c008","wiki":"Sarah Goldfarb"},{"name":"Cobb","universe":"Inception","media":"Films","id":"c009","wiki":"Cobb"},{"name":"Ariadne","universe":"Inception","media":"Films","id":"c010","wiki":"Ariadne"},{"name":"Marty McFly","universe":"Retour vers le futur","media":"Films","id":"c011","wiki":"Marty McFly"},{"name":"Doc Brown","universe":"Retour vers le futur","media":"Films","id":"c012","wiki":"Doc Brown"},{"name":"Mavis Gary","universe":"Young Adult","media":"Films","id":"c013","wiki":"Mavis Gary"},{"name":"Erin Brockovich","universe":"Erin Brockovich","media":"Films","id":"c014","wiki":"Erin Brockovich"},{"name":"Andy Dufresne","universe":"Les Évadés","media":"Films","id":"c015","wiki":"Andy Dufresne"},{"name":"John McClane","universe":"Die Hard","media":"Films","id":"c016","wiki":"John McClane"},{"name":"Verbal Kint","universe":"Usual Suspects","media":"Films","id":"c017","wiki":"Verbal Kint"},{"name":"The Driver","universe":"Drive","media":"Films","id":"c018","wiki":"The Driver"},{"name":"Erik Killmonger","universe":"Black Panther","media":"Films","id":"c019","wiki":"Erik Killmonger"},{"name":"Shuri","universe":"Black Panther","media":"Films","id":"c020","wiki":"Shuri"},{"name":"Okoye","universe":"Black Panther","media":"Films","id":"c021","wiki":"Okoye"},{"name":"Wendy Torrance","universe":"Shining","media":"Films","id":"c022","wiki":"Wendy Torrance"},{"name":"Jack Torrance","universe":"Shining","media":"Films","id":"c023","wiki":"Jack Torrance"},{"name":"Annie Wilkes","universe":"Misery","media":"Films","id":"c024","wiki":"Annie Wilkes"},{"name":"Daniel Plainview","universe":"There Will Be Blood","media":"Films","id":"c025","wiki":"Daniel Plainview"},{"name":"Remy","universe":"Ratatouille","media":"Films","id":"c026","wiki":"Remy"},{"name":"Elastigirl","universe":"Les Indestructibles","media":"Films","id":"c027","wiki":"Elastigirl"},{"name":"Mirabel Madrigal","universe":"Encanto","media":"Films","id":"c028","wiki":"Mirabel Madrigal"},{"name":"Raya","universe":"Raya et le Dernier Dragon","media":"Films","id":"c029","wiki":"Raya"},{"name":"Neytiri","universe":"Avatar","media":"Films","id":"c030","wiki":"Neytiri"},{"name":"Jake Sully","universe":"Avatar","media":"Films","id":"c031","wiki":"Jake Sully"},{"name":"Hiccup","universe":"Dragons","media":"Films","id":"c032","wiki":"Hiccup"},{"name":"Toothless","universe":"Dragons","media":"Films","id":"c033","wiki":"Toothless"},{"name":"Megamind","universe":"Megamind","media":"Films","id":"c034","wiki":"Megamind"},{"name":"Gru","universe":"Moi, moche et méchant","media":"Films","id":"c035","wiki":"Gru"},{"name":"Lucy Wilde","universe":"Moi, moche et méchant","media":"Films","id":"c036","wiki":"Lucy Wilde"},{"name":"Po","universe":"Kung Fu Panda","media":"Films","id":"c037","wiki":"Po"},{"name":"Tigress","universe":"Kung Fu Panda","media":"Films","id":"c038","wiki":"Tigress"},{"name":"Shrek","universe":"Shrek","media":"Films","id":"c039","wiki":"Shrek"},{"name":"Fiona","universe":"Shrek","media":"Films","id":"c040","wiki":"Fiona"},{"name":"Puss in Boots","universe":"Le Chat potté","media":"Films","id":"c041","wiki":"Puss in Boots"},{"name":"Miguel Rivera","universe":"Coco","media":"Films","id":"c042","wiki":"Miguel Rivera"},{"name":"Hector Rivera","universe":"Coco","media":"Films","id":"c043","wiki":"Hector Rivera"},{"name":"Chihiro Ogino","universe":"Le Voyage de Chihiro","media":"Films","id":"c044","wiki":"Chihiro Ogino"},{"name":"Carrie Mathison","universe":"Homeland","media":"Séries","id":"c045","wiki":"Carrie Mathison"},{"name":"Jessica Day","universe":"New Girl","media":"Séries","id":"c046","wiki":"Jessica Day"},{"name":"Eve Polastri","universe":"Killing Eve","media":"Séries","id":"c047","wiki":"Eve Polastri"},{"name":"Fox Mulder","universe":"The X-Files","media":"Séries","id":"c048","wiki":"Fox Mulder"},{"name":"Bobbie Draper","universe":"The Expanse","media":"Séries","id":"c049","wiki":"Bobbie Draper"},{"name":"Naomi Nagata","universe":"The Expanse","media":"Séries","id":"c050","wiki":"Naomi Nagata"},{"name":"Camina Drummer","universe":"The Expanse","media":"Séries","id":"c051","wiki":"Camina Drummer"},{"name":"Laura Roslin","universe":"Battlestar Galactica","media":"Séries","id":"c052","wiki":"Laura Roslin"},{"name":"Rory Williams","universe":"Doctor Who","media":"Séries","id":"c053","wiki":"Rory Williams"},{"name":"Wilfred Mott","universe":"Doctor Who","media":"Séries","id":"c054","wiki":"Wilfred Mott"},{"name":"Donna Noble","universe":"Doctor Who","media":"Séries","id":"c055","wiki":"Donna Noble"},{"name":"Clara Oswald","universe":"Doctor Who","media":"Séries","id":"c056","wiki":"Clara Oswald"},{"name":"Rose Tyler","universe":"Doctor Who","media":"Séries","id":"c057","wiki":"Rose Tyler"},{"name":"Sarah Jane Smith","universe":"Doctor Who","media":"Séries","id":"c058","wiki":"Sarah Jane Smith"},{"name":"Seven of Nine","universe":"Star Trek: Voyager","media":"Séries","id":"c059","wiki":"Seven of Nine"},{"name":"Kathryn Janeway","universe":"Star Trek: Voyager","media":"Séries","id":"c060","wiki":"Kathryn Janeway"},{"name":"Kira Nerys","universe":"Star Trek: Deep Space Nine","media":"Séries","id":"c061","wiki":"Kira Nerys"},{"name":"Benjamin Sisko","universe":"Star Trek: Deep Space Nine","media":"Séries","id":"c062","wiki":"Benjamin Sisko"},{"name":"Jean-Luc Picard","universe":"Star Trek: The Next Generation","media":"Séries","id":"c063","wiki":"Jean-Luc Picard"},{"name":"Beverly Crusher","universe":"Star Trek: The Next Generation","media":"Séries","id":"c064","wiki":"Beverly Crusher"},{"name":"Michael Burnham","universe":"Star Trek: Discovery","media":"Séries","id":"c065","wiki":"Michael Burnham"},{"name":"Philippa Georgiou","universe":"Star Trek: Discovery","media":"Séries","id":"c066","wiki":"Philippa Georgiou"},{"name":"Din Djarin","universe":"The Mandalorian","media":"Séries","id":"c067","wiki":"Din Djarin"},{"name":"Bo-Katan Kryze","universe":"Star Wars","media":"Séries","id":"c068","wiki":"Bo-Katan Kryze"},{"name":"Cassian Andor","universe":"Andor","media":"Séries","id":"c069","wiki":"Cassian Andor"},{"name":"Mon Mothma","universe":"Andor","media":"Séries","id":"c070","wiki":"Mon Mothma"},{"name":"Bix Caleen","universe":"Andor","media":"Séries","id":"c071","wiki":"Bix Caleen"},{"name":"Luthen Rael","universe":"Andor","media":"Séries","id":"c072","wiki":"Luthen Rael"},{"name":"Jimmy McGill","universe":"Better Call Saul","media":"Séries","id":"c073","wiki":"Jimmy McGill"},{"name":"Mike Ehrmantraut","universe":"Better Call Saul","media":"Séries","id":"c074","wiki":"Mike Ehrmantraut"},{"name":"Chuck McGill","universe":"Better Call Saul","media":"Séries","id":"c075","wiki":"Chuck McGill"},{"name":"Nacho Varga","universe":"Better Call Saul","media":"Séries","id":"c076","wiki":"Nacho Varga"},{"name":"Don Draper","universe":"Mad Men","media":"Séries","id":"c077","wiki":"Don Draper"},{"name":"Peggy Olson","universe":"Mad Men","media":"Séries","id":"c078","wiki":"Peggy Olson"},{"name":"Joan Holloway","universe":"Mad Men","media":"Séries","id":"c079","wiki":"Joan Holloway"},{"name":"Betty Draper","universe":"Mad Men","media":"Séries","id":"c080","wiki":"Betty Draper"},{"name":"Leslie Knope","universe":"Parks and Recreation","media":"Séries","id":"c081","wiki":"Leslie Knope"},{"name":"April Ludgate","universe":"Parks and Recreation","media":"Séries","id":"c082","wiki":"April Ludgate"},{"name":"Ron Swanson","universe":"Parks and Recreation","media":"Séries","id":"c083","wiki":"Ron Swanson"},{"name":"Ben Wyatt","universe":"Parks and Recreation","media":"Séries","id":"c084","wiki":"Ben Wyatt"},{"name":"Liz Lemon","universe":"30 Rock","media":"Séries","id":"c085","wiki":"Liz Lemon"},{"name":"Jack Donaghy","universe":"30 Rock","media":"Séries","id":"c086","wiki":"Jack Donaghy"},{"name":"Diane Nguyen","universe":"BoJack Horseman","media":"Séries","id":"c087","wiki":"Diane Nguyen"},{"name":"Princess Carolyn","universe":"BoJack Horseman","media":"Séries","id":"c088","wiki":"Princess Carolyn"},{"name":"Todd Chavez","universe":"BoJack Horseman","media":"Séries","id":"c089","wiki":"Todd Chavez"},{"name":"Mr. Peanutbutter","universe":"BoJack Horseman","media":"Séries","id":"c090","wiki":"Mr. Peanutbutter"},{"name":"Daria Morgendorffer","universe":"Daria","media":"Séries","id":"c091","wiki":"Daria Morgendorffer"},{"name":"Jane Lane","universe":"Daria","media":"Séries","id":"c092","wiki":"Jane Lane"},{"name":"Mabel Pines","universe":"Gravity Falls","media":"Séries","id":"c093","wiki":"Mabel Pines"},{"name":"Stan Pines","universe":"Gravity Falls","media":"Séries","id":"c094","wiki":"Stan Pines"},{"name":"Wendy Corduroy","universe":"Gravity Falls","media":"Séries","id":"c095","wiki":"Wendy Corduroy"},{"name":"Rebecca Bunch","universe":"Crazy Ex-Girlfriend","media":"Séries","id":"c096","wiki":"Rebecca Bunch"},{"name":"Chidi Anagonye","universe":"The Good Place","media":"Séries","id":"c097","wiki":"Chidi Anagonye"},{"name":"Tahani Al-Jamil","universe":"The Good Place","media":"Séries","id":"c098","wiki":"Tahani Al-Jamil"},{"name":"Michael","universe":"The Good Place","media":"Séries","id":"c099","wiki":"Michael"},{"name":"Rory Gilmore","universe":"Gilmore Girls","media":"Séries","id":"c100","wiki":"Rory Gilmore"},{"name":"Paris Geller","universe":"Gilmore Girls","media":"Séries","id":"c101","wiki":"Paris Geller"},{"name":"June Osborne","universe":"The Handmaid's Tale","media":"Séries","id":"c102","wiki":"June Osborne"},{"name":"Moira Rose","universe":"Schitt's Creek","media":"Séries","id":"c103","wiki":"Moira Rose"},{"name":"Alexis Rose","universe":"Schitt's Creek","media":"Séries","id":"c104","wiki":"Alexis Rose"},{"name":"Midge Maisel","universe":"The Marvelous Mrs. Maisel","media":"Séries","id":"c105","wiki":"Midge Maisel"},{"name":"Nico Robin","universe":"One Piece","media":"Manga / Anime","id":"c106","wiki":"Nico Robin"},{"name":"Nami","universe":"One Piece","media":"Manga / Anime","id":"c107","wiki":"Nami"},{"name":"Boa Hancock","universe":"One Piece","media":"Manga / Anime","id":"c108","wiki":"Boa Hancock"},{"name":"Perona","universe":"One Piece","media":"Manga / Anime","id":"c109","wiki":"Perona"},{"name":"Trafalgar Law","universe":"One Piece","media":"Manga / Anime","id":"c110","wiki":"Trafalgar Law"},{"name":"Donquixote Doflamingo","universe":"One Piece","media":"Manga / Anime","id":"c111","wiki":"Donquixote Doflamingo"},{"name":"Charlotte Katakuri","universe":"One Piece","media":"Manga / Anime","id":"c112","wiki":"Charlotte Katakuri"},{"name":"Monkey D. Dragon","universe":"One Piece","media":"Manga / Anime","id":"c113","wiki":"Monkey D. Dragon"},{"name":"Shanks","universe":"One Piece","media":"Manga / Anime","id":"c114","wiki":"Shanks"},{"name":"Brook","universe":"One Piece","media":"Manga / Anime","id":"c115","wiki":"Brook"},{"name":"Franky","universe":"One Piece","media":"Manga / Anime","id":"c116","wiki":"Franky"},{"name":"Usopp","universe":"One Piece","media":"Manga / Anime","id":"c117","wiki":"Usopp"},{"name":"Sanji","universe":"One Piece","media":"Manga / Anime","id":"c118","wiki":"Sanji"},{"name":"Roronoa Zoro","universe":"One Piece","media":"Manga / Anime","id":"c119","wiki":"Roronoa Zoro"},{"name":"Tashigi","universe":"One Piece","media":"Manga / Anime","id":"c120","wiki":"Tashigi"},{"name":"Koby","universe":"One Piece","media":"Manga / Anime","id":"c121","wiki":"Koby"},{"name":"Reiju Vinsmoke","universe":"One Piece","media":"Manga / Anime","id":"c122","wiki":"Reiju Vinsmoke"},{"name":"Maki Zenin","universe":"Jujutsu Kaisen","media":"Manga / Anime","id":"c123","wiki":"Maki Zenin"},{"name":"Nobara Kugisaki","universe":"Jujutsu Kaisen","media":"Manga / Anime","id":"c124","wiki":"Nobara Kugisaki"},{"name":"Megumi Fushiguro","universe":"Jujutsu Kaisen","media":"Manga / Anime","id":"c125","wiki":"Megumi Fushiguro"},{"name":"Suguru Geto","universe":"Jujutsu Kaisen","media":"Manga / Anime","id":"c126","wiki":"Suguru Geto"},{"name":"Toji Fushiguro","universe":"Jujutsu Kaisen","media":"Manga / Anime","id":"c127","wiki":"Toji Fushiguro"},{"name":"Kento Nanami","universe":"Jujutsu Kaisen","media":"Manga / Anime","id":"c128","wiki":"Kento Nanami"},{"name":"Yuki Tsukumo","universe":"Jujutsu Kaisen","media":"Manga / Anime","id":"c129","wiki":"Yuki Tsukumo"},{"name":"Kasumi Miwa","universe":"Jujutsu Kaisen","media":"Manga / Anime","id":"c130","wiki":"Kasumi Miwa"},{"name":"Shoko Ieiri","universe":"Jujutsu Kaisen","media":"Manga / Anime","id":"c131","wiki":"Shoko Ieiri"},{"name":"Maki Oze","universe":"Fire Force","media":"Manga / Anime","id":"c132","wiki":"Maki Oze"},{"name":"Shinra Kusakabe","universe":"Fire Force","media":"Manga / Anime","id":"c133","wiki":"Shinra Kusakabe"},{"name":"Arthur Boyle","universe":"Fire Force","media":"Manga / Anime","id":"c134","wiki":"Arthur Boyle"},{"name":"Tamaki Kotatsu","universe":"Fire Force","media":"Manga / Anime","id":"c135","wiki":"Tamaki Kotatsu"},{"name":"Historia Reiss","universe":"L'Attaque des Titans","media":"Manga / Anime","id":"c136","wiki":"Historia Reiss"},{"name":"Sasha Blouse","universe":"L'Attaque des Titans","media":"Manga / Anime","id":"c137","wiki":"Sasha Blouse"},{"name":"Pieck Finger","universe":"L'Attaque des Titans","media":"Manga / Anime","id":"c138","wiki":"Pieck Finger"},{"name":"Annie Leonhart","universe":"L'Attaque des Titans","media":"Manga / Anime","id":"c139","wiki":"Annie Leonhart"},{"name":"Reiner Braun","universe":"L'Attaque des Titans","media":"Manga / Anime","id":"c140","wiki":"Reiner Braun"},{"name":"Armin Arlert","universe":"L'Attaque des Titans","media":"Manga / Anime","id":"c141","wiki":"Armin Arlert"},{"name":"Levi Ackerman","universe":"L'Attaque des Titans","media":"Manga / Anime","id":"c142","wiki":"Levi Ackerman"},{"name":"Jean Kirstein","universe":"L'Attaque des Titans","media":"Manga / Anime","id":"c143","wiki":"Jean Kirstein"},{"name":"Ymir","universe":"L'Attaque des Titans","media":"Manga / Anime","id":"c144","wiki":"Ymir"},{"name":"Near","universe":"Death Note","media":"Manga / Anime","id":"c145","wiki":"Near"},{"name":"Mello","universe":"Death Note","media":"Manga / Anime","id":"c146","wiki":"Mello"},{"name":"Teru Mikami","universe":"Death Note","media":"Manga / Anime","id":"c147","wiki":"Teru Mikami"},{"name":"Matt","universe":"Death Note","media":"Manga / Anime","id":"c148","wiki":"Matt"},{"name":"Ryuk","universe":"Death Note","media":"Manga / Anime","id":"c149","wiki":"Ryuk"},{"name":"Mitsuri Kanroji","universe":"Demon Slayer","media":"Manga / Anime","id":"c150","wiki":"Mitsuri Kanroji"},{"name":"Kanao Tsuyuri","universe":"Demon Slayer","media":"Manga / Anime","id":"c151","wiki":"Kanao Tsuyuri"},{"name":"Tamayo","universe":"Demon Slayer","media":"Manga / Anime","id":"c152","wiki":"Tamayo"},{"name":"Daki","universe":"Demon Slayer","media":"Manga / Anime","id":"c153","wiki":"Daki"},{"name":"Akaza","universe":"Demon Slayer","media":"Manga / Anime","id":"c154","wiki":"Akaza"},{"name":"Giyu Tomioka","universe":"Demon Slayer","media":"Manga / Anime","id":"c155","wiki":"Giyu Tomioka"},{"name":"Kyojuro Rengoku","universe":"Demon Slayer","media":"Manga / Anime","id":"c156","wiki":"Kyojuro Rengoku"},{"name":"Tengen Uzui","universe":"Demon Slayer","media":"Manga / Anime","id":"c157","wiki":"Tengen Uzui"},{"name":"Muichiro Tokito","universe":"Demon Slayer","media":"Manga / Anime","id":"c158","wiki":"Muichiro Tokito"},{"name":"Nezuko Kamado","universe":"Demon Slayer","media":"Manga / Anime","id":"c159","wiki":"Nezuko Kamado"},{"name":"Tanjiro Kamado","universe":"Demon Slayer","media":"Manga / Anime","id":"c160","wiki":"Tanjiro Kamado"},{"name":"Inosuke Hashibira","universe":"Demon Slayer","media":"Manga / Anime","id":"c161","wiki":"Inosuke Hashibira"},{"name":"Zenitsu Agatsuma","universe":"Demon Slayer","media":"Manga / Anime","id":"c162","wiki":"Zenitsu Agatsuma"},{"name":"Jinshi","universe":"Les Carnets de l'apothicaire","media":"Manga / Anime","id":"c163","wiki":"Jinshi"},{"name":"Gyokuyou","universe":"Les Carnets de l'apothicaire","media":"Manga / Anime","id":"c164","wiki":"Gyokuyou"},{"name":"Fern","universe":"Frieren","media":"Manga / Anime","id":"c165","wiki":"Fern"},{"name":"Stark","universe":"Frieren","media":"Manga / Anime","id":"c166","wiki":"Stark"},{"name":"Übel","universe":"Frieren","media":"Manga / Anime","id":"c167","wiki":"Übel"},{"name":"Himmel","universe":"Frieren","media":"Manga / Anime","id":"c168","wiki":"Himmel"},{"name":"Marcille Donato","universe":"Dungeon Meshi","media":"Manga / Anime","id":"c169","wiki":"Marcille Donato"},{"name":"Laios Touden","universe":"Dungeon Meshi","media":"Manga / Anime","id":"c170","wiki":"Laios Touden"},{"name":"Falin Touden","universe":"Dungeon Meshi","media":"Manga / Anime","id":"c171","wiki":"Falin Touden"},{"name":"Okarun","universe":"DanDaDan","media":"Manga / Anime","id":"c172","wiki":"Okarun"},{"name":"Aira Shiratori","universe":"DanDaDan","media":"Manga / Anime","id":"c173","wiki":"Aira Shiratori"},{"name":"Sailor Moon","universe":"Sailor Moon","media":"Manga / Anime","id":"c174","wiki":"Sailor Moon"},{"name":"Sailor Mars","universe":"Sailor Moon","media":"Manga / Anime","id":"c175","wiki":"Sailor Mars"},{"name":"Sailor Mercury","universe":"Sailor Moon","media":"Manga / Anime","id":"c176","wiki":"Sailor Mercury"},{"name":"Sailor Jupiter","universe":"Sailor Moon","media":"Manga / Anime","id":"c177","wiki":"Sailor Jupiter"},{"name":"Sailor Venus","universe":"Sailor Moon","media":"Manga / Anime","id":"c178","wiki":"Sailor Venus"},{"name":"Utena Tenjou","universe":"Revolutionary Girl Utena","media":"Manga / Anime","id":"c179","wiki":"Utena Tenjou"},{"name":"Anthyy Himemiya","universe":"Revolutionary Girl Utena","media":"Manga / Anime","id":"c180","wiki":"Anthyy Himemiya"},{"name":"Homura Akemi","universe":"Puella Magi Madoka Magica","media":"Manga / Anime","id":"c181","wiki":"Homura Akemi"},{"name":"Madoka Kaname","universe":"Puella Magi Madoka Magica","media":"Manga / Anime","id":"c182","wiki":"Madoka Kaname"},{"name":"Mami Tomoe","universe":"Puella Magi Madoka Magica","media":"Manga / Anime","id":"c183","wiki":"Mami Tomoe"},{"name":"Sayaka Miki","universe":"Puella Magi Madoka Magica","media":"Manga / Anime","id":"c184","wiki":"Sayaka Miki"},{"name":"Kyoko Sakura","universe":"Puella Magi Madoka Magica","media":"Manga / Anime","id":"c185","wiki":"Kyoko Sakura"},{"name":"Batou","universe":"Ghost in the Shell","media":"Manga / Anime","id":"c186","wiki":"Batou"},{"name":"Ginko","universe":"Mushishi","media":"Manga / Anime","id":"c187","wiki":"Ginko"},{"name":"Violet Evergarden","universe":"Violet Evergarden","media":"Manga / Anime","id":"c188","wiki":"Violet Evergarden"},{"name":"Yor Forger","universe":"Spy × Family","media":"Manga / Anime","id":"c189","wiki":"Yor Forger"},{"name":"Loid Forger","universe":"Spy × Family","media":"Manga / Anime","id":"c190","wiki":"Loid Forger"},{"name":"Anya Forger","universe":"Spy × Family","media":"Manga / Anime","id":"c191","wiki":"Anya Forger"},{"name":"Fiona Frost","universe":"Spy × Family","media":"Manga / Anime","id":"c192","wiki":"Fiona Frost"},{"name":"Hachi Komatsu","universe":"Nana","media":"Manga / Anime","id":"c193","wiki":"Hachi Komatsu"},{"name":"Nana Komatsu","universe":"Nana","media":"Manga / Anime","id":"c194","wiki":"Nana Komatsu"},{"name":"Yona","universe":"Yona of the Dawn","media":"Manga / Anime","id":"c195","wiki":"Yona"},{"name":"Balsa Yonsa","universe":"Moribito","media":"Manga / Anime","id":"c196","wiki":"Balsa Yonsa"},{"name":"Akane Tsunemori","universe":"Psycho-Pass","media":"Manga / Anime","id":"c197","wiki":"Akane Tsunemori"},{"name":"Shinya Kogami","universe":"Psycho-Pass","media":"Manga / Anime","id":"c198","wiki":"Shinya Kogami"},{"name":"Balalaika","universe":"Black Lagoon","media":"Manga / Anime","id":"c199","wiki":"Balalaika"},{"name":"Benny","universe":"Black Lagoon","media":"Manga / Anime","id":"c200","wiki":"Benny"},{"name":"Vicious","universe":"Cowboy Bebop","media":"Manga / Anime","id":"c201","wiki":"Vicious"},{"name":"Jet Black","universe":"Cowboy Bebop","media":"Manga / Anime","id":"c202","wiki":"Jet Black"},{"name":"Edward","universe":"Cowboy Bebop","media":"Manga / Anime","id":"c203","wiki":"Edward"},{"name":"Mugen","universe":"Samurai Champloo","media":"Manga / Anime","id":"c204","wiki":"Mugen"},{"name":"Jin","universe":"Samurai Champloo","media":"Manga / Anime","id":"c205","wiki":"Jin"},{"name":"Fuu Kasumi","universe":"Samurai Champloo","media":"Manga / Anime","id":"c206","wiki":"Fuu Kasumi"},{"name":"Jessica Drew","universe":"Marvel","media":"Comics","id":"c207","wiki":"Jessica Drew"},{"name":"Kate Bishop","universe":"Marvel","media":"Comics","id":"c208","wiki":"Kate Bishop"},{"name":"Kamala Khan","universe":"Marvel","media":"Comics","id":"c209","wiki":"Kamala Khan"},{"name":"Monica Rambeau","universe":"Marvel","media":"Comics","id":"c210","wiki":"Monica Rambeau"},{"name":"America Chavez","universe":"Marvel","media":"Comics","id":"c211","wiki":"America Chavez"},{"name":"Wiccan","universe":"Marvel","media":"Comics","id":"c212","wiki":"Wiccan"},{"name":"Hulkling","universe":"Marvel","media":"Comics","id":"c213","wiki":"Hulkling"},{"name":"Kitty Pryde","universe":"Marvel","media":"Comics","id":"c214","wiki":"Kitty Pryde"},{"name":"Emma Frost","universe":"Marvel","media":"Comics","id":"c215","wiki":"Emma Frost"},{"name":"Psylocke","universe":"Marvel","media":"Comics","id":"c216","wiki":"Psylocke"},{"name":"Dazzler","universe":"Marvel","media":"Comics","id":"c217","wiki":"Dazzler"},{"name":"Polaris","universe":"Marvel","media":"Comics","id":"c218","wiki":"Polaris"},{"name":"Magik","universe":"Marvel","media":"Comics","id":"c219","wiki":"Magik"},{"name":"Clea","universe":"Marvel","media":"Comics","id":"c220","wiki":"Clea"},{"name":"Elektra","universe":"Marvel","media":"Comics","id":"c221","wiki":"Elektra"},{"name":"Misty Knight","universe":"Marvel","media":"Comics","id":"c222","wiki":"Misty Knight"},{"name":"Colleen Wing","universe":"Marvel","media":"Comics","id":"c223","wiki":"Colleen Wing"},{"name":"Moon Girl","universe":"Marvel","media":"Comics","id":"c224","wiki":"Moon Girl"},{"name":"Squirrel Girl","universe":"Marvel","media":"Comics","id":"c225","wiki":"Squirrel Girl"},{"name":"Vixen","universe":"DC Comics","media":"Comics","id":"c226","wiki":"Vixen"},{"name":"Hawkgirl","universe":"DC Comics","media":"Comics","id":"c227","wiki":"Hawkgirl"},{"name":"Batwoman","universe":"DC Comics","media":"Comics","id":"c228","wiki":"Batwoman"},{"name":"Power Girl","universe":"DC Comics","media":"Comics","id":"c229","wiki":"Power Girl"},{"name":"Donna Troy","universe":"DC Comics","media":"Comics","id":"c230","wiki":"Donna Troy"},{"name":"Cassandra Cain","universe":"DC Comics","media":"Comics","id":"c231","wiki":"Cassandra Cain"},{"name":"Stephanie Brown","universe":"DC Comics","media":"Comics","id":"c232","wiki":"Stephanie Brown"},{"name":"Kate Kane","universe":"DC Comics","media":"Comics","id":"c233","wiki":"Kate Kane"},{"name":"Huntress","universe":"DC Comics","media":"Comics","id":"c234","wiki":"Huntress"},{"name":"Mary Marvel","universe":"DC Comics","media":"Comics","id":"c235","wiki":"Mary Marvel"},{"name":"Big Barda","universe":"DC Comics","media":"Comics","id":"c236","wiki":"Big Barda"},{"name":"Black Alice","universe":"DC Comics","media":"Comics","id":"c237","wiki":"Black Alice"},{"name":"Poison Ivy","universe":"DC Comics","media":"Comics","id":"c238","wiki":"Poison Ivy"},{"name":"Harley Quinn","universe":"DC Comics","media":"Comics","id":"c239","wiki":"Harley Quinn"},{"name":"Amanda Waller","universe":"DC Comics","media":"Comics","id":"c240","wiki":"Amanda Waller"},{"name":"Talia al Ghul","universe":"DC Comics","media":"Comics","id":"c241","wiki":"Talia al Ghul"},{"name":"Valkyrie","universe":"Marvel","media":"Comics","id":"c242","wiki":"Valkyrie"},{"name":"Sif","universe":"Marvel","media":"Comics","id":"c243","wiki":"Sif"},{"name":"Shanna the She-Devil","universe":"Marvel","media":"Comics","id":"c244","wiki":"Shanna the She-Devil"},{"name":"Medusa","universe":"Marvel","media":"Comics","id":"c245","wiki":"Medusa"},{"name":"Crystal","universe":"Marvel","media":"Comics","id":"c246","wiki":"Crystal"},{"name":"Mantis","universe":"Marvel","media":"Comics","id":"c247","wiki":"Mantis"},{"name":"Nebula","universe":"Marvel","media":"Comics","id":"c248","wiki":"Nebula"},{"name":"Gamora","universe":"Marvel","media":"Comics","id":"c249","wiki":"Gamora"},{"name":"Dani Moonstar","universe":"Marvel","media":"Comics","id":"c250","wiki":"Dani Moonstar"},{"name":"Armor","universe":"Marvel","media":"Comics","id":"c251","wiki":"Armor"},{"name":"Gwenpool","universe":"Marvel","media":"Comics","id":"c252","wiki":"Gwenpool"},{"name":"Spider-Gwen","universe":"Marvel","media":"Comics","id":"c253","wiki":"Spider-Gwen"},{"name":"Miles Morales","universe":"Marvel","media":"Comics","id":"c254","wiki":"Miles Morales"},{"name":"Sam Wilson","universe":"Marvel","media":"Comics","id":"c255","wiki":"Sam Wilson"},{"name":"Bucky Barnes","universe":"Marvel","media":"Comics","id":"c256","wiki":"Bucky Barnes"},{"name":"Luke Cage","universe":"Marvel","media":"Comics","id":"c257","wiki":"Luke Cage"},{"name":"Iron Fist","universe":"Marvel","media":"Comics","id":"c258","wiki":"Iron Fist"},{"name":"Moon Knight","universe":"Marvel","media":"Comics","id":"c259","wiki":"Moon Knight"},{"name":"Nova","universe":"Marvel","media":"Comics","id":"c260","wiki":"Nova"},{"name":"Blue Beetle","universe":"DC Comics","media":"Comics","id":"c261","wiki":"Blue Beetle"},{"name":"Booster Gold","universe":"DC Comics","media":"Comics","id":"c262","wiki":"Booster Gold"},{"name":"Mister Miracle","universe":"DC Comics","media":"Comics","id":"c263","wiki":"Mister Miracle"},{"name":"Plastic Man","universe":"DC Comics","media":"Comics","id":"c264","wiki":"Plastic Man"},{"name":"Animal Man","universe":"DC Comics","media":"Comics","id":"c265","wiki":"Animal Man"},{"name":"Mister Terrific","universe":"DC Comics","media":"Comics","id":"c266","wiki":"Mister Terrific"},{"name":"Green Arrow","universe":"DC Comics","media":"Comics","id":"c267","wiki":"Green Arrow"},{"name":"Atom","universe":"DC Comics","media":"Comics","id":"c268","wiki":"Atom"},{"name":"Cyborg","universe":"DC Comics","media":"Comics","id":"c269","wiki":"Cyborg"},{"name":"Martian Manhunter","universe":"DC Comics","media":"Comics","id":"c270","wiki":"Martian Manhunter"},{"name":"Jane Eyre","universe":"Jane Eyre","media":"Romans / Littérature","id":"c271","wiki":"Jane Eyre"},{"name":"Elizabeth Bennet","universe":"Orgueil et Préjugés","media":"Romans / Littérature","id":"c272","wiki":"Elizabeth Bennet"},{"name":"Jo March","universe":"Les Quatre Filles du docteur March","media":"Romans / Littérature","id":"c273","wiki":"Jo March"},{"name":"Anne Shirley","universe":"Anne... la maison aux pignons verts","media":"Romans / Littérature","id":"c274","wiki":"Anne Shirley"},{"name":"Heathcliff","universe":"Les Hauts de Hurlevent","media":"Romans / Littérature","id":"c275","wiki":"Heathcliff"},{"name":"Estella Havisham","universe":"De grandes espérances","media":"Romans / Littérature","id":"c276","wiki":"Estella Havisham"},{"name":"Pip","universe":"De grandes espérances","media":"Romans / Littérature","id":"c277","wiki":"Pip"},{"name":"Jean Valjean","universe":"Les Misérables","media":"Romans / Littérature","id":"c278","wiki":"Jean Valjean"},{"name":"Javert","universe":"Les Misérables","media":"Romans / Littérature","id":"c279","wiki":"Javert"},{"name":"Cosette","universe":"Les Misérables","media":"Romans / Littérature","id":"c280","wiki":"Cosette"},{"name":"Marius Pontmercy","universe":"Les Misérables","media":"Romans / Littérature","id":"c281","wiki":"Marius Pontmercy"},{"name":"Haydée","universe":"Le Comte de Monte-Cristo","media":"Romans / Littérature","id":"c282","wiki":"Haydée"},{"name":"Mercedes","universe":"Le Comte de Monte-Cristo","media":"Romans / Littérature","id":"c283","wiki":"Mercedes"},{"name":"Hester Prynne","universe":"La Lettre écarlate","media":"Romans / Littérature","id":"c284","wiki":"Hester Prynne"},{"name":"Atticus Finch","universe":"Ne tirez pas sur l'oiseau moqueur","media":"Romans / Littérature","id":"c285","wiki":"Atticus Finch"},{"name":"Scout Finch","universe":"Ne tirez pas sur l'oiseau moqueur","media":"Romans / Littérature","id":"c286","wiki":"Scout Finch"},{"name":"Holden Caulfield","universe":"L'Attrape-cœurs","media":"Romans / Littérature","id":"c287","wiki":"Holden Caulfield"},{"name":"Esther Greenwood","universe":"La Cloche de détresse","media":"Romans / Littérature","id":"c288","wiki":"Esther Greenwood"},{"name":"Offred","universe":"La Servante écarlate","media":"Romans / Littérature","id":"c289","wiki":"Offred"},{"name":"Lyra Belacqua","universe":"À la croisée des mondes","media":"Romans / Littérature","id":"c290","wiki":"Lyra Belacqua"},{"name":"Will Parry","universe":"À la croisée des mondes","media":"Romans / Littérature","id":"c291","wiki":"Will Parry"},{"name":"Mrs Coulter","universe":"À la croisée des mondes","media":"Romans / Littérature","id":"c292","wiki":"Mrs Coulter"},{"name":"Serafina Pekkala","universe":"À la croisée des mondes","media":"Romans / Littérature","id":"c293","wiki":"Serafina Pekkala"},{"name":"Tenar","universe":"Terremer","media":"Romans / Littérature","id":"c294","wiki":"Tenar"},{"name":"Therru","universe":"Terremer","media":"Romans / Littérature","id":"c295","wiki":"Therru"},{"name":"Denna","universe":"Chronique du tueur de roi","media":"Romans / Littérature","id":"c296","wiki":"Denna"},{"name":"Eddard Stark","universe":"A Song of Ice and Fire","media":"Romans / Littérature","id":"c297","wiki":"Eddard Stark"},{"name":"Catelyn Stark","universe":"A Song of Ice and Fire","media":"Romans / Littérature","id":"c298","wiki":"Catelyn Stark"},{"name":"Robb Stark","universe":"A Song of Ice and Fire","media":"Romans / Littérature","id":"c299","wiki":"Robb Stark"},{"name":"Bran Stark","universe":"A Song of Ice and Fire","media":"Romans / Littérature","id":"c300","wiki":"Bran Stark"},{"name":"Theon Greyjoy","universe":"A Song of Ice and Fire","media":"Romans / Littérature","id":"c301","wiki":"Theon Greyjoy"},{"name":"Davos Seaworth","universe":"A Song of Ice and Fire","media":"Romans / Littérature","id":"c302","wiki":"Davos Seaworth"},{"name":"Brienne of Tarth","universe":"A Song of Ice and Fire","media":"Romans / Littérature","id":"c303","wiki":"Brienne of Tarth"},{"name":"Mance Rayder","universe":"A Song of Ice and Fire","media":"Romans / Littérature","id":"c304","wiki":"Mance Rayder"},{"name":"Oberyn Martell","universe":"A Song of Ice and Fire","media":"Romans / Littérature","id":"c305","wiki":"Oberyn Martell"},{"name":"Doran Martell","universe":"A Song of Ice and Fire","media":"Romans / Littérature","id":"c306","wiki":"Doran Martell"},{"name":"Ellaria Sand","universe":"A Song of Ice and Fire","media":"Romans / Littérature","id":"c307","wiki":"Ellaria Sand"},{"name":"Syrio Forel","universe":"A Song of Ice and Fire","media":"Romans / Littérature","id":"c308","wiki":"Syrio Forel"},{"name":"Jaqen H'ghar","universe":"A Song of Ice and Fire","media":"Romans / Littérature","id":"c309","wiki":"Jaqen H'ghar"},{"name":"Samwell Tarly","universe":"A Song of Ice and Fire","media":"Romans / Littérature","id":"c310","wiki":"Samwell Tarly"},{"name":"Gilly","universe":"A Song of Ice and Fire","media":"Romans / Littérature","id":"c311","wiki":"Gilly"},{"name":"Sansa Stark","universe":"A Song of Ice and Fire","media":"Romans / Littérature","id":"c312","wiki":"Sansa Stark"},{"name":"Tyrion Lannister","universe":"A Song of Ice and Fire","media":"Romans / Littérature","id":"c313","wiki":"Tyrion Lannister"},{"name":"Varys","universe":"A Song of Ice and Fire","media":"Romans / Littérature","id":"c314","wiki":"Varys"},{"name":"Littlefinger","universe":"A Song of Ice and Fire","media":"Romans / Littérature","id":"c315","wiki":"Littlefinger"},{"name":"Gregor Clegane","universe":"A Song of Ice and Fire","media":"Romans / Littérature","id":"c316","wiki":"Gregor Clegane"},{"name":"Ramsay Bolton","universe":"A Song of Ice and Fire","media":"Romans / Littérature","id":"c317","wiki":"Ramsay Bolton"},{"name":"Phedre nó Delaunay","universe":"Kushiel","media":"Romans / Littérature","id":"c318","wiki":"Phedre nó Delaunay"},{"name":"Imriel de la Courcel","universe":"Kushiel","media":"Romans / Littérature","id":"c319","wiki":"Imriel de la Courcel"},{"name":"Kell Maresh","universe":"Shades of Magic","media":"Romans / Littérature","id":"c320","wiki":"Kell Maresh"},{"name":"Shego","universe":"Kim Possible","media":"Dessin animé / Animation","id":"c321","wiki":"Shego"},{"name":"Toph Beifong","universe":"Avatar : Le Dernier Maître de l'Air","media":"Dessin animé / Animation","id":"c322","wiki":"Toph Beifong"},{"name":"Princess Bubblegum","universe":"Adventure Time","media":"Dessin animé / Animation","id":"c323","wiki":"Princess Bubblegum"},{"name":"Garnet","universe":"Steven Universe","media":"Dessin animé / Animation","id":"c324","wiki":"Garnet"},{"name":"Adora","universe":"She-Ra","media":"Dessin animé / Animation","id":"c325","wiki":"Adora"},{"name":"Catra","universe":"She-Ra","media":"Dessin animé / Animation","id":"c326","wiki":"Catra"},{"name":"Velma Dinkley","universe":"Scooby-Doo","media":"Dessin animé / Animation","id":"c327","wiki":"Velma Dinkley"},{"name":"Daphne Blake","universe":"Scooby-Doo","media":"Dessin animé / Animation","id":"c328","wiki":"Daphne Blake"},{"name":"Amy Wong","universe":"Futurama","media":"Dessin animé / Animation","id":"c329","wiki":"Amy Wong"},{"name":"Leela","universe":"Futurama","media":"Dessin animé / Animation","id":"c330","wiki":"Leela"},{"name":"Bender","universe":"Futurama","media":"Dessin animé / Animation","id":"c331","wiki":"Bender"},{"name":"Finn","universe":"Adventure Time","media":"Dessin animé / Animation","id":"c332","wiki":"Finn"},{"name":"Jake","universe":"Adventure Time","media":"Dessin animé / Animation","id":"c333","wiki":"Jake"},{"name":"Him","universe":"Les Supers Nanas","media":"Dessin animé / Animation","id":"c334","wiki":"Him"},{"name":"Blossom","universe":"Les Supers Nanas","media":"Dessin animé / Animation","id":"c335","wiki":"Blossom"},{"name":"Bubbles","universe":"Les Supers Nanas","media":"Dessin animé / Animation","id":"c336","wiki":"Bubbles"},{"name":"Buttercup","universe":"Les Supers Nanas","media":"Dessin animé / Animation","id":"c337","wiki":"Buttercup"},{"name":"Terra","universe":"Teen Titans","media":"Dessin animé / Animation","id":"c338","wiki":"Terra"},{"name":"Jinx","universe":"Teen Titans","media":"Dessin animé / Animation","id":"c339","wiki":"Jinx"},{"name":"Ron Stoppable","universe":"Kim Possible","media":"Dessin animé / Animation","id":"c340","wiki":"Ron Stoppable"},{"name":"Maggie Simpson","universe":"Les Simpson","media":"Dessin animé / Animation","id":"c341","wiki":"Maggie Simpson"},{"name":"Milhouse Van Houten","universe":"Les Simpson","media":"Dessin animé / Animation","id":"c342","wiki":"Milhouse Van Houten"},{"name":"Bart Simpson","universe":"Les Simpson","media":"Dessin animé / Animation","id":"c343","wiki":"Bart Simpson"},{"name":"Ned Flanders","universe":"Les Simpson","media":"Dessin animé / Animation","id":"c344","wiki":"Ned Flanders"},{"name":"Louise Belcher","universe":"Bob's Burgers","media":"Dessin animé / Animation","id":"c345","wiki":"Louise Belcher"},{"name":"Tina Belcher","universe":"Bob's Burgers","media":"Dessin animé / Animation","id":"c346","wiki":"Tina Belcher"},{"name":"Linda Belcher","universe":"Bob's Burgers","media":"Dessin animé / Animation","id":"c347","wiki":"Linda Belcher"},{"name":"Bob Belcher","universe":"Bob's Burgers","media":"Dessin animé / Animation","id":"c348","wiki":"Bob Belcher"},{"name":"Gene Belcher","universe":"Bob's Burgers","media":"Dessin animé / Animation","id":"c349","wiki":"Gene Belcher"},{"name":"Dipper Pines","universe":"Gravity Falls","media":"Dessin animé / Animation","id":"c350","wiki":"Dipper Pines"},{"name":"Mordecai","universe":"Regular Show","media":"Dessin animé / Animation","id":"c351","wiki":"Mordecai"},{"name":"Rigby","universe":"Regular Show","media":"Dessin animé / Animation","id":"c352","wiki":"Rigby"},{"name":"Benson","universe":"Regular Show","media":"Dessin animé / Animation","id":"c353","wiki":"Benson"},{"name":"Samurai Jack","universe":"Samurai Jack","media":"Dessin animé / Animation","id":"c354","wiki":"Samurai Jack"},{"name":"Amethyst","universe":"Steven Universe","media":"Dessin animé / Animation","id":"c355","wiki":"Amethyst"},{"name":"Lapis Lazuli","universe":"Steven Universe","media":"Dessin animé / Animation","id":"c356","wiki":"Lapis Lazuli"},{"name":"Peridot","universe":"Steven Universe","media":"Dessin animé / Animation","id":"c357","wiki":"Peridot"},{"name":"Hilda","universe":"Hilda","media":"Dessin animé / Animation","id":"c358","wiki":"Hilda"},{"name":"Frida","universe":"Hilda","media":"Dessin animé / Animation","id":"c359","wiki":"Frida"},{"name":"David","universe":"Hilda","media":"Dessin animé / Animation","id":"c360","wiki":"David"},{"name":"Milo Murphy","universe":"Milo Murphy's Law","media":"Dessin animé / Animation","id":"c361","wiki":"Milo Murphy"},{"name":"Wander","universe":"Wander Over Yonder","media":"Dessin animé / Animation","id":"c362","wiki":"Wander"},{"name":"Lord Hater","universe":"Wander Over Yonder","media":"Dessin animé / Animation","id":"c363","wiki":"Lord Hater"},{"name":"Kipo Oak","universe":"Kipo and the Age of Wonderbeasts","media":"Dessin animé / Animation","id":"c364","wiki":"Kipo Oak"},{"name":"Entrapta","universe":"She-Ra","media":"Dessin animé / Animation","id":"c365","wiki":"Entrapta"},{"name":"Scorpia","universe":"She-Ra","media":"Dessin animé / Animation","id":"c366","wiki":"Scorpia"},{"name":"Hordak","universe":"She-Ra","media":"Dessin animé / Animation","id":"c367","wiki":"Hordak"},{"name":"Sasha Waybright","universe":"Amphibia","media":"Dessin animé / Animation","id":"c368","wiki":"Sasha Waybright"},{"name":"Marcy Wu","universe":"Amphibia","media":"Dessin animé / Animation","id":"c369","wiki":"Marcy Wu"},{"name":"Anne Boonchuy","universe":"Amphibia","media":"Dessin animé / Animation","id":"c370","wiki":"Anne Boonchuy"},{"name":"King","universe":"The Owl House","media":"Dessin animé / Animation","id":"c371","wiki":"King"},{"name":"Luz Noceda","universe":"The Owl House","media":"Dessin animé / Animation","id":"c372","wiki":"Luz Noceda"},{"name":"Amity Blight","universe":"The Owl House","media":"Dessin animé / Animation","id":"c373","wiki":"Amity Blight"},{"name":"Willow Park","universe":"The Owl House","media":"Dessin animé / Animation","id":"c374","wiki":"Willow Park"},{"name":"Hunter","universe":"The Owl House","media":"Dessin animé / Animation","id":"c375","wiki":"Hunter"},{"name":"Molly McGee","universe":"The Ghost and Molly McGee","media":"Dessin animé / Animation","id":"c376","wiki":"Molly McGee"}];
 
 let IMAGE_CATALOG = {};
-const STORAGE_KEY = "characterChoiceV32";
-const BEST_KEY = "characterChoiceV32Best";
-const BEST_HOLDER_KEY = "characterChoiceV32BestHolder";
+const STORAGE_KEY = "characterChoiceV35";
+const BEST_KEY = "characterChoiceV35Best";
+const BEST_HOLDER_KEY = "characterChoiceV35BestHolder";
 
 const $ = id => document.getElementById(id);
 const state = loadState();
@@ -71,133 +71,209 @@ function updateStats() {
   renderHistory();
 }
 
+
 async function loadPortrait(character, el) {
   el.className = "portrait loading";
-  el.innerHTML = "<span>Chargement de l’image…</span>";
+  el.innerHTML = "<span>Recherche du visuel…</span>";
   el.dataset.characterId = character.id;
 
   const entry = IMAGE_CATALOG[character.id] || {};
-  const cacheKeys = ["ccimg-v34:" + character.id, "ccimg-v33:" + character.id, "ccimg-v32:" + character.id];
+  const cacheKey = "ccimg-v35:" + character.id;
+  const oldKeys = ["ccimg-v34:" + character.id, "ccimg-v33:" + character.id, "ccimg-v32:" + character.id];
   const candidates = [];
   const seen = new Set();
-  const addCandidate = (src) => {
-    if (src && typeof src === "string" && !seen.has(src)) {
-      seen.add(src);
-      candidates.push(src);
-    }
+
+  const addCandidate = (src, source = "") => {
+    if (!src || typeof src !== "string" || seen.has(src)) return;
+    seen.add(src);
+    candidates.push({src, source});
   };
 
-  // 1) Images déjà connues par cette version ou les versions précédentes.
-  for (const cacheKey of cacheKeys) addCandidate(localStorage.getItem(cacheKey));
-  addCandidate(entry.imageUrl);
+  // 1) Une image déjà validée est toujours prioritaire.
+  addCandidate(localStorage.getItem(cacheKey), "cache V3.5");
+  for (const k of oldKeys) addCandidate(localStorage.getItem(k), "cache précédent");
+  addCandidate(entry.imageUrl, entry.source || "catalogue");
 
-  // 2) Pages Wikipédia explicitement associées au personnage.
-  const titles = [];
-  const addTitle = (lang, pageUrl) => {
-    if (!pageUrl) return;
-    const marker = "/wiki/";
-    const idx = pageUrl.indexOf(marker);
-    if (idx < 0) return;
-    const raw = pageUrl.slice(idx + marker.length);
-    if (!raw) return;
-    titles.push({ lang, title: decodeURIComponent(raw).replaceAll("_", " ") });
-  };
-  addTitle("fr", entry.preferredPage);
-  addTitle("en", entry.fallbackPage);
-  if (!titles.length) {
-    titles.push({lang:"fr", title: character.wiki || character.name});
-    titles.push({lang:"en", title: character.wiki || character.name});
+  const norm = s => (s || "")
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+
+  const nameNorm = norm(character.name);
+  const universeNorm = norm(character.universe);
+
+  // 2) Wikidata : on cherche d'abord L'ITEM DU PERSONNAGE, pas l'œuvre.
+  // P18 = image du sujet. C'est ce qui évite notamment d'afficher une photo
+  // d'un acteur quand on cherche un personnage fictif.
+  async function fetchWikidataImages(query) {
+    const searchUrl =
+      `https://www.wikidata.org/w/api.php?action=wbsearchentities&search=${encodeURIComponent(query)}` +
+      `&language=fr&uselang=fr&format=json&limit=8&origin=*`;
+    try {
+      const r = await fetch(searchUrl, {signal: AbortSignal.timeout(7000)});
+      if (!r.ok) return [];
+      const d = await r.json();
+      const results = Array.isArray(d.search) ? d.search : [];
+
+      const strong = results.filter(x => {
+        const label = norm(x.label);
+        const desc = norm(x.description);
+        const exact = label === nameNorm || label.includes(nameNorm) || nameNorm.includes(label);
+        const characterLike = /personnage|fictionnel|fictionnelle|character|anime|manga|heros|heroine|protagoniste/.test(desc);
+        return exact && (characterLike || !desc);
+      });
+
+      const ids = [...new Set((strong.length ? strong : results).map(x => x.id).filter(Boolean))].slice(0, 5);
+      if (!ids.length) return [];
+
+      const entityUrl =
+        `https://www.wikidata.org/w/api.php?action=wbgetentities&ids=${ids.join("|")}` +
+        `&props=labels|descriptions|claims&languages=fr|en&format=json&origin=*`;
+      const er = await fetch(entityUrl, {signal: AbortSignal.timeout(7000)});
+      if (!er.ok) return [];
+      const ed = await er.json();
+
+      const out = [];
+      for (const id of ids) {
+        const e = ed.entities?.[id];
+        const claims = e?.claims?.P18 || [];
+        for (const claim of claims.slice(0, 2)) {
+          const file = claim?.mainsnak?.datavalue?.value;
+          if (typeof file !== "string") continue;
+          // Le fichier P18 est hébergé sur Commons. On demande à Commons
+          // sa miniature haute résolution plutôt que de deviner une URL.
+          const cUrl =
+            `https://commons.wikimedia.org/w/api.php?action=query&titles=File:${encodeURIComponent(file)}` +
+            `&prop=imageinfo&iiprop=url|mime|size&iiurlwidth=1400&format=json&origin=*`;
+          try {
+            const cr = await fetch(cUrl, {signal: AbortSignal.timeout(7000)});
+            if (!cr.ok) continue;
+            const cd = await cr.json();
+            const pages = Object.values(cd.query?.pages || {});
+            const info = pages[0]?.imageinfo?.[0];
+            const src = info?.thumburl || info?.url;
+            const w = Number(info?.width || info?.thumbwidth || 0);
+            const h = Number(info?.height || info?.thumbheight || 0);
+            if (src && w >= 250 && h >= 250) out.push({src, source:"Wikidata / Commons", score: 100});
+          } catch (_) {}
+        }
+      }
+      return out;
+    } catch (_) { return []; }
   }
 
-  const fetchWikipediaImage = async (lang, title) => {
-    const url = `https://${lang}.wikipedia.org/w/api.php?action=query&redirects=1&titles=${encodeURIComponent(title)}&prop=pageimages&piprop=thumbnail|original&pilicense=any&pithumbsize=1600&format=json&origin=*`;
+  // 3) Wikipédia : uniquement une page dont le titre correspond au personnage.
+  async function fetchExactWikipedia(lang, title) {
+    if (!title) return null;
+    const url =
+      `https://${lang}.wikipedia.org/w/api.php?action=query&redirects=1&titles=${encodeURIComponent(title)}` +
+      `&prop=pageimages|description&piprop=thumbnail|original&pilicense=any&pithumbsize=1600` +
+      `&format=json&origin=*`;
     try {
-      const controller = new AbortController();
-      const timer = setTimeout(() => controller.abort(), 6000);
-      const res = await fetch(url, {signal: controller.signal});
-      clearTimeout(timer);
-      if (!res.ok) return null;
-      const data = await res.json();
-      const pages = data?.query?.pages ? Object.values(data.query.pages) : [];
-      const page = pages.find(x => !x.missing);
-      return page?.original?.source || page?.thumbnail?.source || null;
+      const r = await fetch(url, {signal: AbortSignal.timeout(6500)});
+      if (!r.ok) return null;
+      const d = await r.json();
+      const page = Object.values(d.query?.pages || {}).find(p => !p.missing);
+      if (!page) return null;
+      const titleNorm = norm(page.title);
+      const titleMatches =
+        titleNorm === nameNorm ||
+        titleNorm.includes(nameNorm) ||
+        nameNorm.includes(titleNorm);
+      const desc = norm(page.description || "");
+      const looksLikeCharacter =
+        /personnage|fictionnel|fictionnelle|character|anime|manga|actor|acteur/.test(desc) ||
+        titleMatches;
+      const src = page.original?.source || page.thumbnail?.source;
+      if (src && titleMatches && looksLikeCharacter) return {src, source:`Wikipédia ${lang}`, score:90};
+      return null;
     } catch (_) { return null; }
-  };
+  }
 
-  // 3) Recherche Wikipédia si le titre exact n'existe pas.
-  const fetchWikipediaSearchImages = async (lang, query) => {
-    const url = `https://${lang}.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(query)}&gsrnamespace=0&gsrlimit=8&prop=pageimages&piprop=thumbnail&pilicense=any&pithumbsize=1600&format=json&origin=*`;
+  async function fetchWikipediaSearch(lang, query) {
+    const url =
+      `https://${lang}.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(query)}` +
+      `&gsrnamespace=0&gsrlimit=10&prop=pageimages|description&piprop=thumbnail|original&pilicense=any` +
+      `&pithumbsize=1600&format=json&origin=*`;
     try {
-      const controller = new AbortController();
-      const timer = setTimeout(() => controller.abort(), 6500);
-      const res = await fetch(url, {signal: controller.signal});
-      clearTimeout(timer);
-      if (!res.ok) return [];
-      const data = await res.json();
-      const pages = data?.query?.pages ? Object.values(data.query.pages) : [];
+      const r = await fetch(url, {signal: AbortSignal.timeout(6500)});
+      if (!r.ok) return [];
+      const d = await r.json();
+      const pages = Object.values(d.query?.pages || {});
       return pages
         .sort((a,b) => (a.index ?? 999) - (b.index ?? 999))
-        .map(p => p?.thumbnail?.source)
-        .filter(Boolean);
-    } catch (_) { return []; }
-  };
-
-  // 4) Wikimedia Commons : recherche d'images librement accessibles, sans clé API.
-  const fetchCommonsImages = async (query) => {
-    const url = `https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(query)}&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url|mime|size|extmetadata&iiurlwidth=1600&format=json&origin=*`;
-    try {
-      const controller = new AbortController();
-      const timer = setTimeout(() => controller.abort(), 7000);
-      const res = await fetch(url, {signal: controller.signal});
-      clearTimeout(timer);
-      if (!res.ok) return [];
-      const data = await res.json();
-      const pages = data?.query?.pages ? Object.values(data.query.pages) : [];
-      return pages
-        .map(p => {
-          const info = p?.imageinfo?.[0];
-          return info?.thumburl || info?.url || null;
+        .filter(p => {
+          const t = norm(p.title);
+          const desc = norm(p.description || "");
+          const titleMatches = t === nameNorm || t.includes(nameNorm) || nameNorm.includes(t);
+          return titleMatches && /personnage|fictionnel|fictionnelle|character|anime|manga/.test(desc);
         })
-        .filter(Boolean);
+        .map(p => ({src:p.original?.source || p.thumbnail?.source, source:`Wikipédia ${lang}`, score:80}))
+        .filter(x => x.src);
     } catch (_) { return []; }
-  };
+  }
 
-  // On privilégie toujours le nom + l'univers : cela évite les homonymes et les cosplays sans rapport.
-  const exactQueries = [
+  // 4) Commons, mais avec une recherche stricte et un filtre sur le nom.
+  async function fetchCommonsImages(query) {
+    const url =
+      `https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(query)}` +
+      `&gsrnamespace=6&gsrlimit=20&prop=imageinfo&iiprop=url|mime|size|extmetadata&iiurlwidth=1400` +
+      `&format=json&origin=*`;
+    try {
+      const r = await fetch(url, {signal: AbortSignal.timeout(7500)});
+      if (!r.ok) return [];
+      const d = await r.json();
+      const pages = Object.values(d.query?.pages || {});
+      return pages.map(p => {
+        const info = p?.imageinfo?.[0];
+        const title = norm(p?.title || "");
+        const match = title.includes(nameNorm) || nameNorm.split(" ").filter(Boolean).some(w => w.length > 3 && title.includes(w));
+        const src = info?.thumburl || info?.url;
+        const w = Number(info?.width || 0), h = Number(info?.height || 0);
+        if (!src || !match || w < 250 || h < 250) return null;
+        return {src, source:"Wikimedia Commons", score:60};
+      }).filter(Boolean);
+    } catch (_) { return []; }
+  }
+
+  // 5) Ordre strict : personnage exact > Wikipédia exact > Commons exact.
+  const queries = [
     `${character.name} ${character.universe}`,
-    `"${character.name}" ${character.universe}`,
-    character.name
+    `"${character.name}" ${character.universe}`
   ];
 
-  // Ajoute les images récupérées depuis les pages Wikipédia exactes.
-  for (const item of titles) addCandidate(await fetchWikipediaImage(item.lang, item.title));
+  const wd = await fetchWikidataImages(`${character.name} ${character.universe}`);
+  wd.forEach(x => addCandidate(x.src, x.source));
 
-  // Puis les recherches Wikipédia plus larges.
-  for (const lang of ["fr", "en"]) {
-    for (const query of exactQueries.slice(0, 2)) {
-      const imgs = await fetchWikipediaSearchImages(lang, query);
-      imgs.slice(0, 4).forEach(addCandidate);
-      if (candidates.length >= 8) break;
+  if (candidates.length < 2) {
+    const fr = await fetchExactWikipedia("fr", character.wiki || character.name);
+    if (fr) addCandidate(fr.src, fr.source);
+    const en = await fetchExactWikipedia("en", character.wiki || character.name);
+    if (en) addCandidate(en.src, en.source);
+  }
+
+  if (candidates.length < 2) {
+    for (const lang of ["fr","en"]) {
+      const arr = await fetchWikipediaSearch(lang, queries[0]);
+      arr.forEach(x => addCandidate(x.src, x.source));
+      if (candidates.length >= 3) break;
     }
-    if (candidates.length >= 8) break;
   }
 
-  // Enfin Commons, qui dispose d'une vraie recherche image avec catégories/Wikidata.
-  for (const query of exactQueries) {
-    const imgs = await fetchCommonsImages(query);
-    imgs.slice(0, 8).forEach(addCandidate);
-    if (candidates.length >= 14) break;
+  if (candidates.length < 2) {
+    for (const q of queries) {
+      const arr = await fetchCommonsImages(q);
+      arr.forEach(x => addCandidate(x.src, x.source));
+      if (candidates.length >= 5) break;
+    }
   }
 
-  // 5) Essaie les images une par une. Si une image est cassée ou trop petite,
-  // on passe automatiquement à la suivante : aucun bouton, aucun AB/MT.
   const tryCandidate = (index) => {
     if (index >= candidates.length) {
       el.className = "portrait unavailable";
-      el.innerHTML = "<span>Image indisponible</span>";
+      el.innerHTML = `<span>Visuel introuvable pour ${escapeHtml(character.name)}</span>`;
       return;
     }
-    const src = candidates[index];
+    const item = candidates[index];
     const img = new Image();
     img.decoding = "async";
     img.referrerPolicy = "no-referrer";
@@ -206,17 +282,17 @@ async function loadPortrait(character, el) {
         tryCandidate(index + 1);
         return;
       }
-      localStorage.setItem(cacheKeys[0], src);
-      setImage(el, src, character, () => tryCandidate(index + 1));
+      localStorage.setItem(cacheKey, item.src);
+      setImage(el, item.src, character, () => tryCandidate(index + 1), item.source);
     };
     img.onerror = () => tryCandidate(index + 1);
-    img.src = src;
+    img.src = item.src;
   };
 
   tryCandidate(0);
 }
 
-function setImage(el, src, character, onError) {
+function setImage(el, src, character, onError, source = "") {
   el.className = "portrait";
   el.innerHTML = "";
   const img = document.createElement("img");
@@ -225,10 +301,11 @@ function setImage(el, src, character, onError) {
   img.decoding = "async";
   img.referrerPolicy = "no-referrer";
   img.src = src;
+  img.title = `${character.name} — visuel externe. Droits © à leurs créateurs / ayants droit. Source : ${source}`;
   img.onerror = () => {
-    localStorage.removeItem("ccimg-v34:" + character.id);
+    localStorage.removeItem("ccimg-v35:" + character.id);
     if (onError) onError();
-    else el.innerHTML = "<span>Image indisponible</span>";
+    else el.innerHTML = "<span>Visuel indisponible</span>";
   };
   el.appendChild(img);
 }

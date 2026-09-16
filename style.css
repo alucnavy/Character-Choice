@@ -20,3 +20,5 @@ main{max-width:1400px;margin:auto;padding:26px clamp(14px,3vw,36px) 60px}
 @media(max-width:900px){.topbar{position:relative;flex-direction:column}.actions{justify-content:flex-start}.record{margin-left:0}.arena{grid-template-columns:1fr;gap:12px}.versus{order:2}.challenger-card{order:3}.footer-grid{grid-template-columns:1fr}.portrait{min-height:420px}}
 @media(max-width:560px){main{padding:18px 10px 40px}.topbar{padding:20px 14px}.character-card{padding:12px;border-radius:18px}.portrait{min-height:360px}.mini-stats{grid-template-columns:1fr 1fr 1fr}.history-row{grid-template-columns:48px 1fr}.history-row div:nth-child(3),.history-row div:nth-child(4){grid-column:2}.brand h1{font-size:30px}}
 .portrait.unavailable{display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.55);font-weight:700}
+
+.rights-panel{margin-top:14px}.rights-panel p{color:var(--muted);font-size:12px;line-height:1.55;margin:0}.portrait.unavailable{color:#b7bdd8;font-size:13px;text-align:center;padding:20px}.portrait.loading span{padding:20px;text-align:center}

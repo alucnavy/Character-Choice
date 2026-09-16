@@ -18,3 +18,7 @@ Pour une publication publique, vérifie les droits d'utilisation des visuels que
 
 ### Images
 La V3.3.1 réactive le chargement automatique des portraits via les pages exactes MediaWiki/Wikipedia lorsque le catalogue ne contient pas encore une image validée. Les anciennes images mises en cache par V3.2 sont également réutilisées. Le bouton « Chercher l’image » reste disponible pour une recherche Google Images ciblée.
+
+
+## V3.5 — résolution d'images
+Les images sont recherchées automatiquement par personnage. Priorité : item Wikidata du personnage + image P18, puis page Wikipédia exacte, puis recherche Wikipédia/Commons strictement filtrée sur le nom du personnage. Aucun bouton de recherche manuelle. Les visuels restent la propriété de leurs créateurs/ayants droit.
