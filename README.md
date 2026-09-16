@@ -22,8 +22,3 @@ La V3.3.1 réactive le chargement automatique des portraits via les pages exacte
 
 ## V3.5 — résolution d'images
 Les images sont recherchées automatiquement par personnage. Priorité : item Wikidata du personnage + image P18, puis page Wikipédia exacte, puis recherche Wikipédia/Commons strictement filtrée sur le nom du personnage. Aucun bouton de recherche manuelle. Les visuels restent la propriété de leurs créateurs/ayants droit.
-
-
-## V3.6 — cadrage et en-tête
-- Les images locales sont affichées avec `object-fit: contain` afin d’éviter les recadrages agressifs et de conserver l’intégralité du visuel.
-- L’en-tête reste fixe (sticky) pendant le défilement, y compris sur mobile.
