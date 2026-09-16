@@ -1,23 +1,23 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#0b0b12">
-  <title>Character Choice — Tournoi des personnages</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090a12">
+<title>Character Choice — Tournoi des personnages</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="topbar">
   <div class="brand">
-    <div class="eyebrow">CHARACTER CHOICE</div>
+    <div class="eyebrow">CHARACTER CHOICE • V3</div>
     <h1>🏆 Tournoi des personnages</h1>
     <p>Un champion. Un nouveau challenger. À toi de choisir.</p>
   </div>
   <div class="actions">
     <button id="historyBtn" class="secondary">📜 Historique</button>
     <button id="exportBtn" class="secondary">⇩ Export CSV</button>
-    <button id="resetBtn" class="secondary danger">↻ Recommencer</button>
+    <button id="resetBtn" class="secondary danger">↻ Nouveau tournoi</button>
   </div>
 </header>
 
@@ -26,7 +26,7 @@
     <div class="pill">⚔️ COMBAT <strong id="combatNumber">1</strong></div>
     <div class="pill">🔥 SÉRIE <strong id="streak">0</strong></div>
     <div class="pill">👥 RESTANTS <strong id="remaining">0</strong></div>
-    <div class="record">🏅 RECORD ABSOLU : <strong>97 VICTOIRES — DEATH</strong> <span>(The Sandman — Netflix)</span></div>
+    <div class="record">🏅 RECORD ABSOLU DU JOUEUR : <strong id="bestRecord">0 VICTOIRE</strong></div>
   </section>
 
   <section class="arena-head">
@@ -40,9 +40,10 @@
   <section class="arena" id="arena">
     <article class="character-card champion-card" id="championCard">
       <div class="card-top"><span class="label">CHAMPION</span><span class="badge" id="championMedia">—</span></div>
-      <div class="portrait" id="championPortrait"></div>
+      <div class="portrait loading" id="championPortrait"><span>Chargement…</span></div>
       <div class="character-name" id="championName">—</div>
       <div class="universe" id="championUniverse">—</div>
+      <div class="card-record"><span>Série actuelle</span><strong id="championStreak">0</strong></div>
       <button class="choose" id="chooseChampion">🏆 Je choisis ce personnage</button>
     </article>
 
@@ -50,9 +51,10 @@
 
     <article class="character-card challenger-card" id="challengerCard">
       <div class="card-top"><span class="label">NOUVEAU CHALLENGER</span><span class="badge" id="challengerMedia">—</span></div>
-      <div class="portrait" id="challengerPortrait"></div>
+      <div class="portrait loading" id="challengerPortrait"><span>Chargement…</span></div>
       <div class="character-name" id="challengerName">—</div>
       <div class="universe" id="challengerUniverse">—</div>
+      <div class="card-record"><span>Statut</span><strong>Nouveau</strong></div>
       <button class="choose" id="chooseChallenger">🏆 Je choisis ce personnage</button>
     </article>
   </section>
@@ -68,17 +70,22 @@
     </div>
     <div class="panel">
       <div class="panel-title">🔒 Anti-doublon</div>
-      <p>Un personnage proposé est marqué comme utilisé. Il ne peut plus revenir comme nouveau challenger pendant cette partie.</p>
+      <p>Chaque personnage proposé est définitivement marqué comme vu pour ce tournoi. Un personnage ne peut pas revenir comme nouveau challenger.</p>
+    </div>
+    <div class="panel">
+      <div class="panel-title">🖼️ Images</div>
+      <p>Les portraits sont récupérés automatiquement depuis Wikipédia / Wikimedia Commons quand une image est disponible. Un visuel de secours s'affiche sinon.</p>
     </div>
   </section>
 
-  <section id="historySection" class="panel history-panel hidden">
-    <div class="history-header"><div><div class="panel-title">📜 Historique</div><p>Les combats de cette partie, du plus récent au plus ancien.</p></div><button id="clearHistoryBtn" class="secondary small">Effacer la partie</button></div>
-    <div class="table-wrap"><table><thead><tr><th>Combat</th><th>Champion avant</th><th>Adversaire</th><th>Univers</th><th>Média</th><th>Gagnant</th></tr></thead><tbody id="historyBody"></tbody></table></div>
+  <section class="panel history-panel" id="historyPanel">
+    <div class="panel-title">📚 Historique</div>
+    <div id="historyList" class="history-list"></div>
   </section>
 </main>
 
 <div id="toast" class="toast" aria-live="polite"></div>
+
 <script src="app.js"></script>
 </body>
 </html>
