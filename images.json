@@ -1,0 +1,3010 @@
+{
+  "c001": {
+    "characterId": "c001",
+    "name": "Truman Burbank",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Truman_Burbank",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Truman_Burbank",
+    "imageUrl": ""
+  },
+  "c002": {
+    "characterId": "c002",
+    "name": "Amélie Poulain",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Amélie_Poulain",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Amélie_Poulain",
+    "imageUrl": ""
+  },
+  "c003": {
+    "characterId": "c003",
+    "name": "Mia Wallace",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Mia_Wallace",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Mia_Wallace",
+    "imageUrl": ""
+  },
+  "c004": {
+    "characterId": "c004",
+    "name": "Vincent Vega",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Vincent_Vega",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Vincent_Vega",
+    "imageUrl": ""
+  },
+  "c005": {
+    "characterId": "c005",
+    "name": "Maximus Decimus Meridius",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Maximus_Decimus_Meridius",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Maximus_Decimus_Meridius",
+    "imageUrl": ""
+  },
+  "c006": {
+    "characterId": "c006",
+    "name": "Tony Montana",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Tony_Montana",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Tony_Montana",
+    "imageUrl": ""
+  },
+  "c007": {
+    "characterId": "c007",
+    "name": "Rick Deckard",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Rick_Deckard",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Rick_Deckard",
+    "imageUrl": ""
+  },
+  "c008": {
+    "characterId": "c008",
+    "name": "Sarah Goldfarb",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Sarah_Goldfarb",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Sarah_Goldfarb",
+    "imageUrl": ""
+  },
+  "c009": {
+    "characterId": "c009",
+    "name": "Cobb",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Cobb",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Cobb",
+    "imageUrl": ""
+  },
+  "c010": {
+    "characterId": "c010",
+    "name": "Ariadne",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Ariadne",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Ariadne",
+    "imageUrl": ""
+  },
+  "c011": {
+    "characterId": "c011",
+    "name": "Marty McFly",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Marty_McFly",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Marty_McFly",
+    "imageUrl": ""
+  },
+  "c012": {
+    "characterId": "c012",
+    "name": "Doc Brown",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Doc_Brown",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Doc_Brown",
+    "imageUrl": ""
+  },
+  "c013": {
+    "characterId": "c013",
+    "name": "Mavis Gary",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Mavis_Gary",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Mavis_Gary",
+    "imageUrl": ""
+  },
+  "c014": {
+    "characterId": "c014",
+    "name": "Erin Brockovich",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Erin_Brockovich",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Erin_Brockovich",
+    "imageUrl": ""
+  },
+  "c015": {
+    "characterId": "c015",
+    "name": "Andy Dufresne",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Andy_Dufresne",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Andy_Dufresne",
+    "imageUrl": ""
+  },
+  "c016": {
+    "characterId": "c016",
+    "name": "John McClane",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/John_McClane",
+    "fallbackPage": "https://en.wikipedia.org/wiki/John_McClane",
+    "imageUrl": ""
+  },
+  "c017": {
+    "characterId": "c017",
+    "name": "Verbal Kint",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Verbal_Kint",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Verbal_Kint",
+    "imageUrl": ""
+  },
+  "c018": {
+    "characterId": "c018",
+    "name": "The Driver",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/The_Driver",
+    "fallbackPage": "https://en.wikipedia.org/wiki/The_Driver",
+    "imageUrl": ""
+  },
+  "c019": {
+    "characterId": "c019",
+    "name": "Erik Killmonger",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Erik_Killmonger",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Erik_Killmonger",
+    "imageUrl": ""
+  },
+  "c020": {
+    "characterId": "c020",
+    "name": "Shuri",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Shuri",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Shuri",
+    "imageUrl": ""
+  },
+  "c021": {
+    "characterId": "c021",
+    "name": "Okoye",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Okoye",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Okoye",
+    "imageUrl": ""
+  },
+  "c022": {
+    "characterId": "c022",
+    "name": "Wendy Torrance",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Wendy_Torrance",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Wendy_Torrance",
+    "imageUrl": ""
+  },
+  "c023": {
+    "characterId": "c023",
+    "name": "Jack Torrance",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Jack_Torrance",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Jack_Torrance",
+    "imageUrl": ""
+  },
+  "c024": {
+    "characterId": "c024",
+    "name": "Annie Wilkes",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Annie_Wilkes",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Annie_Wilkes",
+    "imageUrl": ""
+  },
+  "c025": {
+    "characterId": "c025",
+    "name": "Daniel Plainview",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Daniel_Plainview",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Daniel_Plainview",
+    "imageUrl": ""
+  },
+  "c026": {
+    "characterId": "c026",
+    "name": "Remy",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Remy",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Remy",
+    "imageUrl": ""
+  },
+  "c027": {
+    "characterId": "c027",
+    "name": "Elastigirl",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Elastigirl",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Elastigirl",
+    "imageUrl": ""
+  },
+  "c028": {
+    "characterId": "c028",
+    "name": "Mirabel Madrigal",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Mirabel_Madrigal",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Mirabel_Madrigal",
+    "imageUrl": ""
+  },
+  "c029": {
+    "characterId": "c029",
+    "name": "Raya",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Raya",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Raya",
+    "imageUrl": ""
+  },
+  "c030": {
+    "characterId": "c030",
+    "name": "Neytiri",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Neytiri",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Neytiri",
+    "imageUrl": ""
+  },
+  "c031": {
+    "characterId": "c031",
+    "name": "Jake Sully",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Jake_Sully",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Jake_Sully",
+    "imageUrl": ""
+  },
+  "c032": {
+    "characterId": "c032",
+    "name": "Hiccup",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Hiccup",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Hiccup",
+    "imageUrl": ""
+  },
+  "c033": {
+    "characterId": "c033",
+    "name": "Toothless",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Toothless",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Toothless",
+    "imageUrl": ""
+  },
+  "c034": {
+    "characterId": "c034",
+    "name": "Megamind",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Megamind",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Megamind",
+    "imageUrl": ""
+  },
+  "c035": {
+    "characterId": "c035",
+    "name": "Gru",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Gru",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Gru",
+    "imageUrl": ""
+  },
+  "c036": {
+    "characterId": "c036",
+    "name": "Lucy Wilde",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Lucy_Wilde",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Lucy_Wilde",
+    "imageUrl": ""
+  },
+  "c037": {
+    "characterId": "c037",
+    "name": "Po",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Po",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Po",
+    "imageUrl": ""
+  },
+  "c038": {
+    "characterId": "c038",
+    "name": "Tigress",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Tigress",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Tigress",
+    "imageUrl": ""
+  },
+  "c039": {
+    "characterId": "c039",
+    "name": "Shrek",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Shrek",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Shrek",
+    "imageUrl": ""
+  },
+  "c040": {
+    "characterId": "c040",
+    "name": "Fiona",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Fiona",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Fiona",
+    "imageUrl": ""
+  },
+  "c041": {
+    "characterId": "c041",
+    "name": "Puss in Boots",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Puss_in_Boots",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Puss_in_Boots",
+    "imageUrl": ""
+  },
+  "c042": {
+    "characterId": "c042",
+    "name": "Miguel Rivera",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Miguel_Rivera",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Miguel_Rivera",
+    "imageUrl": ""
+  },
+  "c043": {
+    "characterId": "c043",
+    "name": "Hector Rivera",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Hector_Rivera",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Hector_Rivera",
+    "imageUrl": ""
+  },
+  "c044": {
+    "characterId": "c044",
+    "name": "Chihiro Ogino",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Chihiro_Ogino",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Chihiro_Ogino",
+    "imageUrl": ""
+  },
+  "c045": {
+    "characterId": "c045",
+    "name": "Carrie Mathison",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Carrie_Mathison",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Carrie_Mathison",
+    "imageUrl": ""
+  },
+  "c046": {
+    "characterId": "c046",
+    "name": "Jessica Day",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Jessica_Day",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Jessica_Day",
+    "imageUrl": ""
+  },
+  "c047": {
+    "characterId": "c047",
+    "name": "Eve Polastri",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Eve_Polastri",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Eve_Polastri",
+    "imageUrl": ""
+  },
+  "c048": {
+    "characterId": "c048",
+    "name": "Fox Mulder",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Fox_Mulder",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Fox_Mulder",
+    "imageUrl": ""
+  },
+  "c049": {
+    "characterId": "c049",
+    "name": "Bobbie Draper",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Bobbie_Draper",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Bobbie_Draper",
+    "imageUrl": ""
+  },
+  "c050": {
+    "characterId": "c050",
+    "name": "Naomi Nagata",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Naomi_Nagata",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Naomi_Nagata",
+    "imageUrl": ""
+  },
+  "c051": {
+    "characterId": "c051",
+    "name": "Camina Drummer",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Camina_Drummer",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Camina_Drummer",
+    "imageUrl": ""
+  },
+  "c052": {
+    "characterId": "c052",
+    "name": "Laura Roslin",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Laura_Roslin",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Laura_Roslin",
+    "imageUrl": ""
+  },
+  "c053": {
+    "characterId": "c053",
+    "name": "Rory Williams",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Rory_Williams",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Rory_Williams",
+    "imageUrl": ""
+  },
+  "c054": {
+    "characterId": "c054",
+    "name": "Wilfred Mott",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Wilfred_Mott",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Wilfred_Mott",
+    "imageUrl": ""
+  },
+  "c055": {
+    "characterId": "c055",
+    "name": "Donna Noble",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Donna_Noble",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Donna_Noble",
+    "imageUrl": ""
+  },
+  "c056": {
+    "characterId": "c056",
+    "name": "Clara Oswald",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Clara_Oswald",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Clara_Oswald",
+    "imageUrl": ""
+  },
+  "c057": {
+    "characterId": "c057",
+    "name": "Rose Tyler",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Rose_Tyler",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Rose_Tyler",
+    "imageUrl": ""
+  },
+  "c058": {
+    "characterId": "c058",
+    "name": "Sarah Jane Smith",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Sarah_Jane_Smith",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Sarah_Jane_Smith",
+    "imageUrl": ""
+  },
+  "c059": {
+    "characterId": "c059",
+    "name": "Seven of Nine",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Seven_of_Nine",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Seven_of_Nine",
+    "imageUrl": ""
+  },
+  "c060": {
+    "characterId": "c060",
+    "name": "Kathryn Janeway",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Kathryn_Janeway",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Kathryn_Janeway",
+    "imageUrl": ""
+  },
+  "c061": {
+    "characterId": "c061",
+    "name": "Kira Nerys",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Kira_Nerys",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Kira_Nerys",
+    "imageUrl": ""
+  },
+  "c062": {
+    "characterId": "c062",
+    "name": "Benjamin Sisko",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Benjamin_Sisko",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Benjamin_Sisko",
+    "imageUrl": ""
+  },
+  "c063": {
+    "characterId": "c063",
+    "name": "Jean-Luc Picard",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Jean-Luc_Picard",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Jean-Luc_Picard",
+    "imageUrl": ""
+  },
+  "c064": {
+    "characterId": "c064",
+    "name": "Beverly Crusher",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Beverly_Crusher",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Beverly_Crusher",
+    "imageUrl": ""
+  },
+  "c065": {
+    "characterId": "c065",
+    "name": "Michael Burnham",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Michael_Burnham",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Michael_Burnham",
+    "imageUrl": ""
+  },
+  "c066": {
+    "characterId": "c066",
+    "name": "Philippa Georgiou",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Philippa_Georgiou",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Philippa_Georgiou",
+    "imageUrl": ""
+  },
+  "c067": {
+    "characterId": "c067",
+    "name": "Din Djarin",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Din_Djarin",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Din_Djarin",
+    "imageUrl": ""
+  },
+  "c068": {
+    "characterId": "c068",
+    "name": "Bo-Katan Kryze",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Bo-Katan_Kryze",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Bo-Katan_Kryze",
+    "imageUrl": ""
+  },
+  "c069": {
+    "characterId": "c069",
+    "name": "Cassian Andor",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Cassian_Andor",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Cassian_Andor",
+    "imageUrl": ""
+  },
+  "c070": {
+    "characterId": "c070",
+    "name": "Mon Mothma",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Mon_Mothma",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Mon_Mothma",
+    "imageUrl": ""
+  },
+  "c071": {
+    "characterId": "c071",
+    "name": "Bix Caleen",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Bix_Caleen",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Bix_Caleen",
+    "imageUrl": ""
+  },
+  "c072": {
+    "characterId": "c072",
+    "name": "Luthen Rael",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Luthen_Rael",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Luthen_Rael",
+    "imageUrl": ""
+  },
+  "c073": {
+    "characterId": "c073",
+    "name": "Jimmy McGill",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Jimmy_McGill",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Jimmy_McGill",
+    "imageUrl": ""
+  },
+  "c074": {
+    "characterId": "c074",
+    "name": "Mike Ehrmantraut",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Mike_Ehrmantraut",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Mike_Ehrmantraut",
+    "imageUrl": ""
+  },
+  "c075": {
+    "characterId": "c075",
+    "name": "Chuck McGill",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Chuck_McGill",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Chuck_McGill",
+    "imageUrl": ""
+  },
+  "c076": {
+    "characterId": "c076",
+    "name": "Nacho Varga",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Nacho_Varga",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Nacho_Varga",
+    "imageUrl": ""
+  },
+  "c077": {
+    "characterId": "c077",
+    "name": "Don Draper",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Don_Draper",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Don_Draper",
+    "imageUrl": ""
+  },
+  "c078": {
+    "characterId": "c078",
+    "name": "Peggy Olson",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Peggy_Olson",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Peggy_Olson",
+    "imageUrl": ""
+  },
+  "c079": {
+    "characterId": "c079",
+    "name": "Joan Holloway",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Joan_Holloway",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Joan_Holloway",
+    "imageUrl": ""
+  },
+  "c080": {
+    "characterId": "c080",
+    "name": "Betty Draper",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Betty_Draper",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Betty_Draper",
+    "imageUrl": ""
+  },
+  "c081": {
+    "characterId": "c081",
+    "name": "Leslie Knope",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Leslie_Knope",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Leslie_Knope",
+    "imageUrl": ""
+  },
+  "c082": {
+    "characterId": "c082",
+    "name": "April Ludgate",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/April_Ludgate",
+    "fallbackPage": "https://en.wikipedia.org/wiki/April_Ludgate",
+    "imageUrl": ""
+  },
+  "c083": {
+    "characterId": "c083",
+    "name": "Ron Swanson",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Ron_Swanson",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Ron_Swanson",
+    "imageUrl": ""
+  },
+  "c084": {
+    "characterId": "c084",
+    "name": "Ben Wyatt",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Ben_Wyatt",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Ben_Wyatt",
+    "imageUrl": ""
+  },
+  "c085": {
+    "characterId": "c085",
+    "name": "Liz Lemon",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Liz_Lemon",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Liz_Lemon",
+    "imageUrl": ""
+  },
+  "c086": {
+    "characterId": "c086",
+    "name": "Jack Donaghy",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Jack_Donaghy",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Jack_Donaghy",
+    "imageUrl": ""
+  },
+  "c087": {
+    "characterId": "c087",
+    "name": "Diane Nguyen",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Diane_Nguyen",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Diane_Nguyen",
+    "imageUrl": ""
+  },
+  "c088": {
+    "characterId": "c088",
+    "name": "Princess Carolyn",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Princess_Carolyn",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Princess_Carolyn",
+    "imageUrl": ""
+  },
+  "c089": {
+    "characterId": "c089",
+    "name": "Todd Chavez",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Todd_Chavez",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Todd_Chavez",
+    "imageUrl": ""
+  },
+  "c090": {
+    "characterId": "c090",
+    "name": "Mr. Peanutbutter",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Mr._Peanutbutter",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Mr._Peanutbutter",
+    "imageUrl": ""
+  },
+  "c091": {
+    "characterId": "c091",
+    "name": "Daria Morgendorffer",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Daria_Morgendorffer",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Daria_Morgendorffer",
+    "imageUrl": ""
+  },
+  "c092": {
+    "characterId": "c092",
+    "name": "Jane Lane",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Jane_Lane",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Jane_Lane",
+    "imageUrl": ""
+  },
+  "c093": {
+    "characterId": "c093",
+    "name": "Mabel Pines",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Mabel_Pines",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Mabel_Pines",
+    "imageUrl": ""
+  },
+  "c094": {
+    "characterId": "c094",
+    "name": "Stan Pines",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Stan_Pines",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Stan_Pines",
+    "imageUrl": ""
+  },
+  "c095": {
+    "characterId": "c095",
+    "name": "Wendy Corduroy",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Wendy_Corduroy",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Wendy_Corduroy",
+    "imageUrl": ""
+  },
+  "c096": {
+    "characterId": "c096",
+    "name": "Rebecca Bunch",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Rebecca_Bunch",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Rebecca_Bunch",
+    "imageUrl": ""
+  },
+  "c097": {
+    "characterId": "c097",
+    "name": "Chidi Anagonye",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Chidi_Anagonye",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Chidi_Anagonye",
+    "imageUrl": ""
+  },
+  "c098": {
+    "characterId": "c098",
+    "name": "Tahani Al-Jamil",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Tahani_Al-Jamil",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Tahani_Al-Jamil",
+    "imageUrl": ""
+  },
+  "c099": {
+    "characterId": "c099",
+    "name": "Michael",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Michael",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Michael",
+    "imageUrl": ""
+  },
+  "c100": {
+    "characterId": "c100",
+    "name": "Rory Gilmore",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Rory_Gilmore",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Rory_Gilmore",
+    "imageUrl": ""
+  },
+  "c101": {
+    "characterId": "c101",
+    "name": "Paris Geller",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Paris_Geller",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Paris_Geller",
+    "imageUrl": ""
+  },
+  "c102": {
+    "characterId": "c102",
+    "name": "June Osborne",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/June_Osborne",
+    "fallbackPage": "https://en.wikipedia.org/wiki/June_Osborne",
+    "imageUrl": ""
+  },
+  "c103": {
+    "characterId": "c103",
+    "name": "Moira Rose",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Moira_Rose",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Moira_Rose",
+    "imageUrl": ""
+  },
+  "c104": {
+    "characterId": "c104",
+    "name": "Alexis Rose",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Alexis_Rose",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Alexis_Rose",
+    "imageUrl": ""
+  },
+  "c105": {
+    "characterId": "c105",
+    "name": "Midge Maisel",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Midge_Maisel",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Midge_Maisel",
+    "imageUrl": ""
+  },
+  "c106": {
+    "characterId": "c106",
+    "name": "Nico Robin",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Nico_Robin",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Nico_Robin",
+    "imageUrl": ""
+  },
+  "c107": {
+    "characterId": "c107",
+    "name": "Nami",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Nami",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Nami",
+    "imageUrl": ""
+  },
+  "c108": {
+    "characterId": "c108",
+    "name": "Boa Hancock",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Boa_Hancock",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Boa_Hancock",
+    "imageUrl": ""
+  },
+  "c109": {
+    "characterId": "c109",
+    "name": "Perona",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Perona",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Perona",
+    "imageUrl": ""
+  },
+  "c110": {
+    "characterId": "c110",
+    "name": "Trafalgar Law",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Trafalgar_Law",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Trafalgar_Law",
+    "imageUrl": ""
+  },
+  "c111": {
+    "characterId": "c111",
+    "name": "Donquixote Doflamingo",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Donquixote_Doflamingo",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Donquixote_Doflamingo",
+    "imageUrl": ""
+  },
+  "c112": {
+    "characterId": "c112",
+    "name": "Charlotte Katakuri",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Charlotte_Katakuri",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Charlotte_Katakuri",
+    "imageUrl": ""
+  },
+  "c113": {
+    "characterId": "c113",
+    "name": "Monkey D. Dragon",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Monkey_D._Dragon",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Monkey_D._Dragon",
+    "imageUrl": ""
+  },
+  "c114": {
+    "characterId": "c114",
+    "name": "Shanks",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Shanks",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Shanks",
+    "imageUrl": ""
+  },
+  "c115": {
+    "characterId": "c115",
+    "name": "Brook",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Brook",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Brook",
+    "imageUrl": ""
+  },
+  "c116": {
+    "characterId": "c116",
+    "name": "Franky",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Franky",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Franky",
+    "imageUrl": ""
+  },
+  "c117": {
+    "characterId": "c117",
+    "name": "Usopp",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Usopp",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Usopp",
+    "imageUrl": ""
+  },
+  "c118": {
+    "characterId": "c118",
+    "name": "Sanji",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Sanji",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Sanji",
+    "imageUrl": ""
+  },
+  "c119": {
+    "characterId": "c119",
+    "name": "Roronoa Zoro",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Roronoa_Zoro",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Roronoa_Zoro",
+    "imageUrl": ""
+  },
+  "c120": {
+    "characterId": "c120",
+    "name": "Tashigi",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Tashigi",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Tashigi",
+    "imageUrl": ""
+  },
+  "c121": {
+    "characterId": "c121",
+    "name": "Koby",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Koby",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Koby",
+    "imageUrl": ""
+  },
+  "c122": {
+    "characterId": "c122",
+    "name": "Reiju Vinsmoke",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Reiju_Vinsmoke",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Reiju_Vinsmoke",
+    "imageUrl": ""
+  },
+  "c123": {
+    "characterId": "c123",
+    "name": "Maki Zenin",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Maki_Zenin",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Maki_Zenin",
+    "imageUrl": ""
+  },
+  "c124": {
+    "characterId": "c124",
+    "name": "Nobara Kugisaki",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Nobara_Kugisaki",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Nobara_Kugisaki",
+    "imageUrl": ""
+  },
+  "c125": {
+    "characterId": "c125",
+    "name": "Megumi Fushiguro",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Megumi_Fushiguro",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Megumi_Fushiguro",
+    "imageUrl": ""
+  },
+  "c126": {
+    "characterId": "c126",
+    "name": "Suguru Geto",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Suguru_Geto",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Suguru_Geto",
+    "imageUrl": ""
+  },
+  "c127": {
+    "characterId": "c127",
+    "name": "Toji Fushiguro",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Toji_Fushiguro",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Toji_Fushiguro",
+    "imageUrl": ""
+  },
+  "c128": {
+    "characterId": "c128",
+    "name": "Kento Nanami",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Kento_Nanami",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Kento_Nanami",
+    "imageUrl": ""
+  },
+  "c129": {
+    "characterId": "c129",
+    "name": "Yuki Tsukumo",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Yuki_Tsukumo",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Yuki_Tsukumo",
+    "imageUrl": ""
+  },
+  "c130": {
+    "characterId": "c130",
+    "name": "Kasumi Miwa",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Kasumi_Miwa",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Kasumi_Miwa",
+    "imageUrl": ""
+  },
+  "c131": {
+    "characterId": "c131",
+    "name": "Shoko Ieiri",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Shoko_Ieiri",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Shoko_Ieiri",
+    "imageUrl": ""
+  },
+  "c132": {
+    "characterId": "c132",
+    "name": "Maki Oze",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Maki_Oze",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Maki_Oze",
+    "imageUrl": ""
+  },
+  "c133": {
+    "characterId": "c133",
+    "name": "Shinra Kusakabe",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Shinra_Kusakabe",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Shinra_Kusakabe",
+    "imageUrl": ""
+  },
+  "c134": {
+    "characterId": "c134",
+    "name": "Arthur Boyle",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Arthur_Boyle",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Arthur_Boyle",
+    "imageUrl": ""
+  },
+  "c135": {
+    "characterId": "c135",
+    "name": "Tamaki Kotatsu",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Tamaki_Kotatsu",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Tamaki_Kotatsu",
+    "imageUrl": ""
+  },
+  "c136": {
+    "characterId": "c136",
+    "name": "Historia Reiss",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Historia_Reiss",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Historia_Reiss",
+    "imageUrl": ""
+  },
+  "c137": {
+    "characterId": "c137",
+    "name": "Sasha Blouse",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Sasha_Blouse",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Sasha_Blouse",
+    "imageUrl": ""
+  },
+  "c138": {
+    "characterId": "c138",
+    "name": "Pieck Finger",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Pieck_Finger",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Pieck_Finger",
+    "imageUrl": ""
+  },
+  "c139": {
+    "characterId": "c139",
+    "name": "Annie Leonhart",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Annie_Leonhart",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Annie_Leonhart",
+    "imageUrl": ""
+  },
+  "c140": {
+    "characterId": "c140",
+    "name": "Reiner Braun",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Reiner_Braun",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Reiner_Braun",
+    "imageUrl": ""
+  },
+  "c141": {
+    "characterId": "c141",
+    "name": "Armin Arlert",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Armin_Arlert",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Armin_Arlert",
+    "imageUrl": ""
+  },
+  "c142": {
+    "characterId": "c142",
+    "name": "Levi Ackerman",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Levi_Ackerman",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Levi_Ackerman",
+    "imageUrl": ""
+  },
+  "c143": {
+    "characterId": "c143",
+    "name": "Jean Kirstein",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Jean_Kirstein",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Jean_Kirstein",
+    "imageUrl": ""
+  },
+  "c144": {
+    "characterId": "c144",
+    "name": "Ymir",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Ymir",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Ymir",
+    "imageUrl": ""
+  },
+  "c145": {
+    "characterId": "c145",
+    "name": "Near",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Near",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Near",
+    "imageUrl": ""
+  },
+  "c146": {
+    "characterId": "c146",
+    "name": "Mello",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Mello",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Mello",
+    "imageUrl": ""
+  },
+  "c147": {
+    "characterId": "c147",
+    "name": "Teru Mikami",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Teru_Mikami",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Teru_Mikami",
+    "imageUrl": ""
+  },
+  "c148": {
+    "characterId": "c148",
+    "name": "Matt",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Matt",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Matt",
+    "imageUrl": ""
+  },
+  "c149": {
+    "characterId": "c149",
+    "name": "Ryuk",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Ryuk",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Ryuk",
+    "imageUrl": ""
+  },
+  "c150": {
+    "characterId": "c150",
+    "name": "Mitsuri Kanroji",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Mitsuri_Kanroji",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Mitsuri_Kanroji",
+    "imageUrl": ""
+  },
+  "c151": {
+    "characterId": "c151",
+    "name": "Kanao Tsuyuri",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Kanao_Tsuyuri",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Kanao_Tsuyuri",
+    "imageUrl": ""
+  },
+  "c152": {
+    "characterId": "c152",
+    "name": "Tamayo",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Tamayo",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Tamayo",
+    "imageUrl": ""
+  },
+  "c153": {
+    "characterId": "c153",
+    "name": "Daki",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Daki",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Daki",
+    "imageUrl": ""
+  },
+  "c154": {
+    "characterId": "c154",
+    "name": "Akaza",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Akaza",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Akaza",
+    "imageUrl": ""
+  },
+  "c155": {
+    "characterId": "c155",
+    "name": "Giyu Tomioka",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Giyu_Tomioka",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Giyu_Tomioka",
+    "imageUrl": ""
+  },
+  "c156": {
+    "characterId": "c156",
+    "name": "Kyojuro Rengoku",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Kyojuro_Rengoku",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Kyojuro_Rengoku",
+    "imageUrl": ""
+  },
+  "c157": {
+    "characterId": "c157",
+    "name": "Tengen Uzui",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Tengen_Uzui",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Tengen_Uzui",
+    "imageUrl": ""
+  },
+  "c158": {
+    "characterId": "c158",
+    "name": "Muichiro Tokito",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Muichiro_Tokito",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Muichiro_Tokito",
+    "imageUrl": ""
+  },
+  "c159": {
+    "characterId": "c159",
+    "name": "Nezuko Kamado",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Nezuko_Kamado",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Nezuko_Kamado",
+    "imageUrl": ""
+  },
+  "c160": {
+    "characterId": "c160",
+    "name": "Tanjiro Kamado",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Tanjiro_Kamado",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Tanjiro_Kamado",
+    "imageUrl": ""
+  },
+  "c161": {
+    "characterId": "c161",
+    "name": "Inosuke Hashibira",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Inosuke_Hashibira",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Inosuke_Hashibira",
+    "imageUrl": ""
+  },
+  "c162": {
+    "characterId": "c162",
+    "name": "Zenitsu Agatsuma",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Zenitsu_Agatsuma",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Zenitsu_Agatsuma",
+    "imageUrl": ""
+  },
+  "c163": {
+    "characterId": "c163",
+    "name": "Jinshi",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Jinshi",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Jinshi",
+    "imageUrl": ""
+  },
+  "c164": {
+    "characterId": "c164",
+    "name": "Gyokuyou",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Gyokuyou",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Gyokuyou",
+    "imageUrl": ""
+  },
+  "c165": {
+    "characterId": "c165",
+    "name": "Fern",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Fern",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Fern",
+    "imageUrl": ""
+  },
+  "c166": {
+    "characterId": "c166",
+    "name": "Stark",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Stark",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Stark",
+    "imageUrl": ""
+  },
+  "c167": {
+    "characterId": "c167",
+    "name": "Übel",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Übel",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Übel",
+    "imageUrl": ""
+  },
+  "c168": {
+    "characterId": "c168",
+    "name": "Himmel",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Himmel",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Himmel",
+    "imageUrl": ""
+  },
+  "c169": {
+    "characterId": "c169",
+    "name": "Marcille Donato",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Marcille_Donato",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Marcille_Donato",
+    "imageUrl": ""
+  },
+  "c170": {
+    "characterId": "c170",
+    "name": "Laios Touden",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Laios_Touden",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Laios_Touden",
+    "imageUrl": ""
+  },
+  "c171": {
+    "characterId": "c171",
+    "name": "Falin Touden",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Falin_Touden",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Falin_Touden",
+    "imageUrl": ""
+  },
+  "c172": {
+    "characterId": "c172",
+    "name": "Okarun",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Okarun",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Okarun",
+    "imageUrl": ""
+  },
+  "c173": {
+    "characterId": "c173",
+    "name": "Aira Shiratori",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Aira_Shiratori",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Aira_Shiratori",
+    "imageUrl": ""
+  },
+  "c174": {
+    "characterId": "c174",
+    "name": "Sailor Moon",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Sailor_Moon",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Sailor_Moon",
+    "imageUrl": ""
+  },
+  "c175": {
+    "characterId": "c175",
+    "name": "Sailor Mars",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Sailor_Mars",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Sailor_Mars",
+    "imageUrl": ""
+  },
+  "c176": {
+    "characterId": "c176",
+    "name": "Sailor Mercury",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Sailor_Mercury",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Sailor_Mercury",
+    "imageUrl": ""
+  },
+  "c177": {
+    "characterId": "c177",
+    "name": "Sailor Jupiter",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Sailor_Jupiter",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Sailor_Jupiter",
+    "imageUrl": ""
+  },
+  "c178": {
+    "characterId": "c178",
+    "name": "Sailor Venus",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Sailor_Venus",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Sailor_Venus",
+    "imageUrl": ""
+  },
+  "c179": {
+    "characterId": "c179",
+    "name": "Utena Tenjou",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Utena_Tenjou",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Utena_Tenjou",
+    "imageUrl": ""
+  },
+  "c180": {
+    "characterId": "c180",
+    "name": "Anthyy Himemiya",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Anthyy_Himemiya",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Anthyy_Himemiya",
+    "imageUrl": ""
+  },
+  "c181": {
+    "characterId": "c181",
+    "name": "Homura Akemi",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Homura_Akemi",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Homura_Akemi",
+    "imageUrl": ""
+  },
+  "c182": {
+    "characterId": "c182",
+    "name": "Madoka Kaname",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Madoka_Kaname",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Madoka_Kaname",
+    "imageUrl": ""
+  },
+  "c183": {
+    "characterId": "c183",
+    "name": "Mami Tomoe",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Mami_Tomoe",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Mami_Tomoe",
+    "imageUrl": ""
+  },
+  "c184": {
+    "characterId": "c184",
+    "name": "Sayaka Miki",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Sayaka_Miki",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Sayaka_Miki",
+    "imageUrl": ""
+  },
+  "c185": {
+    "characterId": "c185",
+    "name": "Kyoko Sakura",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Kyoko_Sakura",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Kyoko_Sakura",
+    "imageUrl": ""
+  },
+  "c186": {
+    "characterId": "c186",
+    "name": "Batou",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Batou",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Batou",
+    "imageUrl": ""
+  },
+  "c187": {
+    "characterId": "c187",
+    "name": "Ginko",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Ginko",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Ginko",
+    "imageUrl": ""
+  },
+  "c188": {
+    "characterId": "c188",
+    "name": "Violet Evergarden",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Violet_Evergarden",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Violet_Evergarden",
+    "imageUrl": ""
+  },
+  "c189": {
+    "characterId": "c189",
+    "name": "Yor Forger",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Yor_Forger",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Yor_Forger",
+    "imageUrl": ""
+  },
+  "c190": {
+    "characterId": "c190",
+    "name": "Loid Forger",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Loid_Forger",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Loid_Forger",
+    "imageUrl": ""
+  },
+  "c191": {
+    "characterId": "c191",
+    "name": "Anya Forger",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Anya_Forger",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Anya_Forger",
+    "imageUrl": ""
+  },
+  "c192": {
+    "characterId": "c192",
+    "name": "Fiona Frost",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Fiona_Frost",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Fiona_Frost",
+    "imageUrl": ""
+  },
+  "c193": {
+    "characterId": "c193",
+    "name": "Hachi Komatsu",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Hachi_Komatsu",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Hachi_Komatsu",
+    "imageUrl": ""
+  },
+  "c194": {
+    "characterId": "c194",
+    "name": "Nana Komatsu",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Nana_Komatsu",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Nana_Komatsu",
+    "imageUrl": ""
+  },
+  "c195": {
+    "characterId": "c195",
+    "name": "Yona",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Yona",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Yona",
+    "imageUrl": ""
+  },
+  "c196": {
+    "characterId": "c196",
+    "name": "Balsa Yonsa",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Balsa_Yonsa",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Balsa_Yonsa",
+    "imageUrl": ""
+  },
+  "c197": {
+    "characterId": "c197",
+    "name": "Akane Tsunemori",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Akane_Tsunemori",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Akane_Tsunemori",
+    "imageUrl": ""
+  },
+  "c198": {
+    "characterId": "c198",
+    "name": "Shinya Kogami",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Shinya_Kogami",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Shinya_Kogami",
+    "imageUrl": ""
+  },
+  "c199": {
+    "characterId": "c199",
+    "name": "Balalaika",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Balalaika",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Balalaika",
+    "imageUrl": ""
+  },
+  "c200": {
+    "characterId": "c200",
+    "name": "Benny",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Benny",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Benny",
+    "imageUrl": ""
+  },
+  "c201": {
+    "characterId": "c201",
+    "name": "Vicious",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Vicious",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Vicious",
+    "imageUrl": ""
+  },
+  "c202": {
+    "characterId": "c202",
+    "name": "Jet Black",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Jet_Black",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Jet_Black",
+    "imageUrl": ""
+  },
+  "c203": {
+    "characterId": "c203",
+    "name": "Edward",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Edward",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Edward",
+    "imageUrl": ""
+  },
+  "c204": {
+    "characterId": "c204",
+    "name": "Mugen",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Mugen",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Mugen",
+    "imageUrl": ""
+  },
+  "c205": {
+    "characterId": "c205",
+    "name": "Jin",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Jin",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Jin",
+    "imageUrl": ""
+  },
+  "c206": {
+    "characterId": "c206",
+    "name": "Fuu Kasumi",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Fuu_Kasumi",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Fuu_Kasumi",
+    "imageUrl": ""
+  },
+  "c207": {
+    "characterId": "c207",
+    "name": "Jessica Drew",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Jessica_Drew",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Jessica_Drew",
+    "imageUrl": ""
+  },
+  "c208": {
+    "characterId": "c208",
+    "name": "Kate Bishop",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Kate_Bishop",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Kate_Bishop",
+    "imageUrl": ""
+  },
+  "c209": {
+    "characterId": "c209",
+    "name": "Kamala Khan",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Kamala_Khan",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Kamala_Khan",
+    "imageUrl": ""
+  },
+  "c210": {
+    "characterId": "c210",
+    "name": "Monica Rambeau",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Monica_Rambeau",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Monica_Rambeau",
+    "imageUrl": ""
+  },
+  "c211": {
+    "characterId": "c211",
+    "name": "America Chavez",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/America_Chavez",
+    "fallbackPage": "https://en.wikipedia.org/wiki/America_Chavez",
+    "imageUrl": ""
+  },
+  "c212": {
+    "characterId": "c212",
+    "name": "Wiccan",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Wiccan",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Wiccan",
+    "imageUrl": ""
+  },
+  "c213": {
+    "characterId": "c213",
+    "name": "Hulkling",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Hulkling",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Hulkling",
+    "imageUrl": ""
+  },
+  "c214": {
+    "characterId": "c214",
+    "name": "Kitty Pryde",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Kitty_Pryde",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Kitty_Pryde",
+    "imageUrl": ""
+  },
+  "c215": {
+    "characterId": "c215",
+    "name": "Emma Frost",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Emma_Frost",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Emma_Frost",
+    "imageUrl": ""
+  },
+  "c216": {
+    "characterId": "c216",
+    "name": "Psylocke",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Psylocke",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Psylocke",
+    "imageUrl": ""
+  },
+  "c217": {
+    "characterId": "c217",
+    "name": "Dazzler",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Dazzler",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Dazzler",
+    "imageUrl": ""
+  },
+  "c218": {
+    "characterId": "c218",
+    "name": "Polaris",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Polaris",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Polaris",
+    "imageUrl": ""
+  },
+  "c219": {
+    "characterId": "c219",
+    "name": "Magik",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Magik",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Magik",
+    "imageUrl": ""
+  },
+  "c220": {
+    "characterId": "c220",
+    "name": "Clea",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Clea",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Clea",
+    "imageUrl": ""
+  },
+  "c221": {
+    "characterId": "c221",
+    "name": "Elektra",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Elektra",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Elektra",
+    "imageUrl": ""
+  },
+  "c222": {
+    "characterId": "c222",
+    "name": "Misty Knight",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Misty_Knight",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Misty_Knight",
+    "imageUrl": ""
+  },
+  "c223": {
+    "characterId": "c223",
+    "name": "Colleen Wing",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Colleen_Wing",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Colleen_Wing",
+    "imageUrl": ""
+  },
+  "c224": {
+    "characterId": "c224",
+    "name": "Moon Girl",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Moon_Girl",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Moon_Girl",
+    "imageUrl": ""
+  },
+  "c225": {
+    "characterId": "c225",
+    "name": "Squirrel Girl",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Squirrel_Girl",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Squirrel_Girl",
+    "imageUrl": ""
+  },
+  "c226": {
+    "characterId": "c226",
+    "name": "Vixen",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Vixen",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Vixen",
+    "imageUrl": ""
+  },
+  "c227": {
+    "characterId": "c227",
+    "name": "Hawkgirl",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Hawkgirl",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Hawkgirl",
+    "imageUrl": ""
+  },
+  "c228": {
+    "characterId": "c228",
+    "name": "Batwoman",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Batwoman",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Batwoman",
+    "imageUrl": ""
+  },
+  "c229": {
+    "characterId": "c229",
+    "name": "Power Girl",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Power_Girl",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Power_Girl",
+    "imageUrl": ""
+  },
+  "c230": {
+    "characterId": "c230",
+    "name": "Donna Troy",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Donna_Troy",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Donna_Troy",
+    "imageUrl": ""
+  },
+  "c231": {
+    "characterId": "c231",
+    "name": "Cassandra Cain",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Cassandra_Cain",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Cassandra_Cain",
+    "imageUrl": ""
+  },
+  "c232": {
+    "characterId": "c232",
+    "name": "Stephanie Brown",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Stephanie_Brown",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Stephanie_Brown",
+    "imageUrl": ""
+  },
+  "c233": {
+    "characterId": "c233",
+    "name": "Kate Kane",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Kate_Kane",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Kate_Kane",
+    "imageUrl": ""
+  },
+  "c234": {
+    "characterId": "c234",
+    "name": "Huntress",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Huntress",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Huntress",
+    "imageUrl": ""
+  },
+  "c235": {
+    "characterId": "c235",
+    "name": "Mary Marvel",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Mary_Marvel",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Mary_Marvel",
+    "imageUrl": ""
+  },
+  "c236": {
+    "characterId": "c236",
+    "name": "Big Barda",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Big_Barda",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Big_Barda",
+    "imageUrl": ""
+  },
+  "c237": {
+    "characterId": "c237",
+    "name": "Black Alice",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Black_Alice",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Black_Alice",
+    "imageUrl": ""
+  },
+  "c238": {
+    "characterId": "c238",
+    "name": "Poison Ivy",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Poison_Ivy",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Poison_Ivy",
+    "imageUrl": ""
+  },
+  "c239": {
+    "characterId": "c239",
+    "name": "Harley Quinn",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Harley_Quinn",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Harley_Quinn",
+    "imageUrl": ""
+  },
+  "c240": {
+    "characterId": "c240",
+    "name": "Amanda Waller",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Amanda_Waller",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Amanda_Waller",
+    "imageUrl": ""
+  },
+  "c241": {
+    "characterId": "c241",
+    "name": "Talia al Ghul",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Talia_al_Ghul",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Talia_al_Ghul",
+    "imageUrl": ""
+  },
+  "c242": {
+    "characterId": "c242",
+    "name": "Valkyrie",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Valkyrie",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Valkyrie",
+    "imageUrl": ""
+  },
+  "c243": {
+    "characterId": "c243",
+    "name": "Sif",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Sif",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Sif",
+    "imageUrl": ""
+  },
+  "c244": {
+    "characterId": "c244",
+    "name": "Shanna the She-Devil",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Shanna_the_She-Devil",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Shanna_the_She-Devil",
+    "imageUrl": ""
+  },
+  "c245": {
+    "characterId": "c245",
+    "name": "Medusa",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Medusa",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Medusa",
+    "imageUrl": ""
+  },
+  "c246": {
+    "characterId": "c246",
+    "name": "Crystal",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Crystal",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Crystal",
+    "imageUrl": ""
+  },
+  "c247": {
+    "characterId": "c247",
+    "name": "Mantis",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Mantis",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Mantis",
+    "imageUrl": ""
+  },
+  "c248": {
+    "characterId": "c248",
+    "name": "Nebula",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Nebula",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Nebula",
+    "imageUrl": ""
+  },
+  "c249": {
+    "characterId": "c249",
+    "name": "Gamora",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Gamora",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Gamora",
+    "imageUrl": ""
+  },
+  "c250": {
+    "characterId": "c250",
+    "name": "Dani Moonstar",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Dani_Moonstar",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Dani_Moonstar",
+    "imageUrl": ""
+  },
+  "c251": {
+    "characterId": "c251",
+    "name": "Armor",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Armor",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Armor",
+    "imageUrl": ""
+  },
+  "c252": {
+    "characterId": "c252",
+    "name": "Gwenpool",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Gwenpool",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Gwenpool",
+    "imageUrl": ""
+  },
+  "c253": {
+    "characterId": "c253",
+    "name": "Spider-Gwen",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Spider-Gwen",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Spider-Gwen",
+    "imageUrl": ""
+  },
+  "c254": {
+    "characterId": "c254",
+    "name": "Miles Morales",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Miles_Morales",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Miles_Morales",
+    "imageUrl": ""
+  },
+  "c255": {
+    "characterId": "c255",
+    "name": "Sam Wilson",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Sam_Wilson",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Sam_Wilson",
+    "imageUrl": ""
+  },
+  "c256": {
+    "characterId": "c256",
+    "name": "Bucky Barnes",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Bucky_Barnes",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Bucky_Barnes",
+    "imageUrl": ""
+  },
+  "c257": {
+    "characterId": "c257",
+    "name": "Luke Cage",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Luke_Cage",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Luke_Cage",
+    "imageUrl": ""
+  },
+  "c258": {
+    "characterId": "c258",
+    "name": "Iron Fist",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Iron_Fist",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Iron_Fist",
+    "imageUrl": ""
+  },
+  "c259": {
+    "characterId": "c259",
+    "name": "Moon Knight",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Moon_Knight",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Moon_Knight",
+    "imageUrl": ""
+  },
+  "c260": {
+    "characterId": "c260",
+    "name": "Nova",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Nova",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Nova",
+    "imageUrl": ""
+  },
+  "c261": {
+    "characterId": "c261",
+    "name": "Blue Beetle",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Blue_Beetle",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Blue_Beetle",
+    "imageUrl": ""
+  },
+  "c262": {
+    "characterId": "c262",
+    "name": "Booster Gold",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Booster_Gold",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Booster_Gold",
+    "imageUrl": ""
+  },
+  "c263": {
+    "characterId": "c263",
+    "name": "Mister Miracle",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Mister_Miracle",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Mister_Miracle",
+    "imageUrl": ""
+  },
+  "c264": {
+    "characterId": "c264",
+    "name": "Plastic Man",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Plastic_Man",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Plastic_Man",
+    "imageUrl": ""
+  },
+  "c265": {
+    "characterId": "c265",
+    "name": "Animal Man",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Animal_Man",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Animal_Man",
+    "imageUrl": ""
+  },
+  "c266": {
+    "characterId": "c266",
+    "name": "Mister Terrific",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Mister_Terrific",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Mister_Terrific",
+    "imageUrl": ""
+  },
+  "c267": {
+    "characterId": "c267",
+    "name": "Green Arrow",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Green_Arrow",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Green_Arrow",
+    "imageUrl": ""
+  },
+  "c268": {
+    "characterId": "c268",
+    "name": "Atom",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Atom",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Atom",
+    "imageUrl": ""
+  },
+  "c269": {
+    "characterId": "c269",
+    "name": "Cyborg",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Cyborg",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Cyborg",
+    "imageUrl": ""
+  },
+  "c270": {
+    "characterId": "c270",
+    "name": "Martian Manhunter",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Martian_Manhunter",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Martian_Manhunter",
+    "imageUrl": ""
+  },
+  "c271": {
+    "characterId": "c271",
+    "name": "Jane Eyre",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Jane_Eyre",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Jane_Eyre",
+    "imageUrl": ""
+  },
+  "c272": {
+    "characterId": "c272",
+    "name": "Elizabeth Bennet",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Elizabeth_Bennet",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Elizabeth_Bennet",
+    "imageUrl": ""
+  },
+  "c273": {
+    "characterId": "c273",
+    "name": "Jo March",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Jo_March",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Jo_March",
+    "imageUrl": ""
+  },
+  "c274": {
+    "characterId": "c274",
+    "name": "Anne Shirley",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Anne_Shirley",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Anne_Shirley",
+    "imageUrl": ""
+  },
+  "c275": {
+    "characterId": "c275",
+    "name": "Heathcliff",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Heathcliff",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Heathcliff",
+    "imageUrl": ""
+  },
+  "c276": {
+    "characterId": "c276",
+    "name": "Estella Havisham",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Estella_Havisham",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Estella_Havisham",
+    "imageUrl": ""
+  },
+  "c277": {
+    "characterId": "c277",
+    "name": "Pip",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Pip",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Pip",
+    "imageUrl": ""
+  },
+  "c278": {
+    "characterId": "c278",
+    "name": "Jean Valjean",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Jean_Valjean",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Jean_Valjean",
+    "imageUrl": ""
+  },
+  "c279": {
+    "characterId": "c279",
+    "name": "Javert",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Javert",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Javert",
+    "imageUrl": ""
+  },
+  "c280": {
+    "characterId": "c280",
+    "name": "Cosette",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Cosette",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Cosette",
+    "imageUrl": ""
+  },
+  "c281": {
+    "characterId": "c281",
+    "name": "Marius Pontmercy",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Marius_Pontmercy",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Marius_Pontmercy",
+    "imageUrl": ""
+  },
+  "c282": {
+    "characterId": "c282",
+    "name": "Haydée",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Haydée",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Haydée",
+    "imageUrl": ""
+  },
+  "c283": {
+    "characterId": "c283",
+    "name": "Mercedes",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Mercedes",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Mercedes",
+    "imageUrl": ""
+  },
+  "c284": {
+    "characterId": "c284",
+    "name": "Hester Prynne",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Hester_Prynne",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Hester_Prynne",
+    "imageUrl": ""
+  },
+  "c285": {
+    "characterId": "c285",
+    "name": "Atticus Finch",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Atticus_Finch",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Atticus_Finch",
+    "imageUrl": ""
+  },
+  "c286": {
+    "characterId": "c286",
+    "name": "Scout Finch",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Scout_Finch",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Scout_Finch",
+    "imageUrl": ""
+  },
+  "c287": {
+    "characterId": "c287",
+    "name": "Holden Caulfield",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Holden_Caulfield",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Holden_Caulfield",
+    "imageUrl": ""
+  },
+  "c288": {
+    "characterId": "c288",
+    "name": "Esther Greenwood",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Esther_Greenwood",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Esther_Greenwood",
+    "imageUrl": ""
+  },
+  "c289": {
+    "characterId": "c289",
+    "name": "Offred",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Offred",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Offred",
+    "imageUrl": ""
+  },
+  "c290": {
+    "characterId": "c290",
+    "name": "Lyra Belacqua",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Lyra_Belacqua",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Lyra_Belacqua",
+    "imageUrl": ""
+  },
+  "c291": {
+    "characterId": "c291",
+    "name": "Will Parry",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Will_Parry",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Will_Parry",
+    "imageUrl": ""
+  },
+  "c292": {
+    "characterId": "c292",
+    "name": "Mrs Coulter",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Mrs_Coulter",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Mrs_Coulter",
+    "imageUrl": ""
+  },
+  "c293": {
+    "characterId": "c293",
+    "name": "Serafina Pekkala",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Serafina_Pekkala",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Serafina_Pekkala",
+    "imageUrl": ""
+  },
+  "c294": {
+    "characterId": "c294",
+    "name": "Tenar",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Tenar",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Tenar",
+    "imageUrl": ""
+  },
+  "c295": {
+    "characterId": "c295",
+    "name": "Therru",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Therru",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Therru",
+    "imageUrl": ""
+  },
+  "c296": {
+    "characterId": "c296",
+    "name": "Denna",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Denna",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Denna",
+    "imageUrl": ""
+  },
+  "c297": {
+    "characterId": "c297",
+    "name": "Eddard Stark",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Eddard_Stark",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Eddard_Stark",
+    "imageUrl": ""
+  },
+  "c298": {
+    "characterId": "c298",
+    "name": "Catelyn Stark",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Catelyn_Stark",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Catelyn_Stark",
+    "imageUrl": ""
+  },
+  "c299": {
+    "characterId": "c299",
+    "name": "Robb Stark",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Robb_Stark",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Robb_Stark",
+    "imageUrl": ""
+  },
+  "c300": {
+    "characterId": "c300",
+    "name": "Bran Stark",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Bran_Stark",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Bran_Stark",
+    "imageUrl": ""
+  },
+  "c301": {
+    "characterId": "c301",
+    "name": "Theon Greyjoy",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Theon_Greyjoy",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Theon_Greyjoy",
+    "imageUrl": ""
+  },
+  "c302": {
+    "characterId": "c302",
+    "name": "Davos Seaworth",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Davos_Seaworth",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Davos_Seaworth",
+    "imageUrl": ""
+  },
+  "c303": {
+    "characterId": "c303",
+    "name": "Brienne of Tarth",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Brienne_of_Tarth",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Brienne_of_Tarth",
+    "imageUrl": ""
+  },
+  "c304": {
+    "characterId": "c304",
+    "name": "Mance Rayder",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Mance_Rayder",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Mance_Rayder",
+    "imageUrl": ""
+  },
+  "c305": {
+    "characterId": "c305",
+    "name": "Oberyn Martell",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Oberyn_Martell",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Oberyn_Martell",
+    "imageUrl": ""
+  },
+  "c306": {
+    "characterId": "c306",
+    "name": "Doran Martell",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Doran_Martell",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Doran_Martell",
+    "imageUrl": ""
+  },
+  "c307": {
+    "characterId": "c307",
+    "name": "Ellaria Sand",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Ellaria_Sand",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Ellaria_Sand",
+    "imageUrl": ""
+  },
+  "c308": {
+    "characterId": "c308",
+    "name": "Syrio Forel",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Syrio_Forel",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Syrio_Forel",
+    "imageUrl": ""
+  },
+  "c309": {
+    "characterId": "c309",
+    "name": "Jaqen H'ghar",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Jaqen_H'ghar",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Jaqen_H'ghar",
+    "imageUrl": ""
+  },
+  "c310": {
+    "characterId": "c310",
+    "name": "Samwell Tarly",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Samwell_Tarly",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Samwell_Tarly",
+    "imageUrl": ""
+  },
+  "c311": {
+    "characterId": "c311",
+    "name": "Gilly",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Gilly",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Gilly",
+    "imageUrl": ""
+  },
+  "c312": {
+    "characterId": "c312",
+    "name": "Sansa Stark",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Sansa_Stark",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Sansa_Stark",
+    "imageUrl": ""
+  },
+  "c313": {
+    "characterId": "c313",
+    "name": "Tyrion Lannister",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Tyrion_Lannister",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Tyrion_Lannister",
+    "imageUrl": ""
+  },
+  "c314": {
+    "characterId": "c314",
+    "name": "Varys",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Varys",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Varys",
+    "imageUrl": ""
+  },
+  "c315": {
+    "characterId": "c315",
+    "name": "Littlefinger",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Littlefinger",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Littlefinger",
+    "imageUrl": ""
+  },
+  "c316": {
+    "characterId": "c316",
+    "name": "Gregor Clegane",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Gregor_Clegane",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Gregor_Clegane",
+    "imageUrl": ""
+  },
+  "c317": {
+    "characterId": "c317",
+    "name": "Ramsay Bolton",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Ramsay_Bolton",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Ramsay_Bolton",
+    "imageUrl": ""
+  },
+  "c318": {
+    "characterId": "c318",
+    "name": "Phedre nó Delaunay",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Phedre_nó_Delaunay",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Phedre_nó_Delaunay",
+    "imageUrl": ""
+  },
+  "c319": {
+    "characterId": "c319",
+    "name": "Imriel de la Courcel",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Imriel_de_la_Courcel",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Imriel_de_la_Courcel",
+    "imageUrl": ""
+  },
+  "c320": {
+    "characterId": "c320",
+    "name": "Kell Maresh",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Kell_Maresh",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Kell_Maresh",
+    "imageUrl": ""
+  },
+  "c321": {
+    "characterId": "c321",
+    "name": "Shego",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Shego",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Shego",
+    "imageUrl": ""
+  },
+  "c322": {
+    "characterId": "c322",
+    "name": "Toph Beifong",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Toph_Beifong",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Toph_Beifong",
+    "imageUrl": ""
+  },
+  "c323": {
+    "characterId": "c323",
+    "name": "Princess Bubblegum",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Princess_Bubblegum",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Princess_Bubblegum",
+    "imageUrl": ""
+  },
+  "c324": {
+    "characterId": "c324",
+    "name": "Garnet",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Garnet",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Garnet",
+    "imageUrl": ""
+  },
+  "c325": {
+    "characterId": "c325",
+    "name": "Adora",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Adora",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Adora",
+    "imageUrl": ""
+  },
+  "c326": {
+    "characterId": "c326",
+    "name": "Catra",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Catra",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Catra",
+    "imageUrl": ""
+  },
+  "c327": {
+    "characterId": "c327",
+    "name": "Velma Dinkley",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Velma_Dinkley",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Velma_Dinkley",
+    "imageUrl": ""
+  },
+  "c328": {
+    "characterId": "c328",
+    "name": "Daphne Blake",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Daphne_Blake",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Daphne_Blake",
+    "imageUrl": ""
+  },
+  "c329": {
+    "characterId": "c329",
+    "name": "Amy Wong",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Amy_Wong",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Amy_Wong",
+    "imageUrl": ""
+  },
+  "c330": {
+    "characterId": "c330",
+    "name": "Leela",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Leela",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Leela",
+    "imageUrl": ""
+  },
+  "c331": {
+    "characterId": "c331",
+    "name": "Bender",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Bender",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Bender",
+    "imageUrl": ""
+  },
+  "c332": {
+    "characterId": "c332",
+    "name": "Finn",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Finn",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Finn",
+    "imageUrl": ""
+  },
+  "c333": {
+    "characterId": "c333",
+    "name": "Jake",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Jake",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Jake",
+    "imageUrl": ""
+  },
+  "c334": {
+    "characterId": "c334",
+    "name": "Him",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Him",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Him",
+    "imageUrl": ""
+  },
+  "c335": {
+    "characterId": "c335",
+    "name": "Blossom",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Blossom",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Blossom",
+    "imageUrl": ""
+  },
+  "c336": {
+    "characterId": "c336",
+    "name": "Bubbles",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Bubbles",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Bubbles",
+    "imageUrl": ""
+  },
+  "c337": {
+    "characterId": "c337",
+    "name": "Buttercup",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Buttercup",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Buttercup",
+    "imageUrl": ""
+  },
+  "c338": {
+    "characterId": "c338",
+    "name": "Terra",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Terra",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Terra",
+    "imageUrl": ""
+  },
+  "c339": {
+    "characterId": "c339",
+    "name": "Jinx",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Jinx",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Jinx",
+    "imageUrl": ""
+  },
+  "c340": {
+    "characterId": "c340",
+    "name": "Ron Stoppable",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Ron_Stoppable",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Ron_Stoppable",
+    "imageUrl": ""
+  },
+  "c341": {
+    "characterId": "c341",
+    "name": "Maggie Simpson",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Maggie_Simpson",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Maggie_Simpson",
+    "imageUrl": ""
+  },
+  "c342": {
+    "characterId": "c342",
+    "name": "Milhouse Van Houten",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Milhouse_Van_Houten",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Milhouse_Van_Houten",
+    "imageUrl": ""
+  },
+  "c343": {
+    "characterId": "c343",
+    "name": "Bart Simpson",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Bart_Simpson",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Bart_Simpson",
+    "imageUrl": ""
+  },
+  "c344": {
+    "characterId": "c344",
+    "name": "Ned Flanders",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Ned_Flanders",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Ned_Flanders",
+    "imageUrl": ""
+  },
+  "c345": {
+    "characterId": "c345",
+    "name": "Louise Belcher",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Louise_Belcher",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Louise_Belcher",
+    "imageUrl": ""
+  },
+  "c346": {
+    "characterId": "c346",
+    "name": "Tina Belcher",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Tina_Belcher",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Tina_Belcher",
+    "imageUrl": ""
+  },
+  "c347": {
+    "characterId": "c347",
+    "name": "Linda Belcher",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Linda_Belcher",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Linda_Belcher",
+    "imageUrl": ""
+  },
+  "c348": {
+    "characterId": "c348",
+    "name": "Bob Belcher",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Bob_Belcher",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Bob_Belcher",
+    "imageUrl": ""
+  },
+  "c349": {
+    "characterId": "c349",
+    "name": "Gene Belcher",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Gene_Belcher",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Gene_Belcher",
+    "imageUrl": ""
+  },
+  "c350": {
+    "characterId": "c350",
+    "name": "Dipper Pines",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Dipper_Pines",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Dipper_Pines",
+    "imageUrl": ""
+  },
+  "c351": {
+    "characterId": "c351",
+    "name": "Mordecai",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Mordecai",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Mordecai",
+    "imageUrl": ""
+  },
+  "c352": {
+    "characterId": "c352",
+    "name": "Rigby",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Rigby",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Rigby",
+    "imageUrl": ""
+  },
+  "c353": {
+    "characterId": "c353",
+    "name": "Benson",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Benson",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Benson",
+    "imageUrl": ""
+  },
+  "c354": {
+    "characterId": "c354",
+    "name": "Samurai Jack",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Samurai_Jack",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Samurai_Jack",
+    "imageUrl": ""
+  },
+  "c355": {
+    "characterId": "c355",
+    "name": "Amethyst",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Amethyst",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Amethyst",
+    "imageUrl": ""
+  },
+  "c356": {
+    "characterId": "c356",
+    "name": "Lapis Lazuli",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Lapis_Lazuli",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Lapis_Lazuli",
+    "imageUrl": ""
+  },
+  "c357": {
+    "characterId": "c357",
+    "name": "Peridot",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Peridot",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Peridot",
+    "imageUrl": ""
+  },
+  "c358": {
+    "characterId": "c358",
+    "name": "Hilda",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Hilda",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Hilda",
+    "imageUrl": ""
+  },
+  "c359": {
+    "characterId": "c359",
+    "name": "Frida",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Frida",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Frida",
+    "imageUrl": ""
+  },
+  "c360": {
+    "characterId": "c360",
+    "name": "David",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/David",
+    "fallbackPage": "https://en.wikipedia.org/wiki/David",
+    "imageUrl": ""
+  },
+  "c361": {
+    "characterId": "c361",
+    "name": "Milo Murphy",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Milo_Murphy",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Milo_Murphy",
+    "imageUrl": ""
+  },
+  "c362": {
+    "characterId": "c362",
+    "name": "Wander",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Wander",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Wander",
+    "imageUrl": ""
+  },
+  "c363": {
+    "characterId": "c363",
+    "name": "Lord Hater",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Lord_Hater",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Lord_Hater",
+    "imageUrl": ""
+  },
+  "c364": {
+    "characterId": "c364",
+    "name": "Kipo Oak",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Kipo_Oak",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Kipo_Oak",
+    "imageUrl": ""
+  },
+  "c365": {
+    "characterId": "c365",
+    "name": "Entrapta",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Entrapta",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Entrapta",
+    "imageUrl": ""
+  },
+  "c366": {
+    "characterId": "c366",
+    "name": "Scorpia",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Scorpia",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Scorpia",
+    "imageUrl": ""
+  },
+  "c367": {
+    "characterId": "c367",
+    "name": "Hordak",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Hordak",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Hordak",
+    "imageUrl": ""
+  },
+  "c368": {
+    "characterId": "c368",
+    "name": "Sasha Waybright",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Sasha_Waybright",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Sasha_Waybright",
+    "imageUrl": ""
+  },
+  "c369": {
+    "characterId": "c369",
+    "name": "Marcy Wu",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Marcy_Wu",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Marcy_Wu",
+    "imageUrl": ""
+  },
+  "c370": {
+    "characterId": "c370",
+    "name": "Anne Boonchuy",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Anne_Boonchuy",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Anne_Boonchuy",
+    "imageUrl": ""
+  },
+  "c371": {
+    "characterId": "c371",
+    "name": "King",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/King",
+    "fallbackPage": "https://en.wikipedia.org/wiki/King",
+    "imageUrl": ""
+  },
+  "c372": {
+    "characterId": "c372",
+    "name": "Luz Noceda",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Luz_Noceda",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Luz_Noceda",
+    "imageUrl": ""
+  },
+  "c373": {
+    "characterId": "c373",
+    "name": "Amity Blight",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Amity_Blight",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Amity_Blight",
+    "imageUrl": ""
+  },
+  "c374": {
+    "characterId": "c374",
+    "name": "Willow Park",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Willow_Park",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Willow_Park",
+    "imageUrl": ""
+  },
+  "c375": {
+    "characterId": "c375",
+    "name": "Hunter",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Hunter",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Hunter",
+    "imageUrl": ""
+  },
+  "c376": {
+    "characterId": "c376",
+    "name": "Molly McGee",
+    "source": "Wikipedia",
+    "preferredPage": "https://fr.wikipedia.org/wiki/Molly_McGee",
+    "fallbackPage": "https://en.wikipedia.org/wiki/Molly_McGee",
+    "imageUrl": ""
+  }
+}
