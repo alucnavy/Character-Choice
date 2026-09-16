@@ -25,7 +25,10 @@ function save() {
 function loadState() {
   try {
     const raw = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
-    if (raw && raw.championId && raw.challengerId && Array.isArray(raw.usedIds)) return raw;
+    if (raw && raw.championId && raw.challengerId && Array.isArray(raw.usedIds)) {
+      if (!Object.prototype.hasOwnProperty.call(raw, "lastSnapshot")) raw.lastSnapshot = null;
+      return raw;
+    }
   } catch(e) {}
   return createNewState();
 }
@@ -43,7 +46,8 @@ function createNewState() {
     championId,
     challengerId,
     usedIds,
-    history: []
+    history: [],
+    lastSnapshot: null
   };
 }
 
@@ -68,6 +72,10 @@ function updateStats() {
   $("played").textContent = state.history.length;
   $("pool").textContent = CHARACTERS.length;
   $("remaining").textContent = Math.max(0, CHARACTERS.length - state.usedIds.length);
+  const progress = Math.min(100, Math.round((state.usedIds.length / CHARACTERS.length) * 100));
+  $("progressPercent").textContent = `${progress}%`;
+  $("progressBar").style.width = `${progress}%`;
+  $("undoBtn").disabled = !state.lastSnapshot;
   renderHistory();
 }
 
@@ -166,6 +174,17 @@ function choose(winnerId) {
   const winner = getChar(winnerId);
   if (!champ || !challenger || !winner) return;
 
+  state.lastSnapshot = JSON.parse(JSON.stringify({
+    combat: state.combat,
+    streak: state.streak,
+    championId: state.championId,
+    challengerId: state.challengerId,
+    usedIds: state.usedIds,
+    history: state.history,
+    bestRecord: state.bestRecord,
+    bestRecordHolder: state.bestRecordHolder
+  }));
+
   state.history.push({
     combat: state.combat,
     championBefore: champ.name,
@@ -201,15 +220,25 @@ function choose(winnerId) {
 
   save();
   render();
+  flashWinner(winnerId === champ.id ? "championCard" : "challengerCard");
 }
 
 function renderHistory() {
   const box = $("historyList");
+  const query = ($("historySearch")?.value || "").trim().toLowerCase();
   if (!state.history.length) {
     box.innerHTML = '<div class="history-row"><span>—</span><span>Aucun combat enregistré.</span></div>';
     return;
   }
-  box.innerHTML = [...state.history].reverse().map(h => `
+  const filtered = [...state.history].reverse().filter(h => {
+    if (!query) return true;
+    return [h.championBefore, h.challenger, h.winner, h.universe, h.media].some(v => String(v).toLowerCase().includes(query));
+  });
+  if (!filtered.length) {
+    box.innerHTML = '<div class="history-row"><span>—</span><span>Aucun résultat.</span></div>';
+    return;
+  }
+  box.innerHTML = filtered.map(h => `
     <div class="history-row">
       <div>#${h.combat}</div>
       <div><span>Champion :</span> ${escapeHtml(h.championBefore)}</div>
@@ -237,6 +266,32 @@ function toast(message) {
   setTimeout(() => el.classList.remove("show"), 1800);
 }
 
+$("undoBtn").addEventListener("click", () => {
+  if (!state.lastSnapshot) return;
+  const snap = state.lastSnapshot;
+  state.combat = snap.combat;
+  state.streak = snap.streak;
+  state.championId = snap.championId;
+  state.challengerId = snap.challengerId;
+  state.usedIds = snap.usedIds;
+  state.history = snap.history;
+  state.bestRecord = snap.bestRecord;
+  state.bestRecordHolder = snap.bestRecordHolder;
+  state.lastSnapshot = null;
+  save();
+  render();
+  toast("↩️ Dernier combat annulé");
+});
+$("historySearch").addEventListener("input", renderHistory);
+
+function flashWinner(cardId) {
+  const el = $(cardId);
+  el.classList.remove("winner-flash");
+  void el.offsetWidth;
+  el.classList.add("winner-flash");
+  setTimeout(() => el.classList.remove("winner-flash"), 500);
+}
+
 $("chooseChampion").addEventListener("click", e => { e.stopPropagation(); choose(state.championId); });
 $("chooseChallenger").addEventListener("click", e => { e.stopPropagation(); choose(state.challengerId); });
 $("championCard").addEventListener("click", () => choose(state.championId));
@@ -247,7 +302,7 @@ $("resetBtn").addEventListener("click", () => {
   if (confirm("Commencer un nouveau tournoi ? Le record absolu du joueur sera conservé.")) {
     const best = Number(localStorage.getItem(BEST_KEY) || state.bestRecord || 0);
     const holder = localStorage.getItem(BEST_HOLDER_KEY) || state.bestRecordHolder || "";
-    Object.assign(state, createNewState(), {bestRecord: best, bestRecordHolder: holder});
+    Object.assign(state, createNewState(), {bestRecord: best, bestRecordHolder: holder, lastSnapshot: null});
     save();
     fetch("images.json").then(r => r.ok ? r.json() : {}).then(data => { IMAGE_CATALOG = data || {}; render(); }).catch(() => render());
     toast("🔄 Nouveau tournoi lancé !");

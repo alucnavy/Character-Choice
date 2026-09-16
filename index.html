@@ -6,26 +6,17 @@
 <meta name="theme-color" content="#090a12">
 <title>Character Choice — Tournoi des personnages</title>
 <link rel="stylesheet" href="style.css">
-<script>
-(function(){
-  function syncTopbar(){
-    var bar=document.querySelector('.topbar');
-    if(bar){ document.documentElement.style.setProperty('--topbar-height', bar.getBoundingClientRect().height + 'px'); }
-  }
-  window.addEventListener('load', syncTopbar);
-  window.addEventListener('resize', syncTopbar);
-})();
-</script>
 </head>
 <body>
 <header class="topbar">
   <div class="brand">
-    <div class="eyebrow">CHARACTER CHOICE • V3.7.1</div>
+    <div class="eyebrow">CHARACTER CHOICE • V3.7</div>
     <h1>🏆 Tournoi des personnages</h1>
     <p>Un champion. Un nouveau challenger. À toi de choisir.</p>
   </div>
   <div class="actions">
     <button id="historyBtn" class="secondary">📜 Historique</button>
+    <button id="undoBtn" class="secondary" disabled>↩️ Annuler</button>
     <button id="exportBtn" class="secondary">⇩ Export CSV</button>
     <button id="resetBtn" class="secondary danger">↻ Nouveau tournoi</button>
   </div>
@@ -36,6 +27,7 @@
     <div class="pill">⚔️ COMBAT <strong id="combatNumber">1</strong></div>
     <div class="pill">🔥 SÉRIE <strong id="streak">0</strong></div>
     <div class="pill">👥 RESTANTS <strong id="remaining">0</strong></div>
+    <div class="progress-wrap"><div class="progress-label"><span>Progression</span><strong id="progressPercent">0%</strong></div><div class="progress"><span id="progressBar"></span></div></div>
     <div class="record">
   <div>🏅 RECORD ABSOLU DU JOUEUR : <strong id="bestRecord">0 VICTOIRE</strong></div>
   <div class="record-holder">👑 <span id="bestRecordHolder">—</span></div>
@@ -83,7 +75,7 @@
   </section>
 
   <section class="panel history-panel" id="historyPanel">
-    <div class="panel-title">📚 Historique</div>
+    <div class="panel-title history-heading"><span>📚 Historique</span><input id="historySearch" type="search" placeholder="Rechercher un personnage…" autocomplete="off"></div>
     <div id="historyList" class="history-list"></div>
   </section>
   <section class="panel rights-panel">
