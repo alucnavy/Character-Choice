@@ -1,212 +1,43 @@
 const CHARACTERS = [
-  ["Louise Banks","Premier Contact","Film"],
-  ["Lyra Belacqua","À la croisée des mondes","Roman / série"],
-  ["Donna Noble","Doctor Who","Série"],
-  ["Clara Oswald","Doctor Who","Série"],
-  ["Rose Tyler","Doctor Who","Série"],
-  ["Seven of Nine","Star Trek: Voyager","Série"],
-  ["Kathryn Janeway","Star Trek: Voyager","Série"],
-  ["Kira Nerys","Star Trek: Deep Space Nine","Série"],
-  ["Faith Lehane","Buffy contre les vampires","Série"],
-  ["Cordelia Chase","Buffy / Angel","Série"],
-  ["Nancy Downs","The Craft","Film"],
-  ["Bonnie Bennett","The Vampire Diaries","Série"],
-  ["Caroline Forbes","The Vampire Diaries","Série"],
-  ["Eve Polastri","Killing Eve","Série"],
-  ["Claire Underwood","House of Cards","Série"],
-  ["Leslie Knope","Parks and Recreation","Série"],
-  ["Peggy Olson","Mad Men","Série"],
-  ["Joan Holloway","Mad Men","Série"],
-  ["Daria Morgendorffer","Daria","Dessin animé"],
-  ["Diane Nguyen","BoJack Horseman","Dessin animé"],
-  ["Shego","Kim Possible","Dessin animé"],
-  ["Toph Beifong","Avatar : Le dernier maître de l'air","Dessin animé"],
-  ["Princess Bubblegum","Adventure Time","Dessin animé"],
-  ["Garnet","Steven Universe","Dessin animé"],
-  ["Pearl","Steven Universe","Dessin animé"],
-  ["Adora","She-Ra","Dessin animé"],
-  ["Catra","She-Ra","Dessin animé"],
-  ["Velma","Scooby-Doo","Dessin animé"],
-  ["Daphne Blake","Scooby-Doo","Dessin animé"],
-  ["Jessica Rabbit","Qui veut la peau de Roger Rabbit ?","Film"],
-  ["Belle","La Belle et la Bête","Film / animation"],
-  ["Tiana","La Princesse et la Grenouille","Film / animation"],
-  ["Rapunzel","Raiponce","Film / animation"],
-  ["Elsa","La Reine des neiges","Film / animation"],
-  ["Anna","La Reine des neiges","Film / animation"],
-  ["Arwen","Le Seigneur des anneaux","Roman / film"],
-  ["Ygritte","Game of Thrones","Série"],
-  ["Yara Greyjoy","Game of Thrones","Série"],
-  ["Astrid","Dragons","Film / animation"],
-  ["Kida","Atlantide, l'empire perdu","Film / animation"],
-  ["Lucy Pevensie","Le Monde de Narnia","Roman / film"],
-  ["Susan Pevensie","Le Monde de Narnia","Roman / film"],
-  ["Mabel Pines","Gravity Falls","Dessin animé"],
-  ["Jane Eyre","Jane Eyre","Roman"],
-  ["Elizabeth Bennet","Orgueil et Préjugés","Roman / film"],
-  ["Fantine","Les Misérables","Roman"],
-  ["June Osborne","The Handmaid's Tale","Roman / série"],
-  ["Lorelai Gilmore","Gilmore Girls","Série"],
-  ["Rory Gilmore","Gilmore Girls","Série"],
-  ["Sarah Jane Smith","Doctor Who","Série"],
-  ["Amy Wong","Futurama","Dessin animé"],
-  ["April Ludgate","Parks and Recreation","Série"],
-  ["Liz Lemon","30 Rock","Série"],
-  ["Jessica Drew","Marvel","Comics"],
-  ["Kate Bishop","Marvel","Comics / série"],
-  ["Kamala Khan","Marvel","Comics / série"],
-  ["Rogue","Marvel","Comics"],
-  ["Storm","Marvel","Comics"],
-  ["Zatanna","DC","Comics"],
-  ["Black Canary","DC","Comics"],
-  ["Lois Lane","DC","Comics"],
-  ["Barbara Gordon","DC","Comics"],
-  ["Mera","DC","Comics"],
-  ["Starfire","DC","Comics"],
-  ["She-Hulk","Marvel","Comics / série"],
-  ["Aeon Flux","Æon Flux","Animation"],
-  ["Gwen Tennyson","Ben 10","Dessin animé"],
-  ["Mai","Avatar : Le dernier maître de l'air","Dessin animé"],
-  ["Ty Lee","Avatar : Le dernier maître de l'air","Dessin animé"]
-].map((c,i)=>({id:i+1,name:c[0],universe:c[1],media:c[2]}));
+['Louise Banks','Premier Contact','Film'],['Lyra Belacqua','À la croisée des mondes','Roman / série'],['Donna Noble','Doctor Who','Série'],['Clara Oswald','Doctor Who','Série'],['Rose Tyler','Doctor Who','Série'],['Seven of Nine','Star Trek: Voyager','Série'],['Kathryn Janeway','Star Trek: Voyager','Série'],['Kira Nerys','Star Trek: Deep Space Nine','Série'],['Faith Lehane','Buffy contre les vampires','Série'],['Cordelia Chase','Buffy / Angel','Série'],['Nancy Downs','The Craft','Film'],['Bonnie Bennett','The Vampire Diaries','Série'],['Caroline Forbes','The Vampire Diaries','Série'],['Eve Polastri','Killing Eve','Série'],['Claire Underwood','House of Cards','Série'],['Leslie Knope','Parks and Recreation','Série'],['Peggy Olson','Mad Men','Série'],['Joan Holloway','Mad Men','Série'],['Daria Morgendorffer','Daria','Dessin animé'],['Diane Nguyen','BoJack Horseman','Dessin animé'],['Shego','Kim Possible','Dessin animé'],['Toph Beifong','Avatar : Le dernier maître de l’air','Dessin animé'],['Princess Bubblegum','Adventure Time','Dessin animé'],['Garnet','Steven Universe','Animation'],['Pearl','Steven Universe','Animation'],['Adora','She-Ra','Animation'],['Catra','She-Ra','Animation'],['Velma Dinkley','Scooby-Doo','Dessin animé'],['Daphne Blake','Scooby-Doo','Dessin animé'],['Jessica Rabbit','Qui veut la peau de Roger Rabbit','Film'],['Belle','La Belle et la Bête','Animation'],['Tiana','La Princesse et la Grenouille','Animation'],['Rapunzel','Raiponce','Animation'],['Elsa','La Reine des neiges','Animation'],['Anna','La Reine des neiges','Animation'],['Arwen','Le Seigneur des anneaux','Roman / film'],['Ygritte','Game of Thrones','Série'],['Yara Greyjoy','Game of Thrones','Série'],['Astrid Hofferson','Dragons','Animation'],['Kida Nedakh','Atlantide, l’empire perdu','Animation'],['Lucy Pevensie','Le Monde de Narnia','Roman / film'],['Susan Pevensie','Le Monde de Narnia','Roman / film'],['Mabel Pines','Gravity Falls','Dessin animé'],['Jane Eyre','Jane Eyre','Roman'],['Elizabeth Bennet','Orgueil et Préjugés','Roman'],['Fantine','Les Misérables','Roman / film'],['June Osborne','The Handmaid’s Tale','Roman / série'],['Lorelai Gilmore','Gilmore Girls','Série'],['Rory Gilmore','Gilmore Girls','Série'],['Sarah Jane Smith','Doctor Who / The Sarah Jane Adventures','Série'],['Amy Wong','Futurama','Dessin animé'],['April Ludgate','Parks and Recreation','Série'],['Liz Lemon','30 Rock','Série'],['Jessica Drew','Spider-Woman / Marvel','Comics'],['Kate Bishop','Marvel','Comics'],['Kamala Khan','Ms. Marvel','Comics / série'],['Rogue','Marvel','Comics'],['Storm','Marvel','Comics'],['Zatanna Zatara','DC','Comics'],['Black Canary','DC','Comics'],['Lois Lane','DC','Comics'],['Barbara Gordon','DC','Comics'],['Mera','DC','Comics'],['Starfire','DC','Comics'],['She-Hulk','Marvel','Comics'],['Aeon Flux','Æon Flux','Animation'],['Gwen Tennyson','Ben 10','Dessin animé'],['Mai','Avatar : Le dernier maître de l’air','Dessin animé'],['Ty Lee','Avatar : Le dernier maître de l’air','Dessin animé'],
+['Chihiro Ogino','Le Voyage de Chihiro','Anime / film'],['Nana Komatsu','Nana','Manga / anime'],['Nana Osaki','Nana','Manga / anime'],['Kagome Higurashi','Inuyasha','Manga / anime'],['Faye Valentine','Cowboy Bebop','Anime'],['Winry Rockbell','Fullmetal Alchemist','Manga / anime'],['Riza Hawkeye','Fullmetal Alchemist','Manga / anime'],['Maka Albarn','Soul Eater','Manga / anime'],['Momo Ayase','Dandadan','Manga / anime'],['Maomao','Les Carnets de l’apothicaire','Manga / anime'],['Nausicaä','Nausicaä de la vallée du vent','Manga / film'],['Motoko Kusanagi','Ghost in the Shell','Manga / anime'],['Re-l Mayer','Ergo Proxy','Anime'],['Balsa Yonsa','Moribito','Roman / anime'],['Violet Evergarden','Violet Evergarden','Anime'],['Akane Tsunemori','Psycho-Pass','Anime'],['Kusanagi Yūko','xxxHOLiC','Manga / anime'],['Holo','Spice and Wolf','Roman / anime'],['Tohru Honda','Fruits Basket','Manga / anime'],['Nico Robin','One Piece','Manga / anime'],['Nami','One Piece','Manga / anime'],['Boa Hancock','One Piece','Manga / anime'],['Erza Scarlet','Fairy Tail','Manga / anime'],['Mirajane Strauss','Fairy Tail','Manga / anime'],['Yoruichi Shihōin','Bleach','Manga / anime'],['Rukia Kuchiki','Bleach','Manga / anime'],['Saber','Fate','Manga / anime'],['Nobara Kugisaki','Jujutsu Kaisen','Manga / anime'],['Shinobu Kocho','Demon Slayer','Manga / anime'],['Makima','Chainsaw Man','Manga / anime'],['Power','Chainsaw Man','Manga / anime'],
+['Marla Singer','Fight Club','Roman / film'],['Amy March','Les Quatre Filles du docteur March','Roman / film'],['Jo March','Les Quatre Filles du docteur March','Roman / film'],['Mina Harker','Dracula','Roman / film'],['Lucy Westenra','Dracula','Roman / film'],['Estella Havisham','De grandes espérances','Roman / film'],['Miss Havisham','De grandes espérances','Roman'],['Catherine Earnshaw','Les Hauts de Hurlevent','Roman / film'],['Dorothea Brooke','Middlemarch','Roman'],['Bathsheba Everdene','Loin de la foule déchaînée','Roman / film'],['Miss Marple','Miss Marple','Roman / série'],['Nancy Drew','Nancy Drew','Roman / série'],['Murderbot','Les Archives de Murderbot','Roman'],['Essun','La Terre fracturée','Roman'],['Hoa','La Terre fracturée','Roman'],['Mélanie Cavill','Snowpiercer','Série'],['Sister Night','Watchmen','Série'],['Eleanor Shellstrop','The Good Place','Série'],['Margo Hanson','The Magicians','Série'],['Quinn Mallory','Sliders','Série'],['Veronica Sawyer','Heathers','Film'],['Nancy Downs','The Craft','Film'],['Mia Wallace','Pulp Fiction','Film'],['Clarice Starling','Le Silence des agneaux','Roman / film'],['Erin Brockovich','Erin Brockovich','Film'],['The Bride','Kill Bill','Film'],['Selene','Underworld','Film'],['Leeloo','Le Cinquième Élément','Film'],['Furiosa','Mad Max: Fury Road','Film'],['Imperator Furiosa','Mad Max','Film'],['Ellen Ripley','Alien','Film'],['Sarah Connor','Terminator','Film'],['Marge Gunderson','Fargo','Film'],['Evelyn Salt','Salt','Film'],['Louise Sawyer','Thelma & Louise','Film'],['Thelma Dickinson','Thelma & Louise','Film'],['Mia Thermopolis','Princesse malgré elle','Film / roman'],['Edna Mode','Les Indestructibles','Animation'],['Helen Parr','Les Indestructibles','Animation'],['Colette Tatou','Ratatouille','Animation'],['Esmeralda','Le Bossu de Notre-Dame','Animation'],['Megara','Hercule','Animation'],['Kida','Atlantide','Animation'],
+['Martha Jones','Doctor Who','Série'],['River Song','Doctor Who','Série'],['Nardole','Doctor Who','Série'],['Vicki Pallister','Doctor Who','Série'],['Leela','Doctor Who','Série'],['Nyssa of Traken','Doctor Who','Série'],['Ace McShane','Doctor Who','Série'],['Romana','Doctor Who','Série'],['Tasha Yar','Star Trek: The Next Generation','Série'],['Beverly Crusher','Star Trek: The Next Generation','Série'],['Deanna Troi','Star Trek: The Next Generation','Série'],['Kezia Dax','Star Trek: Deep Space Nine','Série'],['B’Elanna Torres','Star Trek: Voyager','Série'],['Naomi Wildman','Star Trek: Voyager','Série'],['Aeryn Sun','Farscape','Série'],['Kara Thrace','Battlestar Galactica','Série'],['Laura Roslin','Battlestar Galactica','Série'],['Dana Scully','The X-Files','Série'],['Astrid Farnsworth','Fringe','Série'],['Olivia Dunham','Fringe','Série'],['Sarah Linden','The Killing','Série'],['Stella Gibson','The Fall','Série'],['Jane Tennison','Prime Suspect','Série'],['Phryne Fisher','Miss Fisher’s Murder Mysteries','Série'],['Veronica Mars','Veronica Mars','Série'],['Kim Wexler','Better Call Saul','Série'],['Marge Gunderson','Fargo','Film'],['Nora Durst','The Leftovers','Série'],['Carrie Mathison','Homeland','Série'],['Olivia Pope','Scandal','Série'],['Jessica Pearson','Suits','Série'],['Alicia Florrick','The Good Wife','Série'],['Joan Watson','Elementary','Série'],['Temperance Brennan','Bones','Série'],['Angie Tribeca','Angie Tribeca','Série'],['Selina Meyer','Veep','Série'],['Fleabag','Fleabag','Série'],['Maeve Millay','Westworld','Série'],['Dolores Abernathy','Westworld','Série'],['Bernadette Rostenkowski','The Big Bang Theory','Série'],['April Kepner','Grey’s Anatomy','Série'],['Cristina Yang','Grey’s Anatomy','Série'],['Miranda Bailey','Grey’s Anatomy','Série'],
+['Ahsoka Tano','Star Wars','Série / animation'],['Bo-Katan Kryze','Star Wars','Série / animation'],['Hera Syndulla','Star Wars Rebels','Animation / série'],['Sabine Wren','Star Wars Rebels','Animation / série'],['Jyn Erso','Rogue One','Film'],['Mon Mothma','Star Wars','Film / série'],['Qi’ra','Solo','Film'],['Rose Tico','Star Wars','Film'],['Padmé Amidala','Star Wars','Film'],['Shmi Skywalker','Star Wars','Film'],
+['Yennefer','The Witcher','Roman / jeu / série'],['Triss Merigold','The Witcher','Roman / jeu / série'],['Ciri','The Witcher','Roman / jeu / série'],['Shani','The Witcher','Roman / jeu'],['Milva','The Witcher','Roman'],['Philippa Eilhart','The Witcher','Roman / jeu'],['Fringilla Vigo','The Witcher','Roman / série'],['Tissaia de Vries','The Witcher','Roman / série'],['Mara Jade','Star Wars Legends','Roman'],['Tenar','Les Tombeaux d’Atuan','Roman'],['Ged','Terremer','Roman'],['Tenar','Terremer','Roman'],['Eowyn','Le Seigneur des anneaux','Roman / film'],['Galadriel','Le Seigneur des anneaux','Roman / film'],['Éowyn','Le Seigneur des anneaux','Roman / film'],['Éowyn','Le Seigneur des anneaux','Roman / film'],
+['Molly Millions','Neuromancien','Roman'],['Case','Neuromancien','Roman'],['Y.T.','L’Âge de diamant','Roman'],['Molly Grue','La Dernière Licorne','Roman'],['Buttercup','La Princesse Bride','Roman / film'],['Inigo Montoya','La Princesse Bride','Roman / film'],['Lady Jessica','Dune','Roman / film'],['Chani','Dune','Roman / film'],['Irulan Corrino','Dune','Roman / film'],['Alia Atreides','Dune','Roman'],['Ghanima Atreides','Dune','Roman'],['Mara Atreides','Dune','Roman'],['Harriet Vane','Lord Peter Wimsey','Roman'],['Cordelia Vorkosigan','Saga Vorkosigan','Roman'],['Miles Vorkosigan','Saga Vorkosigan','Roman'],['Alys Vorpatril','Saga Vorkosigan','Roman'],['Ekaterin Vorsoisson','Saga Vorkosigan','Roman'],
+['Mavis Dracula','Hôtel Transylvanie','Animation'],['Vanellope von Schweetz','Les Mondes de Ralph','Animation'],['Ralph','Les Mondes de Ralph','Animation'],['Judy Hopps','Zootopie','Animation'],['Nick Wilde','Zootopie','Animation'],['Mirabel Madrigal','Encanto','Animation'],['Isabela Madrigal','Encanto','Animation'],['Luisa Madrigal','Encanto','Animation'],['Asha','Wish','Animation'],['Nimona','Nimona','Animation / BD'],['Marceline','Adventure Time','Animation'],['Eda Clawthorne','The Owl House','Animation'],['Amity Blight','The Owl House','Animation'],['Anne Boonchuy','Amphibia','Animation'],['Sasha Waybright','Amphibia','Animation'],['Marcy Wu','Amphibia','Animation'],['Luz Noceda','The Owl House','Animation'],['Entrapta','She-Ra','Animation'],['Scorpia','She-Ra','Animation'],['Korra','La Légende de Korra','Animation'],['Asami Sato','La Légende de Korra','Animation'],['Lin Beifong','La Légende de Korra','Animation'],['Suyin Beifong','La Légende de Korra','Animation'],
+['Diane Foxington','The Bad Guys','Animation'],['Roxanne Ritchi','Megamind','Animation'],['Susan Murphy','Monstres contre Aliens','Animation'],['Chel','La Route d’Eldorado','Animation'],['Tigress','Kung Fu Panda','Animation'],['Master Viper','Kung Fu Panda','Animation'],['Astrid','How to Train Your Dragon','Animation']
+].map(([name,universe,media],i)=>({id:`c${i+1}`,name,universe,media}));
 
-const KEY = "character-choice-v1-corrige";
-const RECORD = {wins:97,name:"Death",universe:"The Sandman",media:"Série — Netflix"};
+// Déduplication stricte par identifiant + nom normalisé. Le pool peut contenir des entrées proches, mais jamais deux mêmes noms.
+const seenNames=new Set();
+const POOL=CHARACTERS.filter(c=>{const k=c.name.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();if(seenNames.has(k))return false;seenNames.add(k);return true;});
 
-let state = load();
+const KEY='character-choice-v2';
+const state=loadState();
+const $=id=>document.getElementById(id);
 
-function load(){
-  try{
-    const saved = JSON.parse(localStorage.getItem(KEY));
-    if(saved && saved.champion && Array.isArray(saved.used) && Array.isArray(saved.history)) return saved;
-  }catch(e){}
-  const first = pickRandom(CHARACTERS);
-  return {combat:1, streak:0, champion:first, championWins:0, used:[first.id], history:[]};
-}
+function loadState(){try{const s=JSON.parse(localStorage.getItem(KEY));if(s&&s.champion&&Array.isArray(s.usedIds)&&Array.isArray(s.history))return s}catch{}return freshState()}
+function freshState(){const champion=POOL[Math.floor(Math.random()*POOL.length)];return {combat:1,streak:0,champion,challenger:null,usedIds:[champion.id],history:[]}}
+function save(){localStorage.setItem(KEY,JSON.stringify(state))}
+function pickChallenger(){const available=POOL.filter(c=>!state.usedIds.includes(c.id)&&c.id!==state.champion.id);state.challenger=available.length?available[Math.floor(Math.random()*available.length)]:null}
+function initials(name){return name.split(/\s+/).filter(Boolean).slice(0,2).map(x=>x[0]).join('').toUpperCase()}
+function renderCharacter(prefix,c){$(prefix+'Name').textContent=c?.name||'—';$(prefix+'Universe').textContent=c?.universe||'—';$(prefix+'Media').textContent=c?.media||'—';const p=$(prefix+'Portrait');p.innerHTML='';if(c){const a=document.createElement('div');a.className='avatar';a.textContent=initials(c.name);p.appendChild(a)}}
+function render(){if(!state.challenger)pickChallenger();renderCharacter('champion',state.champion);renderCharacter('challenger',state.challenger);$('combatNumber').textContent=state.combat;$('streak').textContent=state.streak;$('remaining').textContent=Math.max(0,POOL.length-state.usedIds.length);$('played').textContent=state.history.length;$('used').textContent=state.usedIds.length;$('pool').textContent=POOL.length;renderHistory();save()}
+function choose(winner){if(!state.challenger)return;const loser=winner.id===state.champion.id?state.challenger:state.champion;state.history.unshift({combat:state.combat,championBefore:state.champion.name,challenger:state.challenger.name,universe:state.challenger.universe,media:state.challenger.media,winner:winner.name});state.champion=winner;state.usedIds=[...new Set([...state.usedIds,winner.id,loser.id])];state.streak=winner.id===state.champion.id?state.streak:state.streak; // réécrit ci-dessous
+// Le champion choisi garde sa série, le challenger choisi démarre à 1.
+const championWasWinner=state.history[0].winner===state.history[0].championBefore;
+state.streak=championWasWinner?state.streak+1:1;
+state.combat+=1;state.challenger=null;save();pickChallenger();render();toast(`${winner.name} devient le champion !`)}
 
-function save(){ localStorage.setItem(KEY, JSON.stringify(state)); }
+// Correction du calcul de série : championBefore est disponible dans l'entrée d'historique.
+function chooseFixed(winner){if(!state.challenger)return;const before=state.champion;const challenger=state.challenger;const championWon=winner.id===before.id;state.history.unshift({combat:state.combat,championBefore:before.name,challenger:challenger.name,universe:challenger.universe,media:challenger.media,winner:winner.name});state.champion=winner;state.usedIds=[...new Set([...state.usedIds,before.id,challenger.id])];state.streak=championWon?state.streak+1:1;state.combat+=1;state.challenger=null;pickChallenger();save();render();toast(`${winner.name} devient le champion !`)}
 
-function pickRandom(list){
-  return list[Math.floor(Math.random()*list.length)];
-}
-
-function available(){
-  return CHARACTERS.filter(c=>!state.used.includes(c.id));
-}
-
-function challenger(){
-  const a = available();
-  return a.length ? pickRandom(a) : null;
-}
-
-function cardHTML(c, side){
-  return `
-    <div class="card-number">${side==="left" ? "CHAMPION" : "NOUVEAU CHALLENGER"}</div>
-    <h3>${escapeHTML(c.name)}</h3>
-    <div class="universe">${escapeHTML(c.universe)}</div>
-    <span class="media">${escapeHTML(c.media)}</span>
-    <button class="choose" data-id="${c.id}">🏆 Je choisis ${escapeHTML(c.name)}</button>
-  `;
-}
-
-let currentChallenger = null;
-
-function render(){
-  currentChallenger = challenger();
-  document.getElementById("combatNumber").textContent = state.combat;
-  document.getElementById("streak").textContent = state.streak;
-  document.getElementById("championName").textContent = state.champion.name;
-  document.getElementById("championMeta").textContent = `${state.champion.universe} • ${state.champion.media}`;
-  document.getElementById("championWins").textContent = state.championWins;
-
-  document.getElementById("leftCard").innerHTML = cardHTML(state.champion,"left");
-  document.getElementById("leftCard").classList.add("champion-side");
-
-  const right = document.getElementById("rightCard");
-  if(currentChallenger){
-    right.innerHTML = cardHTML(currentChallenger,"right");
-  }else{
-    right.innerHTML = `<div class="card-number">FIN DU ROSTER</div><h3>🏆 Tu as parcouru tous les personnages</h3><p class="universe">Appuie sur « Recommencer » pour une nouvelle partie.</p>`;
-  }
-  bindChoices();
-  renderHistory();
-}
-
-function bindChoices(){
-  document.querySelectorAll(".choose").forEach(btn=>{
-    btn.addEventListener("click",()=>choose(Number(btn.dataset.id)));
-  });
-}
-
-function choose(id){
-  if(!currentChallenger || id!==state.champion.id && id!==currentChallenger.id) return;
-  const winner = id===state.champion.id ? state.champion : currentChallenger;
-  const loser = winner.id===state.champion.id ? currentChallenger : state.champion;
-
-  state.history.push({
-    combat:state.combat,
-    championBefore:state.champion.name,
-    challenger:currentChallenger.name,
-    universe:currentChallenger.universe,
-    media:currentChallenger.media,
-    winner:winner.name
-  });
-
-  if(winner.id===state.champion.id){
-    state.championWins += 1;
-    state.streak += 1;
-  }else{
-    state.champion = winner;
-    state.championWins = 1;
-    state.streak = 1;
-  }
-
-  state.used.push(currentChallenger.id);
-  state.combat += 1;
-  save();
-  render();
-  window.scrollTo({top:0,behavior:"smooth"});
-}
-
-function renderHistory(){
-  const box=document.getElementById("historyRows");
-  document.getElementById("historyCount").textContent=`${state.history.length} combat${state.history.length>1?"s":""}`;
-  if(!state.history.length){
-    box.innerHTML=`<div style="color:#777789;padding:12px 0">Aucun combat terminé.</div>`;
-    return;
-  }
-  box.innerHTML=state.history.slice().reverse().map(r=>`
-    <div class="row">
-      <div>#${r.combat}</div>
-      <div>${escapeHTML(r.championBefore)}</div>
-      <div>${escapeHTML(r.challenger)}</div>
-      <div class="win">→ ${escapeHTML(r.winner)}</div>
-    </div>
-  `).join("");
-}
-
-function reset(){
-  if(!confirm("Recommencer la partie ? L'historique local sera effacé.")) return;
-  localStorage.removeItem(KEY);
-  state=load();
-  render();
-}
-
-function exportCSV(){
-  const rows=[["Combat","Champion avant","Adversaire","Univers","Média","Gagnant"],...state.history.map(r=>[r.combat,r.championBefore,r.challenger,r.universe,r.media,r.winner])];
-  const csv=rows.map(row=>row.map(v=>`"${String(v).replaceAll('"','""')}"`).join(";")).join("\n");
-  const blob=new Blob(["\ufeff"+csv],{type:"text/csv;charset=utf-8"});
-  const a=document.createElement("a");
-  a.href=URL.createObjectURL(blob);
-  a.download="historique-character-choice.csv";
-  a.click();
-  URL.revokeObjectURL(a.href);
-}
-
-function escapeHTML(s){
-  return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
-}
-
-document.getElementById("resetBtn").addEventListener("click",reset);
-document.getElementById("exportBtn").addEventListener("click",exportCSV);
+function renderHistory(){const body=$('historyBody');body.innerHTML='';for(const h of state.history){const tr=document.createElement('tr');[h.combat,h.championBefore,h.challenger,h.universe,h.media,h.winner].forEach(v=>{const td=document.createElement('td');td.textContent=v;tr.appendChild(td)});body.appendChild(tr)}$('historySection').classList.toggle('hidden',state.history.length===0)}
+function csvEscape(v){return `"${String(v).replaceAll('"','""')}"`}
+function exportCSV(){const rows=[['Combat','Champion avant','Adversaire','Univers','Média','Gagnant'],...state.history.map(h=>[h.combat,h.championBefore,h.challenger,h.universe,h.media,h.winner])];const csv='\ufeff'+rows.map(r=>r.map(csvEscape).join(';')).join('\n');const blob=new Blob([csv],{type:'text/csv;charset=utf-8'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`character-choice-historique-${new Date().toISOString().slice(0,10)}.csv`;a.click();URL.revokeObjectURL(a.href)}
+function reset(){if(!confirm('Recommencer une nouvelle partie ? L’historique actuel sera effacé.'))return;localStorage.removeItem(KEY);location.reload()}
+function toast(text){const t=$('toast');t.textContent=text;t.classList.add('show');clearTimeout(toast.timer);toast.timer=setTimeout(()=>t.classList.remove('show'),1600)}
+$('chooseChampion').addEventListener('click',()=>chooseFixed(state.champion));$('chooseChallenger').addEventListener('click',()=>chooseFixed(state.challenger));$('championCard').addEventListener('click',e=>{if(!e.target.closest('button'))chooseFixed(state.champion)});$('challengerCard').addEventListener('click',e=>{if(!e.target.closest('button'))chooseFixed(state.challenger)});$('exportBtn').addEventListener('click',exportCSV);$('resetBtn').addEventListener('click',reset);$('historyBtn').addEventListener('click',()=>{const s=$('historySection');s.classList.toggle('hidden');if(!s.classList.contains('hidden'))s.scrollIntoView({behavior:'smooth',block:'start'})});$('clearHistoryBtn').addEventListener('click',reset);
 render();
