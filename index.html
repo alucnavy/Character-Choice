@@ -6,6 +6,16 @@
 <meta name="theme-color" content="#090a12">
 <title>Character Choice — Tournoi des personnages</title>
 <link rel="stylesheet" href="style.css">
+<script>
+(function(){
+  function syncTopbar(){
+    var bar=document.querySelector('.topbar');
+    if(bar){ document.documentElement.style.setProperty('--topbar-height', bar.getBoundingClientRect().height + 'px'); }
+  }
+  window.addEventListener('load', syncTopbar);
+  window.addEventListener('resize', syncTopbar);
+})();
+</script>
 </head>
 <body>
 <header class="topbar">
