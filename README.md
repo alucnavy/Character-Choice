@@ -14,3 +14,7 @@ Les deux fiches qui avaient posé problème dans la capture ont été traitées 
 - Übel → visuel de personnage ciblé pour Frieren.
 
 Pour une publication publique, vérifie les droits d'utilisation des visuels que tu ajoutes au catalogue.
+
+
+### Images
+La V3.3.1 réactive le chargement automatique des portraits via les pages exactes MediaWiki/Wikipedia lorsque le catalogue ne contient pas encore une image validée. Les anciennes images mises en cache par V3.2 sont également réutilisées. Le bouton « Chercher l’image » reste disponible pour une recherche Google Images ciblée.

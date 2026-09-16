@@ -73,46 +73,166 @@ function updateStats() {
 
 async function loadPortrait(character, el) {
   el.className = "portrait loading";
-  el.innerHTML = "<span>Chargement…</span>";
+  el.innerHTML = "<span>Chargement de l’image…</span>";
   el.dataset.characterId = character.id;
 
   const entry = IMAGE_CATALOG[character.id] || {};
-  const cacheKey = "ccimg-v33:" + character.id;
-  const cached = localStorage.getItem(cacheKey);
-  if (cached) return setImage(el, cached, character);
+  const cacheKeys = ["ccimg-v34:" + character.id, "ccimg-v33:" + character.id, "ccimg-v32:" + character.id];
+  const candidates = [];
+  const seen = new Set();
+  const addCandidate = (src) => {
+    if (src && typeof src === "string" && !seen.has(src)) {
+      seen.add(src);
+      candidates.push(src);
+    }
+  };
 
-  if (entry.imageUrl) {
-    localStorage.setItem(cacheKey, entry.imageUrl);
-    return setImage(el, entry.imageUrl, character);
+  // 1) Images déjà connues par cette version ou les versions précédentes.
+  for (const cacheKey of cacheKeys) addCandidate(localStorage.getItem(cacheKey));
+  addCandidate(entry.imageUrl);
+
+  // 2) Pages Wikipédia explicitement associées au personnage.
+  const titles = [];
+  const addTitle = (lang, pageUrl) => {
+    if (!pageUrl) return;
+    const marker = "/wiki/";
+    const idx = pageUrl.indexOf(marker);
+    if (idx < 0) return;
+    const raw = pageUrl.slice(idx + marker.length);
+    if (!raw) return;
+    titles.push({ lang, title: decodeURIComponent(raw).replaceAll("_", " ") });
+  };
+  addTitle("fr", entry.preferredPage);
+  addTitle("en", entry.fallbackPage);
+  if (!titles.length) {
+    titles.push({lang:"fr", title: character.wiki || character.name});
+    titles.push({lang:"en", title: character.wiki || character.name});
   }
 
-  setFallback(el, character, entry);
+  const fetchWikipediaImage = async (lang, title) => {
+    const url = `https://${lang}.wikipedia.org/w/api.php?action=query&redirects=1&titles=${encodeURIComponent(title)}&prop=pageimages&piprop=thumbnail|original&pilicense=any&pithumbsize=1600&format=json&origin=*`;
+    try {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 6000);
+      const res = await fetch(url, {signal: controller.signal});
+      clearTimeout(timer);
+      if (!res.ok) return null;
+      const data = await res.json();
+      const pages = data?.query?.pages ? Object.values(data.query.pages) : [];
+      const page = pages.find(x => !x.missing);
+      return page?.original?.source || page?.thumbnail?.source || null;
+    } catch (_) { return null; }
+  };
+
+  // 3) Recherche Wikipédia si le titre exact n'existe pas.
+  const fetchWikipediaSearchImages = async (lang, query) => {
+    const url = `https://${lang}.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(query)}&gsrnamespace=0&gsrlimit=8&prop=pageimages&piprop=thumbnail&pilicense=any&pithumbsize=1600&format=json&origin=*`;
+    try {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 6500);
+      const res = await fetch(url, {signal: controller.signal});
+      clearTimeout(timer);
+      if (!res.ok) return [];
+      const data = await res.json();
+      const pages = data?.query?.pages ? Object.values(data.query.pages) : [];
+      return pages
+        .sort((a,b) => (a.index ?? 999) - (b.index ?? 999))
+        .map(p => p?.thumbnail?.source)
+        .filter(Boolean);
+    } catch (_) { return []; }
+  };
+
+  // 4) Wikimedia Commons : recherche d'images librement accessibles, sans clé API.
+  const fetchCommonsImages = async (query) => {
+    const url = `https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(query)}&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url|mime|size|extmetadata&iiurlwidth=1600&format=json&origin=*`;
+    try {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 7000);
+      const res = await fetch(url, {signal: controller.signal});
+      clearTimeout(timer);
+      if (!res.ok) return [];
+      const data = await res.json();
+      const pages = data?.query?.pages ? Object.values(data.query.pages) : [];
+      return pages
+        .map(p => {
+          const info = p?.imageinfo?.[0];
+          return info?.thumburl || info?.url || null;
+        })
+        .filter(Boolean);
+    } catch (_) { return []; }
+  };
+
+  // On privilégie toujours le nom + l'univers : cela évite les homonymes et les cosplays sans rapport.
+  const exactQueries = [
+    `${character.name} ${character.universe}`,
+    `"${character.name}" ${character.universe}`,
+    character.name
+  ];
+
+  // Ajoute les images récupérées depuis les pages Wikipédia exactes.
+  for (const item of titles) addCandidate(await fetchWikipediaImage(item.lang, item.title));
+
+  // Puis les recherches Wikipédia plus larges.
+  for (const lang of ["fr", "en"]) {
+    for (const query of exactQueries.slice(0, 2)) {
+      const imgs = await fetchWikipediaSearchImages(lang, query);
+      imgs.slice(0, 4).forEach(addCandidate);
+      if (candidates.length >= 8) break;
+    }
+    if (candidates.length >= 8) break;
+  }
+
+  // Enfin Commons, qui dispose d'une vraie recherche image avec catégories/Wikidata.
+  for (const query of exactQueries) {
+    const imgs = await fetchCommonsImages(query);
+    imgs.slice(0, 8).forEach(addCandidate);
+    if (candidates.length >= 14) break;
+  }
+
+  // 5) Essaie les images une par une. Si une image est cassée ou trop petite,
+  // on passe automatiquement à la suivante : aucun bouton, aucun AB/MT.
+  const tryCandidate = (index) => {
+    if (index >= candidates.length) {
+      el.className = "portrait unavailable";
+      el.innerHTML = "<span>Image indisponible</span>";
+      return;
+    }
+    const src = candidates[index];
+    const img = new Image();
+    img.decoding = "async";
+    img.referrerPolicy = "no-referrer";
+    img.onload = () => {
+      if ((img.naturalWidth || 0) < 250 || (img.naturalHeight || 0) < 250) {
+        tryCandidate(index + 1);
+        return;
+      }
+      localStorage.setItem(cacheKeys[0], src);
+      setImage(el, src, character, () => tryCandidate(index + 1));
+    };
+    img.onerror = () => tryCandidate(index + 1);
+    img.src = src;
+  };
+
+  tryCandidate(0);
 }
 
-function setImage(el, src, character) {
+function setImage(el, src, character, onError) {
   el.className = "portrait";
   el.innerHTML = "";
   const img = document.createElement("img");
-  img.alt = "";
+  img.alt = character.name;
   img.loading = "eager";
   img.decoding = "async";
   img.referrerPolicy = "no-referrer";
   img.src = src;
   img.onerror = () => {
-    localStorage.removeItem("ccimg-v33:" + character.id);
-    const entry = IMAGE_CATALOG[character.id] || {};
-    setFallback(el, character, entry);
+    localStorage.removeItem("ccimg-v34:" + character.id);
+    if (onError) onError();
+    else el.innerHTML = "<span>Image indisponible</span>";
   };
   el.appendChild(img);
 }
 
-function setFallback(el, character, entry = {}) {
-  el.className = "portrait fallback";
-  el.dataset.characterId = character.id;
-  const query = entry.searchQuery || `${character.name} ${character.universe} official character`;
-  const url = entry.searchUrl || `https://www.google.com/search?tbm=isch&q=${encodeURIComponent(query)}`;
-  el.innerHTML = `<div class="fallback-content"><div class="initials">${escapeHtml(initials(character.name))}</div><a class="image-search" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">🔎 Chercher l’image</a></div>`;
-}
 function renderCard(prefix, character) {
   $(prefix+"Name").textContent = character.name;
   $(prefix+"Universe").textContent = character.universe;
