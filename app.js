@@ -69,26 +69,43 @@ function updateStats() {
 async function loadPortrait(character, el) {
   el.className = "portrait loading";
   el.innerHTML = "<span>Chargement…</span>";
-  const cacheKey = "ccimg:" + character.id;
+  el.dataset.characterId = character.id;
+
+  // V3.1: on ne fait plus une recherche vague par nom.
+  // On demande l'image principale de la page encyclopédique EXACTE du personnage,
+  // d'abord sur Wikipédia français puis, si nécessaire, sur Wikipédia anglais.
+  // Cela évite les mauvaises correspondances avec des acteurs, d'autres personnages
+  // ou des résultats sans rapport.
+  const cacheKey = "ccimg-v31:" + character.id;
   const cached = localStorage.getItem(cacheKey);
   if (cached) return setImage(el, cached);
 
-  const query = encodeURIComponent(`${character.name} ${character.universe}`);
-  const url = `https://fr.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=${query}&gsrlimit=1&prop=pageimages&piprop=thumbnail&pithumbsize=800&format=json&origin=*`;
-  try {
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), 6500);
-    const res = await fetch(url, {signal: controller.signal});
-    clearTimeout(timer);
-    const data = await res.json();
-    const pages = data.query && data.query.pages ? Object.values(data.query.pages) : [];
-    const thumb = pages[0]?.thumbnail?.source;
-    if (thumb) {
-      localStorage.setItem(cacheKey, thumb);
-      setImage(el, thumb);
-      return;
+  const titles = [character.wiki || character.name];
+  if (character.wikiEn && character.wikiEn !== titles[0]) titles.push(character.wikiEn);
+  else titles.push(character.wiki || character.name);
+
+  for (const lang of ["fr", "en"]) {
+    for (const title of titles) {
+      const url = `https://${lang}.wikipedia.org/w/api.php?action=query&redirects=1&titles=${encodeURIComponent(title)}&prop=pageimages&piprop=thumbnail|original&pilicense=any&pithumbsize=1000&format=json&origin=*`;
+      try {
+        const controller = new AbortController();
+        const timer = setTimeout(() => controller.abort(), 5000);
+        const res = await fetch(url, { signal: controller.signal });
+        clearTimeout(timer);
+        if (!res.ok) continue;
+        const data = await res.json();
+        const pages = data.query && data.query.pages ? Object.values(data.query.pages) : [];
+        const page = pages.find(x => !x.missing);
+        const src = page?.original?.source || page?.thumbnail?.source;
+        if (src) {
+          localStorage.setItem(cacheKey, src);
+          setImage(el, src);
+          return;
+        }
+      } catch (e) {}
     }
-  } catch(e) {}
+  }
+
   setFallback(el, character);
 }
 
@@ -97,10 +114,13 @@ function setImage(el, src) {
   el.innerHTML = "";
   const img = document.createElement("img");
   img.alt = "";
+  img.loading = "eager";
+  img.decoding = "async";
   img.referrerPolicy = "no-referrer";
   img.src = src;
   img.onerror = () => {
     const c = getChar(el.dataset.characterId);
+    localStorage.removeItem("ccimg-v31:" + c.id);
     setFallback(el, c);
   };
   el.appendChild(img);

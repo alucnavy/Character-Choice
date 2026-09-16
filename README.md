@@ -1,16 +1,14 @@
-# Character Choice — V3
+# Character Choice — V3.1
 
-Version du tournoi avec :
-- 376 personnages dans le pool V3 après exclusion des personnages déjà connus dans le tournoi précédent ;
-- anti-doublon par partie ;
-- champion permanent et challenger inédit ;
-- record absolu du joueur conservé entre les parties ;
-- historique + export CSV ;
-- portraits chargés dynamiquement depuis Wikipédia/Wikimedia Commons ;
-- fallback visuel si aucune image n'est disponible ;
-- GitHub Pages compatible.
+Version V3.1 du tournoi.
+
+## Nouveautés
+- portraits déterministes : la recherche ne se fait plus par recherche vague ; le site demande l’image principale de la page encyclopédique exacte du personnage, d’abord sur Wikipédia français puis anglais ;
+- cache local des portraits déjà chargés ;
+- interface nettoyée : les détails techniques sur l’anti-doublon et la récupération des images ne sont plus affichés ;
+- anti-doublon conservé en arrière-plan ;
+- record absolu du joueur conservé ;
+- historique et export CSV conservés.
 
 ## Déploiement
-Placer `index.html`, `style.css`, `app.js` et `.nojekyll` à la racine du dépôt, puis utiliser GitHub Pages sur `main / (root)`.
-
-Les images sont récupérées à l'exécution depuis Wikipédia. Leur disponibilité dépend de Wikipédia et de la présence d'une image pour le personnage.
+Téléverser `index.html`, `style.css`, `app.js`, `.nojekyll` et `README.md` à la racine du dépôt GitHub Pages, puis committer sur `main`.
