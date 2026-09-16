@@ -5,7 +5,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Truman_Burbank",
     "fallbackPage": "https://en.wikipedia.org/wiki/Truman_Burbank",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Truman Burbank The Truman Show official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Truman%20Burbank%20The%20Truman%20Show%20official%20character"
   },
   "c002": {
     "characterId": "c002",
@@ -13,7 +15,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Amélie_Poulain",
     "fallbackPage": "https://en.wikipedia.org/wiki/Amélie_Poulain",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Amélie Poulain Le Fabuleux Destin d'Amélie Poulain official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Am%C3%A9lie%20Poulain%20Le%20Fabuleux%20Destin%20d%27Am%C3%A9lie%20Poulain%20official%20character"
   },
   "c003": {
     "characterId": "c003",
@@ -21,7 +25,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Mia_Wallace",
     "fallbackPage": "https://en.wikipedia.org/wiki/Mia_Wallace",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Mia Wallace Pulp Fiction official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Mia%20Wallace%20Pulp%20Fiction%20official%20character"
   },
   "c004": {
     "characterId": "c004",
@@ -29,7 +35,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Vincent_Vega",
     "fallbackPage": "https://en.wikipedia.org/wiki/Vincent_Vega",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Vincent Vega Pulp Fiction official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Vincent%20Vega%20Pulp%20Fiction%20official%20character"
   },
   "c005": {
     "characterId": "c005",
@@ -37,7 +45,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Maximus_Decimus_Meridius",
     "fallbackPage": "https://en.wikipedia.org/wiki/Maximus_Decimus_Meridius",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Maximus Decimus Meridius Gladiator official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Maximus%20Decimus%20Meridius%20Gladiator%20official%20character"
   },
   "c006": {
     "characterId": "c006",
@@ -45,7 +55,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Tony_Montana",
     "fallbackPage": "https://en.wikipedia.org/wiki/Tony_Montana",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Tony Montana Scarface official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Tony%20Montana%20Scarface%20official%20character"
   },
   "c007": {
     "characterId": "c007",
@@ -53,7 +65,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Rick_Deckard",
     "fallbackPage": "https://en.wikipedia.org/wiki/Rick_Deckard",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Rick Deckard Blade Runner official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Rick%20Deckard%20Blade%20Runner%20official%20character"
   },
   "c008": {
     "characterId": "c008",
@@ -61,7 +75,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Sarah_Goldfarb",
     "fallbackPage": "https://en.wikipedia.org/wiki/Sarah_Goldfarb",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Sarah Goldfarb Requiem for a Dream official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Sarah%20Goldfarb%20Requiem%20for%20a%20Dream%20official%20character"
   },
   "c009": {
     "characterId": "c009",
@@ -69,7 +85,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Cobb",
     "fallbackPage": "https://en.wikipedia.org/wiki/Cobb",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Cobb Inception official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Cobb%20Inception%20official%20character"
   },
   "c010": {
     "characterId": "c010",
@@ -77,7 +95,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Ariadne",
     "fallbackPage": "https://en.wikipedia.org/wiki/Ariadne",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Ariadne Inception official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Ariadne%20Inception%20official%20character"
   },
   "c011": {
     "characterId": "c011",
@@ -85,7 +105,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Marty_McFly",
     "fallbackPage": "https://en.wikipedia.org/wiki/Marty_McFly",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Marty McFly Retour vers le futur official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Marty%20McFly%20Retour%20vers%20le%20futur%20official%20character"
   },
   "c012": {
     "characterId": "c012",
@@ -93,7 +115,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Doc_Brown",
     "fallbackPage": "https://en.wikipedia.org/wiki/Doc_Brown",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Doc Brown Retour vers le futur official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Doc%20Brown%20Retour%20vers%20le%20futur%20official%20character"
   },
   "c013": {
     "characterId": "c013",
@@ -101,7 +125,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Mavis_Gary",
     "fallbackPage": "https://en.wikipedia.org/wiki/Mavis_Gary",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Mavis Gary Young Adult official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Mavis%20Gary%20Young%20Adult%20official%20character"
   },
   "c014": {
     "characterId": "c014",
@@ -109,7 +135,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Erin_Brockovich",
     "fallbackPage": "https://en.wikipedia.org/wiki/Erin_Brockovich",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Erin Brockovich Erin Brockovich official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Erin%20Brockovich%20Erin%20Brockovich%20official%20character"
   },
   "c015": {
     "characterId": "c015",
@@ -117,7 +145,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Andy_Dufresne",
     "fallbackPage": "https://en.wikipedia.org/wiki/Andy_Dufresne",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Andy Dufresne Les Évadés official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Andy%20Dufresne%20Les%20%C3%89vad%C3%A9s%20official%20character"
   },
   "c016": {
     "characterId": "c016",
@@ -125,7 +155,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/John_McClane",
     "fallbackPage": "https://en.wikipedia.org/wiki/John_McClane",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "John McClane Die Hard official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=John%20McClane%20Die%20Hard%20official%20character"
   },
   "c017": {
     "characterId": "c017",
@@ -133,7 +165,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Verbal_Kint",
     "fallbackPage": "https://en.wikipedia.org/wiki/Verbal_Kint",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Verbal Kint Usual Suspects official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Verbal%20Kint%20Usual%20Suspects%20official%20character"
   },
   "c018": {
     "characterId": "c018",
@@ -141,7 +175,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/The_Driver",
     "fallbackPage": "https://en.wikipedia.org/wiki/The_Driver",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "The Driver Drive official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=The%20Driver%20Drive%20official%20character"
   },
   "c019": {
     "characterId": "c019",
@@ -149,7 +185,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Erik_Killmonger",
     "fallbackPage": "https://en.wikipedia.org/wiki/Erik_Killmonger",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Erik Killmonger Black Panther official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Erik%20Killmonger%20Black%20Panther%20official%20character"
   },
   "c020": {
     "characterId": "c020",
@@ -157,7 +195,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Shuri",
     "fallbackPage": "https://en.wikipedia.org/wiki/Shuri",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Shuri Black Panther official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Shuri%20Black%20Panther%20official%20character"
   },
   "c021": {
     "characterId": "c021",
@@ -165,7 +205,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Okoye",
     "fallbackPage": "https://en.wikipedia.org/wiki/Okoye",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Okoye Black Panther official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Okoye%20Black%20Panther%20official%20character"
   },
   "c022": {
     "characterId": "c022",
@@ -173,7 +215,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Wendy_Torrance",
     "fallbackPage": "https://en.wikipedia.org/wiki/Wendy_Torrance",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Wendy Torrance Shining official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Wendy%20Torrance%20Shining%20official%20character"
   },
   "c023": {
     "characterId": "c023",
@@ -181,7 +225,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Jack_Torrance",
     "fallbackPage": "https://en.wikipedia.org/wiki/Jack_Torrance",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Jack Torrance Shining official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Jack%20Torrance%20Shining%20official%20character"
   },
   "c024": {
     "characterId": "c024",
@@ -189,7 +235,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Annie_Wilkes",
     "fallbackPage": "https://en.wikipedia.org/wiki/Annie_Wilkes",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Annie Wilkes Misery official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Annie%20Wilkes%20Misery%20official%20character"
   },
   "c025": {
     "characterId": "c025",
@@ -197,7 +245,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Daniel_Plainview",
     "fallbackPage": "https://en.wikipedia.org/wiki/Daniel_Plainview",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Daniel Plainview There Will Be Blood official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Daniel%20Plainview%20There%20Will%20Be%20Blood%20official%20character"
   },
   "c026": {
     "characterId": "c026",
@@ -205,7 +255,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Remy",
     "fallbackPage": "https://en.wikipedia.org/wiki/Remy",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Remy Ratatouille official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Remy%20Ratatouille%20official%20character"
   },
   "c027": {
     "characterId": "c027",
@@ -213,7 +265,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Elastigirl",
     "fallbackPage": "https://en.wikipedia.org/wiki/Elastigirl",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Elastigirl Les Indestructibles official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Elastigirl%20Les%20Indestructibles%20official%20character"
   },
   "c028": {
     "characterId": "c028",
@@ -221,7 +275,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Mirabel_Madrigal",
     "fallbackPage": "https://en.wikipedia.org/wiki/Mirabel_Madrigal",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Mirabel Madrigal Encanto official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Mirabel%20Madrigal%20Encanto%20official%20character"
   },
   "c029": {
     "characterId": "c029",
@@ -229,7 +285,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Raya",
     "fallbackPage": "https://en.wikipedia.org/wiki/Raya",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Raya Raya et le Dernier Dragon official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Raya%20Raya%20et%20le%20Dernier%20Dragon%20official%20character"
   },
   "c030": {
     "characterId": "c030",
@@ -237,7 +295,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Neytiri",
     "fallbackPage": "https://en.wikipedia.org/wiki/Neytiri",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Neytiri Avatar official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Neytiri%20Avatar%20official%20character"
   },
   "c031": {
     "characterId": "c031",
@@ -245,7 +305,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Jake_Sully",
     "fallbackPage": "https://en.wikipedia.org/wiki/Jake_Sully",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Jake Sully Avatar official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Jake%20Sully%20Avatar%20official%20character"
   },
   "c032": {
     "characterId": "c032",
@@ -253,7 +315,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Hiccup",
     "fallbackPage": "https://en.wikipedia.org/wiki/Hiccup",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Hiccup Dragons official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Hiccup%20Dragons%20official%20character"
   },
   "c033": {
     "characterId": "c033",
@@ -261,7 +325,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Toothless",
     "fallbackPage": "https://en.wikipedia.org/wiki/Toothless",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Toothless Dragons official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Toothless%20Dragons%20official%20character"
   },
   "c034": {
     "characterId": "c034",
@@ -269,7 +335,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Megamind",
     "fallbackPage": "https://en.wikipedia.org/wiki/Megamind",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Megamind Megamind official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Megamind%20Megamind%20official%20character"
   },
   "c035": {
     "characterId": "c035",
@@ -277,7 +345,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Gru",
     "fallbackPage": "https://en.wikipedia.org/wiki/Gru",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Gru Moi, moche et méchant official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Gru%20Moi%2C%20moche%20et%20m%C3%A9chant%20official%20character"
   },
   "c036": {
     "characterId": "c036",
@@ -285,7 +355,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Lucy_Wilde",
     "fallbackPage": "https://en.wikipedia.org/wiki/Lucy_Wilde",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Lucy Wilde Moi, moche et méchant official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Lucy%20Wilde%20Moi%2C%20moche%20et%20m%C3%A9chant%20official%20character"
   },
   "c037": {
     "characterId": "c037",
@@ -293,7 +365,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Po",
     "fallbackPage": "https://en.wikipedia.org/wiki/Po",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Po Kung Fu Panda official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Po%20Kung%20Fu%20Panda%20official%20character"
   },
   "c038": {
     "characterId": "c038",
@@ -301,7 +375,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Tigress",
     "fallbackPage": "https://en.wikipedia.org/wiki/Tigress",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Tigress Kung Fu Panda official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Tigress%20Kung%20Fu%20Panda%20official%20character"
   },
   "c039": {
     "characterId": "c039",
@@ -309,7 +385,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Shrek",
     "fallbackPage": "https://en.wikipedia.org/wiki/Shrek",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Shrek Shrek official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Shrek%20Shrek%20official%20character"
   },
   "c040": {
     "characterId": "c040",
@@ -317,7 +395,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Fiona",
     "fallbackPage": "https://en.wikipedia.org/wiki/Fiona",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Fiona Shrek official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Fiona%20Shrek%20official%20character"
   },
   "c041": {
     "characterId": "c041",
@@ -325,7 +405,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Puss_in_Boots",
     "fallbackPage": "https://en.wikipedia.org/wiki/Puss_in_Boots",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Puss in Boots Le Chat potté official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Puss%20in%20Boots%20Le%20Chat%20pott%C3%A9%20official%20character"
   },
   "c042": {
     "characterId": "c042",
@@ -333,7 +415,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Miguel_Rivera",
     "fallbackPage": "https://en.wikipedia.org/wiki/Miguel_Rivera",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Miguel Rivera Coco official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Miguel%20Rivera%20Coco%20official%20character"
   },
   "c043": {
     "characterId": "c043",
@@ -341,7 +425,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Hector_Rivera",
     "fallbackPage": "https://en.wikipedia.org/wiki/Hector_Rivera",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Hector Rivera Coco official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Hector%20Rivera%20Coco%20official%20character"
   },
   "c044": {
     "characterId": "c044",
@@ -349,7 +435,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Chihiro_Ogino",
     "fallbackPage": "https://en.wikipedia.org/wiki/Chihiro_Ogino",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Chihiro Ogino Le Voyage de Chihiro official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Chihiro%20Ogino%20Le%20Voyage%20de%20Chihiro%20official%20character"
   },
   "c045": {
     "characterId": "c045",
@@ -357,7 +445,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Carrie_Mathison",
     "fallbackPage": "https://en.wikipedia.org/wiki/Carrie_Mathison",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Carrie Mathison Homeland official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Carrie%20Mathison%20Homeland%20official%20character"
   },
   "c046": {
     "characterId": "c046",
@@ -365,7 +455,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Jessica_Day",
     "fallbackPage": "https://en.wikipedia.org/wiki/Jessica_Day",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Jessica Day New Girl official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Jessica%20Day%20New%20Girl%20official%20character"
   },
   "c047": {
     "characterId": "c047",
@@ -373,7 +465,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Eve_Polastri",
     "fallbackPage": "https://en.wikipedia.org/wiki/Eve_Polastri",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Eve Polastri Killing Eve official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Eve%20Polastri%20Killing%20Eve%20official%20character"
   },
   "c048": {
     "characterId": "c048",
@@ -381,7 +475,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Fox_Mulder",
     "fallbackPage": "https://en.wikipedia.org/wiki/Fox_Mulder",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Fox Mulder The X-Files official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Fox%20Mulder%20The%20X-Files%20official%20character"
   },
   "c049": {
     "characterId": "c049",
@@ -389,7 +485,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Bobbie_Draper",
     "fallbackPage": "https://en.wikipedia.org/wiki/Bobbie_Draper",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Bobbie Draper The Expanse official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Bobbie%20Draper%20The%20Expanse%20official%20character"
   },
   "c050": {
     "characterId": "c050",
@@ -397,7 +495,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Naomi_Nagata",
     "fallbackPage": "https://en.wikipedia.org/wiki/Naomi_Nagata",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Naomi Nagata The Expanse official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Naomi%20Nagata%20The%20Expanse%20official%20character"
   },
   "c051": {
     "characterId": "c051",
@@ -405,7 +505,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Camina_Drummer",
     "fallbackPage": "https://en.wikipedia.org/wiki/Camina_Drummer",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Camina Drummer The Expanse official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Camina%20Drummer%20The%20Expanse%20official%20character"
   },
   "c052": {
     "characterId": "c052",
@@ -413,7 +515,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Laura_Roslin",
     "fallbackPage": "https://en.wikipedia.org/wiki/Laura_Roslin",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Laura Roslin Battlestar Galactica official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Laura%20Roslin%20Battlestar%20Galactica%20official%20character"
   },
   "c053": {
     "characterId": "c053",
@@ -421,7 +525,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Rory_Williams",
     "fallbackPage": "https://en.wikipedia.org/wiki/Rory_Williams",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Rory Williams Doctor Who official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Rory%20Williams%20Doctor%20Who%20official%20character"
   },
   "c054": {
     "characterId": "c054",
@@ -429,7 +535,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Wilfred_Mott",
     "fallbackPage": "https://en.wikipedia.org/wiki/Wilfred_Mott",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Wilfred Mott Doctor Who official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Wilfred%20Mott%20Doctor%20Who%20official%20character"
   },
   "c055": {
     "characterId": "c055",
@@ -437,7 +545,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Donna_Noble",
     "fallbackPage": "https://en.wikipedia.org/wiki/Donna_Noble",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Donna Noble Doctor Who official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Donna%20Noble%20Doctor%20Who%20official%20character"
   },
   "c056": {
     "characterId": "c056",
@@ -445,7 +555,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Clara_Oswald",
     "fallbackPage": "https://en.wikipedia.org/wiki/Clara_Oswald",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Clara Oswald Doctor Who official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Clara%20Oswald%20Doctor%20Who%20official%20character"
   },
   "c057": {
     "characterId": "c057",
@@ -453,7 +565,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Rose_Tyler",
     "fallbackPage": "https://en.wikipedia.org/wiki/Rose_Tyler",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Rose Tyler Doctor Who official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Rose%20Tyler%20Doctor%20Who%20official%20character"
   },
   "c058": {
     "characterId": "c058",
@@ -461,7 +575,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Sarah_Jane_Smith",
     "fallbackPage": "https://en.wikipedia.org/wiki/Sarah_Jane_Smith",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Sarah Jane Smith Doctor Who official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Sarah%20Jane%20Smith%20Doctor%20Who%20official%20character"
   },
   "c059": {
     "characterId": "c059",
@@ -469,7 +585,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Seven_of_Nine",
     "fallbackPage": "https://en.wikipedia.org/wiki/Seven_of_Nine",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Seven of Nine Star Trek: Voyager official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Seven%20of%20Nine%20Star%20Trek%3A%20Voyager%20official%20character"
   },
   "c060": {
     "characterId": "c060",
@@ -477,7 +595,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Kathryn_Janeway",
     "fallbackPage": "https://en.wikipedia.org/wiki/Kathryn_Janeway",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Kathryn Janeway Star Trek: Voyager official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Kathryn%20Janeway%20Star%20Trek%3A%20Voyager%20official%20character"
   },
   "c061": {
     "characterId": "c061",
@@ -485,7 +605,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Kira_Nerys",
     "fallbackPage": "https://en.wikipedia.org/wiki/Kira_Nerys",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Kira Nerys Star Trek: Deep Space Nine official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Kira%20Nerys%20Star%20Trek%3A%20Deep%20Space%20Nine%20official%20character"
   },
   "c062": {
     "characterId": "c062",
@@ -493,7 +615,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Benjamin_Sisko",
     "fallbackPage": "https://en.wikipedia.org/wiki/Benjamin_Sisko",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Benjamin Sisko Star Trek: Deep Space Nine official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Benjamin%20Sisko%20Star%20Trek%3A%20Deep%20Space%20Nine%20official%20character"
   },
   "c063": {
     "characterId": "c063",
@@ -501,7 +625,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Jean-Luc_Picard",
     "fallbackPage": "https://en.wikipedia.org/wiki/Jean-Luc_Picard",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Jean-Luc Picard Star Trek: The Next Generation official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Jean-Luc%20Picard%20Star%20Trek%3A%20The%20Next%20Generation%20official%20character"
   },
   "c064": {
     "characterId": "c064",
@@ -509,7 +635,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Beverly_Crusher",
     "fallbackPage": "https://en.wikipedia.org/wiki/Beverly_Crusher",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Beverly Crusher Star Trek: The Next Generation official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Beverly%20Crusher%20Star%20Trek%3A%20The%20Next%20Generation%20official%20character"
   },
   "c065": {
     "characterId": "c065",
@@ -517,7 +645,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Michael_Burnham",
     "fallbackPage": "https://en.wikipedia.org/wiki/Michael_Burnham",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Michael Burnham Star Trek: Discovery official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Michael%20Burnham%20Star%20Trek%3A%20Discovery%20official%20character"
   },
   "c066": {
     "characterId": "c066",
@@ -525,7 +655,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Philippa_Georgiou",
     "fallbackPage": "https://en.wikipedia.org/wiki/Philippa_Georgiou",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Philippa Georgiou Star Trek: Discovery official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Philippa%20Georgiou%20Star%20Trek%3A%20Discovery%20official%20character"
   },
   "c067": {
     "characterId": "c067",
@@ -533,7 +665,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Din_Djarin",
     "fallbackPage": "https://en.wikipedia.org/wiki/Din_Djarin",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Din Djarin The Mandalorian official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Din%20Djarin%20The%20Mandalorian%20official%20character"
   },
   "c068": {
     "characterId": "c068",
@@ -541,7 +675,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Bo-Katan_Kryze",
     "fallbackPage": "https://en.wikipedia.org/wiki/Bo-Katan_Kryze",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Bo-Katan Kryze Star Wars official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Bo-Katan%20Kryze%20Star%20Wars%20official%20character"
   },
   "c069": {
     "characterId": "c069",
@@ -549,7 +685,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Cassian_Andor",
     "fallbackPage": "https://en.wikipedia.org/wiki/Cassian_Andor",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Cassian Andor Andor official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Cassian%20Andor%20Andor%20official%20character"
   },
   "c070": {
     "characterId": "c070",
@@ -557,7 +695,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Mon_Mothma",
     "fallbackPage": "https://en.wikipedia.org/wiki/Mon_Mothma",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Mon Mothma Andor official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Mon%20Mothma%20Andor%20official%20character"
   },
   "c071": {
     "characterId": "c071",
@@ -565,7 +705,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Bix_Caleen",
     "fallbackPage": "https://en.wikipedia.org/wiki/Bix_Caleen",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Bix Caleen Andor official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Bix%20Caleen%20Andor%20official%20character"
   },
   "c072": {
     "characterId": "c072",
@@ -573,7 +715,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Luthen_Rael",
     "fallbackPage": "https://en.wikipedia.org/wiki/Luthen_Rael",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Luthen Rael Andor official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Luthen%20Rael%20Andor%20official%20character"
   },
   "c073": {
     "characterId": "c073",
@@ -581,7 +725,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Jimmy_McGill",
     "fallbackPage": "https://en.wikipedia.org/wiki/Jimmy_McGill",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Jimmy McGill Better Call Saul official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Jimmy%20McGill%20Better%20Call%20Saul%20official%20character"
   },
   "c074": {
     "characterId": "c074",
@@ -589,7 +735,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Mike_Ehrmantraut",
     "fallbackPage": "https://en.wikipedia.org/wiki/Mike_Ehrmantraut",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Mike Ehrmantraut Better Call Saul official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Mike%20Ehrmantraut%20Better%20Call%20Saul%20official%20character"
   },
   "c075": {
     "characterId": "c075",
@@ -597,7 +745,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Chuck_McGill",
     "fallbackPage": "https://en.wikipedia.org/wiki/Chuck_McGill",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Chuck McGill Better Call Saul official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Chuck%20McGill%20Better%20Call%20Saul%20official%20character"
   },
   "c076": {
     "characterId": "c076",
@@ -605,7 +755,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Nacho_Varga",
     "fallbackPage": "https://en.wikipedia.org/wiki/Nacho_Varga",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Nacho Varga Better Call Saul official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Nacho%20Varga%20Better%20Call%20Saul%20official%20character"
   },
   "c077": {
     "characterId": "c077",
@@ -613,7 +765,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Don_Draper",
     "fallbackPage": "https://en.wikipedia.org/wiki/Don_Draper",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Don Draper Mad Men official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Don%20Draper%20Mad%20Men%20official%20character"
   },
   "c078": {
     "characterId": "c078",
@@ -621,7 +775,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Peggy_Olson",
     "fallbackPage": "https://en.wikipedia.org/wiki/Peggy_Olson",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Peggy Olson Mad Men official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Peggy%20Olson%20Mad%20Men%20official%20character"
   },
   "c079": {
     "characterId": "c079",
@@ -629,7 +785,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Joan_Holloway",
     "fallbackPage": "https://en.wikipedia.org/wiki/Joan_Holloway",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Joan Holloway Mad Men official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Joan%20Holloway%20Mad%20Men%20official%20character"
   },
   "c080": {
     "characterId": "c080",
@@ -637,7 +795,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Betty_Draper",
     "fallbackPage": "https://en.wikipedia.org/wiki/Betty_Draper",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Betty Draper Mad Men official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Betty%20Draper%20Mad%20Men%20official%20character"
   },
   "c081": {
     "characterId": "c081",
@@ -645,7 +805,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Leslie_Knope",
     "fallbackPage": "https://en.wikipedia.org/wiki/Leslie_Knope",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Leslie Knope Parks and Recreation official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Leslie%20Knope%20Parks%20and%20Recreation%20official%20character"
   },
   "c082": {
     "characterId": "c082",
@@ -653,7 +815,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/April_Ludgate",
     "fallbackPage": "https://en.wikipedia.org/wiki/April_Ludgate",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "April Ludgate Parks and Recreation official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=April%20Ludgate%20Parks%20and%20Recreation%20official%20character"
   },
   "c083": {
     "characterId": "c083",
@@ -661,7 +825,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Ron_Swanson",
     "fallbackPage": "https://en.wikipedia.org/wiki/Ron_Swanson",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Ron Swanson Parks and Recreation official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Ron%20Swanson%20Parks%20and%20Recreation%20official%20character"
   },
   "c084": {
     "characterId": "c084",
@@ -669,7 +835,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Ben_Wyatt",
     "fallbackPage": "https://en.wikipedia.org/wiki/Ben_Wyatt",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Ben Wyatt Parks and Recreation official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Ben%20Wyatt%20Parks%20and%20Recreation%20official%20character"
   },
   "c085": {
     "characterId": "c085",
@@ -677,7 +845,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Liz_Lemon",
     "fallbackPage": "https://en.wikipedia.org/wiki/Liz_Lemon",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Liz Lemon 30 Rock official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Liz%20Lemon%2030%20Rock%20official%20character"
   },
   "c086": {
     "characterId": "c086",
@@ -685,7 +855,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Jack_Donaghy",
     "fallbackPage": "https://en.wikipedia.org/wiki/Jack_Donaghy",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Jack Donaghy 30 Rock official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Jack%20Donaghy%2030%20Rock%20official%20character"
   },
   "c087": {
     "characterId": "c087",
@@ -693,7 +865,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Diane_Nguyen",
     "fallbackPage": "https://en.wikipedia.org/wiki/Diane_Nguyen",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Diane Nguyen BoJack Horseman official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Diane%20Nguyen%20BoJack%20Horseman%20official%20character"
   },
   "c088": {
     "characterId": "c088",
@@ -701,7 +875,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Princess_Carolyn",
     "fallbackPage": "https://en.wikipedia.org/wiki/Princess_Carolyn",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Princess Carolyn BoJack Horseman official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Princess%20Carolyn%20BoJack%20Horseman%20official%20character"
   },
   "c089": {
     "characterId": "c089",
@@ -709,7 +885,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Todd_Chavez",
     "fallbackPage": "https://en.wikipedia.org/wiki/Todd_Chavez",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Todd Chavez BoJack Horseman official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Todd%20Chavez%20BoJack%20Horseman%20official%20character"
   },
   "c090": {
     "characterId": "c090",
@@ -717,7 +895,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Mr._Peanutbutter",
     "fallbackPage": "https://en.wikipedia.org/wiki/Mr._Peanutbutter",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Mr. Peanutbutter BoJack Horseman official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Mr.%20Peanutbutter%20BoJack%20Horseman%20official%20character"
   },
   "c091": {
     "characterId": "c091",
@@ -725,7 +905,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Daria_Morgendorffer",
     "fallbackPage": "https://en.wikipedia.org/wiki/Daria_Morgendorffer",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Daria Morgendorffer Daria official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Daria%20Morgendorffer%20Daria%20official%20character"
   },
   "c092": {
     "characterId": "c092",
@@ -733,7 +915,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Jane_Lane",
     "fallbackPage": "https://en.wikipedia.org/wiki/Jane_Lane",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Jane Lane Daria official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Jane%20Lane%20Daria%20official%20character"
   },
   "c093": {
     "characterId": "c093",
@@ -741,7 +925,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Mabel_Pines",
     "fallbackPage": "https://en.wikipedia.org/wiki/Mabel_Pines",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Mabel Pines Gravity Falls official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Mabel%20Pines%20Gravity%20Falls%20official%20character"
   },
   "c094": {
     "characterId": "c094",
@@ -749,7 +935,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Stan_Pines",
     "fallbackPage": "https://en.wikipedia.org/wiki/Stan_Pines",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Stan Pines Gravity Falls official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Stan%20Pines%20Gravity%20Falls%20official%20character"
   },
   "c095": {
     "characterId": "c095",
@@ -757,7 +945,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Wendy_Corduroy",
     "fallbackPage": "https://en.wikipedia.org/wiki/Wendy_Corduroy",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Wendy Corduroy Gravity Falls official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Wendy%20Corduroy%20Gravity%20Falls%20official%20character"
   },
   "c096": {
     "characterId": "c096",
@@ -765,7 +955,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Rebecca_Bunch",
     "fallbackPage": "https://en.wikipedia.org/wiki/Rebecca_Bunch",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Rebecca Bunch Crazy Ex-Girlfriend official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Rebecca%20Bunch%20Crazy%20Ex-Girlfriend%20official%20character"
   },
   "c097": {
     "characterId": "c097",
@@ -773,7 +965,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Chidi_Anagonye",
     "fallbackPage": "https://en.wikipedia.org/wiki/Chidi_Anagonye",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Chidi Anagonye The Good Place official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Chidi%20Anagonye%20The%20Good%20Place%20official%20character"
   },
   "c098": {
     "characterId": "c098",
@@ -781,7 +975,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Tahani_Al-Jamil",
     "fallbackPage": "https://en.wikipedia.org/wiki/Tahani_Al-Jamil",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Tahani Al-Jamil The Good Place official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Tahani%20Al-Jamil%20The%20Good%20Place%20official%20character"
   },
   "c099": {
     "characterId": "c099",
@@ -789,7 +985,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Michael",
     "fallbackPage": "https://en.wikipedia.org/wiki/Michael",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Michael The Good Place official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Michael%20The%20Good%20Place%20official%20character"
   },
   "c100": {
     "characterId": "c100",
@@ -797,7 +995,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Rory_Gilmore",
     "fallbackPage": "https://en.wikipedia.org/wiki/Rory_Gilmore",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Rory Gilmore Gilmore Girls official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Rory%20Gilmore%20Gilmore%20Girls%20official%20character"
   },
   "c101": {
     "characterId": "c101",
@@ -805,7 +1005,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Paris_Geller",
     "fallbackPage": "https://en.wikipedia.org/wiki/Paris_Geller",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Paris Geller Gilmore Girls official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Paris%20Geller%20Gilmore%20Girls%20official%20character"
   },
   "c102": {
     "characterId": "c102",
@@ -813,7 +1015,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/June_Osborne",
     "fallbackPage": "https://en.wikipedia.org/wiki/June_Osborne",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "June Osborne The Handmaid's Tale official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=June%20Osborne%20The%20Handmaid%27s%20Tale%20official%20character"
   },
   "c103": {
     "characterId": "c103",
@@ -821,7 +1025,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Moira_Rose",
     "fallbackPage": "https://en.wikipedia.org/wiki/Moira_Rose",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Moira Rose Schitt's Creek official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Moira%20Rose%20Schitt%27s%20Creek%20official%20character"
   },
   "c104": {
     "characterId": "c104",
@@ -829,7 +1035,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Alexis_Rose",
     "fallbackPage": "https://en.wikipedia.org/wiki/Alexis_Rose",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Alexis Rose Schitt's Creek official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Alexis%20Rose%20Schitt%27s%20Creek%20official%20character"
   },
   "c105": {
     "characterId": "c105",
@@ -837,7 +1045,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Midge_Maisel",
     "fallbackPage": "https://en.wikipedia.org/wiki/Midge_Maisel",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Midge Maisel The Marvelous Mrs. Maisel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Midge%20Maisel%20The%20Marvelous%20Mrs.%20Maisel%20official%20character"
   },
   "c106": {
     "characterId": "c106",
@@ -845,7 +1055,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Nico_Robin",
     "fallbackPage": "https://en.wikipedia.org/wiki/Nico_Robin",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Nico Robin One Piece official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Nico%20Robin%20One%20Piece%20official%20character"
   },
   "c107": {
     "characterId": "c107",
@@ -853,7 +1065,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Nami",
     "fallbackPage": "https://en.wikipedia.org/wiki/Nami",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Nami One Piece official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Nami%20One%20Piece%20official%20character"
   },
   "c108": {
     "characterId": "c108",
@@ -861,7 +1075,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Boa_Hancock",
     "fallbackPage": "https://en.wikipedia.org/wiki/Boa_Hancock",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Boa Hancock One Piece official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Boa%20Hancock%20One%20Piece%20official%20character"
   },
   "c109": {
     "characterId": "c109",
@@ -869,7 +1085,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Perona",
     "fallbackPage": "https://en.wikipedia.org/wiki/Perona",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Perona One Piece official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Perona%20One%20Piece%20official%20character"
   },
   "c110": {
     "characterId": "c110",
@@ -877,7 +1095,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Trafalgar_Law",
     "fallbackPage": "https://en.wikipedia.org/wiki/Trafalgar_Law",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Trafalgar Law One Piece official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Trafalgar%20Law%20One%20Piece%20official%20character"
   },
   "c111": {
     "characterId": "c111",
@@ -885,7 +1105,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Donquixote_Doflamingo",
     "fallbackPage": "https://en.wikipedia.org/wiki/Donquixote_Doflamingo",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Donquixote Doflamingo One Piece official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Donquixote%20Doflamingo%20One%20Piece%20official%20character"
   },
   "c112": {
     "characterId": "c112",
@@ -893,7 +1115,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Charlotte_Katakuri",
     "fallbackPage": "https://en.wikipedia.org/wiki/Charlotte_Katakuri",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Charlotte Katakuri One Piece official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Charlotte%20Katakuri%20One%20Piece%20official%20character"
   },
   "c113": {
     "characterId": "c113",
@@ -901,7 +1125,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Monkey_D._Dragon",
     "fallbackPage": "https://en.wikipedia.org/wiki/Monkey_D._Dragon",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Monkey D. Dragon One Piece official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Monkey%20D.%20Dragon%20One%20Piece%20official%20character"
   },
   "c114": {
     "characterId": "c114",
@@ -909,7 +1135,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Shanks",
     "fallbackPage": "https://en.wikipedia.org/wiki/Shanks",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Shanks One Piece official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Shanks%20One%20Piece%20official%20character"
   },
   "c115": {
     "characterId": "c115",
@@ -917,7 +1145,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Brook",
     "fallbackPage": "https://en.wikipedia.org/wiki/Brook",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Brook One Piece official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Brook%20One%20Piece%20official%20character"
   },
   "c116": {
     "characterId": "c116",
@@ -925,7 +1155,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Franky",
     "fallbackPage": "https://en.wikipedia.org/wiki/Franky",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Franky One Piece official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Franky%20One%20Piece%20official%20character"
   },
   "c117": {
     "characterId": "c117",
@@ -933,7 +1165,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Usopp",
     "fallbackPage": "https://en.wikipedia.org/wiki/Usopp",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Usopp One Piece official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Usopp%20One%20Piece%20official%20character"
   },
   "c118": {
     "characterId": "c118",
@@ -941,7 +1175,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Sanji",
     "fallbackPage": "https://en.wikipedia.org/wiki/Sanji",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Sanji One Piece official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Sanji%20One%20Piece%20official%20character"
   },
   "c119": {
     "characterId": "c119",
@@ -949,7 +1185,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Roronoa_Zoro",
     "fallbackPage": "https://en.wikipedia.org/wiki/Roronoa_Zoro",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Roronoa Zoro One Piece official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Roronoa%20Zoro%20One%20Piece%20official%20character"
   },
   "c120": {
     "characterId": "c120",
@@ -957,7 +1195,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Tashigi",
     "fallbackPage": "https://en.wikipedia.org/wiki/Tashigi",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Tashigi One Piece official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Tashigi%20One%20Piece%20official%20character"
   },
   "c121": {
     "characterId": "c121",
@@ -965,7 +1205,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Koby",
     "fallbackPage": "https://en.wikipedia.org/wiki/Koby",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Koby One Piece official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Koby%20One%20Piece%20official%20character"
   },
   "c122": {
     "characterId": "c122",
@@ -973,7 +1215,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Reiju_Vinsmoke",
     "fallbackPage": "https://en.wikipedia.org/wiki/Reiju_Vinsmoke",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Reiju Vinsmoke One Piece official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Reiju%20Vinsmoke%20One%20Piece%20official%20character"
   },
   "c123": {
     "characterId": "c123",
@@ -981,7 +1225,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Maki_Zenin",
     "fallbackPage": "https://en.wikipedia.org/wiki/Maki_Zenin",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Maki Zenin Jujutsu Kaisen official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Maki%20Zenin%20Jujutsu%20Kaisen%20official%20character"
   },
   "c124": {
     "characterId": "c124",
@@ -989,7 +1235,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Nobara_Kugisaki",
     "fallbackPage": "https://en.wikipedia.org/wiki/Nobara_Kugisaki",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Nobara Kugisaki Jujutsu Kaisen official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Nobara%20Kugisaki%20Jujutsu%20Kaisen%20official%20character"
   },
   "c125": {
     "characterId": "c125",
@@ -997,7 +1245,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Megumi_Fushiguro",
     "fallbackPage": "https://en.wikipedia.org/wiki/Megumi_Fushiguro",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Megumi Fushiguro Jujutsu Kaisen official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Megumi%20Fushiguro%20Jujutsu%20Kaisen%20official%20character"
   },
   "c126": {
     "characterId": "c126",
@@ -1005,7 +1255,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Suguru_Geto",
     "fallbackPage": "https://en.wikipedia.org/wiki/Suguru_Geto",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Suguru Geto Jujutsu Kaisen official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Suguru%20Geto%20Jujutsu%20Kaisen%20official%20character"
   },
   "c127": {
     "characterId": "c127",
@@ -1013,7 +1265,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Toji_Fushiguro",
     "fallbackPage": "https://en.wikipedia.org/wiki/Toji_Fushiguro",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Toji Fushiguro Jujutsu Kaisen official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Toji%20Fushiguro%20Jujutsu%20Kaisen%20official%20character"
   },
   "c128": {
     "characterId": "c128",
@@ -1021,7 +1275,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Kento_Nanami",
     "fallbackPage": "https://en.wikipedia.org/wiki/Kento_Nanami",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Kento Nanami Jujutsu Kaisen official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Kento%20Nanami%20Jujutsu%20Kaisen%20official%20character"
   },
   "c129": {
     "characterId": "c129",
@@ -1029,7 +1285,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Yuki_Tsukumo",
     "fallbackPage": "https://en.wikipedia.org/wiki/Yuki_Tsukumo",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Yuki Tsukumo Jujutsu Kaisen official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Yuki%20Tsukumo%20Jujutsu%20Kaisen%20official%20character"
   },
   "c130": {
     "characterId": "c130",
@@ -1037,7 +1295,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Kasumi_Miwa",
     "fallbackPage": "https://en.wikipedia.org/wiki/Kasumi_Miwa",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Kasumi Miwa Jujutsu Kaisen official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Kasumi%20Miwa%20Jujutsu%20Kaisen%20official%20character"
   },
   "c131": {
     "characterId": "c131",
@@ -1045,7 +1305,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Shoko_Ieiri",
     "fallbackPage": "https://en.wikipedia.org/wiki/Shoko_Ieiri",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Shoko Ieiri Jujutsu Kaisen official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Shoko%20Ieiri%20Jujutsu%20Kaisen%20official%20character"
   },
   "c132": {
     "characterId": "c132",
@@ -1053,7 +1315,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Maki_Oze",
     "fallbackPage": "https://en.wikipedia.org/wiki/Maki_Oze",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Maki Oze Fire Force official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Maki%20Oze%20Fire%20Force%20official%20character"
   },
   "c133": {
     "characterId": "c133",
@@ -1061,7 +1325,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Shinra_Kusakabe",
     "fallbackPage": "https://en.wikipedia.org/wiki/Shinra_Kusakabe",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Shinra Kusakabe Fire Force official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Shinra%20Kusakabe%20Fire%20Force%20official%20character"
   },
   "c134": {
     "characterId": "c134",
@@ -1069,7 +1335,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Arthur_Boyle",
     "fallbackPage": "https://en.wikipedia.org/wiki/Arthur_Boyle",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Arthur Boyle Fire Force official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Arthur%20Boyle%20Fire%20Force%20official%20character"
   },
   "c135": {
     "characterId": "c135",
@@ -1077,7 +1345,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Tamaki_Kotatsu",
     "fallbackPage": "https://en.wikipedia.org/wiki/Tamaki_Kotatsu",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Tamaki Kotatsu Fire Force official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Tamaki%20Kotatsu%20Fire%20Force%20official%20character"
   },
   "c136": {
     "characterId": "c136",
@@ -1085,7 +1355,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Historia_Reiss",
     "fallbackPage": "https://en.wikipedia.org/wiki/Historia_Reiss",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Historia Reiss L'Attaque des Titans official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Historia%20Reiss%20L%27Attaque%20des%20Titans%20official%20character"
   },
   "c137": {
     "characterId": "c137",
@@ -1093,7 +1365,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Sasha_Blouse",
     "fallbackPage": "https://en.wikipedia.org/wiki/Sasha_Blouse",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Sasha Blouse L'Attaque des Titans official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Sasha%20Blouse%20L%27Attaque%20des%20Titans%20official%20character"
   },
   "c138": {
     "characterId": "c138",
@@ -1101,7 +1375,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Pieck_Finger",
     "fallbackPage": "https://en.wikipedia.org/wiki/Pieck_Finger",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Pieck Finger L'Attaque des Titans official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Pieck%20Finger%20L%27Attaque%20des%20Titans%20official%20character"
   },
   "c139": {
     "characterId": "c139",
@@ -1109,7 +1385,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Annie_Leonhart",
     "fallbackPage": "https://en.wikipedia.org/wiki/Annie_Leonhart",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Annie Leonhart L'Attaque des Titans official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Annie%20Leonhart%20L%27Attaque%20des%20Titans%20official%20character"
   },
   "c140": {
     "characterId": "c140",
@@ -1117,7 +1395,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Reiner_Braun",
     "fallbackPage": "https://en.wikipedia.org/wiki/Reiner_Braun",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Reiner Braun L'Attaque des Titans official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Reiner%20Braun%20L%27Attaque%20des%20Titans%20official%20character"
   },
   "c141": {
     "characterId": "c141",
@@ -1125,7 +1405,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Armin_Arlert",
     "fallbackPage": "https://en.wikipedia.org/wiki/Armin_Arlert",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Armin Arlert L'Attaque des Titans official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Armin%20Arlert%20L%27Attaque%20des%20Titans%20official%20character"
   },
   "c142": {
     "characterId": "c142",
@@ -1133,7 +1415,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Levi_Ackerman",
     "fallbackPage": "https://en.wikipedia.org/wiki/Levi_Ackerman",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Levi Ackerman L'Attaque des Titans official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Levi%20Ackerman%20L%27Attaque%20des%20Titans%20official%20character"
   },
   "c143": {
     "characterId": "c143",
@@ -1141,7 +1425,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Jean_Kirstein",
     "fallbackPage": "https://en.wikipedia.org/wiki/Jean_Kirstein",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Jean Kirstein L'Attaque des Titans official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Jean%20Kirstein%20L%27Attaque%20des%20Titans%20official%20character"
   },
   "c144": {
     "characterId": "c144",
@@ -1149,7 +1435,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Ymir",
     "fallbackPage": "https://en.wikipedia.org/wiki/Ymir",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Ymir L'Attaque des Titans official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Ymir%20L%27Attaque%20des%20Titans%20official%20character"
   },
   "c145": {
     "characterId": "c145",
@@ -1157,7 +1445,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Near",
     "fallbackPage": "https://en.wikipedia.org/wiki/Near",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Near Death Note official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Near%20Death%20Note%20official%20character"
   },
   "c146": {
     "characterId": "c146",
@@ -1165,7 +1455,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Mello",
     "fallbackPage": "https://en.wikipedia.org/wiki/Mello",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Mello Death Note official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Mello%20Death%20Note%20official%20character"
   },
   "c147": {
     "characterId": "c147",
@@ -1173,7 +1465,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Teru_Mikami",
     "fallbackPage": "https://en.wikipedia.org/wiki/Teru_Mikami",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Teru Mikami Death Note official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Teru%20Mikami%20Death%20Note%20official%20character"
   },
   "c148": {
     "characterId": "c148",
@@ -1181,7 +1475,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Matt",
     "fallbackPage": "https://en.wikipedia.org/wiki/Matt",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Matt Death Note official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Matt%20Death%20Note%20official%20character"
   },
   "c149": {
     "characterId": "c149",
@@ -1189,7 +1485,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Ryuk",
     "fallbackPage": "https://en.wikipedia.org/wiki/Ryuk",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Ryuk Death Note official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Ryuk%20Death%20Note%20official%20character"
   },
   "c150": {
     "characterId": "c150",
@@ -1197,7 +1495,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Mitsuri_Kanroji",
     "fallbackPage": "https://en.wikipedia.org/wiki/Mitsuri_Kanroji",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Mitsuri Kanroji Demon Slayer official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Mitsuri%20Kanroji%20Demon%20Slayer%20official%20character"
   },
   "c151": {
     "characterId": "c151",
@@ -1205,7 +1505,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Kanao_Tsuyuri",
     "fallbackPage": "https://en.wikipedia.org/wiki/Kanao_Tsuyuri",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Kanao Tsuyuri Demon Slayer official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Kanao%20Tsuyuri%20Demon%20Slayer%20official%20character"
   },
   "c152": {
     "characterId": "c152",
@@ -1213,7 +1515,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Tamayo",
     "fallbackPage": "https://en.wikipedia.org/wiki/Tamayo",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Tamayo Demon Slayer official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Tamayo%20Demon%20Slayer%20official%20character"
   },
   "c153": {
     "characterId": "c153",
@@ -1221,7 +1525,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Daki",
     "fallbackPage": "https://en.wikipedia.org/wiki/Daki",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Daki Demon Slayer official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Daki%20Demon%20Slayer%20official%20character"
   },
   "c154": {
     "characterId": "c154",
@@ -1229,7 +1535,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Akaza",
     "fallbackPage": "https://en.wikipedia.org/wiki/Akaza",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Akaza Demon Slayer official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Akaza%20Demon%20Slayer%20official%20character"
   },
   "c155": {
     "characterId": "c155",
@@ -1237,7 +1545,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Giyu_Tomioka",
     "fallbackPage": "https://en.wikipedia.org/wiki/Giyu_Tomioka",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Giyu Tomioka Demon Slayer official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Giyu%20Tomioka%20Demon%20Slayer%20official%20character"
   },
   "c156": {
     "characterId": "c156",
@@ -1245,7 +1555,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Kyojuro_Rengoku",
     "fallbackPage": "https://en.wikipedia.org/wiki/Kyojuro_Rengoku",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Kyojuro Rengoku Demon Slayer official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Kyojuro%20Rengoku%20Demon%20Slayer%20official%20character"
   },
   "c157": {
     "characterId": "c157",
@@ -1253,7 +1565,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Tengen_Uzui",
     "fallbackPage": "https://en.wikipedia.org/wiki/Tengen_Uzui",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Tengen Uzui Demon Slayer official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Tengen%20Uzui%20Demon%20Slayer%20official%20character"
   },
   "c158": {
     "characterId": "c158",
@@ -1261,7 +1575,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Muichiro_Tokito",
     "fallbackPage": "https://en.wikipedia.org/wiki/Muichiro_Tokito",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Muichiro Tokito Demon Slayer official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Muichiro%20Tokito%20Demon%20Slayer%20official%20character"
   },
   "c159": {
     "characterId": "c159",
@@ -1269,7 +1585,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Nezuko_Kamado",
     "fallbackPage": "https://en.wikipedia.org/wiki/Nezuko_Kamado",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Nezuko Kamado Demon Slayer official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Nezuko%20Kamado%20Demon%20Slayer%20official%20character"
   },
   "c160": {
     "characterId": "c160",
@@ -1277,7 +1595,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Tanjiro_Kamado",
     "fallbackPage": "https://en.wikipedia.org/wiki/Tanjiro_Kamado",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Tanjiro Kamado Demon Slayer official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Tanjiro%20Kamado%20Demon%20Slayer%20official%20character"
   },
   "c161": {
     "characterId": "c161",
@@ -1285,7 +1605,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Inosuke_Hashibira",
     "fallbackPage": "https://en.wikipedia.org/wiki/Inosuke_Hashibira",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Inosuke Hashibira Demon Slayer official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Inosuke%20Hashibira%20Demon%20Slayer%20official%20character"
   },
   "c162": {
     "characterId": "c162",
@@ -1293,7 +1615,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Zenitsu_Agatsuma",
     "fallbackPage": "https://en.wikipedia.org/wiki/Zenitsu_Agatsuma",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Zenitsu Agatsuma Demon Slayer official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Zenitsu%20Agatsuma%20Demon%20Slayer%20official%20character"
   },
   "c163": {
     "characterId": "c163",
@@ -1301,7 +1625,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Jinshi",
     "fallbackPage": "https://en.wikipedia.org/wiki/Jinshi",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Jinshi Les Carnets de l'apothicaire official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Jinshi%20Les%20Carnets%20de%20l%27apothicaire%20official%20character"
   },
   "c164": {
     "characterId": "c164",
@@ -1309,7 +1635,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Gyokuyou",
     "fallbackPage": "https://en.wikipedia.org/wiki/Gyokuyou",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Gyokuyou Les Carnets de l'apothicaire official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Gyokuyou%20Les%20Carnets%20de%20l%27apothicaire%20official%20character"
   },
   "c165": {
     "characterId": "c165",
@@ -1317,7 +1645,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Fern",
     "fallbackPage": "https://en.wikipedia.org/wiki/Fern",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Fern Frieren official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Fern%20Frieren%20official%20character"
   },
   "c166": {
     "characterId": "c166",
@@ -1325,15 +1655,17 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Stark",
     "fallbackPage": "https://en.wikipedia.org/wiki/Stark",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Stark Frieren official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Stark%20Frieren%20official%20character"
   },
   "c167": {
     "characterId": "c167",
     "name": "Übel",
-    "source": "Wikipedia",
-    "preferredPage": "https://fr.wikipedia.org/wiki/Übel",
-    "fallbackPage": "https://en.wikipedia.org/wiki/Übel",
-    "imageUrl": ""
+    "source": "Visuel anime — recherche image ciblée",
+    "imageUrl": "https://static.zerochan.net/%C3%9Cbel.full.4100023.jpg",
+    "searchQuery": "Übel Frieren official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=%C3%9Cbel%20Frieren%20official%20character"
   },
   "c168": {
     "characterId": "c168",
@@ -1341,7 +1673,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Himmel",
     "fallbackPage": "https://en.wikipedia.org/wiki/Himmel",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Himmel Frieren official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Himmel%20Frieren%20official%20character"
   },
   "c169": {
     "characterId": "c169",
@@ -1349,7 +1683,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Marcille_Donato",
     "fallbackPage": "https://en.wikipedia.org/wiki/Marcille_Donato",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Marcille Donato Dungeon Meshi official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Marcille%20Donato%20Dungeon%20Meshi%20official%20character"
   },
   "c170": {
     "characterId": "c170",
@@ -1357,7 +1693,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Laios_Touden",
     "fallbackPage": "https://en.wikipedia.org/wiki/Laios_Touden",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Laios Touden Dungeon Meshi official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Laios%20Touden%20Dungeon%20Meshi%20official%20character"
   },
   "c171": {
     "characterId": "c171",
@@ -1365,7 +1703,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Falin_Touden",
     "fallbackPage": "https://en.wikipedia.org/wiki/Falin_Touden",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Falin Touden Dungeon Meshi official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Falin%20Touden%20Dungeon%20Meshi%20official%20character"
   },
   "c172": {
     "characterId": "c172",
@@ -1373,7 +1713,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Okarun",
     "fallbackPage": "https://en.wikipedia.org/wiki/Okarun",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Okarun DanDaDan official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Okarun%20DanDaDan%20official%20character"
   },
   "c173": {
     "characterId": "c173",
@@ -1381,7 +1723,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Aira_Shiratori",
     "fallbackPage": "https://en.wikipedia.org/wiki/Aira_Shiratori",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Aira Shiratori DanDaDan official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Aira%20Shiratori%20DanDaDan%20official%20character"
   },
   "c174": {
     "characterId": "c174",
@@ -1389,7 +1733,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Sailor_Moon",
     "fallbackPage": "https://en.wikipedia.org/wiki/Sailor_Moon",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Sailor Moon Sailor Moon official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Sailor%20Moon%20Sailor%20Moon%20official%20character"
   },
   "c175": {
     "characterId": "c175",
@@ -1397,7 +1743,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Sailor_Mars",
     "fallbackPage": "https://en.wikipedia.org/wiki/Sailor_Mars",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Sailor Mars Sailor Moon official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Sailor%20Mars%20Sailor%20Moon%20official%20character"
   },
   "c176": {
     "characterId": "c176",
@@ -1405,7 +1753,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Sailor_Mercury",
     "fallbackPage": "https://en.wikipedia.org/wiki/Sailor_Mercury",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Sailor Mercury Sailor Moon official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Sailor%20Mercury%20Sailor%20Moon%20official%20character"
   },
   "c177": {
     "characterId": "c177",
@@ -1413,7 +1763,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Sailor_Jupiter",
     "fallbackPage": "https://en.wikipedia.org/wiki/Sailor_Jupiter",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Sailor Jupiter Sailor Moon official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Sailor%20Jupiter%20Sailor%20Moon%20official%20character"
   },
   "c178": {
     "characterId": "c178",
@@ -1421,7 +1773,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Sailor_Venus",
     "fallbackPage": "https://en.wikipedia.org/wiki/Sailor_Venus",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Sailor Venus Sailor Moon official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Sailor%20Venus%20Sailor%20Moon%20official%20character"
   },
   "c179": {
     "characterId": "c179",
@@ -1429,7 +1783,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Utena_Tenjou",
     "fallbackPage": "https://en.wikipedia.org/wiki/Utena_Tenjou",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Utena Tenjou Revolutionary Girl Utena official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Utena%20Tenjou%20Revolutionary%20Girl%20Utena%20official%20character"
   },
   "c180": {
     "characterId": "c180",
@@ -1437,7 +1793,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Anthyy_Himemiya",
     "fallbackPage": "https://en.wikipedia.org/wiki/Anthyy_Himemiya",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Anthyy Himemiya Revolutionary Girl Utena official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Anthyy%20Himemiya%20Revolutionary%20Girl%20Utena%20official%20character"
   },
   "c181": {
     "characterId": "c181",
@@ -1445,7 +1803,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Homura_Akemi",
     "fallbackPage": "https://en.wikipedia.org/wiki/Homura_Akemi",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Homura Akemi Puella Magi Madoka Magica official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Homura%20Akemi%20Puella%20Magi%20Madoka%20Magica%20official%20character"
   },
   "c182": {
     "characterId": "c182",
@@ -1453,7 +1813,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Madoka_Kaname",
     "fallbackPage": "https://en.wikipedia.org/wiki/Madoka_Kaname",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Madoka Kaname Puella Magi Madoka Magica official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Madoka%20Kaname%20Puella%20Magi%20Madoka%20Magica%20official%20character"
   },
   "c183": {
     "characterId": "c183",
@@ -1461,7 +1823,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Mami_Tomoe",
     "fallbackPage": "https://en.wikipedia.org/wiki/Mami_Tomoe",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Mami Tomoe Puella Magi Madoka Magica official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Mami%20Tomoe%20Puella%20Magi%20Madoka%20Magica%20official%20character"
   },
   "c184": {
     "characterId": "c184",
@@ -1469,7 +1833,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Sayaka_Miki",
     "fallbackPage": "https://en.wikipedia.org/wiki/Sayaka_Miki",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Sayaka Miki Puella Magi Madoka Magica official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Sayaka%20Miki%20Puella%20Magi%20Madoka%20Magica%20official%20character"
   },
   "c185": {
     "characterId": "c185",
@@ -1477,7 +1843,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Kyoko_Sakura",
     "fallbackPage": "https://en.wikipedia.org/wiki/Kyoko_Sakura",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Kyoko Sakura Puella Magi Madoka Magica official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Kyoko%20Sakura%20Puella%20Magi%20Madoka%20Magica%20official%20character"
   },
   "c186": {
     "characterId": "c186",
@@ -1485,7 +1853,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Batou",
     "fallbackPage": "https://en.wikipedia.org/wiki/Batou",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Batou Ghost in the Shell official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Batou%20Ghost%20in%20the%20Shell%20official%20character"
   },
   "c187": {
     "characterId": "c187",
@@ -1493,7 +1863,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Ginko",
     "fallbackPage": "https://en.wikipedia.org/wiki/Ginko",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Ginko Mushishi official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Ginko%20Mushishi%20official%20character"
   },
   "c188": {
     "characterId": "c188",
@@ -1501,7 +1873,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Violet_Evergarden",
     "fallbackPage": "https://en.wikipedia.org/wiki/Violet_Evergarden",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Violet Evergarden Violet Evergarden official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Violet%20Evergarden%20Violet%20Evergarden%20official%20character"
   },
   "c189": {
     "characterId": "c189",
@@ -1509,7 +1883,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Yor_Forger",
     "fallbackPage": "https://en.wikipedia.org/wiki/Yor_Forger",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Yor Forger Spy × Family official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Yor%20Forger%20Spy%20%C3%97%20Family%20official%20character"
   },
   "c190": {
     "characterId": "c190",
@@ -1517,7 +1893,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Loid_Forger",
     "fallbackPage": "https://en.wikipedia.org/wiki/Loid_Forger",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Loid Forger Spy × Family official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Loid%20Forger%20Spy%20%C3%97%20Family%20official%20character"
   },
   "c191": {
     "characterId": "c191",
@@ -1525,7 +1903,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Anya_Forger",
     "fallbackPage": "https://en.wikipedia.org/wiki/Anya_Forger",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Anya Forger Spy × Family official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Anya%20Forger%20Spy%20%C3%97%20Family%20official%20character"
   },
   "c192": {
     "characterId": "c192",
@@ -1533,7 +1913,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Fiona_Frost",
     "fallbackPage": "https://en.wikipedia.org/wiki/Fiona_Frost",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Fiona Frost Spy × Family official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Fiona%20Frost%20Spy%20%C3%97%20Family%20official%20character"
   },
   "c193": {
     "characterId": "c193",
@@ -1541,7 +1923,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Hachi_Komatsu",
     "fallbackPage": "https://en.wikipedia.org/wiki/Hachi_Komatsu",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Hachi Komatsu Nana official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Hachi%20Komatsu%20Nana%20official%20character"
   },
   "c194": {
     "characterId": "c194",
@@ -1549,7 +1933,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Nana_Komatsu",
     "fallbackPage": "https://en.wikipedia.org/wiki/Nana_Komatsu",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Nana Komatsu Nana official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Nana%20Komatsu%20Nana%20official%20character"
   },
   "c195": {
     "characterId": "c195",
@@ -1557,7 +1943,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Yona",
     "fallbackPage": "https://en.wikipedia.org/wiki/Yona",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Yona Yona of the Dawn official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Yona%20Yona%20of%20the%20Dawn%20official%20character"
   },
   "c196": {
     "characterId": "c196",
@@ -1565,7 +1953,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Balsa_Yonsa",
     "fallbackPage": "https://en.wikipedia.org/wiki/Balsa_Yonsa",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Balsa Yonsa Moribito official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Balsa%20Yonsa%20Moribito%20official%20character"
   },
   "c197": {
     "characterId": "c197",
@@ -1573,7 +1963,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Akane_Tsunemori",
     "fallbackPage": "https://en.wikipedia.org/wiki/Akane_Tsunemori",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Akane Tsunemori Psycho-Pass official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Akane%20Tsunemori%20Psycho-Pass%20official%20character"
   },
   "c198": {
     "characterId": "c198",
@@ -1581,7 +1973,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Shinya_Kogami",
     "fallbackPage": "https://en.wikipedia.org/wiki/Shinya_Kogami",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Shinya Kogami Psycho-Pass official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Shinya%20Kogami%20Psycho-Pass%20official%20character"
   },
   "c199": {
     "characterId": "c199",
@@ -1589,7 +1983,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Balalaika",
     "fallbackPage": "https://en.wikipedia.org/wiki/Balalaika",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Balalaika Black Lagoon official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Balalaika%20Black%20Lagoon%20official%20character"
   },
   "c200": {
     "characterId": "c200",
@@ -1597,7 +1993,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Benny",
     "fallbackPage": "https://en.wikipedia.org/wiki/Benny",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Benny Black Lagoon official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Benny%20Black%20Lagoon%20official%20character"
   },
   "c201": {
     "characterId": "c201",
@@ -1605,7 +2003,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Vicious",
     "fallbackPage": "https://en.wikipedia.org/wiki/Vicious",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Vicious Cowboy Bebop official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Vicious%20Cowboy%20Bebop%20official%20character"
   },
   "c202": {
     "characterId": "c202",
@@ -1613,7 +2013,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Jet_Black",
     "fallbackPage": "https://en.wikipedia.org/wiki/Jet_Black",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Jet Black Cowboy Bebop official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Jet%20Black%20Cowboy%20Bebop%20official%20character"
   },
   "c203": {
     "characterId": "c203",
@@ -1621,7 +2023,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Edward",
     "fallbackPage": "https://en.wikipedia.org/wiki/Edward",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Edward Cowboy Bebop official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Edward%20Cowboy%20Bebop%20official%20character"
   },
   "c204": {
     "characterId": "c204",
@@ -1629,7 +2033,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Mugen",
     "fallbackPage": "https://en.wikipedia.org/wiki/Mugen",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Mugen Samurai Champloo official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Mugen%20Samurai%20Champloo%20official%20character"
   },
   "c205": {
     "characterId": "c205",
@@ -1637,7 +2043,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Jin",
     "fallbackPage": "https://en.wikipedia.org/wiki/Jin",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Jin Samurai Champloo official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Jin%20Samurai%20Champloo%20official%20character"
   },
   "c206": {
     "characterId": "c206",
@@ -1645,7 +2053,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Fuu_Kasumi",
     "fallbackPage": "https://en.wikipedia.org/wiki/Fuu_Kasumi",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Fuu Kasumi Samurai Champloo official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Fuu%20Kasumi%20Samurai%20Champloo%20official%20character"
   },
   "c207": {
     "characterId": "c207",
@@ -1653,7 +2063,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Jessica_Drew",
     "fallbackPage": "https://en.wikipedia.org/wiki/Jessica_Drew",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Jessica Drew Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Jessica%20Drew%20Marvel%20official%20character"
   },
   "c208": {
     "characterId": "c208",
@@ -1661,7 +2073,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Kate_Bishop",
     "fallbackPage": "https://en.wikipedia.org/wiki/Kate_Bishop",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Kate Bishop Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Kate%20Bishop%20Marvel%20official%20character"
   },
   "c209": {
     "characterId": "c209",
@@ -1669,7 +2083,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Kamala_Khan",
     "fallbackPage": "https://en.wikipedia.org/wiki/Kamala_Khan",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Kamala Khan Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Kamala%20Khan%20Marvel%20official%20character"
   },
   "c210": {
     "characterId": "c210",
@@ -1677,7 +2093,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Monica_Rambeau",
     "fallbackPage": "https://en.wikipedia.org/wiki/Monica_Rambeau",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Monica Rambeau Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Monica%20Rambeau%20Marvel%20official%20character"
   },
   "c211": {
     "characterId": "c211",
@@ -1685,7 +2103,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/America_Chavez",
     "fallbackPage": "https://en.wikipedia.org/wiki/America_Chavez",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "America Chavez Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=America%20Chavez%20Marvel%20official%20character"
   },
   "c212": {
     "characterId": "c212",
@@ -1693,7 +2113,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Wiccan",
     "fallbackPage": "https://en.wikipedia.org/wiki/Wiccan",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Wiccan Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Wiccan%20Marvel%20official%20character"
   },
   "c213": {
     "characterId": "c213",
@@ -1701,7 +2123,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Hulkling",
     "fallbackPage": "https://en.wikipedia.org/wiki/Hulkling",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Hulkling Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Hulkling%20Marvel%20official%20character"
   },
   "c214": {
     "characterId": "c214",
@@ -1709,7 +2133,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Kitty_Pryde",
     "fallbackPage": "https://en.wikipedia.org/wiki/Kitty_Pryde",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Kitty Pryde Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Kitty%20Pryde%20Marvel%20official%20character"
   },
   "c215": {
     "characterId": "c215",
@@ -1717,7 +2143,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Emma_Frost",
     "fallbackPage": "https://en.wikipedia.org/wiki/Emma_Frost",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Emma Frost Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Emma%20Frost%20Marvel%20official%20character"
   },
   "c216": {
     "characterId": "c216",
@@ -1725,7 +2153,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Psylocke",
     "fallbackPage": "https://en.wikipedia.org/wiki/Psylocke",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Psylocke Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Psylocke%20Marvel%20official%20character"
   },
   "c217": {
     "characterId": "c217",
@@ -1733,7 +2163,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Dazzler",
     "fallbackPage": "https://en.wikipedia.org/wiki/Dazzler",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Dazzler Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Dazzler%20Marvel%20official%20character"
   },
   "c218": {
     "characterId": "c218",
@@ -1741,7 +2173,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Polaris",
     "fallbackPage": "https://en.wikipedia.org/wiki/Polaris",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Polaris Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Polaris%20Marvel%20official%20character"
   },
   "c219": {
     "characterId": "c219",
@@ -1749,7 +2183,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Magik",
     "fallbackPage": "https://en.wikipedia.org/wiki/Magik",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Magik Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Magik%20Marvel%20official%20character"
   },
   "c220": {
     "characterId": "c220",
@@ -1757,7 +2193,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Clea",
     "fallbackPage": "https://en.wikipedia.org/wiki/Clea",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Clea Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Clea%20Marvel%20official%20character"
   },
   "c221": {
     "characterId": "c221",
@@ -1765,7 +2203,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Elektra",
     "fallbackPage": "https://en.wikipedia.org/wiki/Elektra",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Elektra Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Elektra%20Marvel%20official%20character"
   },
   "c222": {
     "characterId": "c222",
@@ -1773,7 +2213,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Misty_Knight",
     "fallbackPage": "https://en.wikipedia.org/wiki/Misty_Knight",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Misty Knight Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Misty%20Knight%20Marvel%20official%20character"
   },
   "c223": {
     "characterId": "c223",
@@ -1781,7 +2223,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Colleen_Wing",
     "fallbackPage": "https://en.wikipedia.org/wiki/Colleen_Wing",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Colleen Wing Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Colleen%20Wing%20Marvel%20official%20character"
   },
   "c224": {
     "characterId": "c224",
@@ -1789,7 +2233,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Moon_Girl",
     "fallbackPage": "https://en.wikipedia.org/wiki/Moon_Girl",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Moon Girl Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Moon%20Girl%20Marvel%20official%20character"
   },
   "c225": {
     "characterId": "c225",
@@ -1797,7 +2243,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Squirrel_Girl",
     "fallbackPage": "https://en.wikipedia.org/wiki/Squirrel_Girl",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Squirrel Girl Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Squirrel%20Girl%20Marvel%20official%20character"
   },
   "c226": {
     "characterId": "c226",
@@ -1805,7 +2253,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Vixen",
     "fallbackPage": "https://en.wikipedia.org/wiki/Vixen",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Vixen DC Comics official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Vixen%20DC%20Comics%20official%20character"
   },
   "c227": {
     "characterId": "c227",
@@ -1813,7 +2263,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Hawkgirl",
     "fallbackPage": "https://en.wikipedia.org/wiki/Hawkgirl",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Hawkgirl DC Comics official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Hawkgirl%20DC%20Comics%20official%20character"
   },
   "c228": {
     "characterId": "c228",
@@ -1821,7 +2273,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Batwoman",
     "fallbackPage": "https://en.wikipedia.org/wiki/Batwoman",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Batwoman DC Comics official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Batwoman%20DC%20Comics%20official%20character"
   },
   "c229": {
     "characterId": "c229",
@@ -1829,7 +2283,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Power_Girl",
     "fallbackPage": "https://en.wikipedia.org/wiki/Power_Girl",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Power Girl DC Comics official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Power%20Girl%20DC%20Comics%20official%20character"
   },
   "c230": {
     "characterId": "c230",
@@ -1837,7 +2293,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Donna_Troy",
     "fallbackPage": "https://en.wikipedia.org/wiki/Donna_Troy",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Donna Troy DC Comics official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Donna%20Troy%20DC%20Comics%20official%20character"
   },
   "c231": {
     "characterId": "c231",
@@ -1845,7 +2303,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Cassandra_Cain",
     "fallbackPage": "https://en.wikipedia.org/wiki/Cassandra_Cain",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Cassandra Cain DC Comics official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Cassandra%20Cain%20DC%20Comics%20official%20character"
   },
   "c232": {
     "characterId": "c232",
@@ -1853,7 +2313,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Stephanie_Brown",
     "fallbackPage": "https://en.wikipedia.org/wiki/Stephanie_Brown",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Stephanie Brown DC Comics official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Stephanie%20Brown%20DC%20Comics%20official%20character"
   },
   "c233": {
     "characterId": "c233",
@@ -1861,7 +2323,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Kate_Kane",
     "fallbackPage": "https://en.wikipedia.org/wiki/Kate_Kane",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Kate Kane DC Comics official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Kate%20Kane%20DC%20Comics%20official%20character"
   },
   "c234": {
     "characterId": "c234",
@@ -1869,7 +2333,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Huntress",
     "fallbackPage": "https://en.wikipedia.org/wiki/Huntress",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Huntress DC Comics official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Huntress%20DC%20Comics%20official%20character"
   },
   "c235": {
     "characterId": "c235",
@@ -1877,7 +2343,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Mary_Marvel",
     "fallbackPage": "https://en.wikipedia.org/wiki/Mary_Marvel",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Mary Marvel DC Comics official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Mary%20Marvel%20DC%20Comics%20official%20character"
   },
   "c236": {
     "characterId": "c236",
@@ -1885,7 +2353,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Big_Barda",
     "fallbackPage": "https://en.wikipedia.org/wiki/Big_Barda",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Big Barda DC Comics official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Big%20Barda%20DC%20Comics%20official%20character"
   },
   "c237": {
     "characterId": "c237",
@@ -1893,7 +2363,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Black_Alice",
     "fallbackPage": "https://en.wikipedia.org/wiki/Black_Alice",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Black Alice DC Comics official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Black%20Alice%20DC%20Comics%20official%20character"
   },
   "c238": {
     "characterId": "c238",
@@ -1901,7 +2373,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Poison_Ivy",
     "fallbackPage": "https://en.wikipedia.org/wiki/Poison_Ivy",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Poison Ivy DC Comics official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Poison%20Ivy%20DC%20Comics%20official%20character"
   },
   "c239": {
     "characterId": "c239",
@@ -1909,7 +2383,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Harley_Quinn",
     "fallbackPage": "https://en.wikipedia.org/wiki/Harley_Quinn",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Harley Quinn DC Comics official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Harley%20Quinn%20DC%20Comics%20official%20character"
   },
   "c240": {
     "characterId": "c240",
@@ -1917,7 +2393,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Amanda_Waller",
     "fallbackPage": "https://en.wikipedia.org/wiki/Amanda_Waller",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Amanda Waller DC Comics official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Amanda%20Waller%20DC%20Comics%20official%20character"
   },
   "c241": {
     "characterId": "c241",
@@ -1925,7 +2403,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Talia_al_Ghul",
     "fallbackPage": "https://en.wikipedia.org/wiki/Talia_al_Ghul",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Talia al Ghul DC Comics official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Talia%20al%20Ghul%20DC%20Comics%20official%20character"
   },
   "c242": {
     "characterId": "c242",
@@ -1933,7 +2413,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Valkyrie",
     "fallbackPage": "https://en.wikipedia.org/wiki/Valkyrie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Valkyrie Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Valkyrie%20Marvel%20official%20character"
   },
   "c243": {
     "characterId": "c243",
@@ -1941,7 +2423,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Sif",
     "fallbackPage": "https://en.wikipedia.org/wiki/Sif",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Sif Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Sif%20Marvel%20official%20character"
   },
   "c244": {
     "characterId": "c244",
@@ -1949,7 +2433,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Shanna_the_She-Devil",
     "fallbackPage": "https://en.wikipedia.org/wiki/Shanna_the_She-Devil",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Shanna the She-Devil Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Shanna%20the%20She-Devil%20Marvel%20official%20character"
   },
   "c245": {
     "characterId": "c245",
@@ -1957,7 +2443,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Medusa",
     "fallbackPage": "https://en.wikipedia.org/wiki/Medusa",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Medusa Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Medusa%20Marvel%20official%20character"
   },
   "c246": {
     "characterId": "c246",
@@ -1965,7 +2453,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Crystal",
     "fallbackPage": "https://en.wikipedia.org/wiki/Crystal",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Crystal Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Crystal%20Marvel%20official%20character"
   },
   "c247": {
     "characterId": "c247",
@@ -1973,7 +2463,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Mantis",
     "fallbackPage": "https://en.wikipedia.org/wiki/Mantis",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Mantis Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Mantis%20Marvel%20official%20character"
   },
   "c248": {
     "characterId": "c248",
@@ -1981,7 +2473,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Nebula",
     "fallbackPage": "https://en.wikipedia.org/wiki/Nebula",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Nebula Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Nebula%20Marvel%20official%20character"
   },
   "c249": {
     "characterId": "c249",
@@ -1989,7 +2483,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Gamora",
     "fallbackPage": "https://en.wikipedia.org/wiki/Gamora",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Gamora Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Gamora%20Marvel%20official%20character"
   },
   "c250": {
     "characterId": "c250",
@@ -1997,7 +2493,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Dani_Moonstar",
     "fallbackPage": "https://en.wikipedia.org/wiki/Dani_Moonstar",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Dani Moonstar Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Dani%20Moonstar%20Marvel%20official%20character"
   },
   "c251": {
     "characterId": "c251",
@@ -2005,7 +2503,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Armor",
     "fallbackPage": "https://en.wikipedia.org/wiki/Armor",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Armor Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Armor%20Marvel%20official%20character"
   },
   "c252": {
     "characterId": "c252",
@@ -2013,7 +2513,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Gwenpool",
     "fallbackPage": "https://en.wikipedia.org/wiki/Gwenpool",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Gwenpool Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Gwenpool%20Marvel%20official%20character"
   },
   "c253": {
     "characterId": "c253",
@@ -2021,7 +2523,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Spider-Gwen",
     "fallbackPage": "https://en.wikipedia.org/wiki/Spider-Gwen",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Spider-Gwen Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Spider-Gwen%20Marvel%20official%20character"
   },
   "c254": {
     "characterId": "c254",
@@ -2029,7 +2533,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Miles_Morales",
     "fallbackPage": "https://en.wikipedia.org/wiki/Miles_Morales",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Miles Morales Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Miles%20Morales%20Marvel%20official%20character"
   },
   "c255": {
     "characterId": "c255",
@@ -2037,15 +2543,18 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Sam_Wilson",
     "fallbackPage": "https://en.wikipedia.org/wiki/Sam_Wilson",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Sam Wilson Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Sam%20Wilson%20Marvel%20official%20character"
   },
   "c256": {
     "characterId": "c256",
     "name": "Bucky Barnes",
-    "source": "Wikipedia",
-    "preferredPage": "https://fr.wikipedia.org/wiki/Bucky_Barnes",
-    "fallbackPage": "https://en.wikipedia.org/wiki/Bucky_Barnes",
-    "imageUrl": ""
+    "source": "Marvel — page officielle / recherche ciblée",
+    "imageUrl": "",
+    "searchQuery": "Bucky Barnes Winter Soldier Marvel official",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Bucky+Barnes+Winter+Soldier+Marvel+official",
+    "sourcePage": "https://www.marvel.com/characters/winter-soldier-bucky-barnes"
   },
   "c257": {
     "characterId": "c257",
@@ -2053,7 +2562,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Luke_Cage",
     "fallbackPage": "https://en.wikipedia.org/wiki/Luke_Cage",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Luke Cage Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Luke%20Cage%20Marvel%20official%20character"
   },
   "c258": {
     "characterId": "c258",
@@ -2061,7 +2572,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Iron_Fist",
     "fallbackPage": "https://en.wikipedia.org/wiki/Iron_Fist",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Iron Fist Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Iron%20Fist%20Marvel%20official%20character"
   },
   "c259": {
     "characterId": "c259",
@@ -2069,7 +2582,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Moon_Knight",
     "fallbackPage": "https://en.wikipedia.org/wiki/Moon_Knight",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Moon Knight Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Moon%20Knight%20Marvel%20official%20character"
   },
   "c260": {
     "characterId": "c260",
@@ -2077,7 +2592,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Nova",
     "fallbackPage": "https://en.wikipedia.org/wiki/Nova",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Nova Marvel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Nova%20Marvel%20official%20character"
   },
   "c261": {
     "characterId": "c261",
@@ -2085,7 +2602,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Blue_Beetle",
     "fallbackPage": "https://en.wikipedia.org/wiki/Blue_Beetle",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Blue Beetle DC Comics official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Blue%20Beetle%20DC%20Comics%20official%20character"
   },
   "c262": {
     "characterId": "c262",
@@ -2093,7 +2612,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Booster_Gold",
     "fallbackPage": "https://en.wikipedia.org/wiki/Booster_Gold",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Booster Gold DC Comics official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Booster%20Gold%20DC%20Comics%20official%20character"
   },
   "c263": {
     "characterId": "c263",
@@ -2101,7 +2622,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Mister_Miracle",
     "fallbackPage": "https://en.wikipedia.org/wiki/Mister_Miracle",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Mister Miracle DC Comics official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Mister%20Miracle%20DC%20Comics%20official%20character"
   },
   "c264": {
     "characterId": "c264",
@@ -2109,7 +2632,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Plastic_Man",
     "fallbackPage": "https://en.wikipedia.org/wiki/Plastic_Man",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Plastic Man DC Comics official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Plastic%20Man%20DC%20Comics%20official%20character"
   },
   "c265": {
     "characterId": "c265",
@@ -2117,7 +2642,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Animal_Man",
     "fallbackPage": "https://en.wikipedia.org/wiki/Animal_Man",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Animal Man DC Comics official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Animal%20Man%20DC%20Comics%20official%20character"
   },
   "c266": {
     "characterId": "c266",
@@ -2125,7 +2652,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Mister_Terrific",
     "fallbackPage": "https://en.wikipedia.org/wiki/Mister_Terrific",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Mister Terrific DC Comics official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Mister%20Terrific%20DC%20Comics%20official%20character"
   },
   "c267": {
     "characterId": "c267",
@@ -2133,7 +2662,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Green_Arrow",
     "fallbackPage": "https://en.wikipedia.org/wiki/Green_Arrow",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Green Arrow DC Comics official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Green%20Arrow%20DC%20Comics%20official%20character"
   },
   "c268": {
     "characterId": "c268",
@@ -2141,7 +2672,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Atom",
     "fallbackPage": "https://en.wikipedia.org/wiki/Atom",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Atom DC Comics official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Atom%20DC%20Comics%20official%20character"
   },
   "c269": {
     "characterId": "c269",
@@ -2149,7 +2682,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Cyborg",
     "fallbackPage": "https://en.wikipedia.org/wiki/Cyborg",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Cyborg DC Comics official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Cyborg%20DC%20Comics%20official%20character"
   },
   "c270": {
     "characterId": "c270",
@@ -2157,7 +2692,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Martian_Manhunter",
     "fallbackPage": "https://en.wikipedia.org/wiki/Martian_Manhunter",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Martian Manhunter DC Comics official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Martian%20Manhunter%20DC%20Comics%20official%20character"
   },
   "c271": {
     "characterId": "c271",
@@ -2165,7 +2702,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Jane_Eyre",
     "fallbackPage": "https://en.wikipedia.org/wiki/Jane_Eyre",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Jane Eyre Jane Eyre official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Jane%20Eyre%20Jane%20Eyre%20official%20character"
   },
   "c272": {
     "characterId": "c272",
@@ -2173,7 +2712,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Elizabeth_Bennet",
     "fallbackPage": "https://en.wikipedia.org/wiki/Elizabeth_Bennet",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Elizabeth Bennet Orgueil et Préjugés official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Elizabeth%20Bennet%20Orgueil%20et%20Pr%C3%A9jug%C3%A9s%20official%20character"
   },
   "c273": {
     "characterId": "c273",
@@ -2181,7 +2722,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Jo_March",
     "fallbackPage": "https://en.wikipedia.org/wiki/Jo_March",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Jo March Les Quatre Filles du docteur March official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Jo%20March%20Les%20Quatre%20Filles%20du%20docteur%20March%20official%20character"
   },
   "c274": {
     "characterId": "c274",
@@ -2189,7 +2732,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Anne_Shirley",
     "fallbackPage": "https://en.wikipedia.org/wiki/Anne_Shirley",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Anne Shirley Anne... la maison aux pignons verts official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Anne%20Shirley%20Anne...%20la%20maison%20aux%20pignons%20verts%20official%20character"
   },
   "c275": {
     "characterId": "c275",
@@ -2197,7 +2742,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Heathcliff",
     "fallbackPage": "https://en.wikipedia.org/wiki/Heathcliff",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Heathcliff Les Hauts de Hurlevent official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Heathcliff%20Les%20Hauts%20de%20Hurlevent%20official%20character"
   },
   "c276": {
     "characterId": "c276",
@@ -2205,7 +2752,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Estella_Havisham",
     "fallbackPage": "https://en.wikipedia.org/wiki/Estella_Havisham",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Estella Havisham De grandes espérances official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Estella%20Havisham%20De%20grandes%20esp%C3%A9rances%20official%20character"
   },
   "c277": {
     "characterId": "c277",
@@ -2213,7 +2762,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Pip",
     "fallbackPage": "https://en.wikipedia.org/wiki/Pip",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Pip De grandes espérances official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Pip%20De%20grandes%20esp%C3%A9rances%20official%20character"
   },
   "c278": {
     "characterId": "c278",
@@ -2221,7 +2772,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Jean_Valjean",
     "fallbackPage": "https://en.wikipedia.org/wiki/Jean_Valjean",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Jean Valjean Les Misérables official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Jean%20Valjean%20Les%20Mis%C3%A9rables%20official%20character"
   },
   "c279": {
     "characterId": "c279",
@@ -2229,7 +2782,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Javert",
     "fallbackPage": "https://en.wikipedia.org/wiki/Javert",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Javert Les Misérables official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Javert%20Les%20Mis%C3%A9rables%20official%20character"
   },
   "c280": {
     "characterId": "c280",
@@ -2237,7 +2792,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Cosette",
     "fallbackPage": "https://en.wikipedia.org/wiki/Cosette",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Cosette Les Misérables official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Cosette%20Les%20Mis%C3%A9rables%20official%20character"
   },
   "c281": {
     "characterId": "c281",
@@ -2245,7 +2802,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Marius_Pontmercy",
     "fallbackPage": "https://en.wikipedia.org/wiki/Marius_Pontmercy",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Marius Pontmercy Les Misérables official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Marius%20Pontmercy%20Les%20Mis%C3%A9rables%20official%20character"
   },
   "c282": {
     "characterId": "c282",
@@ -2253,7 +2812,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Haydée",
     "fallbackPage": "https://en.wikipedia.org/wiki/Haydée",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Haydée Le Comte de Monte-Cristo official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Hayd%C3%A9e%20Le%20Comte%20de%20Monte-Cristo%20official%20character"
   },
   "c283": {
     "characterId": "c283",
@@ -2261,7 +2822,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Mercedes",
     "fallbackPage": "https://en.wikipedia.org/wiki/Mercedes",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Mercedes Le Comte de Monte-Cristo official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Mercedes%20Le%20Comte%20de%20Monte-Cristo%20official%20character"
   },
   "c284": {
     "characterId": "c284",
@@ -2269,7 +2832,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Hester_Prynne",
     "fallbackPage": "https://en.wikipedia.org/wiki/Hester_Prynne",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Hester Prynne La Lettre écarlate official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Hester%20Prynne%20La%20Lettre%20%C3%A9carlate%20official%20character"
   },
   "c285": {
     "characterId": "c285",
@@ -2277,7 +2842,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Atticus_Finch",
     "fallbackPage": "https://en.wikipedia.org/wiki/Atticus_Finch",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Atticus Finch Ne tirez pas sur l'oiseau moqueur official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Atticus%20Finch%20Ne%20tirez%20pas%20sur%20l%27oiseau%20moqueur%20official%20character"
   },
   "c286": {
     "characterId": "c286",
@@ -2285,7 +2852,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Scout_Finch",
     "fallbackPage": "https://en.wikipedia.org/wiki/Scout_Finch",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Scout Finch Ne tirez pas sur l'oiseau moqueur official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Scout%20Finch%20Ne%20tirez%20pas%20sur%20l%27oiseau%20moqueur%20official%20character"
   },
   "c287": {
     "characterId": "c287",
@@ -2293,7 +2862,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Holden_Caulfield",
     "fallbackPage": "https://en.wikipedia.org/wiki/Holden_Caulfield",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Holden Caulfield L'Attrape-cœurs official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Holden%20Caulfield%20L%27Attrape-c%C5%93urs%20official%20character"
   },
   "c288": {
     "characterId": "c288",
@@ -2301,7 +2872,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Esther_Greenwood",
     "fallbackPage": "https://en.wikipedia.org/wiki/Esther_Greenwood",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Esther Greenwood La Cloche de détresse official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Esther%20Greenwood%20La%20Cloche%20de%20d%C3%A9tresse%20official%20character"
   },
   "c289": {
     "characterId": "c289",
@@ -2309,7 +2882,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Offred",
     "fallbackPage": "https://en.wikipedia.org/wiki/Offred",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Offred La Servante écarlate official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Offred%20La%20Servante%20%C3%A9carlate%20official%20character"
   },
   "c290": {
     "characterId": "c290",
@@ -2317,7 +2892,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Lyra_Belacqua",
     "fallbackPage": "https://en.wikipedia.org/wiki/Lyra_Belacqua",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Lyra Belacqua À la croisée des mondes official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Lyra%20Belacqua%20%C3%80%20la%20crois%C3%A9e%20des%20mondes%20official%20character"
   },
   "c291": {
     "characterId": "c291",
@@ -2325,7 +2902,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Will_Parry",
     "fallbackPage": "https://en.wikipedia.org/wiki/Will_Parry",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Will Parry À la croisée des mondes official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Will%20Parry%20%C3%80%20la%20crois%C3%A9e%20des%20mondes%20official%20character"
   },
   "c292": {
     "characterId": "c292",
@@ -2333,7 +2912,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Mrs_Coulter",
     "fallbackPage": "https://en.wikipedia.org/wiki/Mrs_Coulter",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Mrs Coulter À la croisée des mondes official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Mrs%20Coulter%20%C3%80%20la%20crois%C3%A9e%20des%20mondes%20official%20character"
   },
   "c293": {
     "characterId": "c293",
@@ -2341,7 +2922,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Serafina_Pekkala",
     "fallbackPage": "https://en.wikipedia.org/wiki/Serafina_Pekkala",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Serafina Pekkala À la croisée des mondes official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Serafina%20Pekkala%20%C3%80%20la%20crois%C3%A9e%20des%20mondes%20official%20character"
   },
   "c294": {
     "characterId": "c294",
@@ -2349,7 +2932,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Tenar",
     "fallbackPage": "https://en.wikipedia.org/wiki/Tenar",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Tenar Terremer official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Tenar%20Terremer%20official%20character"
   },
   "c295": {
     "characterId": "c295",
@@ -2357,7 +2942,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Therru",
     "fallbackPage": "https://en.wikipedia.org/wiki/Therru",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Therru Terremer official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Therru%20Terremer%20official%20character"
   },
   "c296": {
     "characterId": "c296",
@@ -2365,7 +2952,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Denna",
     "fallbackPage": "https://en.wikipedia.org/wiki/Denna",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Denna Chronique du tueur de roi official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Denna%20Chronique%20du%20tueur%20de%20roi%20official%20character"
   },
   "c297": {
     "characterId": "c297",
@@ -2373,7 +2962,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Eddard_Stark",
     "fallbackPage": "https://en.wikipedia.org/wiki/Eddard_Stark",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Eddard Stark A Song of Ice and Fire official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Eddard%20Stark%20A%20Song%20of%20Ice%20and%20Fire%20official%20character"
   },
   "c298": {
     "characterId": "c298",
@@ -2381,7 +2972,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Catelyn_Stark",
     "fallbackPage": "https://en.wikipedia.org/wiki/Catelyn_Stark",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Catelyn Stark A Song of Ice and Fire official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Catelyn%20Stark%20A%20Song%20of%20Ice%20and%20Fire%20official%20character"
   },
   "c299": {
     "characterId": "c299",
@@ -2389,7 +2982,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Robb_Stark",
     "fallbackPage": "https://en.wikipedia.org/wiki/Robb_Stark",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Robb Stark A Song of Ice and Fire official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Robb%20Stark%20A%20Song%20of%20Ice%20and%20Fire%20official%20character"
   },
   "c300": {
     "characterId": "c300",
@@ -2397,7 +2992,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Bran_Stark",
     "fallbackPage": "https://en.wikipedia.org/wiki/Bran_Stark",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Bran Stark A Song of Ice and Fire official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Bran%20Stark%20A%20Song%20of%20Ice%20and%20Fire%20official%20character"
   },
   "c301": {
     "characterId": "c301",
@@ -2405,7 +3002,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Theon_Greyjoy",
     "fallbackPage": "https://en.wikipedia.org/wiki/Theon_Greyjoy",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Theon Greyjoy A Song of Ice and Fire official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Theon%20Greyjoy%20A%20Song%20of%20Ice%20and%20Fire%20official%20character"
   },
   "c302": {
     "characterId": "c302",
@@ -2413,7 +3012,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Davos_Seaworth",
     "fallbackPage": "https://en.wikipedia.org/wiki/Davos_Seaworth",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Davos Seaworth A Song of Ice and Fire official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Davos%20Seaworth%20A%20Song%20of%20Ice%20and%20Fire%20official%20character"
   },
   "c303": {
     "characterId": "c303",
@@ -2421,7 +3022,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Brienne_of_Tarth",
     "fallbackPage": "https://en.wikipedia.org/wiki/Brienne_of_Tarth",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Brienne of Tarth A Song of Ice and Fire official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Brienne%20of%20Tarth%20A%20Song%20of%20Ice%20and%20Fire%20official%20character"
   },
   "c304": {
     "characterId": "c304",
@@ -2429,7 +3032,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Mance_Rayder",
     "fallbackPage": "https://en.wikipedia.org/wiki/Mance_Rayder",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Mance Rayder A Song of Ice and Fire official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Mance%20Rayder%20A%20Song%20of%20Ice%20and%20Fire%20official%20character"
   },
   "c305": {
     "characterId": "c305",
@@ -2437,7 +3042,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Oberyn_Martell",
     "fallbackPage": "https://en.wikipedia.org/wiki/Oberyn_Martell",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Oberyn Martell A Song of Ice and Fire official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Oberyn%20Martell%20A%20Song%20of%20Ice%20and%20Fire%20official%20character"
   },
   "c306": {
     "characterId": "c306",
@@ -2445,7 +3052,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Doran_Martell",
     "fallbackPage": "https://en.wikipedia.org/wiki/Doran_Martell",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Doran Martell A Song of Ice and Fire official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Doran%20Martell%20A%20Song%20of%20Ice%20and%20Fire%20official%20character"
   },
   "c307": {
     "characterId": "c307",
@@ -2453,7 +3062,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Ellaria_Sand",
     "fallbackPage": "https://en.wikipedia.org/wiki/Ellaria_Sand",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Ellaria Sand A Song of Ice and Fire official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Ellaria%20Sand%20A%20Song%20of%20Ice%20and%20Fire%20official%20character"
   },
   "c308": {
     "characterId": "c308",
@@ -2461,7 +3072,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Syrio_Forel",
     "fallbackPage": "https://en.wikipedia.org/wiki/Syrio_Forel",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Syrio Forel A Song of Ice and Fire official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Syrio%20Forel%20A%20Song%20of%20Ice%20and%20Fire%20official%20character"
   },
   "c309": {
     "characterId": "c309",
@@ -2469,7 +3082,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Jaqen_H'ghar",
     "fallbackPage": "https://en.wikipedia.org/wiki/Jaqen_H'ghar",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Jaqen H'ghar A Song of Ice and Fire official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Jaqen%20H%27ghar%20A%20Song%20of%20Ice%20and%20Fire%20official%20character"
   },
   "c310": {
     "characterId": "c310",
@@ -2477,7 +3092,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Samwell_Tarly",
     "fallbackPage": "https://en.wikipedia.org/wiki/Samwell_Tarly",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Samwell Tarly A Song of Ice and Fire official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Samwell%20Tarly%20A%20Song%20of%20Ice%20and%20Fire%20official%20character"
   },
   "c311": {
     "characterId": "c311",
@@ -2485,7 +3102,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Gilly",
     "fallbackPage": "https://en.wikipedia.org/wiki/Gilly",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Gilly A Song of Ice and Fire official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Gilly%20A%20Song%20of%20Ice%20and%20Fire%20official%20character"
   },
   "c312": {
     "characterId": "c312",
@@ -2493,7 +3112,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Sansa_Stark",
     "fallbackPage": "https://en.wikipedia.org/wiki/Sansa_Stark",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Sansa Stark A Song of Ice and Fire official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Sansa%20Stark%20A%20Song%20of%20Ice%20and%20Fire%20official%20character"
   },
   "c313": {
     "characterId": "c313",
@@ -2501,7 +3122,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Tyrion_Lannister",
     "fallbackPage": "https://en.wikipedia.org/wiki/Tyrion_Lannister",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Tyrion Lannister A Song of Ice and Fire official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Tyrion%20Lannister%20A%20Song%20of%20Ice%20and%20Fire%20official%20character"
   },
   "c314": {
     "characterId": "c314",
@@ -2509,7 +3132,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Varys",
     "fallbackPage": "https://en.wikipedia.org/wiki/Varys",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Varys A Song of Ice and Fire official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Varys%20A%20Song%20of%20Ice%20and%20Fire%20official%20character"
   },
   "c315": {
     "characterId": "c315",
@@ -2517,7 +3142,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Littlefinger",
     "fallbackPage": "https://en.wikipedia.org/wiki/Littlefinger",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Littlefinger A Song of Ice and Fire official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Littlefinger%20A%20Song%20of%20Ice%20and%20Fire%20official%20character"
   },
   "c316": {
     "characterId": "c316",
@@ -2525,7 +3152,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Gregor_Clegane",
     "fallbackPage": "https://en.wikipedia.org/wiki/Gregor_Clegane",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Gregor Clegane A Song of Ice and Fire official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Gregor%20Clegane%20A%20Song%20of%20Ice%20and%20Fire%20official%20character"
   },
   "c317": {
     "characterId": "c317",
@@ -2533,7 +3162,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Ramsay_Bolton",
     "fallbackPage": "https://en.wikipedia.org/wiki/Ramsay_Bolton",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Ramsay Bolton A Song of Ice and Fire official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Ramsay%20Bolton%20A%20Song%20of%20Ice%20and%20Fire%20official%20character"
   },
   "c318": {
     "characterId": "c318",
@@ -2541,7 +3172,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Phedre_nó_Delaunay",
     "fallbackPage": "https://en.wikipedia.org/wiki/Phedre_nó_Delaunay",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Phedre nó Delaunay Kushiel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Phedre%20n%C3%B3%20Delaunay%20Kushiel%20official%20character"
   },
   "c319": {
     "characterId": "c319",
@@ -2549,7 +3182,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Imriel_de_la_Courcel",
     "fallbackPage": "https://en.wikipedia.org/wiki/Imriel_de_la_Courcel",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Imriel de la Courcel Kushiel official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Imriel%20de%20la%20Courcel%20Kushiel%20official%20character"
   },
   "c320": {
     "characterId": "c320",
@@ -2557,7 +3192,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Kell_Maresh",
     "fallbackPage": "https://en.wikipedia.org/wiki/Kell_Maresh",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Kell Maresh Shades of Magic official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Kell%20Maresh%20Shades%20of%20Magic%20official%20character"
   },
   "c321": {
     "characterId": "c321",
@@ -2565,7 +3202,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Shego",
     "fallbackPage": "https://en.wikipedia.org/wiki/Shego",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Shego Kim Possible official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Shego%20Kim%20Possible%20official%20character"
   },
   "c322": {
     "characterId": "c322",
@@ -2573,7 +3212,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Toph_Beifong",
     "fallbackPage": "https://en.wikipedia.org/wiki/Toph_Beifong",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Toph Beifong Avatar : Le Dernier Maître de l'Air official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Toph%20Beifong%20Avatar%20%3A%20Le%20Dernier%20Ma%C3%AEtre%20de%20l%27Air%20official%20character"
   },
   "c323": {
     "characterId": "c323",
@@ -2581,7 +3222,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Princess_Bubblegum",
     "fallbackPage": "https://en.wikipedia.org/wiki/Princess_Bubblegum",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Princess Bubblegum Adventure Time official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Princess%20Bubblegum%20Adventure%20Time%20official%20character"
   },
   "c324": {
     "characterId": "c324",
@@ -2589,7 +3232,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Garnet",
     "fallbackPage": "https://en.wikipedia.org/wiki/Garnet",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Garnet Steven Universe official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Garnet%20Steven%20Universe%20official%20character"
   },
   "c325": {
     "characterId": "c325",
@@ -2597,7 +3242,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Adora",
     "fallbackPage": "https://en.wikipedia.org/wiki/Adora",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Adora She-Ra official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Adora%20She-Ra%20official%20character"
   },
   "c326": {
     "characterId": "c326",
@@ -2605,7 +3252,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Catra",
     "fallbackPage": "https://en.wikipedia.org/wiki/Catra",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Catra She-Ra official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Catra%20She-Ra%20official%20character"
   },
   "c327": {
     "characterId": "c327",
@@ -2613,7 +3262,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Velma_Dinkley",
     "fallbackPage": "https://en.wikipedia.org/wiki/Velma_Dinkley",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Velma Dinkley Scooby-Doo official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Velma%20Dinkley%20Scooby-Doo%20official%20character"
   },
   "c328": {
     "characterId": "c328",
@@ -2621,7 +3272,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Daphne_Blake",
     "fallbackPage": "https://en.wikipedia.org/wiki/Daphne_Blake",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Daphne Blake Scooby-Doo official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Daphne%20Blake%20Scooby-Doo%20official%20character"
   },
   "c329": {
     "characterId": "c329",
@@ -2629,7 +3282,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Amy_Wong",
     "fallbackPage": "https://en.wikipedia.org/wiki/Amy_Wong",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Amy Wong Futurama official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Amy%20Wong%20Futurama%20official%20character"
   },
   "c330": {
     "characterId": "c330",
@@ -2637,7 +3292,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Leela",
     "fallbackPage": "https://en.wikipedia.org/wiki/Leela",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Leela Futurama official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Leela%20Futurama%20official%20character"
   },
   "c331": {
     "characterId": "c331",
@@ -2645,7 +3302,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Bender",
     "fallbackPage": "https://en.wikipedia.org/wiki/Bender",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Bender Futurama official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Bender%20Futurama%20official%20character"
   },
   "c332": {
     "characterId": "c332",
@@ -2653,7 +3312,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Finn",
     "fallbackPage": "https://en.wikipedia.org/wiki/Finn",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Finn Adventure Time official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Finn%20Adventure%20Time%20official%20character"
   },
   "c333": {
     "characterId": "c333",
@@ -2661,7 +3322,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Jake",
     "fallbackPage": "https://en.wikipedia.org/wiki/Jake",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Jake Adventure Time official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Jake%20Adventure%20Time%20official%20character"
   },
   "c334": {
     "characterId": "c334",
@@ -2669,7 +3332,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Him",
     "fallbackPage": "https://en.wikipedia.org/wiki/Him",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Him Les Supers Nanas official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Him%20Les%20Supers%20Nanas%20official%20character"
   },
   "c335": {
     "characterId": "c335",
@@ -2677,7 +3342,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Blossom",
     "fallbackPage": "https://en.wikipedia.org/wiki/Blossom",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Blossom Les Supers Nanas official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Blossom%20Les%20Supers%20Nanas%20official%20character"
   },
   "c336": {
     "characterId": "c336",
@@ -2685,7 +3352,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Bubbles",
     "fallbackPage": "https://en.wikipedia.org/wiki/Bubbles",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Bubbles Les Supers Nanas official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Bubbles%20Les%20Supers%20Nanas%20official%20character"
   },
   "c337": {
     "characterId": "c337",
@@ -2693,7 +3362,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Buttercup",
     "fallbackPage": "https://en.wikipedia.org/wiki/Buttercup",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Buttercup Les Supers Nanas official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Buttercup%20Les%20Supers%20Nanas%20official%20character"
   },
   "c338": {
     "characterId": "c338",
@@ -2701,7 +3372,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Terra",
     "fallbackPage": "https://en.wikipedia.org/wiki/Terra",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Terra Teen Titans official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Terra%20Teen%20Titans%20official%20character"
   },
   "c339": {
     "characterId": "c339",
@@ -2709,7 +3382,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Jinx",
     "fallbackPage": "https://en.wikipedia.org/wiki/Jinx",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Jinx Teen Titans official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Jinx%20Teen%20Titans%20official%20character"
   },
   "c340": {
     "characterId": "c340",
@@ -2717,7 +3392,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Ron_Stoppable",
     "fallbackPage": "https://en.wikipedia.org/wiki/Ron_Stoppable",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Ron Stoppable Kim Possible official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Ron%20Stoppable%20Kim%20Possible%20official%20character"
   },
   "c341": {
     "characterId": "c341",
@@ -2725,7 +3402,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Maggie_Simpson",
     "fallbackPage": "https://en.wikipedia.org/wiki/Maggie_Simpson",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Maggie Simpson Les Simpson official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Maggie%20Simpson%20Les%20Simpson%20official%20character"
   },
   "c342": {
     "characterId": "c342",
@@ -2733,7 +3412,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Milhouse_Van_Houten",
     "fallbackPage": "https://en.wikipedia.org/wiki/Milhouse_Van_Houten",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Milhouse Van Houten Les Simpson official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Milhouse%20Van%20Houten%20Les%20Simpson%20official%20character"
   },
   "c343": {
     "characterId": "c343",
@@ -2741,7 +3422,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Bart_Simpson",
     "fallbackPage": "https://en.wikipedia.org/wiki/Bart_Simpson",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Bart Simpson Les Simpson official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Bart%20Simpson%20Les%20Simpson%20official%20character"
   },
   "c344": {
     "characterId": "c344",
@@ -2749,7 +3432,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Ned_Flanders",
     "fallbackPage": "https://en.wikipedia.org/wiki/Ned_Flanders",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Ned Flanders Les Simpson official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Ned%20Flanders%20Les%20Simpson%20official%20character"
   },
   "c345": {
     "characterId": "c345",
@@ -2757,7 +3442,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Louise_Belcher",
     "fallbackPage": "https://en.wikipedia.org/wiki/Louise_Belcher",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Louise Belcher Bob's Burgers official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Louise%20Belcher%20Bob%27s%20Burgers%20official%20character"
   },
   "c346": {
     "characterId": "c346",
@@ -2765,7 +3452,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Tina_Belcher",
     "fallbackPage": "https://en.wikipedia.org/wiki/Tina_Belcher",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Tina Belcher Bob's Burgers official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Tina%20Belcher%20Bob%27s%20Burgers%20official%20character"
   },
   "c347": {
     "characterId": "c347",
@@ -2773,7 +3462,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Linda_Belcher",
     "fallbackPage": "https://en.wikipedia.org/wiki/Linda_Belcher",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Linda Belcher Bob's Burgers official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Linda%20Belcher%20Bob%27s%20Burgers%20official%20character"
   },
   "c348": {
     "characterId": "c348",
@@ -2781,7 +3472,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Bob_Belcher",
     "fallbackPage": "https://en.wikipedia.org/wiki/Bob_Belcher",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Bob Belcher Bob's Burgers official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Bob%20Belcher%20Bob%27s%20Burgers%20official%20character"
   },
   "c349": {
     "characterId": "c349",
@@ -2789,7 +3482,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Gene_Belcher",
     "fallbackPage": "https://en.wikipedia.org/wiki/Gene_Belcher",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Gene Belcher Bob's Burgers official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Gene%20Belcher%20Bob%27s%20Burgers%20official%20character"
   },
   "c350": {
     "characterId": "c350",
@@ -2797,7 +3492,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Dipper_Pines",
     "fallbackPage": "https://en.wikipedia.org/wiki/Dipper_Pines",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Dipper Pines Gravity Falls official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Dipper%20Pines%20Gravity%20Falls%20official%20character"
   },
   "c351": {
     "characterId": "c351",
@@ -2805,7 +3502,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Mordecai",
     "fallbackPage": "https://en.wikipedia.org/wiki/Mordecai",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Mordecai Regular Show official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Mordecai%20Regular%20Show%20official%20character"
   },
   "c352": {
     "characterId": "c352",
@@ -2813,7 +3512,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Rigby",
     "fallbackPage": "https://en.wikipedia.org/wiki/Rigby",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Rigby Regular Show official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Rigby%20Regular%20Show%20official%20character"
   },
   "c353": {
     "characterId": "c353",
@@ -2821,7 +3522,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Benson",
     "fallbackPage": "https://en.wikipedia.org/wiki/Benson",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Benson Regular Show official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Benson%20Regular%20Show%20official%20character"
   },
   "c354": {
     "characterId": "c354",
@@ -2829,7 +3532,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Samurai_Jack",
     "fallbackPage": "https://en.wikipedia.org/wiki/Samurai_Jack",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Samurai Jack Samurai Jack official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Samurai%20Jack%20Samurai%20Jack%20official%20character"
   },
   "c355": {
     "characterId": "c355",
@@ -2837,7 +3542,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Amethyst",
     "fallbackPage": "https://en.wikipedia.org/wiki/Amethyst",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Amethyst Steven Universe official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Amethyst%20Steven%20Universe%20official%20character"
   },
   "c356": {
     "characterId": "c356",
@@ -2845,7 +3552,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Lapis_Lazuli",
     "fallbackPage": "https://en.wikipedia.org/wiki/Lapis_Lazuli",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Lapis Lazuli Steven Universe official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Lapis%20Lazuli%20Steven%20Universe%20official%20character"
   },
   "c357": {
     "characterId": "c357",
@@ -2853,7 +3562,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Peridot",
     "fallbackPage": "https://en.wikipedia.org/wiki/Peridot",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Peridot Steven Universe official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Peridot%20Steven%20Universe%20official%20character"
   },
   "c358": {
     "characterId": "c358",
@@ -2861,7 +3572,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Hilda",
     "fallbackPage": "https://en.wikipedia.org/wiki/Hilda",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Hilda Hilda official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Hilda%20Hilda%20official%20character"
   },
   "c359": {
     "characterId": "c359",
@@ -2869,7 +3582,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Frida",
     "fallbackPage": "https://en.wikipedia.org/wiki/Frida",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Frida Hilda official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Frida%20Hilda%20official%20character"
   },
   "c360": {
     "characterId": "c360",
@@ -2877,7 +3592,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/David",
     "fallbackPage": "https://en.wikipedia.org/wiki/David",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "David Hilda official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=David%20Hilda%20official%20character"
   },
   "c361": {
     "characterId": "c361",
@@ -2885,7 +3602,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Milo_Murphy",
     "fallbackPage": "https://en.wikipedia.org/wiki/Milo_Murphy",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Milo Murphy Milo Murphy's Law official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Milo%20Murphy%20Milo%20Murphy%27s%20Law%20official%20character"
   },
   "c362": {
     "characterId": "c362",
@@ -2893,7 +3612,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Wander",
     "fallbackPage": "https://en.wikipedia.org/wiki/Wander",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Wander Wander Over Yonder official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Wander%20Wander%20Over%20Yonder%20official%20character"
   },
   "c363": {
     "characterId": "c363",
@@ -2901,7 +3622,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Lord_Hater",
     "fallbackPage": "https://en.wikipedia.org/wiki/Lord_Hater",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Lord Hater Wander Over Yonder official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Lord%20Hater%20Wander%20Over%20Yonder%20official%20character"
   },
   "c364": {
     "characterId": "c364",
@@ -2909,7 +3632,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Kipo_Oak",
     "fallbackPage": "https://en.wikipedia.org/wiki/Kipo_Oak",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Kipo Oak Kipo and the Age of Wonderbeasts official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Kipo%20Oak%20Kipo%20and%20the%20Age%20of%20Wonderbeasts%20official%20character"
   },
   "c365": {
     "characterId": "c365",
@@ -2917,7 +3642,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Entrapta",
     "fallbackPage": "https://en.wikipedia.org/wiki/Entrapta",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Entrapta She-Ra official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Entrapta%20She-Ra%20official%20character"
   },
   "c366": {
     "characterId": "c366",
@@ -2925,7 +3652,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Scorpia",
     "fallbackPage": "https://en.wikipedia.org/wiki/Scorpia",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Scorpia She-Ra official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Scorpia%20She-Ra%20official%20character"
   },
   "c367": {
     "characterId": "c367",
@@ -2933,7 +3662,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Hordak",
     "fallbackPage": "https://en.wikipedia.org/wiki/Hordak",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Hordak She-Ra official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Hordak%20She-Ra%20official%20character"
   },
   "c368": {
     "characterId": "c368",
@@ -2941,7 +3672,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Sasha_Waybright",
     "fallbackPage": "https://en.wikipedia.org/wiki/Sasha_Waybright",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Sasha Waybright Amphibia official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Sasha%20Waybright%20Amphibia%20official%20character"
   },
   "c369": {
     "characterId": "c369",
@@ -2949,7 +3682,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Marcy_Wu",
     "fallbackPage": "https://en.wikipedia.org/wiki/Marcy_Wu",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Marcy Wu Amphibia official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Marcy%20Wu%20Amphibia%20official%20character"
   },
   "c370": {
     "characterId": "c370",
@@ -2957,7 +3692,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Anne_Boonchuy",
     "fallbackPage": "https://en.wikipedia.org/wiki/Anne_Boonchuy",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Anne Boonchuy Amphibia official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Anne%20Boonchuy%20Amphibia%20official%20character"
   },
   "c371": {
     "characterId": "c371",
@@ -2965,7 +3702,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/King",
     "fallbackPage": "https://en.wikipedia.org/wiki/King",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "King The Owl House official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=King%20The%20Owl%20House%20official%20character"
   },
   "c372": {
     "characterId": "c372",
@@ -2973,7 +3712,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Luz_Noceda",
     "fallbackPage": "https://en.wikipedia.org/wiki/Luz_Noceda",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Luz Noceda The Owl House official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Luz%20Noceda%20The%20Owl%20House%20official%20character"
   },
   "c373": {
     "characterId": "c373",
@@ -2981,7 +3722,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Amity_Blight",
     "fallbackPage": "https://en.wikipedia.org/wiki/Amity_Blight",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Amity Blight The Owl House official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Amity%20Blight%20The%20Owl%20House%20official%20character"
   },
   "c374": {
     "characterId": "c374",
@@ -2989,7 +3732,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Willow_Park",
     "fallbackPage": "https://en.wikipedia.org/wiki/Willow_Park",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Willow Park The Owl House official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Willow%20Park%20The%20Owl%20House%20official%20character"
   },
   "c375": {
     "characterId": "c375",
@@ -2997,7 +3742,9 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Hunter",
     "fallbackPage": "https://en.wikipedia.org/wiki/Hunter",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Hunter The Owl House official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Hunter%20The%20Owl%20House%20official%20character"
   },
   "c376": {
     "characterId": "c376",
@@ -3005,6 +3752,8 @@
     "source": "Wikipedia",
     "preferredPage": "https://fr.wikipedia.org/wiki/Molly_McGee",
     "fallbackPage": "https://en.wikipedia.org/wiki/Molly_McGee",
-    "imageUrl": ""
+    "imageUrl": "",
+    "searchQuery": "Molly McGee The Ghost and Molly McGee official character",
+    "searchUrl": "https://www.google.com/search?tbm=isch&q=Molly%20McGee%20The%20Ghost%20and%20Molly%20McGee%20official%20character"
   }
 }

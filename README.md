@@ -1,18 +1,16 @@
-# Character Choice — V3.2
+# Character Choice V3.3
 
-Version V3.2 du tournoi.
+Version orientée **images ciblées** : le jeu n'utilise plus Wikipedia comme moteur d'image automatique.
 
-## Nouveautés
-- portraits déterministes : la recherche ne se fait plus par recherche vague ; le site demande l’image principale de la page encyclopédique exacte du personnage, d’abord sur Wikipédia français puis anglais ;
-- cache local des portraits déjà chargés ;
-- interface nettoyée : les détails techniques sur l’anti-doublon et la récupération des images ne sont plus affichés ;
-- anti-doublon conservé en arrière-plan ;
-- record absolu du joueur conservé ;
-- historique et export CSV conservés.
+- chaque personnage peut avoir une URL d'image explicitement validée dans `images.json` ;
+- quand une image n'est pas encore validée, l'application n'affiche pas une image aléatoire ou un cosplay : elle affiche un placeholder propre et un bouton de recherche Google Images ciblé ;
+- les cartes utilisent un ratio portrait uniforme (4:5) et `object-fit: cover` ;
+- le record absolu du joueur et son détenteur sont conservés ;
+- l'anti-doublon des personnages reste actif.
 
-## Déploiement
-Téléverser `index.html`, `style.css`, `app.js`, `.nojekyll` et `README.md` à la racine du dépôt GitHub Pages, puis committer sur `main`.
+### Images
+Les deux fiches qui avaient posé problème dans la capture ont été traitées avec des recherches ciblées :
+- Bucky Barnes → fiche Marvel ;
+- Übel → visuel de personnage ciblé pour Frieren.
 
-
-### V3.2 — catalogue d’images individualisé
-Chaque personnage possède une entrée dédiée dans `images.json` avec sa page source et un champ `imageUrl` prévu pour une image validée manuellement. Le jeu ne fait plus de recherche générique par nom. Le record absolu du joueur conserve aussi le nom du personnage détenteur du record.
+Pour une publication publique, vérifie les droits d'utilisation des visuels que tu ajoutes au catalogue.

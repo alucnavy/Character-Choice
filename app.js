@@ -76,49 +76,20 @@ async function loadPortrait(character, el) {
   el.innerHTML = "<span>Chargement…</span>";
   el.dataset.characterId = character.id;
 
-  // V3.2 : catalogue d'images individualisé.
-  // Chaque personnage possède sa propre fiche image dans images.json.
-  // imageUrl peut être renseignée plus tard pour une image validée manuellement.
-  const cacheKey = "ccimg-v32:" + character.id;
+  const entry = IMAGE_CATALOG[character.id] || {};
+  const cacheKey = "ccimg-v33:" + character.id;
   const cached = localStorage.getItem(cacheKey);
-  if (cached) return setImage(el, cached);
+  if (cached) return setImage(el, cached, character);
 
-  let entry = IMAGE_CATALOG[character.id] || {};
   if (entry.imageUrl) {
     localStorage.setItem(cacheKey, entry.imageUrl);
-    return setImage(el, entry.imageUrl);
+    return setImage(el, entry.imageUrl, character);
   }
 
-  const titles = [];
-  if (entry.preferredPage) titles.push({lang:"fr", title: entry.preferredPage.split("/wiki/")[1] || character.name});
-  if (entry.fallbackPage) titles.push({lang:"en", title: entry.fallbackPage.split("/wiki/")[1] || character.name});
-  if (!titles.length) titles.push({lang:"fr", title: character.wiki || character.name});
-
-  for (const item of titles) {
-    const title = decodeURIComponent(item.title).replaceAll("_", " ");
-    const url = `https://${item.lang}.wikipedia.org/w/api.php?action=query&redirects=1&titles=${encodeURIComponent(title)}&prop=pageimages&piprop=thumbnail|original&pilicense=any&pithumbsize=1200&format=json&origin=*`;
-    try {
-      const controller = new AbortController();
-      const timer = setTimeout(() => controller.abort(), 5000);
-      const res = await fetch(url, { signal: controller.signal });
-      clearTimeout(timer);
-      if (!res.ok) continue;
-      const data = await res.json();
-      const pages = data.query && data.query.pages ? Object.values(data.query.pages) : [];
-      const page = pages.find(x => !x.missing);
-      const src = page?.original?.source || page?.thumbnail?.source;
-      if (src) {
-        localStorage.setItem(cacheKey, src);
-        setImage(el, src);
-        return;
-      }
-    } catch (e) {}
-  }
-
-  setFallback(el, character);
+  setFallback(el, character, entry);
 }
 
-function setImage(el, src) {
+function setImage(el, src, character) {
   el.className = "portrait";
   el.innerHTML = "";
   const img = document.createElement("img");
@@ -128,19 +99,20 @@ function setImage(el, src) {
   img.referrerPolicy = "no-referrer";
   img.src = src;
   img.onerror = () => {
-    const c = getChar(el.dataset.characterId);
-    localStorage.removeItem("ccimg-v31:" + c.id);
-    setFallback(el, c);
+    localStorage.removeItem("ccimg-v33:" + character.id);
+    const entry = IMAGE_CATALOG[character.id] || {};
+    setFallback(el, character, entry);
   };
   el.appendChild(img);
 }
 
-function setFallback(el, character) {
+function setFallback(el, character, entry = {}) {
   el.className = "portrait fallback";
   el.dataset.characterId = character.id;
-  el.innerHTML = `<div class="initials">${escapeHtml(initials(character.name))}</div>`;
+  const query = entry.searchQuery || `${character.name} ${character.universe} official character`;
+  const url = entry.searchUrl || `https://www.google.com/search?tbm=isch&q=${encodeURIComponent(query)}`;
+  el.innerHTML = `<div class="fallback-content"><div class="initials">${escapeHtml(initials(character.name))}</div><a class="image-search" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">🔎 Chercher l’image</a></div>`;
 }
-
 function renderCard(prefix, character) {
   $(prefix+"Name").textContent = character.name;
   $(prefix+"Universe").textContent = character.universe;
@@ -190,10 +162,7 @@ function choose(winnerId) {
   if (state.usedIds.length >= CHARACTERS.length) {
     state.challengerId = null;
     save();
-    fetch("images.json").then(r => r.ok ? r.json() : {}).then(data => {
-  IMAGE_CATALOG = data || {};
-  render();
-}).catch(() => render());
+    render();
     toast("🎉 Le pool entier a été parcouru !");
     return;
   }
@@ -203,10 +172,7 @@ function choose(winnerId) {
   if (state.challengerId) state.usedIds.push(state.challengerId);
 
   save();
-  fetch("images.json").then(r => r.ok ? r.json() : {}).then(data => {
-  IMAGE_CATALOG = data || {};
   render();
-}).catch(() => render());
 }
 
 function renderHistory() {
@@ -255,15 +221,9 @@ $("resetBtn").addEventListener("click", () => {
     const holder = localStorage.getItem(BEST_HOLDER_KEY) || state.bestRecordHolder || "";
     Object.assign(state, createNewState(), {bestRecord: best, bestRecordHolder: holder});
     save();
-    fetch("images.json").then(r => r.ok ? r.json() : {}).then(data => {
-  IMAGE_CATALOG = data || {};
-  render();
-}).catch(() => render());
+    fetch("images.json").then(r => r.ok ? r.json() : {}).then(data => { IMAGE_CATALOG = data || {}; render(); }).catch(() => render());
     toast("🔄 Nouveau tournoi lancé !");
   }
 });
 
-fetch("images.json").then(r => r.ok ? r.json() : {}).then(data => {
-  IMAGE_CATALOG = data || {};
-  render();
-}).catch(() => render());
+fetch("images.json").then(r => r.ok ? r.json() : {}).then(data => { IMAGE_CATALOG = data || {}; render(); }).catch(() => render());
