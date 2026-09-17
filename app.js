@@ -94,6 +94,9 @@ function loadState() {
     const raw = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
     if (raw && raw.championId && raw.challengerId && Array.isArray(raw.usedIds)) {
       if (!Object.prototype.hasOwnProperty.call(raw, "lastSnapshot")) raw.lastSnapshot = null;
+      if (!Array.isArray(raw.history)) raw.history = [];
+      if (!Number.isFinite(Number(raw.bestRecord))) raw.bestRecord = 0;
+      if (typeof raw.bestRecordHolder !== "string") raw.bestRecordHolder = "";
       return raw;
     }
   } catch(e) {}
@@ -130,22 +133,62 @@ function escapeHtml(s) {
   return s.replace(/[&<>"']/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
 }
 
-function updateStats() {
-  $("combatNumber").textContent = state.combat;
-  $("streak").textContent = state.streak;
-  $("bestRecord").textContent = `${state.bestRecord} ${state.bestRecord === 1 ? "VICTOIRE" : "VICTOIRES"}`;
-  const inlineHolder = $("bestRecordHolderInline");
-  if (inlineHolder) inlineHolder.textContent = state.bestRecordHolder || "—";
-  $("used").textContent = state.usedIds.length;
-  $("played").textContent = state.history.length;
-  $("pool").textContent = CHARACTERS.length;
-  $("remaining").textContent = Math.max(0, CHARACTERS.length - state.usedIds.length);
-  const progress = Math.min(100, Math.round((state.usedIds.length / CHARACTERS.length) * 100));
-  $("progressPercent").textContent = `${progress}%`;
-  $("progressBar").style.width = `${progress}%`;
-  $("undoBtn").disabled = !state.lastSnapshot;
+function getBestRecordFromHistory() {
+  let best = 0, holder = "";
+  let current = 0, previousWinner = null;
+  for (const h of (Array.isArray(state.history) ? state.history : [])) {
+    const winner = h && h.winner ? String(h.winner) : "";
+    if (winner && winner === previousWinner) current += 1;
+    else current = winner ? 1 : 0;
+    if (current > best) {
+      best = current;
+      holder = winner;
+    }
+    previousWinner = winner || null;
+  }
+  return {best, holder};
 }
 
+function syncBestRecord() {
+  const derived = getBestRecordFromHistory();
+  const storedBest = Number(state.bestRecord || 0);
+  if (derived.best > storedBest) {
+    state.bestRecord = derived.best;
+    state.bestRecordHolder = derived.holder;
+  } else if (!state.bestRecordHolder && storedBest > 0) {
+    state.bestRecordHolder = derived.holder || "";
+  }
+}
+
+function updateStats() {
+  syncBestRecord();
+
+  const setText = (id, value) => {
+    const el = $(id);
+    if (el) el.textContent = String(value);
+  };
+
+  setText("combatNumber", state.combat);
+  setText("streak", state.streak);
+  setText("bestRecord", `${state.bestRecord} ${state.bestRecord === 1 ? "VICTOIRE" : "VICTOIRES"}`);
+  setText("bestRecordHolderInline", state.bestRecordHolder || "—");
+
+  // Partie actuelle : toujours calculée directement depuis l'état courant.
+  setText("used", state.usedIds.length);
+  setText("played", state.history.length);
+  setText("pool", CHARACTERS.length);
+  setText("remaining", Math.max(0, CHARACTERS.length - state.usedIds.length));
+
+  const progress = CHARACTERS.length
+    ? Math.min(100, Math.round((state.usedIds.length / CHARACTERS.length) * 100))
+    : 0;
+  setText("progressPercent", `${progress}%`);
+  const bar = $("progressBar");
+  if (bar) bar.style.width = `${progress}%`;
+
+  const undo = $("undoBtn");
+  if (undo) undo.disabled = !state.lastSnapshot;
+}
 
 async function loadPortrait(character, el) {
   el.className = "portrait loading";
@@ -305,8 +348,10 @@ function choose(winnerId) {
   state.challengerId = pickUnused(state.usedIds);
   if (state.challengerId) state.usedIds.push(state.challengerId);
 
+  syncBestRecord();
   save();
   render();
+  updateStats();
   flashWinner(winnerId === champ.id ? "championCard" : "challengerCard");
 }
 
