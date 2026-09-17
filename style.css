@@ -71,80 +71,371 @@ main{max-width:1400px;margin:auto;padding:190px clamp(14px,3vw,36px) 60px}
 }
 
 
-
-
 /* =========================================================
-   V4.8 — HEADER FIXE PROPRE
-   Aucun transform/filter/perspective/will-change.
-   Le shell est enfant direct de <body>.
+   V4.9 — EN-TÊTE RECONSTRUIT
+   Un seul système de header, lisible et fixe.
    ========================================================= */
 
-.site-header {
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  width: 100% !important;
-  height: 308px !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  z-index: 99999 !important;
-  display: block !important;
-  overflow: visible !important;
-  box-sizing: border-box !important;
+.site-header{
+  position:fixed;
+  inset:0 0 auto 0;
+  width:100%;
+  height:206px;
+  z-index:1000;
+  margin:0;
+  padding:0;
+  background:#090a12;
+  box-shadow:0 8px 28px rgba(0,0,0,.30);
 }
 
-.site-header .ultimate-banner {
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  width: 100% !important;
-  height: 154px !important;
-  margin: 0 !important;
-  box-sizing: border-box !important;
+.ultimate-banner{
+  position:relative;
+  width:100%;
+  height:118px;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-bottom:1px solid rgba(248,216,74,.45);
+  background:
+    radial-gradient(circle at 50% 35%,rgba(140,124,255,.28),transparent 48%),
+    radial-gradient(circle at 12% 50%,rgba(248,216,74,.10),transparent 32%),
+    linear-gradient(135deg,#17133d 0%,#0d1230 55%,#090a18 100%);
 }
 
-.site-header .topbar {
-  position: absolute !important;
-  top: 154px !important;
-  left: 0 !important;
-  right: 0 !important;
-  width: 100% !important;
-  margin: 0 !important;
-  box-sizing: border-box !important;
+.ultimate-banner::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+  background-size:34px 34px;
+  mask-image:linear-gradient(to bottom,transparent,black 22%,black 78%,transparent);
+  pointer-events:none;
 }
 
-.site-header-spacer {
-  display: block !important;
-  width: 100% !important;
-  height: 308px !important;
-  margin: 0 !important;
-  padding: 0 !important;
+.ultimate-banner::after{
+  content:"";
+  position:absolute;
+  left:8%;
+  right:8%;
+  bottom:0;
+  height:2px;
+  background:linear-gradient(90deg,transparent,var(--accent),#8c7cff,var(--accent),transparent);
+  box-shadow:0 0 18px rgba(248,216,74,.35);
 }
 
-main {
-  padding-top: 32px !important;
+.banner-grid,
+.banner-orbit,
+.banner-particles{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
 }
 
-@media (max-width: 700px) {
-  .site-header {
-    height: 252px !important;
-  }
+.banner-grid{
+  background:radial-gradient(circle at 50% 50%,transparent 0,transparent 42%,rgba(255,255,255,.035) 43%,transparent 44%);
+}
 
-  .site-header .ultimate-banner {
-    height: 126px !important;
-  }
+.banner-orbit::before,
+.banner-orbit::after{
+  content:"";
+  position:absolute;
+  border:1px solid rgba(140,124,255,.22);
+  border-radius:50%;
+  width:320px;
+  height:100px;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%) rotate(-9deg);
+}
+.banner-orbit-b::before{
+  width:520px;
+  height:150px;
+  transform:translate(-50%,-50%) rotate(13deg);
+  border-color:rgba(248,216,74,.12);
+}
 
-  .site-header .topbar {
-    top: 126px !important;
-  }
+.banner-content{
+  position:relative;
+  z-index:2;
+  width:min(1100px,92%);
+  text-align:center;
+  padding:8px 20px;
+}
 
-  .site-header-spacer {
-    height: 252px !important;
-  }
+.banner-crown{
+  display:none;
+}
 
-  main {
-    padding-top: 24px !important;
+.banner-kicker{
+  margin:0 0 4px;
+  color:#d9dcf0;
+  font-size:10px;
+  line-height:1;
+  font-weight:900;
+  letter-spacing:.24em;
+}
+
+.ultimate-banner h1{
+  margin:0;
+  display:flex;
+  align-items:baseline;
+  justify-content:center;
+  gap:10px;
+  color:#fff;
+  font-size:clamp(30px,4.2vw,52px);
+  line-height:.98;
+  letter-spacing:-2px;
+  text-shadow:0 3px 22px rgba(0,0,0,.45);
+}
+
+.ultimate-banner h1 span{
+  color:#fff;
+  font-weight:800;
+}
+
+.ultimate-banner h1 strong{
+  color:var(--accent);
+  font-weight:950;
+}
+
+.banner-line{
+  display:none;
+}
+
+.ultimate-banner p{
+  margin:6px 0 0;
+  color:#b9bfd9;
+  font-size:12px;
+  font-weight:600;
+}
+
+.site-header .topbar{
+  position:relative;
+  width:100%;
+  height:88px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:22px;
+  padding:12px clamp(16px,3vw,36px);
+  background:rgba(10,12,25,.97);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.site-header .topbar::before{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  height:2px;
+  background:linear-gradient(90deg,transparent,var(--accent),#8c7cff,var(--accent),transparent);
+}
+
+.site-header .topbar::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:radial-gradient(circle at 18% 0%,rgba(140,124,255,.10),transparent 34%);
+  pointer-events:none;
+}
+
+.site-header .brand{
+  position:relative;
+  z-index:1;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  min-width:0;
+}
+
+.site-header .brand-mark{
+  width:46px;
+  height:46px;
+  flex:0 0 46px;
+  border-radius:14px;
+  font-size:22px;
+}
+
+.site-header .brand-copy{
+  min-width:0;
+}
+
+.site-header .brand-copy .eyebrow{
+  margin-bottom:3px;
+  font-size:9px;
+  letter-spacing:.18em;
+}
+
+.site-header .brand h1{
+  margin:0;
+  font-size:clamp(20px,2.2vw,28px);
+  line-height:1;
+  letter-spacing:-1px;
+}
+
+.site-header .actions{
+  position:relative;
+  z-index:2;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:8px;
+  flex-wrap:wrap;
+}
+
+.site-header .secondary{
+  padding:9px 12px;
+  border-radius:10px;
+  font-size:13px;
+  white-space:nowrap;
+}
+
+.site-header-spacer{
+  width:100%;
+  height:206px;
+  margin:0;
+  padding:0;
+}
+
+main{
+  padding-top:28px !important;
+}
+
+@media(max-width:900px){
+  .site-header{
+    height:224px;
   }
+  .ultimate-banner{
+    height:118px;
+  }
+  .site-header .topbar{
+    height:106px;
+    align-items:flex-start;
+  }
+  .site-header .actions{
+    padding-top:2px;
+  }
+  .site-header-spacer{
+    height:224px;
+  }
+  main{
+    padding-top:24px !important;
+  }
+}
+
+@media(max-width:700px){
+  .site-header{
+    height:236px;
+  }
+  .ultimate-banner{
+    height:106px;
+  }
+  .ultimate-banner h1{
+    font-size:clamp(25px,8vw,38px);
+    letter-spacing:-1.4px;
+    gap:6px;
+  }
+  .banner-kicker{
+    font-size:8px;
+    letter-spacing:.16em;
+  }
+  .ultimate-banner p{
+    font-size:10px;
+    margin-top:5px;
+  }
+  .site-header .topbar{
+    height:130px;
+    padding:11px 14px;
+    flex-direction:column;
+    gap:10px;
+  }
+  .site-header .brand{
+    width:100%;
+  }
+  .site-header .brand-mark{
+    width:40px;
+    height:40px;
+    flex-basis:40px;
+    font-size:19px;
+  }
+  .site-header .brand h1{
+    font-size:22px;
+  }
+  .site-header .actions{
+    width:100%;
+    justify-content:flex-start;
+    gap:6px;
+  }
+  .site-header .secondary{
+    padding:8px 10px;
+    font-size:12px;
+  }
+  .site-header-spacer{
+    height:236px;
+  }
+}
+
+@media(max-width:430px){
+  .site-header{
+    height:250px;
+  }
+  .ultimate-banner{
+    height:100px;
+  }
+  .site-header .topbar{
+    height:150px;
+  }
+  .site-header-spacer{
+    height:250px;
+  }
+  .site-header .actions{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    width:100%;
+  }
+  .site-header .secondary{
+    width:100%;
+    text-align:center;
+  }
+}
+
+/* Historique : barre simple cohérente avec le tournoi */
+.history-page .topbar{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:1000;
+  min-height:92px;
+  padding:14px clamp(16px,3vw,36px);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  background:rgba(10,12,25,.98);
+  border-bottom:1px solid rgba(255,255,255,.08);
+  box-shadow:0 8px 28px rgba(0,0,0,.30);
+}
+.history-page .topbar .brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.history-page .topbar .brand-mark{
+  width:46px;height:46px;flex:0 0 46px;border-radius:14px;font-size:22px;
+}
+.history-page .topbar .brand h1{
+  margin:0;font-size:clamp(20px,2.2vw,28px);line-height:1;letter-spacing:-1px;
+}
+.history-page .topbar .brand p{margin:4px 0 0;color:var(--muted);font-size:12px}
+.history-page .topbar .actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.history-page main{padding-top:118px}
+@media(max-width:700px){
+  .history-page .topbar{min-height:118px;align-items:flex-start;flex-direction:column;gap:10px;padding:12px 14px}
+  .history-page .topbar .actions{width:100%;justify-content:flex-start}
+  .history-page main{padding-top:140px}
 }
