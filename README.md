@@ -30,4 +30,4 @@ Les images sont recherchées automatiquement par personnage. Priorité : item Wi
 - Aucun changement au système de correspondance des images locales.
 
 
-V4.3 : nouvelle bannière de titre visuelle, plus moderne et compacte. Fonctionnalités et dossier images conservés.
+V4.4 : nouvelle bannière de titre visuelle, plus moderne et compacte. Fonctionnalités et dossier images conservés.

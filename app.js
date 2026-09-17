@@ -150,7 +150,7 @@ async function loadPortrait(character, el) {
   el.innerHTML = "<span>Chargement du visuel…</span>";
   el.dataset.characterId = character.id;
 
-  // V4.3 corrigée :
+  // V4.4 corrigée :
   // les fichiers du dossier images peuvent avoir conservé la casse et les
   // tirets du nom du personnage. On essaie donc plusieurs conventions.
   const raw = String(character.name || "").trim();
