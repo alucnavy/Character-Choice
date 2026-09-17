@@ -10,12 +10,12 @@
 <body>
 <header class="topbar">
   <div class="brand">
-    <div class="eyebrow">CHARACTER CHOICE • V3.7</div>
+    <div class="eyebrow">CHARACTER CHOICE • V4.1</div>
     <h1>🏆 Tournoi des personnages</h1>
     <p>Un champion. Un nouveau challenger. À toi de choisir.</p>
   </div>
   <div class="actions">
-    <button id="historyBtn" class="secondary">📜 Historique</button>
+    <a href="history.html" class="secondary nav-link">📜 Historique</a>
     <button id="undoBtn" class="secondary" disabled>↩️ Annuler</button>
     <button id="exportBtn" class="secondary">⇩ Export CSV</button>
     <button id="resetBtn" class="secondary danger">↻ Nouveau tournoi</button>
@@ -74,10 +74,6 @@
     </div>
   </section>
 
-  <section class="panel history-panel" id="historyPanel">
-    <div class="panel-title history-heading"><span>📚 Historique</span><input id="historySearch" type="search" placeholder="Rechercher un personnage…" autocomplete="off"></div>
-    <div id="historyList" class="history-list"></div>
-  </section>
   <section class="panel rights-panel">
     <div class="panel-title">🖼️ Visuels</div>
     <p>Les visuels affichés appartiennent à leurs créateurs, auteurs, studios, éditeurs ou ayants droit. Character Choice ne revendique aucun droit sur ces images.</p>

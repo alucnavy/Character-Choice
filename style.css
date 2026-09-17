@@ -25,3 +25,21 @@ main{max-width:1400px;margin:auto;padding:190px clamp(14px,3vw,36px) 60px}
 
 .progress-wrap{flex:1 1 240px;min-width:220px;max-width:420px;margin-left:8px}.progress-label{display:flex;justify-content:space-between;color:var(--muted);font-size:11px;font-weight:800;margin:0 2px 5px}.progress-label strong{color:var(--accent)}.progress{height:7px;background:#202440;border-radius:99px;overflow:hidden;border:1px solid #30365a}.progress span{display:block;height:100%;width:0;background:var(--accent);border-radius:99px;transition:width .35s ease}.secondary:disabled{opacity:.4;cursor:not-allowed;transform:none}.history-heading{display:flex;align-items:center;justify-content:space-between;gap:12px}.history-heading input{width:min(300px,55%);background:#0e1122;color:#fff;border:1px solid var(--line);border-radius:10px;padding:9px 11px;outline:none}.history-heading input:focus{border-color:#6c73a4}.character-card.winner-flash{animation:winnerFlash .45s ease}.character-card.loser-flash{animation:loserFlash .35s ease}@keyframes winnerFlash{0%{transform:scale(1)}45%{transform:scale(1.015);box-shadow:0 0 0 3px rgba(248,216,74,.35),0 20px 70px rgba(0,0,0,.28)}100%{transform:scale(1)}}@keyframes loserFlash{0%{opacity:1}100%{opacity:.78}}
 @media(max-width:700px){.progress-wrap{order:10;flex-basis:100%;max-width:none;margin-left:0}.history-heading{align-items:stretch;flex-direction:column}.history-heading input{width:100%}}
+
+/* V4.1 — navigation et page Historique */
+.nav-link{display:inline-flex;align-items:center;text-decoration:none}
+.history-page main{padding-top:150px}
+.history-page .history-panel{margin-top:0}
+.history-heading{display:flex;justify-content:space-between;align-items:center;gap:14px}
+.history-heading input{width:min(360px,100%);border:1px solid var(--line);background:#0e1223;color:#fff;border-radius:10px;padding:9px 11px;outline:none}
+.history-heading input:focus{border-color:#777db0}
+.history-tools{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.history-filter{border:1px solid var(--line);background:#161a31;color:#fff;padding:9px 11px;border-radius:10px}
+.history-full-list{max-height:none}
+.history-empty{color:var(--muted);padding:20px 0}
+.back-link{margin-left:auto}
+@media (max-width:700px){
+  .history-page main{padding-top:190px}
+  .history-heading{align-items:stretch;flex-direction:column}
+  .history-heading input{width:100%}
+}

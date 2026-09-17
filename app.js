@@ -76,7 +76,6 @@ function updateStats() {
   $("progressPercent").textContent = `${progress}%`;
   $("progressBar").style.width = `${progress}%`;
   $("undoBtn").disabled = !state.lastSnapshot;
-  renderHistory();
 }
 
 
@@ -282,7 +281,6 @@ $("undoBtn").addEventListener("click", () => {
   render();
   toast("↩️ Dernier combat annulé");
 });
-$("historySearch").addEventListener("input", renderHistory);
 
 function flashWinner(cardId) {
   const el = $(cardId);
@@ -297,7 +295,6 @@ $("chooseChallenger").addEventListener("click", e => { e.stopPropagation(); choo
 $("championCard").addEventListener("click", () => choose(state.championId));
 $("challengerCard").addEventListener("click", () => choose(state.challengerId));
 $("exportBtn").addEventListener("click", exportCSV);
-$("historyBtn").addEventListener("click", () => $("historyPanel").scrollIntoView({behavior:"smooth"}));
 $("resetBtn").addEventListener("click", () => {
   if (confirm("Commencer un nouveau tournoi ? Le record absolu du joueur sera conservé.")) {
     const best = Number(localStorage.getItem(BEST_KEY) || state.bestRecord || 0);

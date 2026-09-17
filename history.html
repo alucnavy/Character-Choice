@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090a12">
+<title>Character Choice — Historique</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="history-page">
+<header class="topbar">
+  <div class="brand">
+    <div class="eyebrow">CHARACTER CHOICE • V4.1</div>
+    <h1>📜 Historique des combats</h1>
+    <p>Retrouve tous les combats de ton tournoi.</p>
+  </div>
+  <div class="actions">
+    <a href="index.html" class="secondary nav-link">🏆 Retour au tournoi</a>
+    <button id="exportHistoryBtn" class="secondary">⇩ Export CSV</button>
+  </div>
+</header>
+
+<main>
+  <section class="panel history-panel">
+    <div class="panel-title history-heading">
+      <span>📚 Tous les combats</span>
+      <input id="historySearch" type="search" placeholder="Rechercher un personnage, univers ou média…" autocomplete="off">
+    </div>
+    <div id="historyList" class="history-list history-full-list"></div>
+  </section>
+</main>
+
+<script>
+const STORAGE_KEY = "characterChoiceV35";
+const $ = id => document.getElementById(id);
+
+function escapeHtml(value){
+  return String(value ?? "").replace(/[&<>"']/g, m => ({
+    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"
+  }[m]));
+}
+
+function getHistory(){
+  try{
+    const state = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
+    return state && Array.isArray(state.history) ? state.history : [];
+  }catch(e){ return []; }
+}
+
+function renderHistory(){
+  const box = $("historyList");
+  const query = $("historySearch").value.trim().toLowerCase();
+  const history = getHistory();
+
+  if(!history.length){
+    box.innerHTML = '<div class="history-empty">Aucun combat enregistré pour le moment.</div>';
+    return;
+  }
+
+  const filtered = [...history].reverse().filter(h => {
+    if(!query) return true;
+    return [h.combat,h.championBefore,h.challenger,h.winner,h.universe,h.media]
+      .some(v => String(v ?? "").toLowerCase().includes(query));
+  });
+
+  if(!filtered.length){
+    box.innerHTML = '<div class="history-empty">Aucun résultat pour cette recherche.</div>';
+    return;
+  }
+
+  box.innerHTML = filtered.map(h => `
+    <div class="history-row">
+      <div>#${escapeHtml(h.combat)}</div>
+      <div><span>Champion :</span> ${escapeHtml(h.championBefore)}</div>
+      <div><span>Challenger :</span> ${escapeHtml(h.challenger)}</div>
+      <div class="winner">🏆 ${escapeHtml(h.winner)}</div>
+    </div>
+  `).join("");
+}
+
+function exportCSV(){
+  const history = getHistory();
+  const rows = [
+    ["Combat","Champion avant","Adversaire","Univers","Média","Gagnant"],
+    ...history.map(h => [h.combat,h.championBefore,h.challenger,h.universe,h.media,h.winner])
+  ];
+  const csv = rows.map(r => r.map(v => `"${String(v ?? "").replace(/"/g,'""')}"`).join(";")).join("\n");
+  const blob = new Blob(["\ufeff"+csv], {type:"text/csv;charset=utf-8"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `character-choice-historique-${new Date().toISOString().slice(0,10)}.csv`;
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+$("historySearch").addEventListener("input", renderHistory);
+$("exportHistoryBtn").addEventListener("click", exportCSV);
+renderHistory();
+</script>
+</body>
+</html>
