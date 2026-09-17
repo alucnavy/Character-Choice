@@ -8,6 +8,72 @@ const BEST_HOLDER_KEY = "characterChoiceV35BestHolder";
 const $ = id => document.getElementById(id);
 const state = loadState();
 
+function getImageCandidates(character) {
+  const rawName = String(character?.name || "").trim();
+  const id = String(character?.id ?? "").trim();
+
+  const normalize = (value) => value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/['’]/g, "")
+    .replace(/&/g, "and")
+    .replace(/[^a-zA-Z0-9]+/g, "_")
+    .replace(/^_+|_+$/g, "")
+    .toLowerCase();
+
+  const variants = [
+    rawName,
+    rawName.replace(/[-–—]/g, " "),
+    rawName.replace(/\([^)]*\)/g, "").trim()
+  ];
+
+  const slugs = [...new Set(variants.map(normalize).filter(Boolean))];
+  const candidates = [];
+
+  for (const slug of slugs) candidates.push(`images/${id}_${slug}.jpg`);
+  for (const slug of slugs) candidates.push(`images/${slug}.jpg`);
+
+  return [...new Set(candidates)];
+}
+
+function getImagePath(character) {
+  return getImageCandidates(character)[0] || "";
+}
+
+
+function loadCharacterImage(img, character) {
+  const candidates = getImageCandidates(character);
+  let index = 0;
+
+  const tryNext = () => {
+    if (index >= candidates.length) {
+      img.removeAttribute("src");
+      img.alt = `Visuel introuvable pour ${character?.name || "ce personnage"}`;
+      const parent = img.parentElement;
+      if (parent) {
+        parent.classList.add("image-missing");
+        parent.setAttribute("data-image-status", "missing");
+      }
+      return;
+    }
+
+    const candidate = candidates[index++];
+    img.onerror = tryNext;
+    img.onload = () => {
+      const parent = img.parentElement;
+      if (parent) {
+        parent.classList.remove("image-missing");
+        parent.classList.add("image-found");
+        parent.setAttribute("data-image-status", "found");
+      }
+    };
+    img.src = candidate;
+  };
+
+  tryNext();
+}
+
+
 function slug(text) {
   return text.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
 }
