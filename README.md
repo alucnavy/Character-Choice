@@ -28,3 +28,6 @@ Les images sont recherchées automatiquement par personnage. Priorité : item Wi
 - En-tête du tournoi réellement fixe au défilement.
 - Portraits affichés sans recadrage CSS forcé (`object-fit: contain`) pour préserver l'image entière fournie dans le catalogue local.
 - Aucun changement au système de correspondance des images locales.
+
+
+V4.2 : nouvelle bannière de titre visuelle, plus moderne et compacte. Fonctionnalités et dossier images conservés.
