@@ -463,3 +463,5 @@ main{
 @media(max-width:560px){
   .character-card .portrait{min-height:390px;padding:5px}
 }
+
+.career-stats{margin-bottom:14px}.career-stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.career-stats-grid div{padding:12px;border:1px solid var(--line);border-radius:14px;background:rgba(19,22,43,.65)}.career-stats-grid span{display:block;color:var(--muted);font-size:12px;margin-bottom:5px}.career-stats-grid strong{font-size:24px}@media(max-width:700px){.career-stats-grid{grid-template-columns:repeat(2,1fr)}}

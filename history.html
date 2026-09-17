@@ -12,7 +12,7 @@
   <div class="brand">
     <div class="brand-mark">📜</div>
     <div class="brand-copy">
-      <div class="eyebrow">CHARACTER CHOICE • V4.3</div>
+      <div class="eyebrow">CHARACTER CHOICE • V5</div>
       <h1>Historique des combats</h1>
       <p>Retrouve tous les combats de ton tournoi.</p>
     </div>
@@ -24,7 +24,18 @@
 </header>
 
 <main>
-  <section class="panel history-panel">
+  
+<section class="career-stats panel" aria-label="Statistiques de carrière">
+  <div class="panel-title">📊 Statistiques de carrière</div>
+  <div class="career-stats-grid">
+    <div><span>Combats joués</span><strong id="careerCombats">0</strong></div>
+    <div><span>Meilleure série</span><strong id="careerBest">0</strong></div>
+    <div><span>Champions différents</span><strong id="careerChampions">0</strong></div>
+    <div><span>Personnages vus</span><strong id="careerSeen">0</strong></div>
+  </div>
+</section>
+
+<section class="panel history-panel">
     <div class="panel-title history-heading">
       <span>📚 Tous les combats</span>
       <input id="historySearch" type="search" placeholder="Rechercher un personnage, univers ou média…" autocomplete="off">
@@ -48,6 +59,28 @@ function getHistory(){
     const state = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
     return state && Array.isArray(state.history) ? state.history : [];
   }catch(e){ return []; }
+}
+
+function renderCareerStats(){
+  const history = getHistory();
+  const combats = history.length;
+  const champions = new Set(history.map(h => h.winner).filter(Boolean)).size;
+  const seen = new Set();
+  history.forEach(h => {
+    if (h.championBefore) seen.add(h.championBefore);
+    if (h.challenger) seen.add(h.challenger);
+  });
+  let best = 0, current = 0, previousWinner = null;
+  for (const h of history) {
+    if (h.winner && h.winner === previousWinner) current += 1;
+    else current = h.winner ? 1 : 0;
+    if (current > best) best = current;
+    previousWinner = h.winner || null;
+  }
+  $("careerCombats").textContent = combats;
+  $("careerBest").textContent = best;
+  $("careerChampions").textContent = champions;
+  $("careerSeen").textContent = seen.size;
 }
 
 function renderHistory(){
@@ -99,6 +132,7 @@ function exportCSV(){
 $("historySearch").addEventListener("input", renderHistory);
 $("exportHistoryBtn").addEventListener("click", exportCSV);
 renderHistory();
+renderCareerStats();
 </script>
 </body>
 </html>

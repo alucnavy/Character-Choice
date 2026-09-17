@@ -134,7 +134,8 @@ function updateStats() {
   $("combatNumber").textContent = state.combat;
   $("streak").textContent = state.streak;
   $("bestRecord").textContent = `${state.bestRecord} ${state.bestRecord === 1 ? "VICTOIRE" : "VICTOIRES"}`;
-  $("bestRecordHolder").textContent = state.bestRecordHolder || "—";
+  const inlineHolder = $("bestRecordHolderInline");
+  if (inlineHolder) inlineHolder.textContent = state.bestRecordHolder || "—";
   $("used").textContent = state.usedIds.length;
   $("played").textContent = state.history.length;
   $("pool").textContent = CHARACTERS.length;
