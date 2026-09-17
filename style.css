@@ -439,3 +439,27 @@ main{
   .history-page .topbar .actions{width:100%;justify-content:flex-start}
   .history-page main{padding-top:140px}
 }
+
+/* V4.10 — cartes personnages : image toujours visible en entier */
+.character-card .portrait{
+  aspect-ratio: 3 / 4;
+  min-height: 400px;
+  max-height: 620px;
+  padding: 6px;
+  background:#0b0d18;
+}
+.character-card .portrait img{
+  width:100%;
+  height:100%;
+  max-width:100%;
+  max-height:100%;
+  object-fit:contain !important;
+  object-position:center center !important;
+  background:transparent;
+}
+@media(max-width:900px){
+  .character-card .portrait{min-height:420px;max-height:none}
+}
+@media(max-width:560px){
+  .character-card .portrait{min-height:390px;padding:5px}
+}
