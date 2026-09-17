@@ -150,52 +150,72 @@ async function loadPortrait(character, el) {
   el.innerHTML = "<span>Chargement du visuel…</span>";
   el.dataset.characterId = character.id;
 
-  // V3.6 : les portraits utilisés par le jeu sont UNIQUEMENT ceux du dossier
-  // local /images du dépôt GitHub. On ne lance plus de recherche Wikipedia,
-  // Wikidata ou Commons : cela évite définitivement les acteurs, cosplayers
-  // ou images sans rapport avec le personnage.
-  const slug = (s => (s || "")
-    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^A-Za-z0-9]+/g, "_")
-    .replace(/^_+|_+$/g, ""))(character.name);
+  // V4.3 corrigée :
+  // les fichiers du dossier images peuvent avoir conservé la casse et les
+  // tirets du nom du personnage. On essaie donc plusieurs conventions.
+  const raw = String(character.name || "").trim();
+  const id = String(character.id || "").trim();
 
-  const base = `images/${character.id}_${slug}`;
-  const candidates = [
-    `${base}.jpg`,
-    `${base}.jpeg`,
-    `${base}.JPG`,
-    `${base}.JPEG`
+  const stripAccents = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  const noApostrophe = (s) => s.replace(/['’]/g, "");
+  const clean = (s) => noApostrophe(stripAccents(s));
+
+  const variants = [
+    raw,
+    clean(raw),
+    raw.replace(/[-–—]/g, "_"),
+    clean(raw).replace(/[-–—]/g, "_"),
+    raw.replace(/\s+/g, "_"),
+    clean(raw).replace(/\s+/g, "_"),
+    raw.replace(/[^A-Za-zÀ-ÿ0-9_-]+/g, "_"),
+    clean(raw).replace(/[^A-Za-z0-9_-]+/g, "_")
   ];
 
+  const names = [...new Set(variants.map(v => v.replace(/^_+|_+$/g, "")).filter(Boolean))];
+
+  const candidates = [];
+  for (const name of names) {
+    for (const ext of [".jpg", ".jpeg", ".JPG", ".JPEG"]) {
+      candidates.push(`images/${id}_${name}${ext}`);
+    }
+  }
+
+  // Dernier filet : certains fichiers peuvent avoir été enregistrés sans ID.
+  for (const name of names) {
+    for (const ext of [".jpg", ".jpeg", ".JPG", ".JPEG"]) {
+      candidates.push(`images/${name}${ext}`);
+    }
+  }
+
+  const uniqueCandidates = [...new Set(candidates)];
+
   const tryCandidate = (index) => {
-    if (index >= candidates.length) {
+    if (index >= uniqueCandidates.length) {
       el.className = "portrait unavailable";
       el.innerHTML = `<span>Visuel introuvable pour ${character.name}</span>`;
       return;
     }
 
-    const src = candidates[index];
+    const src = uniqueCandidates[index];
     const img = new Image();
     img.alt = character.name;
     img.loading = "eager";
     img.decoding = "async";
 
     img.onload = () => {
-      // Les images du catalogue utilisateur sont prioritaires et sont
-      // affichées telles quelles, avec un cadrage uniforme par le CSS.
       if ((img.naturalWidth || 0) < 150 || (img.naturalHeight || 0) < 150) {
         tryCandidate(index + 1);
         return;
       }
       setImage(el, src, character, () => tryCandidate(index + 1), "catalogue local /images");
     };
+
     img.onerror = () => tryCandidate(index + 1);
     img.src = src;
   };
 
   tryCandidate(0);
 }
-
 function setImage(el, src, character, onError, source = "") {
   el.className = "portrait";
   el.innerHTML = "";
