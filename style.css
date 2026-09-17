@@ -288,3 +288,69 @@ main {
   .topbar { top: 126px !important; }
   main { padding-top: 300px !important; }
 }
+
+
+/* =========================================================
+   V4.5 — HEADER UNIQUE, RÉELLEMENT FIXE
+   Un seul conteneur est attaché à la fenêtre.
+   ========================================================= */
+
+.site-header {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  height: 308px !important;
+  z-index: 99999 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transform: none !important;
+  filter: none !important;
+  perspective: none !important;
+  overflow: visible !important;
+  isolation: isolate;
+}
+
+.site-header .ultimate-banner {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  height: 154px !important;
+  margin: 0 !important;
+  transform: none !important;
+}
+
+.site-header .topbar {
+  position: absolute !important;
+  top: 154px !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  margin: 0 !important;
+  transform: none !important;
+}
+
+main {
+  padding-top: 340px !important;
+}
+
+@media (max-width: 700px) {
+  .site-header {
+    height: 252px !important;
+  }
+
+  .site-header .ultimate-banner {
+    height: 126px !important;
+  }
+
+  .site-header .topbar {
+    top: 126px !important;
+  }
+
+  main {
+    padding-top: 300px !important;
+  }
+}
