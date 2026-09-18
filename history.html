@@ -8,7 +8,8 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="history-page">
-<header class="topbar">
+
+<header class="topbar history-topbar">
   <div class="brand">
     <div class="brand-mark">📜</div>
     <div class="brand-copy">
@@ -23,24 +24,15 @@
   </div>
 </header>
 
-<main>
-  
-<section class="career-stats" aria-label="Statistiques de carrière">
-  <div class="career-stat">
-    <span>Combats joués</span><strong id="careerCombats">0</strong>
-  </div>
-  <div class="career-stat">
-    <span>Meilleure série</span><strong id="careerBest">0</strong>
-  </div>
-  <div class="career-stat">
-    <span>Champions différents</span><strong id="careerChampions">0</strong>
-  </div>
-  <div class="career-stat">
-    <span>Personnages vus</span><strong id="careerSeen">0</strong>
-  </div>
-</section>
+<main class="history-main">
+  <section class="career-stats" aria-label="Statistiques">
+    <div class="career-stat"><span>Combats joués</span><strong id="careerCombats">0</strong></div>
+    <div class="career-stat"><span>Meilleure série</span><strong id="careerBest">0</strong></div>
+    <div class="career-stat"><span>Champions différents</span><strong id="careerChampions">0</strong></div>
+    <div class="career-stat"><span>Personnages vus</span><strong id="careerSeen">0</strong></div>
+  </section>
 
-<section class="panel history-panel">
+  <section class="panel history-panel">
     <div class="panel-title history-heading">
       <span>📚 Tous les combats</span>
       <input id="historySearch" type="search" placeholder="Rechercher un personnage, univers ou média…" autocomplete="off">
@@ -63,28 +55,34 @@ function getHistory(){
   try{
     const state = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
     return state && Array.isArray(state.history) ? state.history : [];
-  }catch(e){ return []; }
+  }catch(e){
+    return [];
+  }
 }
 
 function renderCareerStats(){
   const history = getHistory();
-  const combats = history.length;
-  const champions = new Set(history.map(h => h.winner).filter(Boolean)).size;
+  let best = 0;
+  let current = 0;
+  let previousWinner = null;
+  const champions = new Set();
   const seen = new Set();
-  history.forEach(h => {
-    if (h.championBefore) seen.add(h.championBefore);
-    if (h.challenger) seen.add(h.challenger);
-  });
-  let best = 0, current = 0, previousWinner = null;
-  for (const h of history) {
-    if (h.winner && h.winner === previousWinner) current += 1;
+
+  for(const h of history){
+    if(h.winner) champions.add(h.winner);
+    if(h.championBefore) seen.add(h.championBefore);
+    if(h.challenger) seen.add(h.challenger);
+
+    if(h.winner && h.winner === previousWinner) current += 1;
     else current = h.winner ? 1 : 0;
-    if (current > best) best = current;
+
+    if(current > best) best = current;
     previousWinner = h.winner || null;
   }
-  $("careerCombats").textContent = combats;
+
+  $("careerCombats").textContent = history.length;
   $("careerBest").textContent = best;
-  $("careerChampions").textContent = champions;
+  $("careerChampions").textContent = champions.size;
   $("careerSeen").textContent = seen.size;
 }
 

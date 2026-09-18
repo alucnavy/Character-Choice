@@ -25,34 +25,6 @@ main{max-width:1400px;margin:auto;padding:190px clamp(14px,3vw,36px) 60px}
 .progress-wrap{flex:1 1 240px;min-width:220px;max-width:420px;margin-left:8px}.progress-label{display:flex;justify-content:space-between;color:var(--muted);font-size:11px;font-weight:800;margin:0 2px 5px}.progress-label strong{color:var(--accent)}.progress{height:7px;background:#202440;border-radius:99px;overflow:hidden;border:1px solid #30365a}.progress span{display:block;height:100%;width:0;background:var(--accent);border-radius:99px;transition:width .35s ease}.secondary:disabled{opacity:.4;cursor:not-allowed;transform:none}.history-heading{display:flex;align-items:center;justify-content:space-between;gap:12px}.history-heading input{width:min(300px,55%);background:#0e1122;color:#fff;border:1px solid var(--line);border-radius:10px;padding:9px 11px;outline:none}.history-heading input:focus{border-color:#6c73a4}.character-card.winner-flash{animation:winnerFlash .45s ease}.character-card.loser-flash{animation:loserFlash .35s ease}@keyframes winnerFlash{0%{transform:scale(1)}45%{transform:scale(1.015);box-shadow:0 0 0 3px rgba(248,216,74,.35),0 20px 70px rgba(0,0,0,.28)}100%{transform:scale(1)}}@keyframes loserFlash{0%{opacity:1}100%{opacity:.78}}
 @media(max-width:700px){.progress-wrap{order:10;flex-basis:100%;max-width:none;margin-left:0}.history-heading{align-items:stretch;flex-direction:column}.history-heading input{width:100%}}
 
-/* V4.1 — navigation et page Historique */
-.nav-link{display:inline-flex;align-items:center;text-decoration:none}
-.history-page main{padding-top:150px}
-.history-page .history-panel{margin-top:0}
-.history-heading{display:flex;justify-content:space-between;align-items:center;gap:14px}
-.history-heading input{width:min(360px,100%);border:1px solid var(--line);background:#0e1223;color:#fff;border-radius:10px;padding:9px 11px;outline:none}
-.history-heading input:focus{border-color:#777db0}
-.history-tools{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
-.history-filter{border:1px solid var(--line);background:#161a31;color:#fff;padding:9px 11px;border-radius:10px}
-.history-full-list{max-height:none}
-.history-empty{color:var(--muted);padding:20px 0}
-.back-link{margin-left:auto}
-@media (max-width:700px){
-  .history-page main{padding-top:190px}
-  .history-heading{align-items:stretch;flex-direction:column}
-  .history-heading input{width:100%}
-}
-
-@media (max-width:760px){
-  .topbar{padding:17px 16px;gap:14px}
-  .brand{gap:11px}
-  .brand-mark{width:46px;height:46px;flex-basis:46px;border-radius:14px;font-size:22px}
-  .brand h1{font-size:clamp(23px,7vw,32px)}
-  .brand p{font-size:12px}
-  .eyebrow{font-size:9px}
-}
-
-
 /* V4.3 — état explicite des portraits */
 .portrait.image-missing::after {
   content: "Visuel manquant";
@@ -403,43 +375,6 @@ main{
   }
 }
 
-/* Historique : barre simple cohérente avec le tournoi */
-.history-page .topbar{
-  position:fixed;
-  top:0;
-  left:0;
-  right:0;
-  z-index:1000;
-  min-height:92px;
-  padding:14px clamp(16px,3vw,36px);
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
-  background:rgba(10,12,25,.98);
-  border-bottom:1px solid rgba(255,255,255,.08);
-  box-shadow:0 8px 28px rgba(0,0,0,.30);
-}
-.history-page .topbar .brand{
-  display:flex;
-  align-items:center;
-  gap:12px;
-}
-.history-page .topbar .brand-mark{
-  width:46px;height:46px;flex:0 0 46px;border-radius:14px;font-size:22px;
-}
-.history-page .topbar .brand h1{
-  margin:0;font-size:clamp(20px,2.2vw,28px);line-height:1;letter-spacing:-1px;
-}
-.history-page .topbar .brand p{margin:4px 0 0;color:var(--muted);font-size:12px}
-.history-page .topbar .actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
-.history-page main{padding-top:118px}
-@media(max-width:700px){
-  .history-page .topbar{min-height:118px;align-items:flex-start;flex-direction:column;gap:10px;padding:12px 14px}
-  .history-page .topbar .actions{width:100%;justify-content:flex-start}
-  .history-page main{padding-top:140px}
-}
-
 /* V4.10 — cartes personnages : image toujours visible en entier */
 .character-card .portrait{
   aspect-ratio: 3 / 4;
@@ -465,8 +400,37 @@ main{
 }
 
 
-/* V5.1 — Historique : statistiques compactes */
-.history-page main{padding-top:150px;}
+
+
+/* V5.3 — Historique : un seul système propre */
+.history-page{
+  --history-header-height:104px;
+}
+.history-page .history-topbar{
+  position:fixed;
+  inset:0 0 auto 0;
+  z-index:1000;
+  min-height:var(--history-header-height);
+  padding:14px clamp(16px,3vw,36px);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  background:rgba(10,12,25,.98);
+  border-bottom:1px solid rgba(255,255,255,.08);
+  box-shadow:0 8px 28px rgba(0,0,0,.30);
+}
+.history-page .history-topbar .brand{display:flex;align-items:center;gap:12px;min-width:0;}
+.history-page .history-topbar .brand-mark{width:46px;height:46px;flex:0 0 46px;border-radius:14px;font-size:22px;}
+.history-page .history-topbar .brand h1{margin:0;font-size:clamp(20px,2.2vw,28px);line-height:1;letter-spacing:-1px;}
+.history-page .history-topbar .brand p{margin:4px 0 0;color:var(--muted);font-size:12px;}
+.history-page .history-topbar .actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;}
+
+.history-page .history-main{
+  max-width:1400px;
+  margin:auto;
+  padding:calc(var(--history-header-height) + 20px) clamp(14px,3vw,36px) 60px;
+}
 .history-page .career-stats{
   display:grid;
   grid-template-columns:repeat(4,minmax(0,1fr));
@@ -475,10 +439,11 @@ main{
 }
 .history-page .career-stat{
   min-width:0;
+  min-height:58px;
   padding:11px 14px;
-  border:1px solid rgba(255,255,255,.12);
+  border:1px solid var(--line);
   border-radius:13px;
-  background:rgba(18,21,40,.72);
+  background:rgba(18,21,40,.86);
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -499,19 +464,41 @@ main{
 }
 .history-page .history-panel{margin-top:0;}
 .history-page .history-heading{
-  margin-bottom:10px;
   display:flex;
   align-items:center;
   justify-content:space-between;
   gap:14px;
 }
-@media(max-width:800px){
+.history-page .history-heading input{
+  width:min(360px,100%);
+  border:1px solid var(--line);
+  background:#0e1223;
+  color:#fff;
+  border-radius:10px;
+  padding:9px 11px;
+  outline:none;
+}
+.history-page .history-heading input:focus{border-color:#777db0;}
+.history-page .history-full-list{max-height:none;}
+.history-page .history-empty{color:var(--muted);padding:20px 0;}
+
+@media(max-width:700px){
+  .history-page .history-topbar{
+    min-height:118px;
+    align-items:flex-start;
+    flex-direction:column;
+    gap:10px;
+    padding:12px 14px;
+  }
+  .history-page{--history-header-height:118px;}
+  .history-page .history-topbar .actions{width:100%;justify-content:flex-start;}
   .history-page .career-stats{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .history-page .history-heading{align-items:stretch;flex-direction:column;}
+  .history-page .history-heading input{width:100%;}
 }
 @media(max-width:560px){
-  .history-page main{padding-top:190px;}
   .history-page .career-stats{gap:8px;}
-  .history-page .career-stat{padding:10px 11px;}
+  .history-page .career-stat{padding:10px 11px;min-height:54px;}
   .history-page .career-stat span{font-size:11px;}
   .history-page .career-stat strong{font-size:20px;}
 }
