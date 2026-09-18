@@ -7,58 +7,71 @@ const BEST_HOLDER_KEY = "characterChoiceV35BestHolder";
 const $ = id => document.getElementById(id);
 const state = loadState();
 
-function imageCandidates(character) {
-  const id = String(character?.id || "").trim();
-  const name = String(character?.name || "").trim();
-  const clean = value => value
+function getImageCandidates(character) {
+  const rawName = String(character?.name || "").trim();
+  const id = String(character?.id ?? "").trim();
+
+  const normalize = (value) => value
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[\\/:*?"<>|]/g, "")
-    .trim();
+    .replace(/['’]/g, "")
+    .replace(/&/g, "and")
+    .replace(/[^a-zA-Z0-9]+/g, "_")
+    .replace(/^_+|_+$/g, "")
+    .toLowerCase();
 
-  const original = name.replace(/[\\/:*?"<>|]/g, "").trim();
-  const withoutAccents = clean(name);
+  const variants = [
+    rawName,
+    rawName.replace(/[-–—]/g, " "),
+    rawName.replace(/\([^)]*\)/g, "").trim()
+  ];
 
-  return [...new Set([
-    `images/${id}_${original}.jpg`,
-    `images/${id}_${withoutAccents}.jpg`
-  ])];
+  const slugs = [...new Set(variants.map(normalize).filter(Boolean))];
+  const candidates = [];
+
+  for (const slug of slugs) candidates.push(`images/${id}_${slug}.jpg`);
+  for (const slug of slugs) candidates.push(`images/${slug}.jpg`);
+
+  return [...new Set(candidates)];
 }
 
-function loadPortrait(character, el) {
-  el.className = "portrait loading";
-  el.innerHTML = "<span>Chargement du visuel…</span>";
-  el.dataset.characterId = character.id;
+function getImagePath(character) {
+  return getImageCandidates(character)[0] || "";
+}
 
-  const candidates = imageCandidates(character);
+
+function loadCharacterImage(img, character) {
+  const candidates = getImageCandidates(character);
   let index = 0;
 
   const tryNext = () => {
     if (index >= candidates.length) {
-      el.className = "portrait unavailable";
-      el.innerHTML = `<span>Visuel introuvable pour ${escapeHtml(character.name)}</span>`;
+      img.removeAttribute("src");
+      img.alt = `Visuel introuvable pour ${character?.name || "ce personnage"}`;
+      const parent = img.parentElement;
+      if (parent) {
+        parent.classList.add("image-missing");
+        parent.setAttribute("data-image-status", "missing");
+      }
       return;
     }
 
-    const src = candidates[index++];
-    const img = new Image();
-    img.alt = character.name;
-    img.loading = "eager";
-    img.decoding = "async";
-
-    img.onload = () => {
-      el.className = "portrait";
-      el.innerHTML = "";
-      img.title = `${character.name} — visuel local du catalogue.`;
-      el.appendChild(img);
-    };
-
+    const candidate = candidates[index++];
     img.onerror = tryNext;
-    img.src = src;
+    img.onload = () => {
+      const parent = img.parentElement;
+      if (parent) {
+        parent.classList.remove("image-missing");
+        parent.classList.add("image-found");
+        parent.setAttribute("data-image-status", "found");
+      }
+    };
+    img.src = candidate;
   };
 
   tryNext();
 }
+
 
 function slug(text) {
   return text.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
@@ -173,6 +186,94 @@ function updateStats() {
 
   const undo = $("undoBtn");
   if (undo) undo.disabled = !state.lastSnapshot;
+}
+
+async function loadPortrait(character, el) {
+  el.className = "portrait loading";
+  el.innerHTML = "<span>Chargement du visuel…</span>";
+  el.dataset.characterId = character.id;
+
+  const raw = String(character.name || "").trim();
+  const id = String(character.id || "").trim();
+
+  const stripAccents = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  const noApostrophe = (s) => s.replace(/[\u2018\u2019']/g, "");
+  const clean = (s) => noApostrophe(stripAccents(s));
+
+  const variants = [
+    raw,
+    clean(raw),
+    raw.replace(/[-–—]/g, "_"),
+    clean(raw).replace(/[-–—]/g, "_"),
+    raw.replace(/\s+/g, "_"),
+    clean(raw).replace(/\s+/g, "_"),
+    raw.replace(/[^A-Za-zÀ-ÿ0-9_-]+/g, "_"),
+    clean(raw).replace(/[^A-Za-z0-9_-]+/g, "_")
+  ];
+
+  const names = [...new Set(variants.map(v => v.replace(/^_+|_+$/g, "")).filter(Boolean))];
+  const candidates = [];
+  for (const name of names) {
+    for (const ext of [".jpg", ".jpeg", ".JPG", ".JPEG"]) {
+      candidates.push(`images/${id}_${name}${ext}`);
+    }
+  }
+  for (const name of names) {
+    for (const ext of [".jpg", ".jpeg", ".JPG", ".JPEG"]) {
+      candidates.push(`images/${name}${ext}`);
+    }
+  }
+
+  const uniqueCandidates = [...new Set(candidates)];
+
+  const finishMissing = () => {
+    el.className = "portrait unavailable";
+    el.innerHTML = `<span>Visuel introuvable pour ${character.name}</span>`;
+  };
+
+  const tryCandidate = (index) => {
+    if (index >= uniqueCandidates.length) {
+      finishMissing();
+      return;
+    }
+
+    const src = uniqueCandidates[index];
+    const img = new Image();
+    img.alt = character.name;
+    img.loading = "eager";
+    img.decoding = "async";
+
+    img.onload = () => {
+      if ((img.naturalWidth || 0) < 150 || (img.naturalHeight || 0) < 150) {
+        tryCandidate(index + 1);
+        return;
+      }
+      setImage(el, src, character, () => tryCandidate(index + 1), "catalogue local /images");
+    };
+
+    img.onerror = () => tryCandidate(index + 1);
+    img.src = src;
+  };
+
+  tryCandidate(0);
+}
+
+function setImage(el, src, character, onError, source = "") {
+  el.className = "portrait";
+  el.innerHTML = "";
+  const img = document.createElement("img");
+  img.alt = character.name;
+  img.loading = "eager";
+  img.decoding = "async";
+  img.referrerPolicy = "no-referrer";
+  img.src = src;
+  img.title = `${character.name} — visuel externe. Droits © à leurs créateurs / ayants droit. Source : ${source}`;
+  img.onerror = () => {
+    localStorage.removeItem("ccimg-v35:" + character.id);
+    if (onError) onError();
+    else el.innerHTML = "<span>Visuel indisponible</span>";
+  };
+  el.appendChild(img);
 }
 
 function renderCard(prefix, character) {
