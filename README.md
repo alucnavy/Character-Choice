@@ -31,3 +31,20 @@ Les images sont recherchées automatiquement par personnage. Priorité : item Wi
 
 
 V4.9 : nouvelle bannière de titre visuelle, plus moderne et compacte. Fonctionnalités et dossier images conservés.
+
+
+## V5.6 — Ajouter un personnage
+
+Le catalogue est séparé dans `characters.js`. Pour un nouvel ajout, il suffit de modifier ce fichier puis d'ajouter l'image dans `images/`.
+
+### Fiche à ajouter
+
+```js
+{ name: "Nom du personnage", universe: "Nom de l’œuvre", media: "Films", id: "c377", wiki: "Nom du personnage" }
+```
+
+- Utilisez le prochain ID disponible (`c377`, puis `c378`, etc.).
+- `media` peut être `Films`, `Séries`, `Manga / Anime`, `Comics`, `Romans / Littérature` ou `Dessin animé / Animation`.
+- L'image doit reprendre l'ID et le nom : `images/c377_Nom_du_personnage.jpg`.
+- Aucun changement dans `app.js` n'est nécessaire.
+- L'anti-doublon, l'historique et les statistiques utilisent automatiquement le catalogue.
