@@ -193,11 +193,14 @@ async function loadPortrait(character, el) {
   el.innerHTML = "<span>Chargement du visuel…</span>";
   el.dataset.characterId = character.id;
 
+  // V4.8 corrigée :
+  // les fichiers du dossier images peuvent avoir conservé la casse et les
+  // tirets du nom du personnage. On essaie donc plusieurs conventions.
   const raw = String(character.name || "").trim();
   const id = String(character.id || "").trim();
 
   const stripAccents = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-  const noApostrophe = (s) => s.replace(/[\u2018\u2019']/g, "");
+  const noApostrophe = (s) => s.replace(/['’]/g, "");
   const clean = (s) => noApostrophe(stripAccents(s));
 
   const variants = [
@@ -212,12 +215,15 @@ async function loadPortrait(character, el) {
   ];
 
   const names = [...new Set(variants.map(v => v.replace(/^_+|_+$/g, "")).filter(Boolean))];
+
   const candidates = [];
   for (const name of names) {
     for (const ext of [".jpg", ".jpeg", ".JPG", ".JPEG"]) {
       candidates.push(`images/${id}_${name}${ext}`);
     }
   }
+
+  // Dernier filet : certains fichiers peuvent avoir été enregistrés sans ID.
   for (const name of names) {
     for (const ext of [".jpg", ".jpeg", ".JPG", ".JPEG"]) {
       candidates.push(`images/${name}${ext}`);
@@ -226,14 +232,10 @@ async function loadPortrait(character, el) {
 
   const uniqueCandidates = [...new Set(candidates)];
 
-  const finishMissing = () => {
-    el.className = "portrait unavailable";
-    el.innerHTML = `<span>Visuel introuvable pour ${character.name}</span>`;
-  };
-
   const tryCandidate = (index) => {
     if (index >= uniqueCandidates.length) {
-      finishMissing();
+      el.className = "portrait unavailable";
+      el.innerHTML = `<span>Visuel introuvable pour ${character.name}</span>`;
       return;
     }
 
@@ -244,10 +246,6 @@ async function loadPortrait(character, el) {
     img.decoding = "async";
 
     img.onload = () => {
-      if ((img.naturalWidth || 0) < 150 || (img.naturalHeight || 0) < 150) {
-        tryCandidate(index + 1);
-        return;
-      }
       setImage(el, src, character, () => tryCandidate(index + 1), "catalogue local /images");
     };
 
@@ -257,7 +255,6 @@ async function loadPortrait(character, el) {
 
   tryCandidate(0);
 }
-
 function setImage(el, src, character, onError, source = "") {
   el.className = "portrait";
   el.innerHTML = "";
