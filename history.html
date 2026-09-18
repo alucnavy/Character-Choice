@@ -20,17 +20,12 @@
   </div>
   <div class="actions">
     <a href="index.html" class="secondary nav-link">🏆 Retour au tournoi</a>
+    <a href="stats.html" class="secondary nav-link">📊 Statistiques</a>
     <button id="exportHistoryBtn" class="secondary">⇩ Export CSV</button>
   </div>
 </header>
 
 <main class="history-main">
-  <section class="career-stats" aria-label="Statistiques">
-    <div class="career-stat"><span>Combats joués</span><strong id="careerCombats">0</strong></div>
-    <div class="career-stat"><span>Meilleure série</span><strong id="careerBest">0</strong></div>
-    <div class="career-stat"><span>Champions différents</span><strong id="careerChampions">0</strong></div>
-    <div class="career-stat"><span>Personnages vus</span><strong id="careerSeen">0</strong></div>
-  </section>
 
   <section class="panel history-panel">
     <div class="panel-title history-heading">
@@ -58,32 +53,6 @@ function getHistory(){
   }catch(e){
     return [];
   }
-}
-
-function renderCareerStats(){
-  const history = getHistory();
-  let best = 0;
-  let current = 0;
-  let previousWinner = null;
-  const champions = new Set();
-  const seen = new Set();
-
-  for(const h of history){
-    if(h.winner) champions.add(h.winner);
-    if(h.championBefore) seen.add(h.championBefore);
-    if(h.challenger) seen.add(h.challenger);
-
-    if(h.winner && h.winner === previousWinner) current += 1;
-    else current = h.winner ? 1 : 0;
-
-    if(current > best) best = current;
-    previousWinner = h.winner || null;
-  }
-
-  $("careerCombats").textContent = history.length;
-  $("careerBest").textContent = best;
-  $("careerChampions").textContent = champions.size;
-  $("careerSeen").textContent = seen.size;
 }
 
 function renderHistory(){
@@ -135,7 +104,6 @@ function exportCSV(){
 $("historySearch").addEventListener("input", renderHistory);
 $("exportHistoryBtn").addEventListener("click", exportCSV);
 renderHistory();
-renderCareerStats();
 </script>
 </body>
 </html>

@@ -502,3 +502,25 @@ main{
   .history-page .career-stat span{font-size:11px;}
   .history-page .career-stat strong{font-size:20px;}
 }
+
+
+/* V5.4 — Onglet Statistiques */
+.stats-page .stats-main{max-width:1100px;}
+.stats-page .stats-hero{margin-bottom:14px;text-align:center;padding:22px;}
+.stats-page .stats-hero .panel-title{margin-bottom:8px;}
+.stats-page .record-big{display:flex;align-items:baseline;justify-content:center;gap:10px;}
+.stats-page .record-big strong{font-size:clamp(42px,7vw,72px);line-height:1;color:var(--accent);}
+.stats-page .record-big span{font-weight:900;font-size:14px;letter-spacing:.08em;}
+.stats-page .record-holder{margin-top:7px;color:#fff;font-weight:800;font-size:18px;}
+.stats-page .stats-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:14px;}
+.stats-page .stat-card{padding:16px;border:1px solid var(--line);border-radius:16px;background:rgba(18,21,40,.86);display:flex;flex-direction:column;gap:9px;}
+.stats-page .stat-card span{color:var(--muted);font-size:12px;font-weight:800;}
+.stats-page .stat-card strong{font-size:30px;line-height:1;color:#fff;}
+.stats-page .stats-detail{margin-top:0;}
+.stats-page .stats-media-list{display:grid;gap:0;}
+.stats-page .stats-media-row{display:flex;align-items:center;justify-content:space-between;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.07);}
+.stats-page .stats-media-row:last-child{border-bottom:0;}
+.stats-page .stats-media-row span{color:#fff;}
+.stats-page .stats-media-row strong{color:var(--accent);font-size:18px;}
+@media(max-width:800px){.stats-page .stats-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:560px){.stats-page .stats-grid{grid-template-columns:1fr;gap:8px}.stats-page .stat-card{padding:14px}.stats-page .record-holder{font-size:16px}}

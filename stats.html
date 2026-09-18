@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090a12">
+<title>Character Choice — Statistiques</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="history-page stats-page">
+<header class="topbar history-topbar">
+  <div class="brand">
+    <div class="brand-mark">📊</div>
+    <div class="brand-copy">
+      <div class="eyebrow">CHARACTER CHOICE • V5</div>
+      <h1>Statistiques</h1>
+      <p>Les chiffres de ton tournoi.</p>
+    </div>
+  </div>
+  <div class="actions">
+    <a href="index.html" class="secondary nav-link">🏆 Tournoi</a>
+    <a href="history.html" class="secondary nav-link">📜 Historique</a>
+  </div>
+</header>
+
+<main class="history-main stats-main">
+  <section class="stats-hero panel">
+    <div class="panel-title">🏆 Record absolu</div>
+    <div class="record-big"><strong id="statsBestRecord">0</strong><span>VICTOIRES</span></div>
+    <div class="record-holder" id="statsBestHolder">Aucun record enregistré</div>
+  </section>
+
+  <section class="stats-grid" aria-label="Statistiques du tournoi">
+    <div class="stat-card"><span>⚔️ Combats joués</span><strong id="statsCombats">0</strong></div>
+    <div class="stat-card"><span>🔥 Série actuelle</span><strong id="statsCurrentStreak">0</strong></div>
+    <div class="stat-card"><span>📈 Meilleure série</span><strong id="statsBestStreak">0</strong></div>
+    <div class="stat-card"><span>👑 Champions différents</span><strong id="statsChampions">0</strong></div>
+    <div class="stat-card"><span>👥 Personnages vus</span><strong id="statsSeen">0</strong></div>
+    <div class="stat-card"><span>🎭 Médias représentés</span><strong id="statsMedia">0</strong></div>
+  </section>
+
+  <section class="panel stats-detail">
+    <div class="panel-title">📚 Répartition des combats</div>
+    <div id="statsMediaList" class="stats-media-list"></div>
+  </section>
+</main>
+
+<script>
+const STORAGE_KEY = "characterChoiceV35";
+const BEST_KEY = "characterChoiceBestRecord";
+const BEST_HOLDER_KEY = "characterChoiceBestRecordHolder";
+
+function getState(){
+  try{
+    const state = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
+    return state && Array.isArray(state.history) ? state : {history:[], streak:0, bestRecord:0, bestRecordHolder:""};
+  }catch(e){
+    return {history:[], streak:0, bestRecord:0, bestRecordHolder:""};
+  }
+}
+
+function computeBest(history){
+  let best=0, holder="", current=0, previous="";
+  for(const h of history){
+    const winner=String(h?.winner || "");
+    current = winner && winner === previous ? current + 1 : (winner ? 1 : 0);
+    if(current > best){ best=current; holder=winner; }
+    previous=winner;
+  }
+  return {best, holder};
+}
+
+function renderStats(){
+  const state=getState();
+  const history=state.history;
+  const derived=computeBest(history);
+  const storedBest=Math.max(Number(state.bestRecord)||0, Number(localStorage.getItem(BEST_KEY)||0), derived.best);
+  const holder=localStorage.getItem(BEST_HOLDER_KEY) || state.bestRecordHolder || derived.holder || "";
+
+  const seen=new Set();
+  const champions=new Set();
+  const media=new Map();
+  for(const h of history){
+    if(h?.championBefore) seen.add(h.championBefore);
+    if(h?.challenger) seen.add(h.challenger);
+    if(h?.winner) champions.add(h.winner);
+    const m=String(h?.media || "Inconnu");
+    media.set(m,(media.get(m)||0)+1);
+  }
+
+  document.getElementById("statsBestRecord").textContent=storedBest;
+  document.getElementById("statsBestHolder").textContent=holder ? `Détenu par ${holder}` : "Aucun record enregistré";
+  document.getElementById("statsCombats").textContent=history.length;
+  document.getElementById("statsCurrentStreak").textContent=Number(state.streak)||0;
+  document.getElementById("statsBestStreak").textContent=storedBest;
+  document.getElementById("statsChampions").textContent=champions.size;
+  document.getElementById("statsSeen").textContent=seen.size;
+  document.getElementById("statsMedia").textContent=media.size;
+
+  const list=document.getElementById("statsMediaList");
+  if(!media.size){ list.innerHTML='<div class="history-empty">Aucun combat enregistré pour le moment.</div>'; return; }
+  list.innerHTML=[...media.entries()].sort((a,b)=>b[1]-a[1]).map(([name,count])=>
+    `<div class="stats-media-row"><span>${name}</span><strong>${count}</strong></div>`
+  ).join("");
+}
+renderStats();
+</script>
+</body>
+</html>
