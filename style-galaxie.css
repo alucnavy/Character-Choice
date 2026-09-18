@@ -3,24 +3,49 @@
 body{
   margin:0;
   background:
-    radial-gradient(ellipse at 50% -10%,rgba(99,78,190,.34) 0,rgba(36,28,82,.20) 28%,transparent 58%),
-    radial-gradient(ellipse at 15% 35%,rgba(72,55,150,.18) 0,transparent 42%),
-    radial-gradient(ellipse at 85% 70%,rgba(42,90,160,.14) 0,transparent 45%),
-    radial-gradient(circle at 12% 18%,rgba(255,255,255,.85) 0 1px,transparent 1.5px),
-    radial-gradient(circle at 78% 12%,rgba(255,255,255,.75) 0 1px,transparent 1.5px),
-    radial-gradient(circle at 34% 72%,rgba(255,255,255,.65) 0 1px,transparent 1.5px),
-    radial-gradient(circle at 91% 48%,rgba(255,255,255,.8) 0 1px,transparent 1.5px),
-    radial-gradient(circle at 56% 88%,rgba(255,255,255,.7) 0 1px,transparent 1.5px),
-    radial-gradient(circle at 22% 94%,rgba(255,255,255,.55) 0 1px,transparent 1.5px),
-    radial-gradient(circle at 66% 38%,rgba(255,255,255,.55) 0 1px,transparent 1.5px),
-    radial-gradient(circle at 44% 16%,rgba(255,255,255,.5) 0 1px,transparent 1.5px),
-    radial-gradient(circle at 5% 60%,rgba(255,255,255,.55) 0 1px,transparent 1.5px),
-    radial-gradient(circle at 96% 88%,rgba(255,255,255,.6) 0 1px,transparent 1.5px),
-    linear-gradient(180deg,#090a18 0%,#080b18 48%,#050711 100%);
-  background-attachment:fixed;
+    radial-gradient(ellipse at 50% 5%,rgba(92,67,190,.30) 0,rgba(40,30,95,.18) 30%,transparent 62%),
+    radial-gradient(ellipse at 10% 55%,rgba(55,80,180,.16) 0,transparent 45%),
+    radial-gradient(ellipse at 90% 75%,rgba(115,55,180,.13) 0,transparent 48%),
+    linear-gradient(180deg,#050611 0%,#08091a 48%,#03040b 100%);
   color:var(--text);
   font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   min-height:100vh;
+  position:relative;
+  overflow-x:hidden;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:-1;
+  opacity:.9;
+  background-image:
+    radial-gradient(circle at 7% 12%,rgba(255,255,255,.95) 0 1px,transparent 1.7px),
+    radial-gradient(circle at 17% 67%,rgba(255,255,255,.75) 0 1px,transparent 1.8px),
+    radial-gradient(circle at 29% 24%,rgba(255,255,255,.8) 0 1.2px,transparent 1.9px),
+    radial-gradient(circle at 41% 82%,rgba(255,255,255,.65) 0 1px,transparent 1.7px),
+    radial-gradient(circle at 53% 14%,rgba(255,255,255,.9) 0 1px,transparent 1.7px),
+    radial-gradient(circle at 64% 57%,rgba(255,255,255,.7) 0 1px,transparent 1.8px),
+    radial-gradient(circle at 76% 29%,rgba(255,255,255,.85) 0 1.1px,transparent 1.8px),
+    radial-gradient(circle at 88% 11%,rgba(255,255,255,.7) 0 1px,transparent 1.7px),
+    radial-gradient(circle at 94% 63%,rgba(255,255,255,.9) 0 1.2px,transparent 1.9px),
+    radial-gradient(circle at 4% 91%,rgba(255,255,255,.6) 0 1px,transparent 1.7px),
+    radial-gradient(circle at 34% 46%,rgba(255,255,255,.55) 0 1px,transparent 1.7px),
+    radial-gradient(circle at 58% 91%,rgba(255,255,255,.55) 0 1px,transparent 1.7px),
+    radial-gradient(circle at 82% 84%,rgba(255,255,255,.6) 0 1px,transparent 1.7px);
+  background-size:100% 100%;
+}
+body::after{
+  content:"";
+  position:fixed;
+  inset:-20%;
+  pointer-events:none;
+  z-index:-2;
+  background:
+    radial-gradient(ellipse at 25% 35%,rgba(93,57,190,.10),transparent 30%),
+    radial-gradient(ellipse at 72% 60%,rgba(38,91,190,.09),transparent 32%);
+  filter:blur(22px);
 }
 button{font:inherit}
 .topbar::before{content:"";position:absolute;left:0;top:0;width:100%;height:3px;background:linear-gradient(90deg,transparent,var(--accent),#8c7cff,transparent);opacity:.9}.topbar::after{content:"";position:absolute;width:320px;height:180px;left:-90px;top:-110px;background:radial-gradient(circle,rgba(248,216,74,.14),transparent 68%);pointer-events:none}.brand{display:flex;align-items:center;gap:16px;min-width:0}.brand-mark{width:58px;height:58px;flex:0 0 58px;display:grid;place-items:center;border:1px solid rgba(248,216,74,.35);border-radius:18px;background:linear-gradient(145deg,rgba(248,216,74,.16),rgba(140,124,255,.12));box-shadow:0 0 28px rgba(248,216,74,.10),inset 0 0 18px rgba(255,255,255,.03);font-size:28px}.brand-copy{min-width:0}.brand h1{margin:3px 0 3px;font-size:clamp(27px,3.7vw,46px);letter-spacing:-1.7px;line-height:1.05}.brand p{margin:0;color:var(--muted);font-size:14px}.eyebrow{font-size:10px;letter-spacing:.22em;color:#d5d8f0;font-weight:900}
