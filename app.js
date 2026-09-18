@@ -431,3 +431,6 @@ $("resetBtn").addEventListener("click", () => {
     toast("🔄 Nouveau tournoi lancé !");
   }
 });
+
+// Affiche immédiatement le premier combat au chargement de la page.
+render();
