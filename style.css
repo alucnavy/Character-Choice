@@ -466,7 +466,7 @@ main{
 
 
 /* V5.1 — Historique : statistiques compactes */
-.history-page main{padding-top:118px;}
+.history-page main{padding-top:150px;}
 .history-page .career-stats{
   display:grid;
   grid-template-columns:repeat(4,minmax(0,1fr));
@@ -509,6 +509,7 @@ main{
   .history-page .career-stats{grid-template-columns:repeat(2,minmax(0,1fr));}
 }
 @media(max-width:560px){
+  .history-page main{padding-top:190px;}
   .history-page .career-stats{gap:8px;}
   .history-page .career-stat{padding:10px 11px;}
   .history-page .career-stat span{font-size:11px;}
