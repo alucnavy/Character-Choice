@@ -428,9 +428,6 @@ $("resetBtn").addEventListener("click", () => {
     const holder = localStorage.getItem(BEST_HOLDER_KEY) || state.bestRecordHolder || "";
     Object.assign(state, createNewState(), {bestRecord: best, bestRecordHolder: holder, lastSnapshot: null});
     save();
-    fetch("images.json").then(r => r.ok ? r.json() : {}).then(data => { IMAGE_CATALOG = data || {}; render(); }).catch(() => render());
     toast("🔄 Nouveau tournoi lancé !");
   }
 });
-
-fetch("images.json").then(r => r.ok ? r.json() : {}).then(data => { IMAGE_CATALOG = data || {}; render(); }).catch(() => render());
