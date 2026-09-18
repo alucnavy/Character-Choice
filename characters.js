@@ -3014,5 +3014,189 @@ const CHARACTERS = [
     media: "Films",
     id: "c377",
     wiki: "Furiosa"
-  }
+  },
+  
+   {
+    name: "Evelyn Wang",
+    universe: "Everything Everywhere All at Once",
+    media: "Films",
+    id: "c378",
+    wiki: "Evelyn Wang"
+  },
+
+  {
+    name: "Max Rockatansky",
+    universe: "Mad Max",
+    media: "Films",
+    id: "c379",
+    wiki: "Max Rockatansky"
+  },
+
+  {
+    name: "Jules Winnfield",
+    universe: "Pulp Fiction",
+    media: "Films",
+    id: "c380",
+    wiki: "Jules Winnfield"
+  },
+
+  {
+    name: "Clarice Starling",
+    universe: "Le Silence des agneaux",
+    media: "Films",
+    id: "c381",
+    wiki: "Clarice Starling"
+  },
+
+  {
+    name: "Tyler Durden",
+    universe: "Fight Club",
+    media: "Films",
+    id: "c382",
+    wiki: "Tyler Durden"
+  },
+
+  {
+    name: "Driss",
+    universe: "Intouchables",
+    media: "Films",
+    id: "c383",
+    wiki: "Driss"
+  },
+
+  {
+    name: "Carmy Berzatto",
+    universe: "The Bear",
+    media: "Séries",
+    id: "c384",
+    wiki: "Carmy Berzatto"
+  },
+
+  {
+    name: "Rue Bennett",
+    universe: "Euphoria",
+    media: "Séries",
+    id: "c385",
+    wiki: "Rue Bennett"
+  },
+
+  {
+    name: "Kendall Roy",
+    universe: "Succession",
+    media: "Séries",
+    id: "c386",
+    wiki: "Kendall Roy"
+  },
+
+  {
+    name: "Mariko Toda",
+    universe: "Shōgun",
+    media: "Séries",
+    id: "c387",
+    wiki: "Mariko Toda"
+  },
+
+  {
+    name: "Fleabag",
+    universe: "Fleabag",
+    media: "Séries",
+    id: "c388",
+    wiki: "Fleabag"
+  },
+
+  {
+    name: "Denji",
+    universe: "Chainsaw Man",
+    media: "Manga / Anime",
+    id: "c389",
+    wiki: "Denji"
+  },
+
+  {
+    name: "Power",
+    universe: "Chainsaw Man",
+    media: "Manga / Anime",
+    id: "c390",
+    wiki: "Power"
+  },
+
+  {
+    name: "Asuka Langley Soryu",
+    universe: "Neon Genesis Evangelion",
+    media: "Manga / Anime",
+    id: "c391",
+    wiki: "Asuka Langley Soryu"
+  },
+
+  {
+    name: "Shinji Ikari",
+    universe: "Neon Genesis Evangelion",
+    media: "Manga / Anime",
+    id: "c392",
+    wiki: "Shinji Ikari"
+  },
+
+  {
+    name: "Thorfinn",
+    universe: "Vinland Saga",
+    media: "Manga / Anime",
+    id: "c393",
+    wiki: "Thorfinn"
+  },
+
+  {
+    name: "Winston Smith",
+    universe: "1984",
+    media: "Romans / Littérature",
+    id: "c394",
+    wiki: "Winston Smith"
+  },
+
+  {
+    name: "Anna Karénine",
+    universe: "Anna Karénine",
+    media: "Romans / Littérature",
+    id: "c395",
+    wiki: "Anna Karénine"
+  },
+
+  {
+    name: "Meursault",
+    universe: "L'Étranger",
+    media: "Romans / Littérature",
+    id: "c396",
+    wiki: "Meursault"
+  },
+
+  {
+    name: "Storm",
+    universe: "Marvel",
+    media: "Comics",
+    id: "c397",
+    wiki: "Storm"
+  },
+
+  {
+    name: "Zatanna Zatara",
+    universe: "DC Comics",
+    media: "Comics",
+    id: "c398",
+    wiki: "Zatanna Zatara"
+  },
+
+  {
+    name: "Mister Sinister",
+    universe: "Marvel",
+    media: "Comics",
+    id: "c399",
+    wiki: "Mister Sinister"
+  },
+
+  {
+    name: "Nimona",
+    universe: "Nimona",
+    media: "Dessin animé / Animation",
+    id: "c400",
+    wiki: "Nimona"
+  },
 ];
