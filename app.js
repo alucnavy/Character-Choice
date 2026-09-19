@@ -30,7 +30,19 @@ function getImageCandidates(character) {
   const slugs = [...new Set(variants.map(normalize).filter(Boolean))];
   const candidates = [];
 
-  for (const slug of slugs) candidates.push(`images/${id}_${slug}.jpg`);
+  // On essaie aussi les variantes avec la casse d'origine.
+  // Les fichiers images peuvent être nommés avec ou sans majuscules.
+  const rawVariants = [...new Set(variants.map(v => v.trim()).filter(Boolean))];
+  for (const name of rawVariants) {
+    candidates.push(`images/${id}_${name}.jpg`);
+    candidates.push(`images/${id}_${name}.jpeg`);
+  }
+  // Variante entièrement en minuscules : c401_voldemort.jpg fonctionne
+  // même si le personnage s'appelle "Voldemort" dans characters.js.
+  for (const slug of slugs) {
+    candidates.push(`images/${id}_${slug}.jpg`);
+    candidates.push(`images/${id}_${slug}.jpeg`);
+  }
   for (const slug of slugs) candidates.push(`images/${slug}.jpg`);
 
   return [...new Set(candidates)];
@@ -262,6 +274,15 @@ async function loadPortrait(character, el) {
   for (const name of names) {
     for (const ext of [".jpg", ".jpeg", ".JPG", ".JPEG"]) {
       candidates.push(`images/${name}${ext}`);
+    }
+  }
+
+  // Compatibilité avec les fichiers dont le nom est en minuscules,
+  // par exemple c404_voldemort.jpg alors que le personnage est "Voldemort".
+  for (const name of names) {
+    const lower = name.toLowerCase();
+    for (const ext of [".jpg", ".jpeg", ".JPG", ".JPEG"]) {
+      candidates.push(`images/${id}_${lower}${ext}`);
     }
   }
 
