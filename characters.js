@@ -1,4 +1,4 @@
-[
+const CHARACTERS = [
   {
     "name":"Truman Burbank",
     "universe":"The Truman Show",
