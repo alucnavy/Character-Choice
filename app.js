@@ -3,6 +3,7 @@ let IMAGE_CATALOG = {};
 const STORAGE_KEY = "characterChoiceV35";
 const BEST_KEY = "characterChoiceV35Best";
 const BEST_HOLDER_KEY = "characterChoiceV35BestHolder";
+const CHARACTER_STATS_KEY = "characterChoiceV35CharacterStats";
 
 const $ = id => document.getElementById(id);
 const state = loadState();
@@ -81,6 +82,40 @@ function initials(name) {
   return name.split(/\s+/).filter(Boolean).slice(0,2).map(x => x[0]).join("").toUpperCase();
 }
 
+function loadCharacterStats() {
+  try {
+    const raw = JSON.parse(localStorage.getItem(CHARACTER_STATS_KEY) || "{}");
+    return raw && typeof raw === "object" && !Array.isArray(raw) ? raw : {};
+  } catch (e) {
+    return {};
+  }
+}
+
+let characterStats = loadCharacterStats();
+
+function saveCharacterStats() {
+  localStorage.setItem(CHARACTER_STATS_KEY, JSON.stringify(characterStats));
+}
+
+function updateCharacterStats(winner, loser) {
+  if (!winner || !loser) return;
+
+  const ensure = (character) => {
+    const id = String(character.id);
+    if (!characterStats[id] || typeof characterStats[id] !== "object") {
+      characterStats[id] = { name: character.name, wins: 0, losses: 0 };
+    }
+    characterStats[id].name = character.name;
+    characterStats[id].wins = Math.max(0, Number(characterStats[id].wins) || 0);
+    characterStats[id].losses = Math.max(0, Number(characterStats[id].losses) || 0);
+    return characterStats[id];
+  };
+
+  ensure(winner).wins += 1;
+  ensure(loser).losses += 1;
+  saveCharacterStats();
+}
+
 function save() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
   localStorage.setItem(BEST_KEY, String(state.bestRecord || 0));
@@ -90,11 +125,7 @@ function save() {
 function loadState() {
   try {
     const raw = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
-    const validIds = new Set(CHARACTERS.map(c => c.id));
-    const validUsedIds = Array.isArray(raw?.usedIds) && raw.usedIds.every(id => validIds.has(id));
-    const validState = raw && validIds.has(raw.championId) && validIds.has(raw.challengerId) && validUsedIds;
-
-    if (validState) {
+    if (raw && raw.championId && raw.challengerId && Array.isArray(raw.usedIds)) {
       if (!Object.prototype.hasOwnProperty.call(raw, "lastSnapshot")) raw.lastSnapshot = null;
       if (!Array.isArray(raw.history)) raw.history = [];
       if (!Number.isFinite(Number(raw.bestRecord))) raw.bestRecord = 0;
@@ -102,14 +133,7 @@ function loadState() {
       return raw;
     }
   } catch(e) {}
-
-  // Ancien état incompatible : on repart sur un tournoi propre au lieu de
-  // laisser les cartes bloquées sur « Chargement… ». Le record absolu est conservé.
-  const fresh = createNewState();
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(fresh));
-  } catch(e) {}
-  return fresh;
+  return createNewState();
 }
 
 function createNewState() {
@@ -317,7 +341,8 @@ function choose(winnerId) {
     usedIds: state.usedIds,
     history: state.history,
     bestRecord: state.bestRecord,
-    bestRecordHolder: state.bestRecordHolder
+    bestRecordHolder: state.bestRecordHolder,
+    characterStats: JSON.parse(JSON.stringify(characterStats))
   }));
 
   state.history.push({
@@ -328,6 +353,9 @@ function choose(winnerId) {
     media: winner.media,
     winner: winner.name
   });
+
+  const loser = winnerId === state.championId ? challenger : champ;
+  updateCharacterStats(winner, loser);
 
   if (winnerId === state.championId) {
     state.streak += 1;
@@ -414,6 +442,10 @@ $("undoBtn").addEventListener("click", () => {
   state.history = snap.history;
   state.bestRecord = snap.bestRecord;
   state.bestRecordHolder = snap.bestRecordHolder;
+  if (snap.characterStats && typeof snap.characterStats === "object") {
+    characterStats = snap.characterStats;
+    saveCharacterStats();
+  }
   state.lastSnapshot = null;
   save();
   render();

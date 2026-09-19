@@ -952,11 +952,11 @@ const CHARACTERS = [
     "wiki":"Historia Reiss"
   },
   {
-    "name":"Sasha Braus",
+    "name":"Sasha Blouse",
     "universe":"L'Attaque des Titans",
     "media":"Manga / Anime",
     "id":"c137",
-    "wiki":"Sasha Braus"
+    "wiki":"Sasha Blouse"
   },
   {
     "name":"Pieck Finger",

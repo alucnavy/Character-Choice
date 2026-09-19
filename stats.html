@@ -14,7 +14,7 @@
     <div class="brand-copy">
       <div class="eyebrow">CHARACTER CHOICE • V5</div>
       <h1>Statistiques</h1>
-      <p>Les chiffres de ton tournoi.</p>
+      <p>Victoires et défaites de chaque personnage, conservées entre les tournois.</p>
     </div>
   </div>
   <div class="actions">
@@ -24,86 +24,81 @@
 </header>
 
 <main class="history-main stats-main">
-  <section class="stats-hero panel">
-    <div class="panel-title">🏆 Record absolu</div>
-    <div class="record-big"><strong id="statsBestRecord">0</strong><span>VICTOIRES</span></div>
-    <div class="record-holder" id="statsBestHolder">Aucun record enregistré</div>
-  </section>
+  <section class="panel stats-detail character-records-panel">
+    <div class="stats-records-head">
+      <div>
+        <div class="panel-title">⚔️ Victoires / défaites par personnage</div>
+        <p class="stats-note">Ces statistiques restent enregistrées même lorsque tu démarres un nouveau tournoi.</p>
+      </div>
+      <button id="resetCharacterStats" class="danger" type="button">🗑️ Réinitialiser les statistiques</button>
+    </div>
 
-  <section class="stats-grid" aria-label="Statistiques du tournoi">
-    <div class="stat-card"><span>⚔️ Combats joués</span><strong id="statsCombats">0</strong></div>
-    <div class="stat-card"><span>🔥 Série actuelle</span><strong id="statsCurrentStreak">0</strong></div>
-    <div class="stat-card"><span>📈 Meilleure série</span><strong id="statsBestStreak">0</strong></div>
-    <div class="stat-card"><span>👑 Champions différents</span><strong id="statsChampions">0</strong></div>
-    <div class="stat-card"><span>👥 Personnages vus</span><strong id="statsSeen">0</strong></div>
-    <div class="stat-card"><span>🎭 Médias représentés</span><strong id="statsMedia">0</strong></div>
-  </section>
-
-  <section class="panel stats-detail">
-    <div class="panel-title">📚 Répartition des combats</div>
-    <div id="statsMediaList" class="stats-media-list"></div>
+    <div class="stats-table-wrap">
+      <table class="character-stats-table">
+        <thead>
+          <tr>
+            <th>Personnage</th>
+            <th>Victoires</th>
+            <th>Défaites</th>
+          </tr>
+        </thead>
+        <tbody id="characterStatsBody"></tbody>
+      </table>
+    </div>
   </section>
 </main>
 
+<script src="characters.js"></script>
 <script>
-const STORAGE_KEY = "characterChoiceV35";
-const BEST_KEY = "characterChoiceBestRecord";
-const BEST_HOLDER_KEY = "characterChoiceBestRecordHolder";
+const CHARACTER_STATS_KEY = "characterChoiceV35CharacterStats";
 
-function getState(){
-  try{
-    const state = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
-    return state && Array.isArray(state.history) ? state : {history:[], streak:0, bestRecord:0, bestRecordHolder:""};
-  }catch(e){
-    return {history:[], streak:0, bestRecord:0, bestRecordHolder:""};
+function loadCharacterStats() {
+  try {
+    const raw = JSON.parse(localStorage.getItem(CHARACTER_STATS_KEY) || "{}");
+    return raw && typeof raw === "object" && !Array.isArray(raw) ? raw : {};
+  } catch (e) {
+    return {};
   }
 }
 
-function computeBest(history){
-  let best=0, holder="", current=0, previous="";
-  for(const h of history){
-    const winner=String(h?.winner || "");
-    current = winner && winner === previous ? current + 1 : (winner ? 1 : 0);
-    if(current > best){ best=current; holder=winner; }
-    previous=winner;
-  }
-  return {best, holder};
+function escapeHtml(value) {
+  return String(value).replace(/[&<>"']/g, char => ({
+    "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#039;"
+  }[char]));
 }
 
-function renderStats(){
-  const state=getState();
-  const history=state.history;
-  const derived=computeBest(history);
-  const storedBest=Math.max(Number(state.bestRecord)||0, Number(localStorage.getItem(BEST_KEY)||0), derived.best);
-  const holder=localStorage.getItem(BEST_HOLDER_KEY) || state.bestRecordHolder || derived.holder || "";
+function renderCharacterStats() {
+  const stats = loadCharacterStats();
+  const body = document.getElementById("characterStatsBody");
 
-  const seen=new Set();
-  const champions=new Set();
-  const media=new Map();
-  for(const h of history){
-    if(h?.championBefore) seen.add(h.championBefore);
-    if(h?.challenger) seen.add(h.challenger);
-    if(h?.winner) champions.add(h.winner);
-    const m=String(h?.media || "Inconnu");
-    media.set(m,(media.get(m)||0)+1);
-  }
+  const rows = [...CHARACTERS]
+    .map(character => {
+      const record = stats[String(character.id)] || {};
+      return {
+        name: character.name,
+        wins: Math.max(0, Number(record.wins) || 0),
+        losses: Math.max(0, Number(record.losses) || 0)
+      };
+    })
+    .sort((a, b) => b.wins - a.wins || b.losses - a.losses || a.name.localeCompare(b.name, "fr"));
 
-  document.getElementById("statsBestRecord").textContent=storedBest;
-  document.getElementById("statsBestHolder").textContent=holder ? `Détenu par ${holder}` : "Aucun record enregistré";
-  document.getElementById("statsCombats").textContent=history.length;
-  document.getElementById("statsCurrentStreak").textContent=Number(state.streak)||0;
-  document.getElementById("statsBestStreak").textContent=storedBest;
-  document.getElementById("statsChampions").textContent=champions.size;
-  document.getElementById("statsSeen").textContent=seen.size;
-  document.getElementById("statsMedia").textContent=media.size;
-
-  const list=document.getElementById("statsMediaList");
-  if(!media.size){ list.innerHTML='<div class="history-empty">Aucun combat enregistré pour le moment.</div>'; return; }
-  list.innerHTML=[...media.entries()].sort((a,b)=>b[1]-a[1]).map(([name,count])=>
-    `<div class="stats-media-row"><span>${name}</span><strong>${count}</strong></div>`
-  ).join("");
+  body.innerHTML = rows.map(row => `
+    <tr>
+      <td>${escapeHtml(row.name)}</td>
+      <td class="wins">${row.wins}</td>
+      <td class="losses">${row.losses}</td>
+    </tr>
+  `).join("");
 }
-renderStats();
+
+document.getElementById("resetCharacterStats").addEventListener("click", () => {
+  const confirmed = confirm("Réinitialiser les victoires et défaites de TOUS les personnages ? Cette action est irréversible.");
+  if (!confirmed) return;
+  localStorage.removeItem(CHARACTER_STATS_KEY);
+  renderCharacterStats();
+});
+
+renderCharacterStats();
 </script>
 </body>
 </html>
