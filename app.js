@@ -90,7 +90,11 @@ function save() {
 function loadState() {
   try {
     const raw = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
-    if (raw && raw.championId && raw.challengerId && Array.isArray(raw.usedIds)) {
+    const validIds = new Set(CHARACTERS.map(c => c.id));
+    const validUsedIds = Array.isArray(raw?.usedIds) && raw.usedIds.every(id => validIds.has(id));
+    const validState = raw && validIds.has(raw.championId) && validIds.has(raw.challengerId) && validUsedIds;
+
+    if (validState) {
       if (!Object.prototype.hasOwnProperty.call(raw, "lastSnapshot")) raw.lastSnapshot = null;
       if (!Array.isArray(raw.history)) raw.history = [];
       if (!Number.isFinite(Number(raw.bestRecord))) raw.bestRecord = 0;
@@ -98,7 +102,14 @@ function loadState() {
       return raw;
     }
   } catch(e) {}
-  return createNewState();
+
+  // Ancien état incompatible : on repart sur un tournoi propre au lieu de
+  // laisser les cartes bloquées sur « Chargement… ». Le record absolu est conservé.
+  const fresh = createNewState();
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(fresh));
+  } catch(e) {}
+  return fresh;
 }
 
 function createNewState() {
