@@ -1,49 +1,97 @@
-# Character Choice V3.3
+# ⚔️ Character Choice — Ultimate Multiverse Battle
 
-Version orientée **images ciblées** : le jeu n'utilise plus Wikipedia comme moteur d'image automatique.
+Character Choice est un jeu de duel basé sur un principe simple :
 
-- quand une image n'est pas encore validée, l'application n'affiche pas une image aléatoire ou un cosplay : elle affiche un placeholder propre et un bouton de recherche Google Images ciblé ;
-- les cartes utilisent un ratio portrait uniforme (4:5) et `object-fit: cover` ;
-- le record absolu du joueur et son détenteur sont conservés ;
-- l'anti-doublon des personnages reste actif.
+> **Deux personnages s'affrontent. Lequel préférez-vous ?**
 
-### Images
-Les deux fiches qui avaient posé problème dans la capture ont été traitées avec des recherches ciblées :
-- Bucky Barnes → fiche Marvel ;
-- Übel → visuel de personnage ciblé pour Frieren.
+À chaque combat, deux personnages sont présentés et le joueur doit choisir son favori. Le personnage sélectionné devient alors le **champion** et continue son parcours face à de nouveaux adversaires.
 
-Pour une publication publique, vérifie les droits d'utilisation des visuels que tu ajoutes au catalogue.
+Le jeu rassemble des personnages issus de nombreux univers : films, séries, jeux vidéo, animation, anime, littérature et bien plus encore.
 
+---
 
-### Images
-La V3.3.1 réactive le chargement automatique des portraits via les pages exactes MediaWiki/Wikipedia lorsque le catalogue ne contient pas encore une image validée. Les anciennes images mises en cache par V3.2 sont également réutilisées. Le bouton « Chercher l’image » reste disponible pour une recherche Google Images ciblée.
+## 🎮 Fonctionnalités
 
+### ⚔️ Système de duel
 
-## V3.5 — résolution d'images
-Les images sont recherchées automatiquement par personnage. Priorité : item Wikidata du personnage + image P18, puis page Wikipédia exacte, puis recherche Wikipédia/Commons strictement filtrée sur le nom du personnage. Aucun bouton de recherche manuelle. Les visuels restent la propriété de leurs créateurs/ayants droit.
+- Deux personnages s'affrontent à chaque tour.
+- Le joueur choisit son personnage préféré.
+- Le personnage choisi devient le champion.
+- Un nouveau challenger est ensuite présenté.
+- Les personnages déjà rencontrés sont gérés automatiquement afin d'éviter les doublons inutiles.
 
+### 🏆 Système de tournoi
 
-### V3.7
-- En-tête du tournoi réellement fixe au défilement.
-- Portraits affichés sans recadrage CSS forcé (`object-fit: contain`) pour préserver l'image entière fournie dans le catalogue local.
-- Aucun changement au système de correspondance des images locales.
+Le jeu conserve différentes informations au cours d'un tournoi :
 
+- Nombre de combats joués
+- Série de victoires actuelle
+- Meilleure série
+- Record absolu
+- Nombre de personnages rencontrés
+- Nombre de champions différents
+- Progression du tournoi
 
-V4.9 : nouvelle bannière de titre visuelle, plus moderne et compacte. Fonctionnalités et dossier images conservés.
+---
 
+## 📊 Statistiques
 
-## V5.6 — Ajouter un personnage
+Character Choice possède un système de statistiques permettant de suivre l'évolution des parties.
 
-Le catalogue est séparé dans `characters.js`. Pour un nouvel ajout, il suffit de modifier ce fichier puis d'ajouter l'image dans `images/`.
+### Statistiques de tournoi
 
-### Fiche à ajouter
+Les statistiques liées aux parties permettent notamment de suivre :
 
-```js
-{ name: "Nom du personnage", universe: "Nom de l’œuvre", media: "Films", id: "c377", wiki: "Nom du personnage" }
-```
+- Les combats joués
+- La série actuelle
+- La meilleure série
+- Le record absolu
+- Les personnages rencontrés
+- Les différents médias représentés
 
-- Utilisez le prochain ID disponible (`c377`, puis `c378`, etc.).
-- `media` peut être `Films`, `Séries`, `Manga / Anime`, `Comics`, `Romans / Littérature` ou `Dessin animé / Animation`.
-- L'image doit reprendre l'ID et le nom : `images/c377_Nom_du_personnage.jpg`.
-- Aucun changement dans `app.js` n'est nécessaire.
-- L'anti-doublon, l'historique et les statistiques utilisent automatiquement le catalogue.
+### ⚔️ Statistiques par personnage
+
+Chaque personnage possède également ses propres statistiques permanentes :
+
+| Personnage | Victoires | Défaites |
+|------------|-----------|----------|
+| Batman | 8 | 3 |
+| Spider-Man | 5 | 4 |
+| Mario | 3 | 6 |
+
+Les victoires et défaites des personnages sont conservées indépendamment des tournois.
+
+Il est donc possible de commencer un nouveau tournoi sans perdre les statistiques accumulées par les personnages.
+
+---
+
+## 🗑️ Réinitialisation
+
+Les statistiques par personnage peuvent être réinitialisées grâce au bouton :
+
+**Réinitialiser les statistiques des personnages**
+
+Cette action remet uniquement les compteurs de victoires et de défaites des personnages à zéro.
+
+Les autres données du jeu ne sont pas affectées.
+
+---
+
+## 📚 Base de personnages
+
+Le jeu contient actuellement **400 personnages** provenant de différents univers.
+
+Chaque personnage possède notamment :
+
+- Un identifiant unique
+- Un nom
+- Une image
+- Un média ou univers associé
+- Ses statistiques de victoires
+- Ses statistiques de défaites
+
+La liste des personnages est centralisée dans :
+
+```text
+characters.js
+
