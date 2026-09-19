@@ -1,3202 +1,2643 @@
-const CHARACTERS = [
-
-  {
-    name: "Truman Burbank",
-    universe: "The Truman Show",
-    media: "Films",
-    id: "c001",
-    wiki: "Truman Burbank"
+[
+  {
+    "name":"Truman Burbank",
+    "universe":"The Truman Show",
+    "media":"Films",
+    "id":"c001",
+    "wiki":"Truman Burbank"
+  },
+  {
+    "name":"Amélie Poulain",
+    "universe":"Le Fabuleux Destin d'Amélie Poulain",
+    "media":"Films",
+    "id":"c002",
+    "wiki":"Amélie Poulain"
+  },
+  {
+    "name":"Mia Wallace",
+    "universe":"Pulp Fiction",
+    "media":"Films",
+    "id":"c003",
+    "wiki":"Mia Wallace"
+  },
+  {
+    "name":"Vincent Vega",
+    "universe":"Pulp Fiction",
+    "media":"Films",
+    "id":"c004",
+    "wiki":"Vincent Vega"
+  },
+  {
+    "name":"Maximus Decimus Meridius",
+    "universe":"Gladiator",
+    "media":"Films",
+    "id":"c005",
+    "wiki":"Maximus Decimus Meridius"
+  },
+  {
+    "name":"Tony Montana",
+    "universe":"Scarface",
+    "media":"Films",
+    "id":"c006",
+    "wiki":"Tony Montana"
+  },
+  {
+    "name":"Rick Deckard",
+    "universe":"Blade Runner",
+    "media":"Films",
+    "id":"c007",
+    "wiki":"Rick Deckard"
+  },
+  {
+    "name":"Sarah Goldfarb",
+    "universe":"Requiem for a Dream",
+    "media":"Films",
+    "id":"c008",
+    "wiki":"Sarah Goldfarb"
+  },
+  {
+    "name":"Cobb",
+    "universe":"Inception",
+    "media":"Films",
+    "id":"c009",
+    "wiki":"Cobb"
+  },
+  {
+    "name":"Ariadne",
+    "universe":"Inception",
+    "media":"Films",
+    "id":"c010",
+    "wiki":"Ariadne"
+  },
+  {
+    "name":"Marty McFly",
+    "universe":"Retour vers le futur",
+    "media":"Films",
+    "id":"c011",
+    "wiki":"Marty McFly"
   },
-
-  {
-    name: "Amélie Poulain",
-    universe: "Le Fabuleux Destin d'Amélie Poulain",
-    media: "Films",
-    id: "c002",
-    wiki: "Amélie Poulain"
+  {
+    "name":"Doc Brown",
+    "universe":"Retour vers le futur",
+    "media":"Films",
+    "id":"c012",
+    "wiki":"Doc Brown"
+  },
+  {
+    "name":"Mavis Gary",
+    "universe":"Young Adult",
+    "media":"Films",
+    "id":"c013",
+    "wiki":"Mavis Gary"
   },
-
-  {
-    name: "Mia Wallace",
-    universe: "Pulp Fiction",
-    media: "Films",
-    id: "c003",
-    wiki: "Mia Wallace"
+  {
+    "name":"Erin Brockovich",
+    "universe":"Erin Brockovich",
+    "media":"Films",
+    "id":"c014",
+    "wiki":"Erin Brockovich"
   },
-
-  {
-    name: "Vincent Vega",
-    universe: "Pulp Fiction",
-    media: "Films",
-    id: "c004",
-    wiki: "Vincent Vega"
+  {
+    "name":"Andy Dufresne",
+    "universe":"Les Évadés",
+    "media":"Films",
+    "id":"c015",
+    "wiki":"Andy Dufresne"
   },
-
-  {
-    name: "Maximus Decimus Meridius",
-    universe: "Gladiator",
-    media: "Films",
-    id: "c005",
-    wiki: "Maximus Decimus Meridius"
+  {
+    "name":"John McClane",
+    "universe":"Die Hard",
+    "media":"Films",
+    "id":"c016",
+    "wiki":"John McClane"
   },
-
-  {
-    name: "Tony Montana",
-    universe: "Scarface",
-    media: "Films",
-    id: "c006",
-    wiki: "Tony Montana"
+  {
+    "name":"Verbal Kint",
+    "universe":"Usual Suspects",
+    "media":"Films",
+    "id":"c017",
+    "wiki":"Verbal Kint"
   },
-
-  {
-    name: "Rick Deckard",
-    universe: "Blade Runner",
-    media: "Films",
-    id: "c007",
-    wiki: "Rick Deckard"
+  {
+    "name":"The Driver",
+    "universe":"Drive",
+    "media":"Films",
+    "id":"c018",
+    "wiki":"The Driver"
   },
-
-  {
-    name: "Sarah Goldfarb",
-    universe: "Requiem for a Dream",
-    media: "Films",
-    id: "c008",
-    wiki: "Sarah Goldfarb"
+  {
+    "name":"Erik Killmonger",
+    "universe":"Black Panther",
+    "media":"Films",
+    "id":"c019",
+    "wiki":"Erik Killmonger"
   },
-
-  {
-    name: "Cobb",
-    universe: "Inception",
-    media: "Films",
-    id: "c009",
-    wiki: "Cobb"
+  {
+    "name":"Shuri",
+    "universe":"Black Panther",
+    "media":"Films",
+    "id":"c020",
+    "wiki":"Shuri"
   },
-
-  {
-    name: "Ariadne",
-    universe: "Inception",
-    media: "Films",
-    id: "c010",
-    wiki: "Ariadne"
+  {
+    "name":"Okoye",
+    "universe":"Black Panther",
+    "media":"Films",
+    "id":"c021",
+    "wiki":"Okoye"
   },
-
-  {
-    name: "Marty McFly",
-    universe: "Retour vers le futur",
-    media: "Films",
-    id: "c011",
-    wiki: "Marty McFly"
+  {
+    "name":"Wendy Torrance",
+    "universe":"Shining",
+    "media":"Films",
+    "id":"c022",
+    "wiki":"Wendy Torrance"
   },
-
-  {
-    name: "Doc Brown",
-    universe: "Retour vers le futur",
-    media: "Films",
-    id: "c012",
-    wiki: "Doc Brown"
+  {
+    "name":"Jack Torrance",
+    "universe":"Shining",
+    "media":"Films",
+    "id":"c023",
+    "wiki":"Jack Torrance"
   },
-
-  {
-    name: "Mavis Gary",
-    universe: "Young Adult",
-    media: "Films",
-    id: "c013",
-    wiki: "Mavis Gary"
+  {
+    "name":"Annie Wilkes",
+    "universe":"Misery",
+    "media":"Films",
+    "id":"c024",
+    "wiki":"Annie Wilkes"
   },
-
-  {
-    name: "Erin Brockovich",
-    universe: "Erin Brockovich",
-    media: "Films",
-    id: "c014",
-    wiki: "Erin Brockovich"
+  {
+    "name":"Daniel Plainview",
+    "universe":"There Will Be Blood",
+    "media":"Films",
+    "id":"c025",
+    "wiki":"Daniel Plainview"
   },
-
-  {
-    name: "Andy Dufresne",
-    universe: "Les Évadés",
-    media: "Films",
-    id: "c015",
-    wiki: "Andy Dufresne"
+  {
+    "name":"Remy",
+    "universe":"Ratatouille",
+    "media":"Films",
+    "id":"c026",
+    "wiki":"Remy"
   },
-
-  {
-    name: "John McClane",
-    universe: "Die Hard",
-    media: "Films",
-    id: "c016",
-    wiki: "John McClane"
+  {
+    "name":"Elastigirl",
+    "universe":"Les Indestructibles",
+    "media":"Films",
+    "id":"c027",
+    "wiki":"Elastigirl"
   },
-
-  {
-    name: "Verbal Kint",
-    universe: "Usual Suspects",
-    media: "Films",
-    id: "c017",
-    wiki: "Verbal Kint"
+  {
+    "name":"Mirabel Madrigal",
+    "universe":"Encanto",
+    "media":"Films",
+    "id":"c028",
+    "wiki":"Mirabel Madrigal"
   },
-
-  {
-    name: "The Driver",
-    universe: "Drive",
-    media: "Films",
-    id: "c018",
-    wiki: "The Driver"
+  {
+    "name":"Raya",
+    "universe":"Raya et le Dernier Dragon",
+    "media":"Films",
+    "id":"c029",
+    "wiki":"Raya"
   },
-
-  {
-    name: "Erik Killmonger",
-    universe: "Black Panther",
-    media: "Films",
-    id: "c019",
-    wiki: "Erik Killmonger"
+  {
+    "name":"Neytiri",
+    "universe":"Avatar",
+    "media":"Films",
+    "id":"c030",
+    "wiki":"Neytiri"
   },
-
-  {
-    name: "Shuri",
-    universe: "Black Panther",
-    media: "Films",
-    id: "c020",
-    wiki: "Shuri"
+  {
+    "name":"Jake Sully",
+    "universe":"Avatar",
+    "media":"Films",
+    "id":"c031",
+    "wiki":"Jake Sully"
   },
-
-  {
-    name: "Okoye",
-    universe: "Black Panther",
-    media: "Films",
-    id: "c021",
-    wiki: "Okoye"
+  {
+    "name":"Hiccup",
+    "universe":"Dragons",
+    "media":"Films",
+    "id":"c032",
+    "wiki":"Hiccup"
   },
-
-  {
-    name: "Wendy Torrance",
-    universe: "Shining",
-    media: "Films",
-    id: "c022",
-    wiki: "Wendy Torrance"
+  {
+    "name":"Toothless",
+    "universe":"Dragons",
+    "media":"Films",
+    "id":"c033",
+    "wiki":"Toothless"
   },
-
-  {
-    name: "Jack Torrance",
-    universe: "Shining",
-    media: "Films",
-    id: "c023",
-    wiki: "Jack Torrance"
+  {
+    "name":"Megamind",
+    "universe":"Megamind",
+    "media":"Films",
+    "id":"c034",
+    "wiki":"Megamind"
   },
-
-  {
-    name: "Annie Wilkes",
-    universe: "Misery",
-    media: "Films",
-    id: "c024",
-    wiki: "Annie Wilkes"
+  {
+    "name":"Gru",
+    "universe":"Moi,
+    moche et méchant",
+    "media":"Films",
+    "id":"c035",
+    "wiki":"Gru"
   },
-
-  {
-    name: "Daniel Plainview",
-    universe: "There Will Be Blood",
-    media: "Films",
-    id: "c025",
-    wiki: "Daniel Plainview"
+  {
+    "name":"Lucy Wilde",
+    "universe":"Moi,
+    moche et méchant",
+    "media":"Films",
+    "id":"c036",
+    "wiki":"Lucy Wilde"
   },
-
-  {
-    name: "Remy",
-    universe: "Ratatouille",
-    media: "Films",
-    id: "c026",
-    wiki: "Remy"
+  {
+    "name":"Po",
+    "universe":"Kung Fu Panda",
+    "media":"Films",
+    "id":"c037",
+    "wiki":"Po"
   },
-
-  {
-    name: "Elastigirl",
-    universe: "Les Indestructibles",
-    media: "Films",
-    id: "c027",
-    wiki: "Elastigirl"
+  {
+    "name":"Tigress",
+    "universe":"Kung Fu Panda",
+    "media":"Films",
+    "id":"c038",
+    "wiki":"Tigress"
   },
-
-  {
-    name: "Mirabel Madrigal",
-    universe: "Encanto",
-    media: "Films",
-    id: "c028",
-    wiki: "Mirabel Madrigal"
+  {
+    "name":"Shrek",
+    "universe":"Shrek",
+    "media":"Films",
+    "id":"c039",
+    "wiki":"Shrek"
   },
-
-  {
-    name: "Raya",
-    universe: "Raya et le Dernier Dragon",
-    media: "Films",
-    id: "c029",
-    wiki: "Raya"
+  {
+    "name":"Fiona",
+    "universe":"Shrek",
+    "media":"Films",
+    "id":"c040",
+    "wiki":"Fiona"
   },
-
-  {
-    name: "Neytiri",
-    universe: "Avatar",
-    media: "Films",
-    id: "c030",
-    wiki: "Neytiri"
+  {
+    "name":"Puss in Boots",
+    "universe":"Le Chat potté",
+    "media":"Films",
+    "id":"c041",
+    "wiki":"Puss in Boots"
   },
-
-  {
-    name: "Jake Sully",
-    universe: "Avatar",
-    media: "Films",
-    id: "c031",
-    wiki: "Jake Sully"
+  {
+    "name":"Miguel Rivera",
+    "universe":"Coco",
+    "media":"Films",
+    "id":"c042",
+    "wiki":"Miguel Rivera"
   },
-
-  {
-    name: "Hiccup",
-    universe: "Dragons",
-    media: "Films",
-    id: "c032",
-    wiki: "Hiccup"
+  {
+    "name":"Hector Rivera",
+    "universe":"Coco",
+    "media":"Films",
+    "id":"c043",
+    "wiki":"Hector Rivera"
   },
-
-  {
-    name: "Toothless",
-    universe: "Dragons",
-    media: "Films",
-    id: "c033",
-    wiki: "Toothless"
+  {
+    "name":"Chihiro Ogino",
+    "universe":"Le Voyage de Chihiro",
+    "media":"Films",
+    "id":"c044",
+    "wiki":"Chihiro Ogino"
   },
-
-  {
-    name: "Megamind",
-    universe: "Megamind",
-    media: "Films",
-    id: "c034",
-    wiki: "Megamind"
+  {
+    "name":"Carrie Mathison",
+    "universe":"Homeland",
+    "media":"Séries",
+    "id":"c045",
+    "wiki":"Carrie Mathison"
   },
-
-  {
-    name: "Gru",
-    universe: "Moi, moche et méchant",
-    media: "Films",
-    id: "c035",
-    wiki: "Gru"
+  {
+    "name":"Jessica Day",
+    "universe":"New Girl",
+    "media":"Séries",
+    "id":"c046",
+    "wiki":"Jessica Day"
   },
-
-  {
-    name: "Lucy Wilde",
-    universe: "Moi, moche et méchant",
-    media: "Films",
-    id: "c036",
-    wiki: "Lucy Wilde"
+  {
+    "name":"Eve Polastri",
+    "universe":"Killing Eve",
+    "media":"Séries",
+    "id":"c047",
+    "wiki":"Eve Polastri"
   },
-
-  {
-    name: "Po",
-    universe: "Kung Fu Panda",
-    media: "Films",
-    id: "c037",
-    wiki: "Po"
+  {
+    "name":"Fox Mulder",
+    "universe":"The X-Files",
+    "media":"Séries",
+    "id":"c048",
+    "wiki":"Fox Mulder"
   },
-
-  {
-    name: "Tigress",
-    universe: "Kung Fu Panda",
-    media: "Films",
-    id: "c038",
-    wiki: "Tigress"
+  {
+    "name":"Bobbie Draper",
+    "universe":"The Expanse",
+    "media":"Séries",
+    "id":"c049",
+    "wiki":"Bobbie Draper"
   },
-
-  {
-    name: "Shrek",
-    universe: "Shrek",
-    media: "Films",
-    id: "c039",
-    wiki: "Shrek"
+  {
+    "name":"Naomi Nagata",
+    "universe":"The Expanse",
+    "media":"Séries",
+    "id":"c050",
+    "wiki":"Naomi Nagata"
   },
-
-  {
-    name: "Fiona",
-    universe: "Shrek",
-    media: "Films",
-    id: "c040",
-    wiki: "Fiona"
+  {
+    "name":"Camina Drummer",
+    "universe":"The Expanse",
+    "media":"Séries",
+    "id":"c051",
+    "wiki":"Camina Drummer"
   },
-
-  {
-    name: "Puss in Boots",
-    universe: "Le Chat potté",
-    media: "Films",
-    id: "c041",
-    wiki: "Puss in Boots"
+  {
+    "name":"Laura Roslin",
+    "universe":"Battlestar Galactica",
+    "media":"Séries",
+    "id":"c052",
+    "wiki":"Laura Roslin"
   },
-
-  {
-    name: "Miguel Rivera",
-    universe: "Coco",
-    media: "Films",
-    id: "c042",
-    wiki: "Miguel Rivera"
+  {
+    "name":"Rory Williams",
+    "universe":"Doctor Who",
+    "media":"Séries",
+    "id":"c053",
+    "wiki":"Rory Williams"
   },
-
-  {
-    name: "Hector Rivera",
-    universe: "Coco",
-    media: "Films",
-    id: "c043",
-    wiki: "Hector Rivera"
+  {
+    "name":"Wilfred Mott",
+    "universe":"Doctor Who",
+    "media":"Séries",
+    "id":"c054",
+    "wiki":"Wilfred Mott"
   },
-
-  {
-    name: "Chihiro Ogino",
-    universe: "Le Voyage de Chihiro",
-    media: "Films",
-    id: "c044",
-    wiki: "Chihiro Ogino"
+  {
+    "name":"Donna Noble",
+    "universe":"Doctor Who",
+    "media":"Séries",
+    "id":"c055",
+    "wiki":"Donna Noble"
   },
-
-  {
-    name: "Carrie Mathison",
-    universe: "Homeland",
-    media: "Séries",
-    id: "c045",
-    wiki: "Carrie Mathison"
+  {
+    "name":"Clara Oswald",
+    "universe":"Doctor Who",
+    "media":"Séries",
+    "id":"c056",
+    "wiki":"Clara Oswald"
   },
-
-  {
-    name: "Jessica Day",
-    universe: "New Girl",
-    media: "Séries",
-    id: "c046",
-    wiki: "Jessica Day"
+  {
+    "name":"Rose Tyler",
+    "universe":"Doctor Who",
+    "media":"Séries",
+    "id":"c057",
+    "wiki":"Rose Tyler"
   },
-
-  {
-    name: "Eve Polastri",
-    universe: "Killing Eve",
-    media: "Séries",
-    id: "c047",
-    wiki: "Eve Polastri"
+  {
+    "name":"Sarah Jane Smith",
+    "universe":"Doctor Who",
+    "media":"Séries",
+    "id":"c058",
+    "wiki":"Sarah Jane Smith"
   },
-
-  {
-    name: "Fox Mulder",
-    universe: "The X-Files",
-    media: "Séries",
-    id: "c048",
-    wiki: "Fox Mulder"
+  {
+    "name":"Seven of Nine",
+    "universe":"Star Trek: Voyager",
+    "media":"Séries",
+    "id":"c059",
+    "wiki":"Seven of Nine"
   },
-
-  {
-    name: "Bobbie Draper",
-    universe: "The Expanse",
-    media: "Séries",
-    id: "c049",
-    wiki: "Bobbie Draper"
+  {
+    "name":"Kathryn Janeway",
+    "universe":"Star Trek: Voyager",
+    "media":"Séries",
+    "id":"c060",
+    "wiki":"Kathryn Janeway"
   },
-
-  {
-    name: "Naomi Nagata",
-    universe: "The Expanse",
-    media: "Séries",
-    id: "c050",
-    wiki: "Naomi Nagata"
+  {
+    "name":"Kira Nerys",
+    "universe":"Star Trek: Deep Space Nine",
+    "media":"Séries",
+    "id":"c061",
+    "wiki":"Kira Nerys"
   },
-
-  {
-    name: "Camina Drummer",
-    universe: "The Expanse",
-    media: "Séries",
-    id: "c051",
-    wiki: "Camina Drummer"
+  {
+    "name":"Benjamin Sisko",
+    "universe":"Star Trek: Deep Space Nine",
+    "media":"Séries",
+    "id":"c062",
+    "wiki":"Benjamin Sisko"
   },
-
-  {
-    name: "Laura Roslin",
-    universe: "Battlestar Galactica",
-    media: "Séries",
-    id: "c052",
-    wiki: "Laura Roslin"
+  {
+    "name":"Jean-Luc Picard",
+    "universe":"Star Trek: The Next Generation",
+    "media":"Séries",
+    "id":"c063",
+    "wiki":"Jean-Luc Picard"
   },
-
-  {
-    name: "Rory Williams",
-    universe: "Doctor Who",
-    media: "Séries",
-    id: "c053",
-    wiki: "Rory Williams"
+  {
+    "name":"Beverly Crusher",
+    "universe":"Star Trek: The Next Generation",
+    "media":"Séries",
+    "id":"c064",
+    "wiki":"Beverly Crusher"
   },
-
-  {
-    name: "Wilfred Mott",
-    universe: "Doctor Who",
-    media: "Séries",
-    id: "c054",
-    wiki: "Wilfred Mott"
+  {
+    "name":"Michael Burnham",
+    "universe":"Star Trek: Discovery",
+    "media":"Séries",
+    "id":"c065",
+    "wiki":"Michael Burnham"
   },
-
-  {
-    name: "Donna Noble",
-    universe: "Doctor Who",
-    media: "Séries",
-    id: "c055",
-    wiki: "Donna Noble"
+  {
+    "name":"Philippa Georgiou",
+    "universe":"Star Trek: Discovery",
+    "media":"Séries",
+    "id":"c066",
+    "wiki":"Philippa Georgiou"
   },
-
-  {
-    name: "Clara Oswald",
-    universe: "Doctor Who",
-    media: "Séries",
-    id: "c056",
-    wiki: "Clara Oswald"
+  {
+    "name":"Din Djarin",
+    "universe":"The Mandalorian",
+    "media":"Séries",
+    "id":"c067",
+    "wiki":"Din Djarin"
   },
-
-  {
-    name: "Rose Tyler",
-    universe: "Doctor Who",
-    media: "Séries",
-    id: "c057",
-    wiki: "Rose Tyler"
+  {
+    "name":"Bo-Katan Kryze",
+    "universe":"Star Wars",
+    "media":"Séries",
+    "id":"c068",
+    "wiki":"Bo-Katan Kryze"
   },
-
-  {
-    name: "Sarah Jane Smith",
-    universe: "Doctor Who",
-    media: "Séries",
-    id: "c058",
-    wiki: "Sarah Jane Smith"
+  {
+    "name":"Cassian Andor",
+    "universe":"Andor",
+    "media":"Séries",
+    "id":"c069",
+    "wiki":"Cassian Andor"
   },
-
-  {
-    name: "Seven of Nine",
-    universe: "Star Trek: Voyager",
-    media: "Séries",
-    id: "c059",
-    wiki: "Seven of Nine"
+  {
+    "name":"Mon Mothma",
+    "universe":"Andor",
+    "media":"Séries",
+    "id":"c070",
+    "wiki":"Mon Mothma"
   },
-
-  {
-    name: "Kathryn Janeway",
-    universe: "Star Trek: Voyager",
-    media: "Séries",
-    id: "c060",
-    wiki: "Kathryn Janeway"
+  {
+    "name":"Bix Caleen",
+    "universe":"Andor",
+    "media":"Séries",
+    "id":"c071",
+    "wiki":"Bix Caleen"
   },
-
-  {
-    name: "Kira Nerys",
-    universe: "Star Trek: Deep Space Nine",
-    media: "Séries",
-    id: "c061",
-    wiki: "Kira Nerys"
+  {
+    "name":"Luthen Rael",
+    "universe":"Andor",
+    "media":"Séries",
+    "id":"c072",
+    "wiki":"Luthen Rael"
   },
-
-  {
-    name: "Benjamin Sisko",
-    universe: "Star Trek: Deep Space Nine",
-    media: "Séries",
-    id: "c062",
-    wiki: "Benjamin Sisko"
+  {
+    "name":"Jimmy McGill",
+    "universe":"Better Call Saul",
+    "media":"Séries",
+    "id":"c073",
+    "wiki":"Jimmy McGill"
   },
-
-  {
-    name: "Jean-Luc Picard",
-    universe: "Star Trek: The Next Generation",
-    media: "Séries",
-    id: "c063",
-    wiki: "Jean-Luc Picard"
+  {
+    "name":"Mike Ehrmantraut",
+    "universe":"Better Call Saul",
+    "media":"Séries",
+    "id":"c074",
+    "wiki":"Mike Ehrmantraut"
   },
-
-  {
-    name: "Beverly Crusher",
-    universe: "Star Trek: The Next Generation",
-    media: "Séries",
-    id: "c064",
-    wiki: "Beverly Crusher"
+  {
+    "name":"Chuck McGill",
+    "universe":"Better Call Saul",
+    "media":"Séries",
+    "id":"c075",
+    "wiki":"Chuck McGill"
   },
-
-  {
-    name: "Michael Burnham",
-    universe: "Star Trek: Discovery",
-    media: "Séries",
-    id: "c065",
-    wiki: "Michael Burnham"
+  {
+    "name":"Nacho Varga",
+    "universe":"Better Call Saul",
+    "media":"Séries",
+    "id":"c076",
+    "wiki":"Nacho Varga"
   },
-
-  {
-    name: "Philippa Georgiou",
-    universe: "Star Trek: Discovery",
-    media: "Séries",
-    id: "c066",
-    wiki: "Philippa Georgiou"
+  {
+    "name":"Don Draper",
+    "universe":"Mad Men",
+    "media":"Séries",
+    "id":"c077",
+    "wiki":"Don Draper"
   },
-
-  {
-    name: "Din Djarin",
-    universe: "The Mandalorian",
-    media: "Séries",
-    id: "c067",
-    wiki: "Din Djarin"
+  {
+    "name":"Peggy Olson",
+    "universe":"Mad Men",
+    "media":"Séries",
+    "id":"c078",
+    "wiki":"Peggy Olson"
   },
-
-  {
-    name: "Bo-Katan Kryze",
-    universe: "Star Wars",
-    media: "Séries",
-    id: "c068",
-    wiki: "Bo-Katan Kryze"
+  {
+    "name":"Joan Holloway",
+    "universe":"Mad Men",
+    "media":"Séries",
+    "id":"c079",
+    "wiki":"Joan Holloway"
   },
-
-  {
-    name: "Cassian Andor",
-    universe: "Andor",
-    media: "Séries",
-    id: "c069",
-    wiki: "Cassian Andor"
+  {
+    "name":"Betty Draper",
+    "universe":"Mad Men",
+    "media":"Séries",
+    "id":"c080",
+    "wiki":"Betty Draper"
   },
-
-  {
-    name: "Mon Mothma",
-    universe: "Andor",
-    media: "Séries",
-    id: "c070",
-    wiki: "Mon Mothma"
+  {
+    "name":"Leslie Knope",
+    "universe":"Parks and Recreation",
+    "media":"Séries",
+    "id":"c081",
+    "wiki":"Leslie Knope"
   },
-
-  {
-    name: "Bix Caleen",
-    universe: "Andor",
-    media: "Séries",
-    id: "c071",
-    wiki: "Bix Caleen"
+  {
+    "name":"April Ludgate",
+    "universe":"Parks and Recreation",
+    "media":"Séries",
+    "id":"c082",
+    "wiki":"April Ludgate"
   },
-
-  {
-    name: "Luthen Rael",
-    universe: "Andor",
-    media: "Séries",
-    id: "c072",
-    wiki: "Luthen Rael"
+  {
+    "name":"Ron Swanson",
+    "universe":"Parks and Recreation",
+    "media":"Séries",
+    "id":"c083",
+    "wiki":"Ron Swanson"
   },
-
-  {
-    name: "Jimmy McGill",
-    universe: "Better Call Saul",
-    media: "Séries",
-    id: "c073",
-    wiki: "Jimmy McGill"
+  {
+    "name":"Ben Wyatt",
+    "universe":"Parks and Recreation",
+    "media":"Séries",
+    "id":"c084",
+    "wiki":"Ben Wyatt"
   },
-
-  {
-    name: "Mike Ehrmantraut",
-    universe: "Better Call Saul",
-    media: "Séries",
-    id: "c074",
-    wiki: "Mike Ehrmantraut"
+  {
+    "name":"Liz Lemon",
+    "universe":"30 Rock",
+    "media":"Séries",
+    "id":"c085",
+    "wiki":"Liz Lemon"
   },
-
-  {
-    name: "Chuck McGill",
-    universe: "Better Call Saul",
-    media: "Séries",
-    id: "c075",
-    wiki: "Chuck McGill"
+  {
+    "name":"Jack Donaghy",
+    "universe":"30 Rock",
+    "media":"Séries",
+    "id":"c086",
+    "wiki":"Jack Donaghy"
   },
-
-  {
-    name: "Nacho Varga",
-    universe: "Better Call Saul",
-    media: "Séries",
-    id: "c076",
-    wiki: "Nacho Varga"
+  {
+    "name":"Diane Nguyen",
+    "universe":"BoJack Horseman",
+    "media":"Séries",
+    "id":"c087",
+    "wiki":"Diane Nguyen"
   },
-
-  {
-    name: "Don Draper",
-    universe: "Mad Men",
-    media: "Séries",
-    id: "c077",
-    wiki: "Don Draper"
+  {
+    "name":"Princess Carolyn",
+    "universe":"BoJack Horseman",
+    "media":"Séries",
+    "id":"c088",
+    "wiki":"Princess Carolyn"
   },
-
-  {
-    name: "Peggy Olson",
-    universe: "Mad Men",
-    media: "Séries",
-    id: "c078",
-    wiki: "Peggy Olson"
+  {
+    "name":"Todd Chavez",
+    "universe":"BoJack Horseman",
+    "media":"Séries",
+    "id":"c089",
+    "wiki":"Todd Chavez"
   },
-
-  {
-    name: "Joan Holloway",
-    universe: "Mad Men",
-    media: "Séries",
-    id: "c079",
-    wiki: "Joan Holloway"
+  {
+    "name":"Mr. Peanutbutter",
+    "universe":"BoJack Horseman",
+    "media":"Séries",
+    "id":"c090",
+    "wiki":"Mr. Peanutbutter"
   },
-
-  {
-    name: "Betty Draper",
-    universe: "Mad Men",
-    media: "Séries",
-    id: "c080",
-    wiki: "Betty Draper"
+  {
+    "name":"Daria Morgendorffer",
+    "universe":"Daria",
+    "media":"Séries",
+    "id":"c091",
+    "wiki":"Daria Morgendorffer"
   },
-
-  {
-    name: "Leslie Knope",
-    universe: "Parks and Recreation",
-    media: "Séries",
-    id: "c081",
-    wiki: "Leslie Knope"
+  {
+    "name":"Jane Lane",
+    "universe":"Daria",
+    "media":"Séries",
+    "id":"c092",
+    "wiki":"Jane Lane"
   },
-
-  {
-    name: "April Ludgate",
-    universe: "Parks and Recreation",
-    media: "Séries",
-    id: "c082",
-    wiki: "April Ludgate"
+  {
+    "name":"Mabel Pines",
+    "universe":"Gravity Falls",
+    "media":"Séries",
+    "id":"c093",
+    "wiki":"Mabel Pines"
   },
-
-  {
-    name: "Ron Swanson",
-    universe: "Parks and Recreation",
-    media: "Séries",
-    id: "c083",
-    wiki: "Ron Swanson"
+  {
+    "name":"Stan Pines",
+    "universe":"Gravity Falls",
+    "media":"Séries",
+    "id":"c094",
+    "wiki":"Stan Pines"
   },
-
-  {
-    name: "Ben Wyatt",
-    universe: "Parks and Recreation",
-    media: "Séries",
-    id: "c084",
-    wiki: "Ben Wyatt"
+  {
+    "name":"Wendy Corduroy",
+    "universe":"Gravity Falls",
+    "media":"Séries",
+    "id":"c095",
+    "wiki":"Wendy Corduroy"
   },
-
-  {
-    name: "Liz Lemon",
-    universe: "30 Rock",
-    media: "Séries",
-    id: "c085",
-    wiki: "Liz Lemon"
+  {
+    "name":"Rebecca Bunch",
+    "universe":"Crazy Ex-Girlfriend",
+    "media":"Séries",
+    "id":"c096",
+    "wiki":"Rebecca Bunch"
   },
-
-  {
-    name: "Jack Donaghy",
-    universe: "30 Rock",
-    media: "Séries",
-    id: "c086",
-    wiki: "Jack Donaghy"
+  {
+    "name":"Chidi Anagonye",
+    "universe":"The Good Place",
+    "media":"Séries",
+    "id":"c097",
+    "wiki":"Chidi Anagonye"
   },
-
-  {
-    name: "Diane Nguyen",
-    universe: "BoJack Horseman",
-    media: "Séries",
-    id: "c087",
-    wiki: "Diane Nguyen"
+  {
+    "name":"Tahani Al-Jamil",
+    "universe":"The Good Place",
+    "media":"Séries",
+    "id":"c098",
+    "wiki":"Tahani Al-Jamil"
   },
-
-  {
-    name: "Princess Carolyn",
-    universe: "BoJack Horseman",
-    media: "Séries",
-    id: "c088",
-    wiki: "Princess Carolyn"
+  {
+    "name":"Michael",
+    "universe":"The Good Place",
+    "media":"Séries",
+    "id":"c099",
+    "wiki":"Michael"
   },
-
-  {
-    name: "Todd Chavez",
-    universe: "BoJack Horseman",
-    media: "Séries",
-    id: "c089",
-    wiki: "Todd Chavez"
+  {
+    "name":"Rory Gilmore",
+    "universe":"Gilmore Girls",
+    "media":"Séries",
+    "id":"c100",
+    "wiki":"Rory Gilmore"
   },
-
-  {
-    name: "Mr. Peanutbutter",
-    universe: "BoJack Horseman",
-    media: "Séries",
-    id: "c090",
-    wiki: "Mr. Peanutbutter"
+  {
+    "name":"Paris Geller",
+    "universe":"Gilmore Girls",
+    "media":"Séries",
+    "id":"c101",
+    "wiki":"Paris Geller"
   },
-
-  {
-    name: "Daria Morgendorffer",
-    universe: "Daria",
-    media: "Séries",
-    id: "c091",
-    wiki: "Daria Morgendorffer"
+  {
+    "name":"June Osborne",
+    "universe":"The Handmaid's Tale",
+    "media":"Séries",
+    "id":"c102",
+    "wiki":"June Osborne"
   },
-
-  {
-    name: "Jane Lane",
-    universe: "Daria",
-    media: "Séries",
-    id: "c092",
-    wiki: "Jane Lane"
+  {
+    "name":"Moira Rose",
+    "universe":"Schitt's Creek",
+    "media":"Séries",
+    "id":"c103",
+    "wiki":"Moira Rose"
   },
-
-  {
-    name: "Mabel Pines",
-    universe: "Gravity Falls",
-    media: "Séries",
-    id: "c093",
-    wiki: "Mabel Pines"
+  {
+    "name":"Alexis Rose",
+    "universe":"Schitt's Creek",
+    "media":"Séries",
+    "id":"c104",
+    "wiki":"Alexis Rose"
   },
-
-  {
-    name: "Stan Pines",
-    universe: "Gravity Falls",
-    media: "Séries",
-    id: "c094",
-    wiki: "Stan Pines"
+  {
+    "name":"Midge Maisel",
+    "universe":"The Marvelous Mrs. Maisel",
+    "media":"Séries",
+    "id":"c105",
+    "wiki":"Midge Maisel"
   },
-
-  {
-    name: "Wendy Corduroy",
-    universe: "Gravity Falls",
-    media: "Séries",
-    id: "c095",
-    wiki: "Wendy Corduroy"
+  {
+    "name":"Nico Robin",
+    "universe":"One Piece",
+    "media":"Manga / Anime",
+    "id":"c106",
+    "wiki":"Nico Robin"
   },
-
-  {
-    name: "Rebecca Bunch",
-    universe: "Crazy Ex-Girlfriend",
-    media: "Séries",
-    id: "c096",
-    wiki: "Rebecca Bunch"
+  {
+    "name":"Nami",
+    "universe":"One Piece",
+    "media":"Manga / Anime",
+    "id":"c107",
+    "wiki":"Nami"
   },
-
-  {
-    name: "Chidi Anagonye",
-    universe: "The Good Place",
-    media: "Séries",
-    id: "c097",
-    wiki: "Chidi Anagonye"
+  {
+    "name":"Boa Hancock",
+    "universe":"One Piece",
+    "media":"Manga / Anime",
+    "id":"c108",
+    "wiki":"Boa Hancock"
   },
-
-  {
-    name: "Tahani Al-Jamil",
-    universe: "The Good Place",
-    media: "Séries",
-    id: "c098",
-    wiki: "Tahani Al-Jamil"
+  {
+    "name":"Perona",
+    "universe":"One Piece",
+    "media":"Manga / Anime",
+    "id":"c109",
+    "wiki":"Perona"
   },
-
-  {
-    name: "Michael",
-    universe: "The Good Place",
-    media: "Séries",
-    id: "c099",
-    wiki: "Michael"
+  {
+    "name":"Trafalgar Law",
+    "universe":"One Piece",
+    "media":"Manga / Anime",
+    "id":"c110",
+    "wiki":"Trafalgar Law"
   },
-
-  {
-    name: "Rory Gilmore",
-    universe: "Gilmore Girls",
-    media: "Séries",
-    id: "c100",
-    wiki: "Rory Gilmore"
+  {
+    "name":"Donquixote Doflamingo",
+    "universe":"One Piece",
+    "media":"Manga / Anime",
+    "id":"c111",
+    "wiki":"Donquixote Doflamingo"
   },
-
-  {
-    name: "Paris Geller",
-    universe: "Gilmore Girls",
-    media: "Séries",
-    id: "c101",
-    wiki: "Paris Geller"
+  {
+    "name":"Charlotte Katakuri",
+    "universe":"One Piece",
+    "media":"Manga / Anime",
+    "id":"c112",
+    "wiki":"Charlotte Katakuri"
   },
-
-  {
-    name: "June Osborne",
-    universe: "The Handmaid's Tale",
-    media: "Séries",
-    id: "c102",
-    wiki: "June Osborne"
+  {
+    "name":"Monkey D. Dragon",
+    "universe":"One Piece",
+    "media":"Manga / Anime",
+    "id":"c113",
+    "wiki":"Monkey D. Dragon"
   },
-
-  {
-    name: "Moira Rose",
-    universe: "Schitt's Creek",
-    media: "Séries",
-    id: "c103",
-    wiki: "Moira Rose"
+  {
+    "name":"Shanks",
+    "universe":"One Piece",
+    "media":"Manga / Anime",
+    "id":"c114",
+    "wiki":"Shanks"
   },
-
-  {
-    name: "Alexis Rose",
-    universe: "Schitt's Creek",
-    media: "Séries",
-    id: "c104",
-    wiki: "Alexis Rose"
+  {
+    "name":"Brook",
+    "universe":"One Piece",
+    "media":"Manga / Anime",
+    "id":"c115",
+    "wiki":"Brook"
   },
-
-  {
-    name: "Midge Maisel",
-    universe: "The Marvelous Mrs. Maisel",
-    media: "Séries",
-    id: "c105",
-    wiki: "Midge Maisel"
+  {
+    "name":"Franky",
+    "universe":"One Piece",
+    "media":"Manga / Anime",
+    "id":"c116",
+    "wiki":"Franky"
   },
-
-  {
-    name: "Nico Robin",
-    universe: "One Piece",
-    media: "Manga / Anime",
-    id: "c106",
-    wiki: "Nico Robin"
+  {
+    "name":"Usopp",
+    "universe":"One Piece",
+    "media":"Manga / Anime",
+    "id":"c117",
+    "wiki":"Usopp"
   },
-
-  {
-    name: "Nami",
-    universe: "One Piece",
-    media: "Manga / Anime",
-    id: "c107",
-    wiki: "Nami"
+  {
+    "name":"Sanji",
+    "universe":"One Piece",
+    "media":"Manga / Anime",
+    "id":"c118",
+    "wiki":"Sanji"
   },
-
-  {
-    name: "Boa Hancock",
-    universe: "One Piece",
-    media: "Manga / Anime",
-    id: "c108",
-    wiki: "Boa Hancock"
+  {
+    "name":"Roronoa Zoro",
+    "universe":"One Piece",
+    "media":"Manga / Anime",
+    "id":"c119",
+    "wiki":"Roronoa Zoro"
   },
-
-  {
-    name: "Perona",
-    universe: "One Piece",
-    media: "Manga / Anime",
-    id: "c109",
-    wiki: "Perona"
+  {
+    "name":"Tashigi",
+    "universe":"One Piece",
+    "media":"Manga / Anime",
+    "id":"c120",
+    "wiki":"Tashigi"
   },
-
-  {
-    name: "Trafalgar Law",
-    universe: "One Piece",
-    media: "Manga / Anime",
-    id: "c110",
-    wiki: "Trafalgar Law"
+  {
+    "name":"Koby",
+    "universe":"One Piece",
+    "media":"Manga / Anime",
+    "id":"c121",
+    "wiki":"Koby"
   },
-
-  {
-    name: "Donquixote Doflamingo",
-    universe: "One Piece",
-    media: "Manga / Anime",
-    id: "c111",
-    wiki: "Donquixote Doflamingo"
+  {
+    "name":"Reiju Vinsmoke",
+    "universe":"One Piece",
+    "media":"Manga / Anime",
+    "id":"c122",
+    "wiki":"Reiju Vinsmoke"
   },
-
-  {
-    name: "Charlotte Katakuri",
-    universe: "One Piece",
-    media: "Manga / Anime",
-    id: "c112",
-    wiki: "Charlotte Katakuri"
+  {
+    "name":"Maki Zenin",
+    "universe":"Jujutsu Kaisen",
+    "media":"Manga / Anime",
+    "id":"c123",
+    "wiki":"Maki Zenin"
   },
-
-  {
-    name: "Monkey D. Dragon",
-    universe: "One Piece",
-    media: "Manga / Anime",
-    id: "c113",
-    wiki: "Monkey D. Dragon"
+  {
+    "name":"Nobara Kugisaki",
+    "universe":"Jujutsu Kaisen",
+    "media":"Manga / Anime",
+    "id":"c124",
+    "wiki":"Nobara Kugisaki"
   },
-
-  {
-    name: "Shanks",
-    universe: "One Piece",
-    media: "Manga / Anime",
-    id: "c114",
-    wiki: "Shanks"
+  {
+    "name":"Megumi Fushiguro",
+    "universe":"Jujutsu Kaisen",
+    "media":"Manga / Anime",
+    "id":"c125",
+    "wiki":"Megumi Fushiguro"
   },
-
-  {
-    name: "Brook",
-    universe: "One Piece",
-    media: "Manga / Anime",
-    id: "c115",
-    wiki: "Brook"
+  {
+    "name":"Suguru Geto",
+    "universe":"Jujutsu Kaisen",
+    "media":"Manga / Anime",
+    "id":"c126",
+    "wiki":"Suguru Geto"
   },
-
-  {
-    name: "Franky",
-    universe: "One Piece",
-    media: "Manga / Anime",
-    id: "c116",
-    wiki: "Franky"
+  {
+    "name":"Toji Fushiguro",
+    "universe":"Jujutsu Kaisen",
+    "media":"Manga / Anime",
+    "id":"c127",
+    "wiki":"Toji Fushiguro"
   },
-
-  {
-    name: "Usopp",
-    universe: "One Piece",
-    media: "Manga / Anime",
-    id: "c117",
-    wiki: "Usopp"
+  {
+    "name":"Kento Nanami",
+    "universe":"Jujutsu Kaisen",
+    "media":"Manga / Anime",
+    "id":"c128",
+    "wiki":"Kento Nanami"
   },
-
-  {
-    name: "Sanji",
-    universe: "One Piece",
-    media: "Manga / Anime",
-    id: "c118",
-    wiki: "Sanji"
+  {
+    "name":"Yuki Tsukumo",
+    "universe":"Jujutsu Kaisen",
+    "media":"Manga / Anime",
+    "id":"c129",
+    "wiki":"Yuki Tsukumo"
   },
-
-  {
-    name: "Roronoa Zoro",
-    universe: "One Piece",
-    media: "Manga / Anime",
-    id: "c119",
-    wiki: "Roronoa Zoro"
+  {
+    "name":"Kasumi Miwa",
+    "universe":"Jujutsu Kaisen",
+    "media":"Manga / Anime",
+    "id":"c130",
+    "wiki":"Kasumi Miwa"
   },
-
-  {
-    name: "Tashigi",
-    universe: "One Piece",
-    media: "Manga / Anime",
-    id: "c120",
-    wiki: "Tashigi"
+  {
+    "name":"Shoko Ieiri",
+    "universe":"Jujutsu Kaisen",
+    "media":"Manga / Anime",
+    "id":"c131",
+    "wiki":"Shoko Ieiri"
   },
-
-  {
-    name: "Koby",
-    universe: "One Piece",
-    media: "Manga / Anime",
-    id: "c121",
-    wiki: "Koby"
+  {
+    "name":"Maki Oze",
+    "universe":"Fire Force",
+    "media":"Manga / Anime",
+    "id":"c132",
+    "wiki":"Maki Oze"
   },
-
-  {
-    name: "Reiju Vinsmoke",
-    universe: "One Piece",
-    media: "Manga / Anime",
-    id: "c122",
-    wiki: "Reiju Vinsmoke"
+  {
+    "name":"Shinra Kusakabe",
+    "universe":"Fire Force",
+    "media":"Manga / Anime",
+    "id":"c133",
+    "wiki":"Shinra Kusakabe"
   },
-
-  {
-    name: "Maki Zenin",
-    universe: "Jujutsu Kaisen",
-    media: "Manga / Anime",
-    id: "c123",
-    wiki: "Maki Zenin"
+  {
+    "name":"Arthur Boyle",
+    "universe":"Fire Force",
+    "media":"Manga / Anime",
+    "id":"c134",
+    "wiki":"Arthur Boyle"
   },
-
-  {
-    name: "Nobara Kugisaki",
-    universe: "Jujutsu Kaisen",
-    media: "Manga / Anime",
-    id: "c124",
-    wiki: "Nobara Kugisaki"
+  {
+    "name":"Tamaki Kotatsu",
+    "universe":"Fire Force",
+    "media":"Manga / Anime",
+    "id":"c135",
+    "wiki":"Tamaki Kotatsu"
   },
-
-  {
-    name: "Megumi Fushiguro",
-    universe: "Jujutsu Kaisen",
-    media: "Manga / Anime",
-    id: "c125",
-    wiki: "Megumi Fushiguro"
+  {
+    "name":"Historia Reiss",
+    "universe":"L'Attaque des Titans",
+    "media":"Manga / Anime",
+    "id":"c136",
+    "wiki":"Historia Reiss"
   },
-
-  {
-    name: "Suguru Geto",
-    universe: "Jujutsu Kaisen",
-    media: "Manga / Anime",
-    id: "c126",
-    wiki: "Suguru Geto"
+  {
+    "name":"Sasha Blouse",
+    "universe":"L'Attaque des Titans",
+    "media":"Manga / Anime",
+    "id":"c137",
+    "wiki":"Sasha Blouse"
   },
-
-  {
-    name: "Toji Fushiguro",
-    universe: "Jujutsu Kaisen",
-    media: "Manga / Anime",
-    id: "c127",
-    wiki: "Toji Fushiguro"
+  {
+    "name":"Pieck Finger",
+    "universe":"L'Attaque des Titans",
+    "media":"Manga / Anime",
+    "id":"c138",
+    "wiki":"Pieck Finger"
   },
-
-  {
-    name: "Kento Nanami",
-    universe: "Jujutsu Kaisen",
-    media: "Manga / Anime",
-    id: "c128",
-    wiki: "Kento Nanami"
+  {
+    "name":"Annie Leonhart",
+    "universe":"L'Attaque des Titans",
+    "media":"Manga / Anime",
+    "id":"c139",
+    "wiki":"Annie Leonhart"
   },
-
-  {
-    name: "Yuki Tsukumo",
-    universe: "Jujutsu Kaisen",
-    media: "Manga / Anime",
-    id: "c129",
-    wiki: "Yuki Tsukumo"
+  {
+    "name":"Reiner Braun",
+    "universe":"L'Attaque des Titans",
+    "media":"Manga / Anime",
+    "id":"c140",
+    "wiki":"Reiner Braun"
   },
-
-  {
-    name: "Kasumi Miwa",
-    universe: "Jujutsu Kaisen",
-    media: "Manga / Anime",
-    id: "c130",
-    wiki: "Kasumi Miwa"
+  {
+    "name":"Armin Arlert",
+    "universe":"L'Attaque des Titans",
+    "media":"Manga / Anime",
+    "id":"c141",
+    "wiki":"Armin Arlert"
   },
-
-  {
-    name: "Shoko Ieiri",
-    universe: "Jujutsu Kaisen",
-    media: "Manga / Anime",
-    id: "c131",
-    wiki: "Shoko Ieiri"
+  {
+    "name":"Levi Ackerman",
+    "universe":"L'Attaque des Titans",
+    "media":"Manga / Anime",
+    "id":"c142",
+    "wiki":"Levi Ackerman"
   },
-
-  {
-    name: "Maki Oze",
-    universe: "Fire Force",
-    media: "Manga / Anime",
-    id: "c132",
-    wiki: "Maki Oze"
+  {
+    "name":"Jean Kirstein",
+    "universe":"L'Attaque des Titans",
+    "media":"Manga / Anime",
+    "id":"c143",
+    "wiki":"Jean Kirstein"
   },
-
-  {
-    name: "Shinra Kusakabe",
-    universe: "Fire Force",
-    media: "Manga / Anime",
-    id: "c133",
-    wiki: "Shinra Kusakabe"
+  {
+    "name":"Ymir",
+    "universe":"L'Attaque des Titans",
+    "media":"Manga / Anime",
+    "id":"c144",
+    "wiki":"Ymir"
   },
-
-  {
-    name: "Arthur Boyle",
-    universe: "Fire Force",
-    media: "Manga / Anime",
-    id: "c134",
-    wiki: "Arthur Boyle"
+  {
+    "name":"Near",
+    "universe":"Death Note",
+    "media":"Manga / Anime",
+    "id":"c145",
+    "wiki":"Near"
   },
-
-  {
-    name: "Tamaki Kotatsu",
-    universe: "Fire Force",
-    media: "Manga / Anime",
-    id: "c135",
-    wiki: "Tamaki Kotatsu"
+  {
+    "name":"Mello",
+    "universe":"Death Note",
+    "media":"Manga / Anime",
+    "id":"c146",
+    "wiki":"Mello"
   },
-
-  {
-    name: "Historia Reiss",
-    universe: "L'Attaque des Titans",
-    media: "Manga / Anime",
-    id: "c136",
-    wiki: "Historia Reiss"
+  {
+    "name":"Teru Mikami",
+    "universe":"Death Note",
+    "media":"Manga / Anime",
+    "id":"c147",
+    "wiki":"Teru Mikami"
   },
-
-  {
-    name: "Sasha Blouse",
-    universe: "L'Attaque des Titans",
-    media: "Manga / Anime",
-    id: "c137",
-    wiki: "Sasha Blouse"
+  {
+    "name":"Matt",
+    "universe":"Death Note",
+    "media":"Manga / Anime",
+    "id":"c148",
+    "wiki":"Matt"
   },
-
-  {
-    name: "Pieck Finger",
-    universe: "L'Attaque des Titans",
-    media: "Manga / Anime",
-    id: "c138",
-    wiki: "Pieck Finger"
+  {
+    "name":"Ryuk",
+    "universe":"Death Note",
+    "media":"Manga / Anime",
+    "id":"c149",
+    "wiki":"Ryuk"
   },
-
-  {
-    name: "Annie Leonhart",
-    universe: "L'Attaque des Titans",
-    media: "Manga / Anime",
-    id: "c139",
-    wiki: "Annie Leonhart"
+  {
+    "name":"Mitsuri Kanroji",
+    "universe":"Demon Slayer",
+    "media":"Manga / Anime",
+    "id":"c150",
+    "wiki":"Mitsuri Kanroji"
   },
-
-  {
-    name: "Reiner Braun",
-    universe: "L'Attaque des Titans",
-    media: "Manga / Anime",
-    id: "c140",
-    wiki: "Reiner Braun"
+  {
+    "name":"Kanao Tsuyuri",
+    "universe":"Demon Slayer",
+    "media":"Manga / Anime",
+    "id":"c151",
+    "wiki":"Kanao Tsuyuri"
   },
-
-  {
-    name: "Armin Arlert",
-    universe: "L'Attaque des Titans",
-    media: "Manga / Anime",
-    id: "c141",
-    wiki: "Armin Arlert"
+  {
+    "name":"Tamayo",
+    "universe":"Demon Slayer",
+    "media":"Manga / Anime",
+    "id":"c152",
+    "wiki":"Tamayo"
   },
-
-  {
-    name: "Levi Ackerman",
-    universe: "L'Attaque des Titans",
-    media: "Manga / Anime",
-    id: "c142",
-    wiki: "Levi Ackerman"
+  {
+    "name":"Daki",
+    "universe":"Demon Slayer",
+    "media":"Manga / Anime",
+    "id":"c153",
+    "wiki":"Daki"
   },
-
-  {
-    name: "Jean Kirstein",
-    universe: "L'Attaque des Titans",
-    media: "Manga / Anime",
-    id: "c143",
-    wiki: "Jean Kirstein"
+  {
+    "name":"Akaza",
+    "universe":"Demon Slayer",
+    "media":"Manga / Anime",
+    "id":"c154",
+    "wiki":"Akaza"
   },
-
-  {
-    name: "Ymir",
-    universe: "L'Attaque des Titans",
-    media: "Manga / Anime",
-    id: "c144",
-    wiki: "Ymir"
+  {
+    "name":"Giyu Tomioka",
+    "universe":"Demon Slayer",
+    "media":"Manga / Anime",
+    "id":"c155",
+    "wiki":"Giyu Tomioka"
   },
-
-  {
-    name: "Near",
-    universe: "Death Note",
-    media: "Manga / Anime",
-    id: "c145",
-    wiki: "Near"
+  {
+    "name":"Kyojuro Rengoku",
+    "universe":"Demon Slayer",
+    "media":"Manga / Anime",
+    "id":"c156",
+    "wiki":"Kyojuro Rengoku"
   },
-
-  {
-    name: "Mello",
-    universe: "Death Note",
-    media: "Manga / Anime",
-    id: "c146",
-    wiki: "Mello"
+  {
+    "name":"Tengen Uzui",
+    "universe":"Demon Slayer",
+    "media":"Manga / Anime",
+    "id":"c157",
+    "wiki":"Tengen Uzui"
   },
-
-  {
-    name: "Teru Mikami",
-    universe: "Death Note",
-    media: "Manga / Anime",
-    id: "c147",
-    wiki: "Teru Mikami"
+  {
+    "name":"Muichiro Tokito",
+    "universe":"Demon Slayer",
+    "media":"Manga / Anime",
+    "id":"c158",
+    "wiki":"Muichiro Tokito"
   },
-
-  {
-    name: "Matt",
-    universe: "Death Note",
-    media: "Manga / Anime",
-    id: "c148",
-    wiki: "Matt"
+  {
+    "name":"Nezuko Kamado",
+    "universe":"Demon Slayer",
+    "media":"Manga / Anime",
+    "id":"c159",
+    "wiki":"Nezuko Kamado"
   },
-
-  {
-    name: "Ryuk",
-    universe: "Death Note",
-    media: "Manga / Anime",
-    id: "c149",
-    wiki: "Ryuk"
+  {
+    "name":"Tanjiro Kamado",
+    "universe":"Demon Slayer",
+    "media":"Manga / Anime",
+    "id":"c160",
+    "wiki":"Tanjiro Kamado"
   },
-
-  {
-    name: "Mitsuri Kanroji",
-    universe: "Demon Slayer",
-    media: "Manga / Anime",
-    id: "c150",
-    wiki: "Mitsuri Kanroji"
+  {
+    "name":"Inosuke Hashibira",
+    "universe":"Demon Slayer",
+    "media":"Manga / Anime",
+    "id":"c161",
+    "wiki":"Inosuke Hashibira"
   },
-
-  {
-    name: "Kanao Tsuyuri",
-    universe: "Demon Slayer",
-    media: "Manga / Anime",
-    id: "c151",
-    wiki: "Kanao Tsuyuri"
+  {
+    "name":"Zenitsu Agatsuma",
+    "universe":"Demon Slayer",
+    "media":"Manga / Anime",
+    "id":"c162",
+    "wiki":"Zenitsu Agatsuma"
   },
-
-  {
-    name: "Tamayo",
-    universe: "Demon Slayer",
-    media: "Manga / Anime",
-    id: "c152",
-    wiki: "Tamayo"
+  {
+    "name":"Jinshi",
+    "universe":"Les Carnets de l'apothicaire",
+    "media":"Manga / Anime",
+    "id":"c163",
+    "wiki":"Jinshi"
   },
-
-  {
-    name: "Daki",
-    universe: "Demon Slayer",
-    media: "Manga / Anime",
-    id: "c153",
-    wiki: "Daki"
+  {
+    "name":"Gyokuyou",
+    "universe":"Les Carnets de l'apothicaire",
+    "media":"Manga / Anime",
+    "id":"c164",
+    "wiki":"Gyokuyou"
   },
-
-  {
-    name: "Akaza",
-    universe: "Demon Slayer",
-    media: "Manga / Anime",
-    id: "c154",
-    wiki: "Akaza"
+  {
+    "name":"Fern",
+    "universe":"Frieren",
+    "media":"Manga / Anime",
+    "id":"c165",
+    "wiki":"Fern"
   },
-
-  {
-    name: "Giyu Tomioka",
-    universe: "Demon Slayer",
-    media: "Manga / Anime",
-    id: "c155",
-    wiki: "Giyu Tomioka"
+  {
+    "name":"Stark",
+    "universe":"Frieren",
+    "media":"Manga / Anime",
+    "id":"c166",
+    "wiki":"Stark"
   },
-
-  {
-    name: "Kyojuro Rengoku",
-    universe: "Demon Slayer",
-    media: "Manga / Anime",
-    id: "c156",
-    wiki: "Kyojuro Rengoku"
+  {
+    "name":"Übel",
+    "universe":"Frieren",
+    "media":"Manga / Anime",
+    "id":"c167",
+    "wiki":"Übel"
   },
-
-  {
-    name: "Tengen Uzui",
-    universe: "Demon Slayer",
-    media: "Manga / Anime",
-    id: "c157",
-    wiki: "Tengen Uzui"
+  {
+    "name":"Himmel",
+    "universe":"Frieren",
+    "media":"Manga / Anime",
+    "id":"c168",
+    "wiki":"Himmel"
   },
-
-  {
-    name: "Muichiro Tokito",
-    universe: "Demon Slayer",
-    media: "Manga / Anime",
-    id: "c158",
-    wiki: "Muichiro Tokito"
+  {
+    "name":"Marcille Donato",
+    "universe":"Dungeon Meshi",
+    "media":"Manga / Anime",
+    "id":"c169",
+    "wiki":"Marcille Donato"
   },
-
-  {
-    name: "Nezuko Kamado",
-    universe: "Demon Slayer",
-    media: "Manga / Anime",
-    id: "c159",
-    wiki: "Nezuko Kamado"
+  {
+    "name":"Laios Touden",
+    "universe":"Dungeon Meshi",
+    "media":"Manga / Anime",
+    "id":"c170",
+    "wiki":"Laios Touden"
   },
-
-  {
-    name: "Tanjiro Kamado",
-    universe: "Demon Slayer",
-    media: "Manga / Anime",
-    id: "c160",
-    wiki: "Tanjiro Kamado"
+  {
+    "name":"Falin Touden",
+    "universe":"Dungeon Meshi",
+    "media":"Manga / Anime",
+    "id":"c171",
+    "wiki":"Falin Touden"
   },
-
-  {
-    name: "Inosuke Hashibira",
-    universe: "Demon Slayer",
-    media: "Manga / Anime",
-    id: "c161",
-    wiki: "Inosuke Hashibira"
+  {
+    "name":"Okarun",
+    "universe":"DanDaDan",
+    "media":"Manga / Anime",
+    "id":"c172",
+    "wiki":"Okarun"
   },
-
-  {
-    name: "Zenitsu Agatsuma",
-    universe: "Demon Slayer",
-    media: "Manga / Anime",
-    id: "c162",
-    wiki: "Zenitsu Agatsuma"
+  {
+    "name":"Aira Shiratori",
+    "universe":"DanDaDan",
+    "media":"Manga / Anime",
+    "id":"c173",
+    "wiki":"Aira Shiratori"
   },
-
-  {
-    name: "Jinshi",
-    universe: "Les Carnets de l'apothicaire",
-    media: "Manga / Anime",
-    id: "c163",
-    wiki: "Jinshi"
+  {
+    "name":"Sailor Moon",
+    "universe":"Sailor Moon",
+    "media":"Manga / Anime",
+    "id":"c174",
+    "wiki":"Sailor Moon"
   },
-
-  {
-    name: "Gyokuyou",
-    universe: "Les Carnets de l'apothicaire",
-    media: "Manga / Anime",
-    id: "c164",
-    wiki: "Gyokuyou"
+  {
+    "name":"Sailor Mars",
+    "universe":"Sailor Moon",
+    "media":"Manga / Anime",
+    "id":"c175",
+    "wiki":"Sailor Mars"
   },
-
-  {
-    name: "Fern",
-    universe: "Frieren",
-    media: "Manga / Anime",
-    id: "c165",
-    wiki: "Fern"
+  {
+    "name":"Sailor Mercury",
+    "universe":"Sailor Moon",
+    "media":"Manga / Anime",
+    "id":"c176",
+    "wiki":"Sailor Mercury"
   },
-
-  {
-    name: "Stark",
-    universe: "Frieren",
-    media: "Manga / Anime",
-    id: "c166",
-    wiki: "Stark"
+  {
+    "name":"Sailor Jupiter",
+    "universe":"Sailor Moon",
+    "media":"Manga / Anime",
+    "id":"c177",
+    "wiki":"Sailor Jupiter"
   },
-
-  {
-    name: "Übel",
-    universe: "Frieren",
-    media: "Manga / Anime",
-    id: "c167",
-    wiki: "Übel"
+  {
+    "name":"Sailor Venus",
+    "universe":"Sailor Moon",
+    "media":"Manga / Anime",
+    "id":"c178",
+    "wiki":"Sailor Venus"
   },
-
-  {
-    name: "Himmel",
-    universe: "Frieren",
-    media: "Manga / Anime",
-    id: "c168",
-    wiki: "Himmel"
+  {
+    "name":"Utena Tenjou",
+    "universe":"Revolutionary Girl Utena",
+    "media":"Manga / Anime",
+    "id":"c179",
+    "wiki":"Utena Tenjou"
   },
-
-  {
-    name: "Marcille Donato",
-    universe: "Dungeon Meshi",
-    media: "Manga / Anime",
-    id: "c169",
-    wiki: "Marcille Donato"
+  {
+    "name":"Anthyy Himemiya",
+    "universe":"Revolutionary Girl Utena",
+    "media":"Manga / Anime",
+    "id":"c180",
+    "wiki":"Anthyy Himemiya"
   },
-
-  {
-    name: "Laios Touden",
-    universe: "Dungeon Meshi",
-    media: "Manga / Anime",
-    id: "c170",
-    wiki: "Laios Touden"
+  {
+    "name":"Homura Akemi",
+    "universe":"Puella Magi Madoka Magica",
+    "media":"Manga / Anime",
+    "id":"c181",
+    "wiki":"Homura Akemi"
   },
-
-  {
-    name: "Falin Touden",
-    universe: "Dungeon Meshi",
-    media: "Manga / Anime",
-    id: "c171",
-    wiki: "Falin Touden"
+  {
+    "name":"Madoka Kaname",
+    "universe":"Puella Magi Madoka Magica",
+    "media":"Manga / Anime",
+    "id":"c182",
+    "wiki":"Madoka Kaname"
   },
-
-  {
-    name: "Okarun",
-    universe: "DanDaDan",
-    media: "Manga / Anime",
-    id: "c172",
-    wiki: "Okarun"
+  {
+    "name":"Mami Tomoe",
+    "universe":"Puella Magi Madoka Magica",
+    "media":"Manga / Anime",
+    "id":"c183",
+    "wiki":"Mami Tomoe"
   },
-
-  {
-    name: "Aira Shiratori",
-    universe: "DanDaDan",
-    media: "Manga / Anime",
-    id: "c173",
-    wiki: "Aira Shiratori"
+  {
+    "name":"Sayaka Miki",
+    "universe":"Puella Magi Madoka Magica",
+    "media":"Manga / Anime",
+    "id":"c184",
+    "wiki":"Sayaka Miki"
   },
-
-  {
-    name: "Sailor Moon",
-    universe: "Sailor Moon",
-    media: "Manga / Anime",
-    id: "c174",
-    wiki: "Sailor Moon"
+  {
+    "name":"Kyoko Sakura",
+    "universe":"Puella Magi Madoka Magica",
+    "media":"Manga / Anime",
+    "id":"c185",
+    "wiki":"Kyoko Sakura"
   },
-
-  {
-    name: "Sailor Mars",
-    universe: "Sailor Moon",
-    media: "Manga / Anime",
-    id: "c175",
-    wiki: "Sailor Mars"
+  {
+    "name":"Batou",
+    "universe":"Ghost in the Shell",
+    "media":"Manga / Anime",
+    "id":"c186",
+    "wiki":"Batou"
   },
-
-  {
-    name: "Sailor Mercury",
-    universe: "Sailor Moon",
-    media: "Manga / Anime",
-    id: "c176",
-    wiki: "Sailor Mercury"
+  {
+    "name":"Ginko",
+    "universe":"Mushishi",
+    "media":"Manga / Anime",
+    "id":"c187",
+    "wiki":"Ginko"
   },
-
-  {
-    name: "Sailor Jupiter",
-    universe: "Sailor Moon",
-    media: "Manga / Anime",
-    id: "c177",
-    wiki: "Sailor Jupiter"
+  {
+    "name":"Violet Evergarden",
+    "universe":"Violet Evergarden",
+    "media":"Manga / Anime",
+    "id":"c188",
+    "wiki":"Violet Evergarden"
   },
-
-  {
-    name: "Sailor Venus",
-    universe: "Sailor Moon",
-    media: "Manga / Anime",
-    id: "c178",
-    wiki: "Sailor Venus"
+  {
+    "name":"Yor Forger",
+    "universe":"Spy × Family",
+    "media":"Manga / Anime",
+    "id":"c189",
+    "wiki":"Yor Forger"
   },
-
-  {
-    name: "Utena Tenjou",
-    universe: "Revolutionary Girl Utena",
-    media: "Manga / Anime",
-    id: "c179",
-    wiki: "Utena Tenjou"
+  {
+    "name":"Loid Forger",
+    "universe":"Spy × Family",
+    "media":"Manga / Anime",
+    "id":"c190",
+    "wiki":"Loid Forger"
   },
-
-  {
-    name: "Anthyy Himemiya",
-    universe: "Revolutionary Girl Utena",
-    media: "Manga / Anime",
-    id: "c180",
-    wiki: "Anthyy Himemiya"
+  {
+    "name":"Anya Forger",
+    "universe":"Spy × Family",
+    "media":"Manga / Anime",
+    "id":"c191",
+    "wiki":"Anya Forger"
   },
-
-  {
-    name: "Homura Akemi",
-    universe: "Puella Magi Madoka Magica",
-    media: "Manga / Anime",
-    id: "c181",
-    wiki: "Homura Akemi"
+  {
+    "name":"Fiona Frost",
+    "universe":"Spy × Family",
+    "media":"Manga / Anime",
+    "id":"c192",
+    "wiki":"Fiona Frost"
   },
-
-  {
-    name: "Madoka Kaname",
-    universe: "Puella Magi Madoka Magica",
-    media: "Manga / Anime",
-    id: "c182",
-    wiki: "Madoka Kaname"
+  {
+    "name":"Hachi Komatsu",
+    "universe":"Nana",
+    "media":"Manga / Anime",
+    "id":"c193",
+    "wiki":"Hachi Komatsu"
   },
-
-  {
-    name: "Mami Tomoe",
-    universe: "Puella Magi Madoka Magica",
-    media: "Manga / Anime",
-    id: "c183",
-    wiki: "Mami Tomoe"
+  {
+    "name":"Nana Komatsu",
+    "universe":"Nana",
+    "media":"Manga / Anime",
+    "id":"c194",
+    "wiki":"Nana Komatsu"
   },
-
-  {
-    name: "Sayaka Miki",
-    universe: "Puella Magi Madoka Magica",
-    media: "Manga / Anime",
-    id: "c184",
-    wiki: "Sayaka Miki"
+  {
+    "name":"Yona",
+    "universe":"Yona of the Dawn",
+    "media":"Manga / Anime",
+    "id":"c195",
+    "wiki":"Yona"
   },
-
-  {
-    name: "Kyoko Sakura",
-    universe: "Puella Magi Madoka Magica",
-    media: "Manga / Anime",
-    id: "c185",
-    wiki: "Kyoko Sakura"
+  {
+    "name":"Balsa Yonsa",
+    "universe":"Moribito",
+    "media":"Manga / Anime",
+    "id":"c196",
+    "wiki":"Balsa Yonsa"
   },
-
-  {
-    name: "Batou",
-    universe: "Ghost in the Shell",
-    media: "Manga / Anime",
-    id: "c186",
-    wiki: "Batou"
+  {
+    "name":"Akane Tsunemori",
+    "universe":"Psycho-Pass",
+    "media":"Manga / Anime",
+    "id":"c197",
+    "wiki":"Akane Tsunemori"
   },
-
-  {
-    name: "Ginko",
-    universe: "Mushishi",
-    media: "Manga / Anime",
-    id: "c187",
-    wiki: "Ginko"
+  {
+    "name":"Shinya Kogami",
+    "universe":"Psycho-Pass",
+    "media":"Manga / Anime",
+    "id":"c198",
+    "wiki":"Shinya Kogami"
   },
-
-  {
-    name: "Violet Evergarden",
-    universe: "Violet Evergarden",
-    media: "Manga / Anime",
-    id: "c188",
-    wiki: "Violet Evergarden"
+  {
+    "name":"Balalaika",
+    "universe":"Black Lagoon",
+    "media":"Manga / Anime",
+    "id":"c199",
+    "wiki":"Balalaika"
   },
-
-  {
-    name: "Yor Forger",
-    universe: "Spy × Family",
-    media: "Manga / Anime",
-    id: "c189",
-    wiki: "Yor Forger"
+  {
+    "name":"Benny",
+    "universe":"Black Lagoon",
+    "media":"Manga / Anime",
+    "id":"c200",
+    "wiki":"Benny"
   },
-
-  {
-    name: "Loid Forger",
-    universe: "Spy × Family",
-    media: "Manga / Anime",
-    id: "c190",
-    wiki: "Loid Forger"
+  {
+    "name":"Vicious",
+    "universe":"Cowboy Bebop",
+    "media":"Manga / Anime",
+    "id":"c201",
+    "wiki":"Vicious"
   },
-
-  {
-    name: "Anya Forger",
-    universe: "Spy × Family",
-    media: "Manga / Anime",
-    id: "c191",
-    wiki: "Anya Forger"
+  {
+    "name":"Jet Black",
+    "universe":"Cowboy Bebop",
+    "media":"Manga / Anime",
+    "id":"c202",
+    "wiki":"Jet Black"
   },
-
-  {
-    name: "Fiona Frost",
-    universe: "Spy × Family",
-    media: "Manga / Anime",
-    id: "c192",
-    wiki: "Fiona Frost"
+  {
+    "name":"Edward",
+    "universe":"Cowboy Bebop",
+    "media":"Manga / Anime",
+    "id":"c203",
+    "wiki":"Edward"
   },
-
-  {
-    name: "Hachi Komatsu",
-    universe: "Nana",
-    media: "Manga / Anime",
-    id: "c193",
-    wiki: "Hachi Komatsu"
+  {
+    "name":"Mugen",
+    "universe":"Samurai Champloo",
+    "media":"Manga / Anime",
+    "id":"c204",
+    "wiki":"Mugen"
   },
-
-  {
-    name: "Nana Komatsu",
-    universe: "Nana",
-    media: "Manga / Anime",
-    id: "c194",
-    wiki: "Nana Komatsu"
+  {
+    "name":"Jin",
+    "universe":"Samurai Champloo",
+    "media":"Manga / Anime",
+    "id":"c205",
+    "wiki":"Jin"
   },
-
-  {
-    name: "Yona",
-    universe: "Yona of the Dawn",
-    media: "Manga / Anime",
-    id: "c195",
-    wiki: "Yona"
+  {
+    "name":"Fuu Kasumi",
+    "universe":"Samurai Champloo",
+    "media":"Manga / Anime",
+    "id":"c206",
+    "wiki":"Fuu Kasumi"
   },
-
-  {
-    name: "Balsa Yonsa",
-    universe: "Moribito",
-    media: "Manga / Anime",
-    id: "c196",
-    wiki: "Balsa Yonsa"
+  {
+    "name":"Jessica Drew",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c207",
+    "wiki":"Jessica Drew"
   },
-
-  {
-    name: "Akane Tsunemori",
-    universe: "Psycho-Pass",
-    media: "Manga / Anime",
-    id: "c197",
-    wiki: "Akane Tsunemori"
+  {
+    "name":"Kate Bishop",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c208",
+    "wiki":"Kate Bishop"
   },
-
-  {
-    name: "Shinya Kogami",
-    universe: "Psycho-Pass",
-    media: "Manga / Anime",
-    id: "c198",
-    wiki: "Shinya Kogami"
+  {
+    "name":"Kamala Khan",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c209",
+    "wiki":"Kamala Khan"
   },
-
-  {
-    name: "Balalaika",
-    universe: "Black Lagoon",
-    media: "Manga / Anime",
-    id: "c199",
-    wiki: "Balalaika"
+  {
+    "name":"Monica Rambeau",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c210",
+    "wiki":"Monica Rambeau"
   },
-
-  {
-    name: "Benny",
-    universe: "Black Lagoon",
-    media: "Manga / Anime",
-    id: "c200",
-    wiki: "Benny"
+  {
+    "name":"America Chavez",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c211",
+    "wiki":"America Chavez"
   },
-
-  {
-    name: "Vicious",
-    universe: "Cowboy Bebop",
-    media: "Manga / Anime",
-    id: "c201",
-    wiki: "Vicious"
+  {
+    "name":"Wiccan",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c212",
+    "wiki":"Wiccan"
   },
-
-  {
-    name: "Jet Black",
-    universe: "Cowboy Bebop",
-    media: "Manga / Anime",
-    id: "c202",
-    wiki: "Jet Black"
+  {
+    "name":"Hulkling",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c213",
+    "wiki":"Hulkling"
   },
-
-  {
-    name: "Edward",
-    universe: "Cowboy Bebop",
-    media: "Manga / Anime",
-    id: "c203",
-    wiki: "Edward"
+  {
+    "name":"Kitty Pryde",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c214",
+    "wiki":"Kitty Pryde"
   },
-
-  {
-    name: "Mugen",
-    universe: "Samurai Champloo",
-    media: "Manga / Anime",
-    id: "c204",
-    wiki: "Mugen"
+  {
+    "name":"Emma Frost",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c215",
+    "wiki":"Emma Frost"
   },
-
-  {
-    name: "Jin",
-    universe: "Samurai Champloo",
-    media: "Manga / Anime",
-    id: "c205",
-    wiki: "Jin"
+  {
+    "name":"Psylocke",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c216",
+    "wiki":"Psylocke"
   },
-
-  {
-    name: "Fuu Kasumi",
-    universe: "Samurai Champloo",
-    media: "Manga / Anime",
-    id: "c206",
-    wiki: "Fuu Kasumi"
+  {
+    "name":"Dazzler",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c217",
+    "wiki":"Dazzler"
   },
-
-  {
-    name: "Jessica Drew",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c207",
-    wiki: "Jessica Drew"
+  {
+    "name":"Polaris",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c218",
+    "wiki":"Polaris"
   },
-
-  {
-    name: "Kate Bishop",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c208",
-    wiki: "Kate Bishop"
+  {
+    "name":"Magik",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c219",
+    "wiki":"Magik"
   },
-
-  {
-    name: "Kamala Khan",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c209",
-    wiki: "Kamala Khan"
+  {
+    "name":"Clea",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c220",
+    "wiki":"Clea"
   },
-
-  {
-    name: "Monica Rambeau",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c210",
-    wiki: "Monica Rambeau"
+  {
+    "name":"Elektra",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c221",
+    "wiki":"Elektra"
   },
-
-  {
-    name: "America Chavez",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c211",
-    wiki: "America Chavez"
+  {
+    "name":"Misty Knight",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c222",
+    "wiki":"Misty Knight"
   },
-
-  {
-    name: "Wiccan",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c212",
-    wiki: "Wiccan"
+  {
+    "name":"Colleen Wing",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c223",
+    "wiki":"Colleen Wing"
   },
-
-  {
-    name: "Hulkling",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c213",
-    wiki: "Hulkling"
+  {
+    "name":"Moon Girl",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c224",
+    "wiki":"Moon Girl"
   },
-
-  {
-    name: "Kitty Pryde",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c214",
-    wiki: "Kitty Pryde"
+  {
+    "name":"Squirrel Girl",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c225",
+    "wiki":"Squirrel Girl"
   },
-
-  {
-    name: "Emma Frost",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c215",
-    wiki: "Emma Frost"
+  {
+    "name":"Vixen",
+    "universe":"DC Comics",
+    "media":"Comics",
+    "id":"c226",
+    "wiki":"Vixen"
   },
-
-  {
-    name: "Psylocke",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c216",
-    wiki: "Psylocke"
+  {
+    "name":"Hawkgirl",
+    "universe":"DC Comics",
+    "media":"Comics",
+    "id":"c227",
+    "wiki":"Hawkgirl"
   },
-
-  {
-    name: "Dazzler",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c217",
-    wiki: "Dazzler"
+  {
+    "name":"Batwoman",
+    "universe":"DC Comics",
+    "media":"Comics",
+    "id":"c228",
+    "wiki":"Batwoman"
   },
-
-  {
-    name: "Polaris",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c218",
-    wiki: "Polaris"
+  {
+    "name":"Power Girl",
+    "universe":"DC Comics",
+    "media":"Comics",
+    "id":"c229",
+    "wiki":"Power Girl"
   },
-
-  {
-    name: "Magik",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c219",
-    wiki: "Magik"
+  {
+    "name":"Donna Troy",
+    "universe":"DC Comics",
+    "media":"Comics",
+    "id":"c230",
+    "wiki":"Donna Troy"
   },
-
-  {
-    name: "Clea",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c220",
-    wiki: "Clea"
+  {
+    "name":"Cassandra Cain",
+    "universe":"DC Comics",
+    "media":"Comics",
+    "id":"c231",
+    "wiki":"Cassandra Cain"
   },
-
-  {
-    name: "Elektra",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c221",
-    wiki: "Elektra"
+  {
+    "name":"Stephanie Brown",
+    "universe":"DC Comics",
+    "media":"Comics",
+    "id":"c232",
+    "wiki":"Stephanie Brown"
   },
-
-  {
-    name: "Misty Knight",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c222",
-    wiki: "Misty Knight"
+  {
+    "name":"Kate Kane",
+    "universe":"DC Comics",
+    "media":"Comics",
+    "id":"c233",
+    "wiki":"Kate Kane"
   },
-
-  {
-    name: "Colleen Wing",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c223",
-    wiki: "Colleen Wing"
+  {
+    "name":"Huntress",
+    "universe":"DC Comics",
+    "media":"Comics",
+    "id":"c234",
+    "wiki":"Huntress"
   },
-
-  {
-    name: "Moon Girl",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c224",
-    wiki: "Moon Girl"
+  {
+    "name":"Mary Marvel",
+    "universe":"DC Comics",
+    "media":"Comics",
+    "id":"c235",
+    "wiki":"Mary Marvel"
   },
-
-  {
-    name: "Squirrel Girl",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c225",
-    wiki: "Squirrel Girl"
+  {
+    "name":"Big Barda",
+    "universe":"DC Comics",
+    "media":"Comics",
+    "id":"c236",
+    "wiki":"Big Barda"
   },
-
-  {
-    name: "Vixen",
-    universe: "DC Comics",
-    media: "Comics",
-    id: "c226",
-    wiki: "Vixen"
+  {
+    "name":"Black Alice",
+    "universe":"DC Comics",
+    "media":"Comics",
+    "id":"c237",
+    "wiki":"Black Alice"
   },
-
-  {
-    name: "Hawkgirl",
-    universe: "DC Comics",
-    media: "Comics",
-    id: "c227",
-    wiki: "Hawkgirl"
+  {
+    "name":"Poison Ivy",
+    "universe":"DC Comics",
+    "media":"Comics",
+    "id":"c238",
+    "wiki":"Poison Ivy"
   },
-
-  {
-    name: "Batwoman",
-    universe: "DC Comics",
-    media: "Comics",
-    id: "c228",
-    wiki: "Batwoman"
+  {
+    "name":"Harley Quinn",
+    "universe":"DC Comics",
+    "media":"Comics",
+    "id":"c239",
+    "wiki":"Harley Quinn"
   },
-
-  {
-    name: "Power Girl",
-    universe: "DC Comics",
-    media: "Comics",
-    id: "c229",
-    wiki: "Power Girl"
+  {
+    "name":"Amanda Waller",
+    "universe":"DC Comics",
+    "media":"Comics",
+    "id":"c240",
+    "wiki":"Amanda Waller"
   },
-
-  {
-    name: "Donna Troy",
-    universe: "DC Comics",
-    media: "Comics",
-    id: "c230",
-    wiki: "Donna Troy"
+  {
+    "name":"Talia al Ghul",
+    "universe":"DC Comics",
+    "media":"Comics",
+    "id":"c241",
+    "wiki":"Talia al Ghul"
   },
-
-  {
-    name: "Cassandra Cain",
-    universe: "DC Comics",
-    media: "Comics",
-    id: "c231",
-    wiki: "Cassandra Cain"
+  {
+    "name":"Valkyrie",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c242",
+    "wiki":"Valkyrie"
   },
-
-  {
-    name: "Stephanie Brown",
-    universe: "DC Comics",
-    media: "Comics",
-    id: "c232",
-    wiki: "Stephanie Brown"
+  {
+    "name":"Sif",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c243",
+    "wiki":"Sif"
   },
-
-  {
-    name: "Kate Kane",
-    universe: "DC Comics",
-    media: "Comics",
-    id: "c233",
-    wiki: "Kate Kane"
+  {
+    "name":"Shanna the She-Devil",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c244",
+    "wiki":"Shanna the She-Devil"
   },
-
-  {
-    name: "Huntress",
-    universe: "DC Comics",
-    media: "Comics",
-    id: "c234",
-    wiki: "Huntress"
+  {
+    "name":"Medusa",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c245",
+    "wiki":"Medusa"
   },
-
-  {
-    name: "Mary Marvel",
-    universe: "DC Comics",
-    media: "Comics",
-    id: "c235",
-    wiki: "Mary Marvel"
+  {
+    "name":"Crystal",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c246",
+    "wiki":"Crystal"
   },
-
-  {
-    name: "Big Barda",
-    universe: "DC Comics",
-    media: "Comics",
-    id: "c236",
-    wiki: "Big Barda"
+  {
+    "name":"Mantis",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c247",
+    "wiki":"Mantis"
   },
-
-  {
-    name: "Black Alice",
-    universe: "DC Comics",
-    media: "Comics",
-    id: "c237",
-    wiki: "Black Alice"
+  {
+    "name":"Nebula",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c248",
+    "wiki":"Nebula"
   },
-
-  {
-    name: "Poison Ivy",
-    universe: "DC Comics",
-    media: "Comics",
-    id: "c238",
-    wiki: "Poison Ivy"
+  {
+    "name":"Gamora",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c249",
+    "wiki":"Gamora"
   },
-
-  {
-    name: "Harley Quinn",
-    universe: "DC Comics",
-    media: "Comics",
-    id: "c239",
-    wiki: "Harley Quinn"
+  {
+    "name":"Dani Moonstar",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c250",
+    "wiki":"Dani Moonstar"
   },
-
-  {
-    name: "Amanda Waller",
-    universe: "DC Comics",
-    media: "Comics",
-    id: "c240",
-    wiki: "Amanda Waller"
+  {
+    "name":"Armor",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c251",
+    "wiki":"Armor"
   },
-
-  {
-    name: "Talia al Ghul",
-    universe: "DC Comics",
-    media: "Comics",
-    id: "c241",
-    wiki: "Talia al Ghul"
+  {
+    "name":"Gwenpool",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c252",
+    "wiki":"Gwenpool"
   },
-
-  {
-    name: "Valkyrie",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c242",
-    wiki: "Valkyrie"
+  {
+    "name":"Spider-Gwen",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c253",
+    "wiki":"Spider-Gwen"
   },
-
-  {
-    name: "Sif",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c243",
-    wiki: "Sif"
+  {
+    "name":"Miles Morales",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c254",
+    "wiki":"Miles Morales"
   },
-
-  {
-    name: "Shanna the She-Devil",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c244",
-    wiki: "Shanna the She-Devil"
+  {
+    "name":"Sam Wilson",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c255",
+    "wiki":"Sam Wilson"
   },
-
-  {
-    name: "Medusa",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c245",
-    wiki: "Medusa"
+  {
+    "name":"Bucky Barnes",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c256",
+    "wiki":"Bucky Barnes"
   },
-
-  {
-    name: "Crystal",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c246",
-    wiki: "Crystal"
+  {
+    "name":"Luke Cage",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c257",
+    "wiki":"Luke Cage"
   },
-
-  {
-    name: "Mantis",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c247",
-    wiki: "Mantis"
+  {
+    "name":"Iron Fist",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c258",
+    "wiki":"Iron Fist"
   },
-
-  {
-    name: "Nebula",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c248",
-    wiki: "Nebula"
+  {
+    "name":"Moon Knight",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c259",
+    "wiki":"Moon Knight"
   },
-
-  {
-    name: "Gamora",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c249",
-    wiki: "Gamora"
+  {
+    "name":"Nova",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c260",
+    "wiki":"Nova"
   },
-
-  {
-    name: "Dani Moonstar",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c250",
-    wiki: "Dani Moonstar"
+  {
+    "name":"Blue Beetle",
+    "universe":"DC Comics",
+    "media":"Comics",
+    "id":"c261",
+    "wiki":"Blue Beetle"
   },
-
-  {
-    name: "Armor",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c251",
-    wiki: "Armor"
+  {
+    "name":"Booster Gold",
+    "universe":"DC Comics",
+    "media":"Comics",
+    "id":"c262",
+    "wiki":"Booster Gold"
   },
-
-  {
-    name: "Gwenpool",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c252",
-    wiki: "Gwenpool"
+  {
+    "name":"Mister Miracle",
+    "universe":"DC Comics",
+    "media":"Comics",
+    "id":"c263",
+    "wiki":"Mister Miracle"
   },
-
-  {
-    name: "Spider-Gwen",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c253",
-    wiki: "Spider-Gwen"
+  {
+    "name":"Plastic Man",
+    "universe":"DC Comics",
+    "media":"Comics",
+    "id":"c264",
+    "wiki":"Plastic Man"
   },
-
-  {
-    name: "Miles Morales",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c254",
-    wiki: "Miles Morales"
+  {
+    "name":"Animal Man",
+    "universe":"DC Comics",
+    "media":"Comics",
+    "id":"c265",
+    "wiki":"Animal Man"
   },
-
-  {
-    name: "Sam Wilson",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c255",
-    wiki: "Sam Wilson"
+  {
+    "name":"Mister Terrific",
+    "universe":"DC Comics",
+    "media":"Comics",
+    "id":"c266",
+    "wiki":"Mister Terrific"
   },
-
-  {
-    name: "Bucky Barnes",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c256",
-    wiki: "Bucky Barnes"
+  {
+    "name":"Green Arrow",
+    "universe":"DC Comics",
+    "media":"Comics",
+    "id":"c267",
+    "wiki":"Green Arrow"
   },
-
-  {
-    name: "Luke Cage",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c257",
-    wiki: "Luke Cage"
+  {
+    "name":"Atom",
+    "universe":"DC Comics",
+    "media":"Comics",
+    "id":"c268",
+    "wiki":"Atom"
   },
-
-  {
-    name: "Iron Fist",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c258",
-    wiki: "Iron Fist"
+  {
+    "name":"Cyborg",
+    "universe":"DC Comics",
+    "media":"Comics",
+    "id":"c269",
+    "wiki":"Cyborg"
   },
-
-  {
-    name: "Moon Knight",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c259",
-    wiki: "Moon Knight"
+  {
+    "name":"Martian Manhunter",
+    "universe":"DC Comics",
+    "media":"Comics",
+    "id":"c270",
+    "wiki":"Martian Manhunter"
   },
-
-  {
-    name: "Nova",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c260",
-    wiki: "Nova"
+  {
+    "name":"Jane Eyre",
+    "universe":"Jane Eyre",
+    "media":"Romans / Littérature",
+    "id":"c271",
+    "wiki":"Jane Eyre"
   },
-
-  {
-    name: "Blue Beetle",
-    universe: "DC Comics",
-    media: "Comics",
-    id: "c261",
-    wiki: "Blue Beetle"
+  {
+    "name":"Elizabeth Bennet",
+    "universe":"Orgueil et Préjugés",
+    "media":"Romans / Littérature",
+    "id":"c272",
+    "wiki":"Elizabeth Bennet"
   },
-
-  {
-    name: "Booster Gold",
-    universe: "DC Comics",
-    media: "Comics",
-    id: "c262",
-    wiki: "Booster Gold"
+  {
+    "name":"Jo March",
+    "universe":"Les Quatre Filles du docteur March",
+    "media":"Romans / Littérature",
+    "id":"c273",
+    "wiki":"Jo March"
   },
-
-  {
-    name: "Mister Miracle",
-    universe: "DC Comics",
-    media: "Comics",
-    id: "c263",
-    wiki: "Mister Miracle"
+  {
+    "name":"Anne Shirley",
+    "universe":"Anne... la maison aux pignons verts",
+    "media":"Romans / Littérature",
+    "id":"c274",
+    "wiki":"Anne Shirley"
   },
-
-  {
-    name: "Plastic Man",
-    universe: "DC Comics",
-    media: "Comics",
-    id: "c264",
-    wiki: "Plastic Man"
+  {
+    "name":"Heathcliff",
+    "universe":"Les Hauts de Hurlevent",
+    "media":"Romans / Littérature",
+    "id":"c275",
+    "wiki":"Heathcliff"
   },
-
-  {
-    name: "Animal Man",
-    universe: "DC Comics",
-    media: "Comics",
-    id: "c265",
-    wiki: "Animal Man"
+  {
+    "name":"Estella Havisham",
+    "universe":"De grandes espérances",
+    "media":"Romans / Littérature",
+    "id":"c276",
+    "wiki":"Estella Havisham"
   },
-
-  {
-    name: "Mister Terrific",
-    universe: "DC Comics",
-    media: "Comics",
-    id: "c266",
-    wiki: "Mister Terrific"
+  {
+    "name":"Pip",
+    "universe":"De grandes espérances",
+    "media":"Romans / Littérature",
+    "id":"c277",
+    "wiki":"Pip"
   },
-
-  {
-    name: "Green Arrow",
-    universe: "DC Comics",
-    media: "Comics",
-    id: "c267",
-    wiki: "Green Arrow"
+  {
+    "name":"Jean Valjean",
+    "universe":"Les Misérables",
+    "media":"Romans / Littérature",
+    "id":"c278",
+    "wiki":"Jean Valjean"
   },
-
-  {
-    name: "Atom",
-    universe: "DC Comics",
-    media: "Comics",
-    id: "c268",
-    wiki: "Atom"
+  {
+    "name":"Javert",
+    "universe":"Les Misérables",
+    "media":"Romans / Littérature",
+    "id":"c279",
+    "wiki":"Javert"
   },
-
-  {
-    name: "Cyborg",
-    universe: "DC Comics",
-    media: "Comics",
-    id: "c269",
-    wiki: "Cyborg"
+  {
+    "name":"Cosette",
+    "universe":"Les Misérables",
+    "media":"Romans / Littérature",
+    "id":"c280",
+    "wiki":"Cosette"
   },
-
-  {
-    name: "Martian Manhunter",
-    universe: "DC Comics",
-    media: "Comics",
-    id: "c270",
-    wiki: "Martian Manhunter"
+  {
+    "name":"Marius Pontmercy",
+    "universe":"Les Misérables",
+    "media":"Romans / Littérature",
+    "id":"c281",
+    "wiki":"Marius Pontmercy"
   },
-
-  {
-    name: "Jane Eyre",
-    universe: "Jane Eyre",
-    media: "Romans / Littérature",
-    id: "c271",
-    wiki: "Jane Eyre"
+  {
+    "name":"Haydée",
+    "universe":"Le Comte de Monte-Cristo",
+    "media":"Romans / Littérature",
+    "id":"c282",
+    "wiki":"Haydée"
   },
-
-  {
-    name: "Elizabeth Bennet",
-    universe: "Orgueil et Préjugés",
-    media: "Romans / Littérature",
-    id: "c272",
-    wiki: "Elizabeth Bennet"
+  {
+    "name":"Mercedes",
+    "universe":"Le Comte de Monte-Cristo",
+    "media":"Romans / Littérature",
+    "id":"c283",
+    "wiki":"Mercedes"
   },
-
-  {
-    name: "Jo March",
-    universe: "Les Quatre Filles du docteur March",
-    media: "Romans / Littérature",
-    id: "c273",
-    wiki: "Jo March"
+  {
+    "name":"Hester Prynne",
+    "universe":"La Lettre écarlate",
+    "media":"Romans / Littérature",
+    "id":"c284",
+    "wiki":"Hester Prynne"
   },
-
-  {
-    name: "Anne Shirley",
-    universe: "Anne... la maison aux pignons verts",
-    media: "Romans / Littérature",
-    id: "c274",
-    wiki: "Anne Shirley"
+  {
+    "name":"Atticus Finch",
+    "universe":"Ne tirez pas sur l'oiseau moqueur",
+    "media":"Romans / Littérature",
+    "id":"c285",
+    "wiki":"Atticus Finch"
   },
-
-  {
-    name: "Heathcliff",
-    universe: "Les Hauts de Hurlevent",
-    media: "Romans / Littérature",
-    id: "c275",
-    wiki: "Heathcliff"
+  {
+    "name":"Scout Finch",
+    "universe":"Ne tirez pas sur l'oiseau moqueur",
+    "media":"Romans / Littérature",
+    "id":"c286",
+    "wiki":"Scout Finch"
   },
-
-  {
-    name: "Estella Havisham",
-    universe: "De grandes espérances",
-    media: "Romans / Littérature",
-    id: "c276",
-    wiki: "Estella Havisham"
+  {
+    "name":"Holden Caulfield",
+    "universe":"L'Attrape-cœurs",
+    "media":"Romans / Littérature",
+    "id":"c287",
+    "wiki":"Holden Caulfield"
   },
-
-  {
-    name: "Pip",
-    universe: "De grandes espérances",
-    media: "Romans / Littérature",
-    id: "c277",
-    wiki: "Pip"
+  {
+    "name":"Esther Greenwood",
+    "universe":"La Cloche de détresse",
+    "media":"Romans / Littérature",
+    "id":"c288",
+    "wiki":"Esther Greenwood"
   },
-
-  {
-    name: "Jean Valjean",
-    universe: "Les Misérables",
-    media: "Romans / Littérature",
-    id: "c278",
-    wiki: "Jean Valjean"
+  {
+    "name":"Offred",
+    "universe":"La Servante écarlate",
+    "media":"Romans / Littérature",
+    "id":"c289",
+    "wiki":"Offred"
   },
-
-  {
-    name: "Javert",
-    universe: "Les Misérables",
-    media: "Romans / Littérature",
-    id: "c279",
-    wiki: "Javert"
+  {
+    "name":"Lyra Belacqua",
+    "universe":"À la croisée des mondes",
+    "media":"Romans / Littérature",
+    "id":"c290",
+    "wiki":"Lyra Belacqua"
   },
-
-  {
-    name: "Cosette",
-    universe: "Les Misérables",
-    media: "Romans / Littérature",
-    id: "c280",
-    wiki: "Cosette"
+  {
+    "name":"Will Parry",
+    "universe":"À la croisée des mondes",
+    "media":"Romans / Littérature",
+    "id":"c291",
+    "wiki":"Will Parry"
   },
-
-  {
-    name: "Marius Pontmercy",
-    universe: "Les Misérables",
-    media: "Romans / Littérature",
-    id: "c281",
-    wiki: "Marius Pontmercy"
+  {
+    "name":"Mrs Coulter",
+    "universe":"À la croisée des mondes",
+    "media":"Romans / Littérature",
+    "id":"c292",
+    "wiki":"Mrs Coulter"
   },
-
-  {
-    name: "Haydée",
-    universe: "Le Comte de Monte-Cristo",
-    media: "Romans / Littérature",
-    id: "c282",
-    wiki: "Haydée"
+  {
+    "name":"Serafina Pekkala",
+    "universe":"À la croisée des mondes",
+    "media":"Romans / Littérature",
+    "id":"c293",
+    "wiki":"Serafina Pekkala"
   },
-
-  {
-    name: "Mercedes",
-    universe: "Le Comte de Monte-Cristo",
-    media: "Romans / Littérature",
-    id: "c283",
-    wiki: "Mercedes"
+  {
+    "name":"Tenar",
+    "universe":"Terremer",
+    "media":"Romans / Littérature",
+    "id":"c294",
+    "wiki":"Tenar"
   },
-
-  {
-    name: "Hester Prynne",
-    universe: "La Lettre écarlate",
-    media: "Romans / Littérature",
-    id: "c284",
-    wiki: "Hester Prynne"
+  {
+    "name":"Therru",
+    "universe":"Terremer",
+    "media":"Romans / Littérature",
+    "id":"c295",
+    "wiki":"Therru"
   },
-
-  {
-    name: "Atticus Finch",
-    universe: "Ne tirez pas sur l'oiseau moqueur",
-    media: "Romans / Littérature",
-    id: "c285",
-    wiki: "Atticus Finch"
+  {
+    "name":"Denna",
+    "universe":"Chronique du tueur de roi",
+    "media":"Romans / Littérature",
+    "id":"c296",
+    "wiki":"Denna"
   },
-
-  {
-    name: "Scout Finch",
-    universe: "Ne tirez pas sur l'oiseau moqueur",
-    media: "Romans / Littérature",
-    id: "c286",
-    wiki: "Scout Finch"
+  {
+    "name":"Eddard Stark",
+    "universe":"Game of Thrones",
+    "media":"Séries",
+    "id":"c297",
+    "wiki":"Eddard Stark"
   },
-
-  {
-    name: "Holden Caulfield",
-    universe: "L'Attrape-cœurs",
-    media: "Romans / Littérature",
-    id: "c287",
-    wiki: "Holden Caulfield"
+  {
+    "name":"Catelyn Stark",
+    "universe":"Game of Thrones",
+    "media":"Séries",
+    "id":"c298",
+    "wiki":"Catelyn Stark"
   },
-
-  {
-    name: "Esther Greenwood",
-    universe: "La Cloche de détresse",
-    media: "Romans / Littérature",
-    id: "c288",
-    wiki: "Esther Greenwood"
+  {
+    "name":"Robb Stark",
+    "universe":"Game of Thrones",
+    "media":"Séries",
+    "id":"c299",
+    "wiki":"Robb Stark"
   },
-
-  {
-    name: "Offred",
-    universe: "La Servante écarlate",
-    media: "Romans / Littérature",
-    id: "c289",
-    wiki: "Offred"
+  {
+    "name":"Bran Stark",
+    "universe":"Game of Thrones",
+    "media":"Séries",
+    "id":"c300",
+    "wiki":"Bran Stark"
   },
-
-  {
-    name: "Lyra Belacqua",
-    universe: "À la croisée des mondes",
-    media: "Romans / Littérature",
-    id: "c290",
-    wiki: "Lyra Belacqua"
+  {
+    "name":"Theon Greyjoy",
+    "universe":"Game of Thrones",
+    "media":"Séries",
+    "id":"c301",
+    "wiki":"Theon Greyjoy"
   },
-
-  {
-    name: "Will Parry",
-    universe: "À la croisée des mondes",
-    media: "Romans / Littérature",
-    id: "c291",
-    wiki: "Will Parry"
+  {
+    "name":"Davos Seaworth",
+    "universe":"Game of Thrones",
+    "media":"Séries",
+    "id":"c302",
+    "wiki":"Davos Seaworth"
   },
-
-  {
-    name: "Mrs Coulter",
-    universe: "À la croisée des mondes",
-    media: "Romans / Littérature",
-    id: "c292",
-    wiki: "Mrs Coulter"
+  {
+    "name":"Brienne of Tarth",
+    "universe":"Game of Thrones",
+    "media":"Séries",
+    "id":"c303",
+    "wiki":"Brienne of Tarth"
   },
-
-  {
-    name: "Serafina Pekkala",
-    universe: "À la croisée des mondes",
-    media: "Romans / Littérature",
-    id: "c293",
-    wiki: "Serafina Pekkala"
+  {
+    "name":"Mance Rayder",
+    "universe":"Game of Thrones",
+    "media":"Séries",
+    "id":"c304",
+    "wiki":"Mance Rayder"
   },
-
-  {
-    name: "Tenar",
-    universe: "Terremer",
-    media: "Romans / Littérature",
-    id: "c294",
-    wiki: "Tenar"
+  {
+    "name":"Oberyn Martell",
+    "universe":"Game of Thrones",
+    "media":"Séries",
+    "id":"c305",
+    "wiki":"Oberyn Martell"
   },
-
-  {
-    name: "Therru",
-    universe: "Terremer",
-    media: "Romans / Littérature",
-    id: "c295",
-    wiki: "Therru"
+  {
+    "name":"Doran Martell",
+    "universe":"Game of Thrones",
+    "media":"Séries",
+    "id":"c306",
+    "wiki":"Doran Martell"
   },
-
-  {
-    name: "Denna",
-    universe: "Chronique du tueur de roi",
-    media: "Romans / Littérature",
-    id: "c296",
-    wiki: "Denna"
+  {
+    "name":"Ellaria Sand",
+    "universe":"Game of Thrones",
+    "media":"Séries",
+    "id":"c307",
+    "wiki":"Ellaria Sand"
   },
-
-  {
-    name: "Eddard Stark",
-    universe: "A Song of Ice and Fire",
-    media: "Romans / Littérature",
-    id: "c297",
-    wiki: "Eddard Stark"
+  {
+    "name":"Syrio Forel",
+    "universe":"Game of Thrones",
+    "media":"Séries",
+    "id":"c308",
+    "wiki":"Syrio Forel"
   },
-
-  {
-    name: "Catelyn Stark",
-    universe: "A Song of Ice and Fire",
-    media: "Romans / Littérature",
-    id: "c298",
-    wiki: "Catelyn Stark"
+  {
+    "name":"Jaqen H'ghar",
+    "universe":"Game of Thrones",
+    "media":"Séries",
+    "id":"c309",
+    "wiki":"Jaqen H'ghar"
   },
-
-  {
-    name: "Robb Stark",
-    universe: "A Song of Ice and Fire",
-    media: "Romans / Littérature",
-    id: "c299",
-    wiki: "Robb Stark"
+  {
+    "name":"Samwell Tarly",
+    "universe":"Game of Thrones",
+    "media":"Séries",
+    "id":"c310",
+    "wiki":"Samwell Tarly"
   },
-
-  {
-    name: "Bran Stark",
-    universe: "A Song of Ice and Fire",
-    media: "Romans / Littérature",
-    id: "c300",
-    wiki: "Bran Stark"
+  {
+    "name":"Gilly",
+    "universe":"Game of Thrones",
+    "media":"Séries",
+    "id":"c311",
+    "wiki":"Gilly"
   },
-
-  {
-    name: "Theon Greyjoy",
-    universe: "A Song of Ice and Fire",
-    media: "Romans / Littérature",
-    id: "c301",
-    wiki: "Theon Greyjoy"
+  {
+    "name":"Sansa Stark",
+    "universe":"Game of Thrones",
+    "media":"Séries",
+    "id":"c312",
+    "wiki":"Sansa Stark"
   },
-
-  {
-    name: "Davos Seaworth",
-    universe: "A Song of Ice and Fire",
-    media: "Romans / Littérature",
-    id: "c302",
-    wiki: "Davos Seaworth"
+  {
+    "name":"Tyrion Lannister",
+    "universe":"Game of Thrones",
+    "media":"Séries",
+    "id":"c313",
+    "wiki":"Tyrion Lannister"
   },
-
-  {
-    name: "Brienne of Tarth",
-    universe: "A Song of Ice and Fire",
-    media: "Romans / Littérature",
-    id: "c303",
-    wiki: "Brienne of Tarth"
+  {
+    "name":"Varys",
+    "universe":"Game of Thrones",
+    "media":"Séries",
+    "id":"c314",
+    "wiki":"Varys"
   },
-
-  {
-    name: "Mance Rayder",
-    universe: "A Song of Ice and Fire",
-    media: "Romans / Littérature",
-    id: "c304",
-    wiki: "Mance Rayder"
+  {
+    "name":"Littlefinger",
+    "universe":"Game of Thrones",
+    "media":"Séries",
+    "id":"c315",
+    "wiki":"Littlefinger"
   },
-
-  {
-    name: "Oberyn Martell",
-    universe: "A Song of Ice and Fire",
-    media: "Romans / Littérature",
-    id: "c305",
-    wiki: "Oberyn Martell"
+  {
+    "name":"Gregor Clegane",
+    "universe":"Game of Thrones",
+    "media":"Séries",
+    "id":"c316",
+    "wiki":"Gregor Clegane"
   },
-
-  {
-    name: "Doran Martell",
-    universe: "A Song of Ice and Fire",
-    media: "Romans / Littérature",
-    id: "c306",
-    wiki: "Doran Martell"
+  {
+    "name":"Ramsay Bolton",
+    "universe":"Game of Thrones",
+    "media":"Séries",
+    "id":"c317",
+    "wiki":"Ramsay Bolton"
   },
-
-  {
-    name: "Ellaria Sand",
-    universe: "A Song of Ice and Fire",
-    media: "Romans / Littérature",
-    id: "c307",
-    wiki: "Ellaria Sand"
+  {
+    "name":"Phedre nó Delaunay",
+    "universe":"Kushiel",
+    "media":"Romans / Littérature",
+    "id":"c318",
+    "wiki":"Phedre nó Delaunay"
   },
-
-  {
-    name: "Syrio Forel",
-    universe: "A Song of Ice and Fire",
-    media: "Romans / Littérature",
-    id: "c308",
-    wiki: "Syrio Forel"
+  {
+    "name":"Imriel de la Courcel",
+    "universe":"Kushiel",
+    "media":"Romans / Littérature",
+    "id":"c319",
+    "wiki":"Imriel de la Courcel"
   },
-
-  {
-    name: "Jaqen H'ghar",
-    universe: "A Song of Ice and Fire",
-    media: "Romans / Littérature",
-    id: "c309",
-    wiki: "Jaqen H'ghar"
+  {
+    "name":"Kell Maresh",
+    "universe":"Shades of Magic",
+    "media":"Romans / Littérature",
+    "id":"c320",
+    "wiki":"Kell Maresh"
   },
-
-  {
-    name: "Samwell Tarly",
-    universe: "A Song of Ice and Fire",
-    media: "Romans / Littérature",
-    id: "c310",
-    wiki: "Samwell Tarly"
+  {
+    "name":"Shego",
+    "universe":"Kim Possible",
+    "media":"Dessin animé / Animation",
+    "id":"c321",
+    "wiki":"Shego"
   },
-
-  {
-    name: "Gilly",
-    universe: "A Song of Ice and Fire",
-    media: "Romans / Littérature",
-    id: "c311",
-    wiki: "Gilly"
+  {
+    "name":"Toph Beifong",
+    "universe":"Avatar : Le Dernier Maître de l'Air",
+    "media":"Dessin animé / Animation",
+    "id":"c322",
+    "wiki":"Toph Beifong"
   },
-
-  {
-    name: "Sansa Stark",
-    universe: "A Song of Ice and Fire",
-    media: "Romans / Littérature",
-    id: "c312",
-    wiki: "Sansa Stark"
+  {
+    "name":"Princess Bubblegum",
+    "universe":"Adventure Time",
+    "media":"Dessin animé / Animation",
+    "id":"c323",
+    "wiki":"Princess Bubblegum"
   },
-
-  {
-    name: "Tyrion Lannister",
-    universe: "A Song of Ice and Fire",
-    media: "Romans / Littérature",
-    id: "c313",
-    wiki: "Tyrion Lannister"
+  {
+    "name":"Garnet",
+    "universe":"Steven Universe",
+    "media":"Dessin animé / Animation",
+    "id":"c324",
+    "wiki":"Garnet"
   },
-
-  {
-    name: "Varys",
-    universe: "A Song of Ice and Fire",
-    media: "Romans / Littérature",
-    id: "c314",
-    wiki: "Varys"
+  {
+    "name":"Adora",
+    "universe":"She-Ra",
+    "media":"Dessin animé / Animation",
+    "id":"c325",
+    "wiki":"Adora"
   },
-
-  {
-    name: "Littlefinger",
-    universe: "A Song of Ice and Fire",
-    media: "Romans / Littérature",
-    id: "c315",
-    wiki: "Littlefinger"
+  {
+    "name":"Catra",
+    "universe":"She-Ra",
+    "media":"Dessin animé / Animation",
+    "id":"c326",
+    "wiki":"Catra"
   },
-
-  {
-    name: "Gregor Clegane",
-    universe: "A Song of Ice and Fire",
-    media: "Romans / Littérature",
-    id: "c316",
-    wiki: "Gregor Clegane"
+  {
+    "name":"Velma Dinkley",
+    "universe":"Scooby-Doo",
+    "media":"Dessin animé / Animation",
+    "id":"c327",
+    "wiki":"Velma Dinkley"
   },
-
-  {
-    name: "Ramsay Bolton",
-    universe: "A Song of Ice and Fire",
-    media: "Romans / Littérature",
-    id: "c317",
-    wiki: "Ramsay Bolton"
+  {
+    "name":"Daphne Blake",
+    "universe":"Scooby-Doo",
+    "media":"Dessin animé / Animation",
+    "id":"c328",
+    "wiki":"Daphne Blake"
   },
-
-  {
-    name: "Phedre nó Delaunay",
-    universe: "Kushiel",
-    media: "Romans / Littérature",
-    id: "c318",
-    wiki: "Phedre nó Delaunay"
+  {
+    "name":"Amy Wong",
+    "universe":"Futurama",
+    "media":"Dessin animé / Animation",
+    "id":"c329",
+    "wiki":"Amy Wong"
   },
-
-  {
-    name: "Imriel de la Courcel",
-    universe: "Kushiel",
-    media: "Romans / Littérature",
-    id: "c319",
-    wiki: "Imriel de la Courcel"
+  {
+    "name":"Leela",
+    "universe":"Futurama",
+    "media":"Dessin animé / Animation",
+    "id":"c330",
+    "wiki":"Leela"
   },
-
-  {
-    name: "Kell Maresh",
-    universe: "Shades of Magic",
-    media: "Romans / Littérature",
-    id: "c320",
-    wiki: "Kell Maresh"
+  {
+    "name":"Bender",
+    "universe":"Futurama",
+    "media":"Dessin animé / Animation",
+    "id":"c331",
+    "wiki":"Bender"
   },
-
-  {
-    name: "Shego",
-    universe: "Kim Possible",
-    media: "Dessin animé / Animation",
-    id: "c321",
-    wiki: "Shego"
+  {
+    "name":"Finn",
+    "universe":"Adventure Time",
+    "media":"Dessin animé / Animation",
+    "id":"c332",
+    "wiki":"Finn"
   },
-
-  {
-    name: "Toph Beifong",
-    universe: "Avatar : Le Dernier Maître de l'Air",
-    media: "Dessin animé / Animation",
-    id: "c322",
-    wiki: "Toph Beifong"
+  {
+    "name":"Jake",
+    "universe":"Adventure Time",
+    "media":"Dessin animé / Animation",
+    "id":"c333",
+    "wiki":"Jake"
   },
-
-  {
-    name: "Princess Bubblegum",
-    universe: "Adventure Time",
-    media: "Dessin animé / Animation",
-    id: "c323",
-    wiki: "Princess Bubblegum"
+  {
+    "name":"Him",
+    "universe":"Les Supers Nanas",
+    "media":"Dessin animé / Animation",
+    "id":"c334",
+    "wiki":"Him"
   },
-
-  {
-    name: "Garnet",
-    universe: "Steven Universe",
-    media: "Dessin animé / Animation",
-    id: "c324",
-    wiki: "Garnet"
+  {
+    "name":"Blossom",
+    "universe":"Les Supers Nanas",
+    "media":"Dessin animé / Animation",
+    "id":"c335",
+    "wiki":"Blossom"
   },
-
-  {
-    name: "Adora",
-    universe: "She-Ra",
-    media: "Dessin animé / Animation",
-    id: "c325",
-    wiki: "Adora"
+  {
+    "name":"Bubbles",
+    "universe":"Les Supers Nanas",
+    "media":"Dessin animé / Animation",
+    "id":"c336",
+    "wiki":"Bubbles"
   },
-
-  {
-    name: "Catra",
-    universe: "She-Ra",
-    media: "Dessin animé / Animation",
-    id: "c326",
-    wiki: "Catra"
+  {
+    "name":"Buttercup",
+    "universe":"Les Supers Nanas",
+    "media":"Dessin animé / Animation",
+    "id":"c337",
+    "wiki":"Buttercup"
   },
-
-  {
-    name: "Velma Dinkley",
-    universe: "Scooby-Doo",
-    media: "Dessin animé / Animation",
-    id: "c327",
-    wiki: "Velma Dinkley"
+  {
+    "name":"Terra",
+    "universe":"Teen Titans",
+    "media":"Dessin animé / Animation",
+    "id":"c338",
+    "wiki":"Terra"
   },
-
-  {
-    name: "Daphne Blake",
-    universe: "Scooby-Doo",
-    media: "Dessin animé / Animation",
-    id: "c328",
-    wiki: "Daphne Blake"
+  {
+    "name":"Jinx",
+    "universe":"Teen Titans",
+    "media":"Dessin animé / Animation",
+    "id":"c339",
+    "wiki":"Jinx"
   },
-
-  {
-    name: "Amy Wong",
-    universe: "Futurama",
-    media: "Dessin animé / Animation",
-    id: "c329",
-    wiki: "Amy Wong"
+  {
+    "name":"Ron Stoppable",
+    "universe":"Kim Possible",
+    "media":"Dessin animé / Animation",
+    "id":"c340",
+    "wiki":"Ron Stoppable"
   },
-
-  {
-    name: "Leela",
-    universe: "Futurama",
-    media: "Dessin animé / Animation",
-    id: "c330",
-    wiki: "Leela"
+  {
+    "name":"Maggie Simpson",
+    "universe":"Les Simpson",
+    "media":"Dessin animé / Animation",
+    "id":"c341",
+    "wiki":"Maggie Simpson"
   },
-
-  {
-    name: "Bender",
-    universe: "Futurama",
-    media: "Dessin animé / Animation",
-    id: "c331",
-    wiki: "Bender"
+  {
+    "name":"Milhouse Van Houten",
+    "universe":"Les Simpson",
+    "media":"Dessin animé / Animation",
+    "id":"c342",
+    "wiki":"Milhouse Van Houten"
   },
-
-  {
-    name: "Finn",
-    universe: "Adventure Time",
-    media: "Dessin animé / Animation",
-    id: "c332",
-    wiki: "Finn"
+  {
+    "name":"Bart Simpson",
+    "universe":"Les Simpson",
+    "media":"Dessin animé / Animation",
+    "id":"c343",
+    "wiki":"Bart Simpson"
   },
-
-  {
-    name: "Jake",
-    universe: "Adventure Time",
-    media: "Dessin animé / Animation",
-    id: "c333",
-    wiki: "Jake"
+  {
+    "name":"Ned Flanders",
+    "universe":"Les Simpson",
+    "media":"Dessin animé / Animation",
+    "id":"c344",
+    "wiki":"Ned Flanders"
   },
-
-  {
-    name: "Him",
-    universe: "Les Supers Nanas",
-    media: "Dessin animé / Animation",
-    id: "c334",
-    wiki: "Him"
+  {
+    "name":"Louise Belcher",
+    "universe":"Bob's Burgers",
+    "media":"Dessin animé / Animation",
+    "id":"c345",
+    "wiki":"Louise Belcher"
   },
-
-  {
-    name: "Blossom",
-    universe: "Les Supers Nanas",
-    media: "Dessin animé / Animation",
-    id: "c335",
-    wiki: "Blossom"
+  {
+    "name":"Tina Belcher",
+    "universe":"Bob's Burgers",
+    "media":"Dessin animé / Animation",
+    "id":"c346",
+    "wiki":"Tina Belcher"
   },
-
-  {
-    name: "Bubbles",
-    universe: "Les Supers Nanas",
-    media: "Dessin animé / Animation",
-    id: "c336",
-    wiki: "Bubbles"
+  {
+    "name":"Linda Belcher",
+    "universe":"Bob's Burgers",
+    "media":"Dessin animé / Animation",
+    "id":"c347",
+    "wiki":"Linda Belcher"
   },
-
-  {
-    name: "Buttercup",
-    universe: "Les Supers Nanas",
-    media: "Dessin animé / Animation",
-    id: "c337",
-    wiki: "Buttercup"
+  {
+    "name":"Bob Belcher",
+    "universe":"Bob's Burgers",
+    "media":"Dessin animé / Animation",
+    "id":"c348",
+    "wiki":"Bob Belcher"
   },
-
-  {
-    name: "Terra",
-    universe: "Teen Titans",
-    media: "Dessin animé / Animation",
-    id: "c338",
-    wiki: "Terra"
+  {
+    "name":"Gene Belcher",
+    "universe":"Bob's Burgers",
+    "media":"Dessin animé / Animation",
+    "id":"c349",
+    "wiki":"Gene Belcher"
   },
-
-  {
-    name: "Jinx",
-    universe: "Teen Titans",
-    media: "Dessin animé / Animation",
-    id: "c339",
-    wiki: "Jinx"
+  {
+    "name":"Dipper Pines",
+    "universe":"Gravity Falls",
+    "media":"Dessin animé / Animation",
+    "id":"c350",
+    "wiki":"Dipper Pines"
   },
-
-  {
-    name: "Ron Stoppable",
-    universe: "Kim Possible",
-    media: "Dessin animé / Animation",
-    id: "c340",
-    wiki: "Ron Stoppable"
+  {
+    "name":"Mordecai",
+    "universe":"Regular Show",
+    "media":"Dessin animé / Animation",
+    "id":"c351",
+    "wiki":"Mordecai"
   },
-
-  {
-    name: "Maggie Simpson",
-    universe: "Les Simpson",
-    media: "Dessin animé / Animation",
-    id: "c341",
-    wiki: "Maggie Simpson"
+  {
+    "name":"Rigby",
+    "universe":"Regular Show",
+    "media":"Dessin animé / Animation",
+    "id":"c352",
+    "wiki":"Rigby"
   },
-
-  {
-    name: "Milhouse Van Houten",
-    universe: "Les Simpson",
-    media: "Dessin animé / Animation",
-    id: "c342",
-    wiki: "Milhouse Van Houten"
+  {
+    "name":"Benson",
+    "universe":"Regular Show",
+    "media":"Dessin animé / Animation",
+    "id":"c353",
+    "wiki":"Benson"
   },
-
-  {
-    name: "Bart Simpson",
-    universe: "Les Simpson",
-    media: "Dessin animé / Animation",
-    id: "c343",
-    wiki: "Bart Simpson"
+  {
+    "name":"Samurai Jack",
+    "universe":"Samurai Jack",
+    "media":"Dessin animé / Animation",
+    "id":"c354",
+    "wiki":"Samurai Jack"
   },
-
-  {
-    name: "Ned Flanders",
-    universe: "Les Simpson",
-    media: "Dessin animé / Animation",
-    id: "c344",
-    wiki: "Ned Flanders"
+  {
+    "name":"Amethyst",
+    "universe":"Steven Universe",
+    "media":"Dessin animé / Animation",
+    "id":"c355",
+    "wiki":"Amethyst"
   },
-
-  {
-    name: "Louise Belcher",
-    universe: "Bob's Burgers",
-    media: "Dessin animé / Animation",
-    id: "c345",
-    wiki: "Louise Belcher"
+  {
+    "name":"Lapis Lazuli",
+    "universe":"Steven Universe",
+    "media":"Dessin animé / Animation",
+    "id":"c356",
+    "wiki":"Lapis Lazuli"
   },
-
-  {
-    name: "Tina Belcher",
-    universe: "Bob's Burgers",
-    media: "Dessin animé / Animation",
-    id: "c346",
-    wiki: "Tina Belcher"
+  {
+    "name":"Peridot",
+    "universe":"Steven Universe",
+    "media":"Dessin animé / Animation",
+    "id":"c357",
+    "wiki":"Peridot"
   },
-
-  {
-    name: "Linda Belcher",
-    universe: "Bob's Burgers",
-    media: "Dessin animé / Animation",
-    id: "c347",
-    wiki: "Linda Belcher"
+  {
+    "name":"Hilda",
+    "universe":"Hilda",
+    "media":"Dessin animé / Animation",
+    "id":"c358",
+    "wiki":"Hilda"
   },
-
-  {
-    name: "Bob Belcher",
-    universe: "Bob's Burgers",
-    media: "Dessin animé / Animation",
-    id: "c348",
-    wiki: "Bob Belcher"
+  {
+    "name":"Frida",
+    "universe":"Hilda",
+    "media":"Dessin animé / Animation",
+    "id":"c359",
+    "wiki":"Frida"
   },
-
-  {
-    name: "Gene Belcher",
-    universe: "Bob's Burgers",
-    media: "Dessin animé / Animation",
-    id: "c349",
-    wiki: "Gene Belcher"
+  {
+    "name":"David",
+    "universe":"Hilda",
+    "media":"Dessin animé / Animation",
+    "id":"c360",
+    "wiki":"David"
   },
-
-  {
-    name: "Dipper Pines",
-    universe: "Gravity Falls",
-    media: "Dessin animé / Animation",
-    id: "c350",
-    wiki: "Dipper Pines"
+  {
+    "name":"Milo Murphy",
+    "universe":"Milo Murphy's Law",
+    "media":"Dessin animé / Animation",
+    "id":"c361",
+    "wiki":"Milo Murphy"
   },
-
-  {
-    name: "Mordecai",
-    universe: "Regular Show",
-    media: "Dessin animé / Animation",
-    id: "c351",
-    wiki: "Mordecai"
+  {
+    "name":"Wander",
+    "universe":"Wander Over Yonder",
+    "media":"Dessin animé / Animation",
+    "id":"c362",
+    "wiki":"Wander"
   },
-
-  {
-    name: "Rigby",
-    universe: "Regular Show",
-    media: "Dessin animé / Animation",
-    id: "c352",
-    wiki: "Rigby"
+  {
+    "name":"Lord Hater",
+    "universe":"Wander Over Yonder",
+    "media":"Dessin animé / Animation",
+    "id":"c363",
+    "wiki":"Lord Hater"
   },
-
-  {
-    name: "Benson",
-    universe: "Regular Show",
-    media: "Dessin animé / Animation",
-    id: "c353",
-    wiki: "Benson"
+  {
+    "name":"Kipo Oak",
+    "universe":"Kipo and the Age of Wonderbeasts",
+    "media":"Dessin animé / Animation",
+    "id":"c364",
+    "wiki":"Kipo Oak"
   },
-
-  {
-    name: "Samurai Jack",
-    universe: "Samurai Jack",
-    media: "Dessin animé / Animation",
-    id: "c354",
-    wiki: "Samurai Jack"
+  {
+    "name":"Entrapta",
+    "universe":"She-Ra",
+    "media":"Dessin animé / Animation",
+    "id":"c365",
+    "wiki":"Entrapta"
   },
-
-  {
-    name: "Amethyst",
-    universe: "Steven Universe",
-    media: "Dessin animé / Animation",
-    id: "c355",
-    wiki: "Amethyst"
+  {
+    "name":"Scorpia",
+    "universe":"She-Ra",
+    "media":"Dessin animé / Animation",
+    "id":"c366",
+    "wiki":"Scorpia"
   },
-
-  {
-    name: "Lapis Lazuli",
-    universe: "Steven Universe",
-    media: "Dessin animé / Animation",
-    id: "c356",
-    wiki: "Lapis Lazuli"
+  {
+    "name":"Hordak",
+    "universe":"She-Ra",
+    "media":"Dessin animé / Animation",
+    "id":"c367",
+    "wiki":"Hordak"
   },
-
-  {
-    name: "Peridot",
-    universe: "Steven Universe",
-    media: "Dessin animé / Animation",
-    id: "c357",
-    wiki: "Peridot"
+  {
+    "name":"Sasha Waybright",
+    "universe":"Amphibia",
+    "media":"Dessin animé / Animation",
+    "id":"c368",
+    "wiki":"Sasha Waybright"
   },
-
-  {
-    name: "Hilda",
-    universe: "Hilda",
-    media: "Dessin animé / Animation",
-    id: "c358",
-    wiki: "Hilda"
+  {
+    "name":"Marcy Wu",
+    "universe":"Amphibia",
+    "media":"Dessin animé / Animation",
+    "id":"c369",
+    "wiki":"Marcy Wu"
   },
-
-  {
-    name: "Frida",
-    universe: "Hilda",
-    media: "Dessin animé / Animation",
-    id: "c359",
-    wiki: "Frida"
+  {
+    "name":"Anne Boonchuy",
+    "universe":"Amphibia",
+    "media":"Dessin animé / Animation",
+    "id":"c370",
+    "wiki":"Anne Boonchuy"
   },
-
-  {
-    name: "David",
-    universe: "Hilda",
-    media: "Dessin animé / Animation",
-    id: "c360",
-    wiki: "David"
+  {
+    "name":"King",
+    "universe":"The Owl House",
+    "media":"Dessin animé / Animation",
+    "id":"c371",
+    "wiki":"King"
   },
-
-  {
-    name: "Milo Murphy",
-    universe: "Milo Murphy's Law",
-    media: "Dessin animé / Animation",
-    id: "c361",
-    wiki: "Milo Murphy"
+  {
+    "name":"Luz Noceda",
+    "universe":"The Owl House",
+    "media":"Dessin animé / Animation",
+    "id":"c372",
+    "wiki":"Luz Noceda"
   },
-
-  {
-    name: "Wander",
-    universe: "Wander Over Yonder",
-    media: "Dessin animé / Animation",
-    id: "c362",
-    wiki: "Wander"
+  {
+    "name":"Amity Blight",
+    "universe":"The Owl House",
+    "media":"Dessin animé / Animation",
+    "id":"c373",
+    "wiki":"Amity Blight"
   },
-
-  {
-    name: "Lord Hater",
-    universe: "Wander Over Yonder",
-    media: "Dessin animé / Animation",
-    id: "c363",
-    wiki: "Lord Hater"
+  {
+    "name":"Willow Park",
+    "universe":"The Owl House",
+    "media":"Dessin animé / Animation",
+    "id":"c374",
+    "wiki":"Willow Park"
   },
-
-  {
-    name: "Kipo Oak",
-    universe: "Kipo and the Age of Wonderbeasts",
-    media: "Dessin animé / Animation",
-    id: "c364",
-    wiki: "Kipo Oak"
+  {
+    "name":"Hunter",
+    "universe":"The Owl House",
+    "media":"Dessin animé / Animation",
+    "id":"c375",
+    "wiki":"Hunter"
   },
-
-  {
-    name: "Entrapta",
-    universe: "She-Ra",
-    media: "Dessin animé / Animation",
-    id: "c365",
-    wiki: "Entrapta"
-  },
-
-  {
-    name: "Scorpia",
-    universe: "She-Ra",
-    media: "Dessin animé / Animation",
-    id: "c366",
-    wiki: "Scorpia"
-  },
-
-  {
-    name: "Hordak",
-    universe: "She-Ra",
-    media: "Dessin animé / Animation",
-    id: "c367",
-    wiki: "Hordak"
-  },
-
-  {
-    name: "Sasha Waybright",
-    universe: "Amphibia",
-    media: "Dessin animé / Animation",
-    id: "c368",
-    wiki: "Sasha Waybright"
-  },
-
-  {
-    name: "Marcy Wu",
-    universe: "Amphibia",
-    media: "Dessin animé / Animation",
-    id: "c369",
-    wiki: "Marcy Wu"
-  },
-
-  {
-    name: "Anne Boonchuy",
-    universe: "Amphibia",
-    media: "Dessin animé / Animation",
-    id: "c370",
-    wiki: "Anne Boonchuy"
-  },
-
-  {
-    name: "King",
-    universe: "The Owl House",
-    media: "Dessin animé / Animation",
-    id: "c371",
-    wiki: "King"
-  },
-
-  {
-    name: "Luz Noceda",
-    universe: "The Owl House",
-    media: "Dessin animé / Animation",
-    id: "c372",
-    wiki: "Luz Noceda"
-  },
-
-  {
-    name: "Amity Blight",
-    universe: "The Owl House",
-    media: "Dessin animé / Animation",
-    id: "c373",
-    wiki: "Amity Blight"
-  },
-
-  {
-    name: "Willow Park",
-    universe: "The Owl House",
-    media: "Dessin animé / Animation",
-    id: "c374",
-    wiki: "Willow Park"
-  },
-
-  {
-    name: "Hunter",
-    universe: "The Owl House",
-    media: "Dessin animé / Animation",
-    id: "c375",
-    wiki: "Hunter"
-  },
-
-  {
-    name: "Molly McGee",
-    universe: "The Ghost and Molly McGee",
-    media: "Dessin animé / Animation",
-    id: "c376",
-    wiki: "Molly McGee"
-  },
-
-  {
-    name: "Furiosa",
-    universe: "Mad Max",
-    media: "Films",
-    id: "c377",
-    wiki: "Furiosa"
-  },
-  
-   {
-    name: "Evelyn Wang",
-    universe: "Everything Everywhere All at Once",
-    media: "Films",
-    id: "c378",
-    wiki: "Evelyn Wang"
-  },
-
-  {
-    name: "Max Rockatansky",
-    universe: "Mad Max",
-    media: "Films",
-    id: "c379",
-    wiki: "Max Rockatansky"
-  },
-
-  {
-    name: "Jules Winnfield",
-    universe: "Pulp Fiction",
-    media: "Films",
-    id: "c380",
-    wiki: "Jules Winnfield"
-  },
-
-  {
-    name: "Clarice Starling",
-    universe: "Le Silence des agneaux",
-    media: "Films",
-    id: "c381",
-    wiki: "Clarice Starling"
-  },
-
-  {
-    name: "Tyler Durden",
-    universe: "Fight Club",
-    media: "Films",
-    id: "c382",
-    wiki: "Tyler Durden"
-  },
-
-  {
-    name: "Driss",
-    universe: "Intouchables",
-    media: "Films",
-    id: "c383",
-    wiki: "Driss"
-  },
-
-  {
-    name: "Carmy Berzatto",
-    universe: "The Bear",
-    media: "Séries",
-    id: "c384",
-    wiki: "Carmy Berzatto"
-  },
-
-  {
-    name: "Rue Bennett",
-    universe: "Euphoria",
-    media: "Séries",
-    id: "c385",
-    wiki: "Rue Bennett"
-  },
-
-  {
-    name: "Kendall Roy",
-    universe: "Succession",
-    media: "Séries",
-    id: "c386",
-    wiki: "Kendall Roy"
-  },
-
-  {
-    name: "Mariko Toda",
-    universe: "Shōgun",
-    media: "Séries",
-    id: "c387",
-    wiki: "Mariko Toda"
-  },
-
-  {
-    name: "Fleabag",
-    universe: "Fleabag",
-    media: "Séries",
-    id: "c388",
-    wiki: "Fleabag"
-  },
-
-  {
-    name: "Denji",
-    universe: "Chainsaw Man",
-    media: "Manga / Anime",
-    id: "c389",
-    wiki: "Denji"
-  },
-
-  {
-    name: "Power",
-    universe: "Chainsaw Man",
-    media: "Manga / Anime",
-    id: "c390",
-    wiki: "Power"
-  },
-
-  {
-    name: "Asuka Langley Soryu",
-    universe: "Neon Genesis Evangelion",
-    media: "Manga / Anime",
-    id: "c391",
-    wiki: "Asuka Langley Soryu"
-  },
-
-  {
-    name: "Shinji Ikari",
-    universe: "Neon Genesis Evangelion",
-    media: "Manga / Anime",
-    id: "c392",
-    wiki: "Shinji Ikari"
-  },
-
-  {
-    name: "Thorfinn",
-    universe: "Vinland Saga",
-    media: "Manga / Anime",
-    id: "c393",
-    wiki: "Thorfinn"
-  },
-
-  {
-    name: "Winston Smith",
-    universe: "1984",
-    media: "Romans / Littérature",
-    id: "c394",
-    wiki: "Winston Smith"
-  },
-
-  {
-    name: "Anna Karénine",
-    universe: "Anna Karénine",
-    media: "Romans / Littérature",
-    id: "c395",
-    wiki: "Anna Karénine"
-  },
-
-  {
-    name: "Meursault",
-    universe: "L'Étranger",
-    media: "Romans / Littérature",
-    id: "c396",
-    wiki: "Meursault"
-  },
-
-  {
-    name: "Storm",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c397",
-    wiki: "Storm"
-  },
-
-  {
-    name: "Zatanna Zatara",
-    universe: "DC Comics",
-    media: "Comics",
-    id: "c398",
-    wiki: "Zatanna Zatara"
-  },
-
-  {
-    name: "Mister Sinister",
-    universe: "Marvel",
-    media: "Comics",
-    id: "c399",
-    wiki: "Mister Sinister"
-  },
-
-  {
-    name: "Nimona",
-    universe: "Nimona",
-    media: "Dessin animé / Animation",
-    id: "c400",
-    wiki: "Nimona"
+  {
+    "name":"Molly McGee",
+    "universe":"The Ghost and Molly McGee",
+    "media":"Dessin animé / Animation",
+    "id":"c376",
+    "wiki":"Molly McGee"
   },
+  {
+    "name":"Furiosa",
+    "universe":"Mad Max",
+    "media":"Films",
+    "id":"c377",
+    "wiki":"Furiosa"
+  }
 ];
