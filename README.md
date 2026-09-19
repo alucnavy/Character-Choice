@@ -7,6 +7,7 @@ Character Choice est un jeu de duel basé sur un principe simple :
 À chaque combat, deux personnages sont présentés et le joueur doit choisir son favori. Le personnage sélectionné devient alors le **champion** et continue son parcours face à de nouveaux adversaires.
 
 Le jeu rassemble des personnages issus de nombreux univers : films, séries, jeux vidéo, animation, anime, littérature et bien plus encore.
+De nouveaux personnages sont ajoutés régulièrement : Dernier ajout 19/09/26 -> Booster "Ultimate Villains" x16
 
 ---
 
