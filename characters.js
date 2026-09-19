@@ -239,16 +239,14 @@
   },
   {
     "name":"Gru",
-    "universe":"Moi,
-    moche et méchant",
+    "universe":"Moi, moche et méchant",
     "media":"Films",
     "id":"c035",
     "wiki":"Gru"
   },
   {
     "name":"Lucy Wilde",
-    "universe":"Moi,
-    moche et méchant",
+    "universe":"Moi, moche et méchant",
     "media":"Films",
     "id":"c036",
     "wiki":"Lucy Wilde"
