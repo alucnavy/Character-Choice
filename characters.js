@@ -2799,5 +2799,117 @@ const CHARACTERS = [
     "media": "Dessin animé / Animation",
     "id": "c400",
     "wiki": "Nimona"
-  }
+  },
+   {
+    "name":"Joker",
+    "universe":"DC",
+    "media":"Films",
+    "id":"c401",
+    "wiki":"Joker"
+  },
+  {
+    "name":"Thanos",
+    "universe":"Marvel",
+    "media":"Films",
+    "id":"c402",
+    "wiki":"Thanos"
+  },
+  {
+    "name":"Ultron",
+    "universe":"Marvel",
+    "media":"Films",
+    "id":"c403",
+    "wiki":"Ultron"
+  },
+  {
+    "name":"Voldemort",
+    "universe":"Harry Potter",
+    "media":"Films",
+    "id":"c404",
+    "wiki":"Voldemort"
+  },
+  {
+    "name":"Scar",
+    "universe":"Le Roi Lion",
+    "media":"Films",
+    "id":"c405",
+    "wiki":"Scar"
+  },
+  {
+    "name":"Sukuna",
+    "universe":"Jujutsu Kaisen",
+    "media":"Anime",
+    "id":"c406",
+    "wiki":"Ryomen Sukuna"
+  },
+  {
+    "name":"Sauron",
+    "universe":"Le Seigneur des Anneaux",
+    "media":"Films",
+    "id":"c407",
+    "wiki":"Sauron"
+  },
+  {
+    "name":"Dark Vador",
+    "universe":"Star Wars",
+    "media":"Films",
+    "id":"c408",
+    "wiki":"Dark Vador"
+  },
+  {
+    "name":"Green Goblin",
+    "universe":"Marvel",
+    "media":"Films",
+    "id":"c409",
+    "wiki":"Green Goblin"
+  },
+  {
+    "name":"Pennywise",
+    "universe":"Ça",
+    "media":"Films",
+    "id":"c410",
+    "wiki":"Pennywise"
+  },
+  {
+    "name":"Dr. Eggman",
+    "universe":"Sonic",
+    "media":"Jeux vidéo",
+    "id":"c411",
+    "wiki":"Dr. Eggman"
+  },
+  {
+    "name":"Bowser",
+    "universe":"Mario",
+    "media":"Jeux vidéo",
+    "id":"c412",
+    "wiki":"Bowser"
+  },
+  {
+    "name":"Mysterio",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c413",
+    "wiki":"Mysterio"
+  },
+  {
+    "name":"Freezer",
+    "universe":"Dragon Ball",
+    "media":"Anime",
+    "id":"c414",
+    "wiki":"Freezer"
+  },
+  {
+    "name":"Doctor Doom",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c415",
+    "wiki":"Doctor Doom"
+  },
+  {
+    "name":"The Lich",
+    "universe":"Adventure Time",
+    "media":"Animation",
+    "id":"c416",
+    "wiki":"The Lich"
+  },
 ];
