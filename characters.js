@@ -2912,4 +2912,144 @@ const CHARACTERS = [
     "id":"c416",
     "wiki":"The Lich"
   },
+  {
+    "name":"Superman",
+    "universe":"DC",
+    "media":"Comics",
+    "id":"c417",
+    "wiki":"Superman"
+  },
+  {
+    "name":"Batman",
+    "universe":"DC",
+    "media":"Films",
+    "id":"c418",
+    "wiki":"Batman"
+  },
+  {
+    "name":"Wonder Woman",
+    "universe":"DC",
+    "media":"Films",
+    "id":"c419",
+    "wiki":"Wonder Woman"
+  },
+  {
+    "name":"Spider-Man",
+    "universe":"Marvel",
+    "media":"Films",
+    "id":"c420",
+    "wiki":"Spider-Man"
+  },
+  {
+    "name":"Iron Man",
+    "universe":"Marvel",
+    "media":"Films",
+    "id":"c421",
+    "wiki":"Iron Man"
+  },
+  {
+    "name":"Captain America",
+    "universe":"Marvel",
+    "media":"Films",
+    "id":"c422",
+    "wiki":"Captain America"
+  },
+  {
+    "name":"Thor",
+    "universe":"Marvel",
+    "media":"Films",
+    "id":"c423",
+    "wiki":"Thor"
+  },
+  {
+    "name":"Hulk",
+    "universe":"Marvel",
+    "media":"Comics",
+    "id":"c424",
+    "wiki":"Hulk"
+  },
+  {
+    "name":"Black Panther",
+    "universe":"Marvel",
+    "media":"Films",
+    "id":"c425",
+    "wiki":"Black Panther"
+  },
+  {
+    "name":"Captain Marvel",
+    "universe":"Marvel",
+    "media":"Films",
+    "id":"c426",
+    "wiki":"Captain Marvel"
+  },
+  {
+    "name":"Flash",
+    "universe":"DC",
+    "media":"Series",
+    "id":"c427",
+    "wiki":"Flash"
+  },
+  {
+    "name":"Aquaman",
+    "universe":"DC",
+    "media": "Comics",
+    "id":"c428",
+    "wiki":"Aquaman"
+  },
+  {
+    "name":"Green Lantern (Hal Jordan)",
+    "universe":"DC",
+    "media":"Comics",
+    "id":"c429",
+    "wiki":"Green Lantern"
+  },
+  {
+    "name":"Goku",
+    "universe":"Dragon Ball",
+    "media":"Anime",
+    "id":"c430",
+    "wiki":"Son Goku"
+  },
+  {
+    "name":"Naruto Uzumaki",
+    "universe":"Naruto",
+    "media":"Anime",
+    "id":"c431",
+    "wiki":"Naruto Uzumaki"
+  },
+  {
+    "name":"Monkey D. Luffy",
+    "universe":"One Piece",
+    "media":"Anime",
+    "id":"c432",
+    "wiki":"Monkey D. Luffy"
+  },
+  {
+    "name":"Link",
+    "universe":"The Legend of Zelda",
+    "media":"Jeux vidéo",
+    "id":"c433",
+    "wiki":"Link"
+  },
+  {
+    "name":"Kratos",
+    "universe":"God of War",
+    "media":"Jeux vidéo",
+    "id":"c434",
+    "wiki":"Kratos"
+  },
+  {
+    "name":"Sonic",
+    "universe":"Sonic",
+    "media":"Jeux vidéo",
+    "id":"c435",
+    "wiki":"Sonic the Hedgehog"
+  },
+  {
+    "name":"Optimus Prime",
+    "universe":"Transformers",
+    "media":"Films",
+    "id":"c436",
+    "wiki":"Optimus Prime"
+  },
 ];
