@@ -1,5 +1,7 @@
 # ⚔️ Character Choice — Ultimate Multiverse Battle
 
+https://alucnavy.github.io/Character-Choice/
+
 Character Choice est un jeu de duel basé sur un principe simple :
 
 > **Deux personnages s'affrontent. Lequel préférez-vous ?**
