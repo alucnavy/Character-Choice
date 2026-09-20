@@ -472,6 +472,8 @@ $("resetBtn").addEventListener("click", () => {
     const holder = localStorage.getItem(BEST_HOLDER_KEY) || state.bestRecordHolder || "";
     Object.assign(state, createNewState(), {bestRecord: best, bestRecordHolder: holder, lastSnapshot: null});
     save();
+    render();
+    updateStats();
     toast("🔄 Nouveau tournoi lancé !");
   }
 });
