@@ -7,6 +7,7 @@ const CHARACTER_STATS_KEY = "characterChoiceV35CharacterStats";
 
 const $ = id => document.getElementById(id);
 const state = loadState();
+let combatAnimating = false;
 
 function getImageCandidates(character) {
   const rawName = String(character?.name || "").trim();
@@ -348,11 +349,26 @@ function render() {
   updateStats();
 }
 
-function choose(winnerId) {
+async function choose(winnerId) {
+  if (combatAnimating) return;
+
   const champ = getChar(state.championId);
   const challenger = getChar(state.challengerId);
   const winner = getChar(winnerId);
   if (!champ || !challenger || !winner) return;
+
+  combatAnimating = true;
+  const winnerCardId = winnerId === state.championId ? "championCard" : "challengerCard";
+  const loserCardId = winnerId === state.championId ? "challengerCard" : "championCard";
+  const winnerCard = $(winnerCardId);
+  const loserCard = $(loserCardId);
+
+  // Phase 1 : le gagnant prend le dessus, le perdant quitte l'arène.
+  winnerCard?.classList.add("combat-winner");
+  loserCard?.classList.add("combat-loser");
+  document.body.classList.add("combat-in-progress");
+
+  await wait(560);
 
   state.lastSnapshot = JSON.parse(JSON.stringify({
     combat: state.combat,
@@ -394,6 +410,11 @@ function choose(winnerId) {
     state.challengerId = null;
     save();
     render();
+    updateStats();
+    document.body.classList.remove("combat-in-progress");
+    $("championCard")?.classList.add("champion-arrival");
+    setTimeout(() => $("championCard")?.classList.remove("champion-arrival"), 800);
+    combatAnimating = false;
     toast("🎉 Le pool entier a été parcouru !");
     return;
   }
@@ -406,7 +427,17 @@ function choose(winnerId) {
   save();
   render();
   updateStats();
-  flashWinner(winnerId === champ.id ? "championCard" : "challengerCard");
+
+  // Phase 2 : le nouveau champion entre avec une aura lumineuse.
+  document.body.classList.remove("combat-in-progress");
+  const championCard = $("championCard");
+  championCard?.classList.add("champion-arrival");
+  setTimeout(() => championCard?.classList.remove("champion-arrival"), 800);
+  combatAnimating = false;
+}
+
+function wait(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 function renderHistory() {
@@ -475,6 +506,7 @@ $("undoBtn").addEventListener("click", () => {
 
 function flashWinner(cardId) {
   const el = $(cardId);
+  if (!el) return;
   el.classList.remove("winner-flash");
   void el.offsetWidth;
   el.classList.add("winner-flash");
