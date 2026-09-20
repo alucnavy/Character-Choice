@@ -29,58 +29,7 @@ body{
   position:relative;
   color:var(--text);
   font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-
-  /* GALAXIE : le fond est directement sur le body */
-  background:
-    radial-gradient(ellipse 75% 55% at 12% 8%,rgba(91,57,190,.38),transparent 65%),
-    radial-gradient(ellipse 65% 50% at 88% 18%,rgba(30,85,190,.30),transparent 68%),
-    radial-gradient(ellipse 70% 55% at 52% 105%,rgba(122,35,155,.28),transparent 70%),
-    radial-gradient(ellipse 42% 34% at 48% 48%,rgba(43,78,165,.13),transparent 72%),
-    linear-gradient(145deg,#02030a 0%,#070a1c 42%,#02030b 100%);
-}
-
-/* ÉTOILES — toujours au-dessus du fond, mais sous l'interface */
-body::before{
-  content:"";
-  position:fixed;
-  inset:0;
-  z-index:0;
-  pointer-events:none;
-  opacity:.95;
-  background-image:
-    radial-gradient(circle at 3% 8%,#fff 0 1px,transparent 1.8px),
-    radial-gradient(circle at 9% 31%,rgba(190,210,255,.9) 0 1.2px,transparent 2px),
-    radial-gradient(circle at 16% 72%,rgba(255,255,255,.8) 0 1px,transparent 1.8px),
-    radial-gradient(circle at 24% 17%,rgba(220,230,255,.9) 0 1px,transparent 1.8px),
-    radial-gradient(circle at 31% 55%,#fff 0 1.1px,transparent 1.9px),
-    radial-gradient(circle at 39% 84%,rgba(180,205,255,.85) 0 1px,transparent 1.8px),
-    radial-gradient(circle at 47% 11%,#fff 0 1px,transparent 1.8px),
-    radial-gradient(circle at 54% 43%,rgba(210,225,255,.85) 0 1.2px,transparent 2px),
-    radial-gradient(circle at 62% 76%,#fff 0 1px,transparent 1.8px),
-    radial-gradient(circle at 69% 22%,rgba(185,205,255,.9) 0 1px,transparent 1.8px),
-    radial-gradient(circle at 77% 58%,#fff 0 1.1px,transparent 1.9px),
-    radial-gradient(circle at 84% 10%,rgba(220,230,255,.9) 0 1px,transparent 1.8px),
-    radial-gradient(circle at 91% 39%,#fff 0 1px,transparent 1.8px),
-    radial-gradient(circle at 97% 82%,rgba(190,210,255,.85) 0 1.1px,transparent 1.9px);
-  background-size:
-    180px 210px,240px 270px,310px 350px,220px 250px,
-    290px 330px,350px 390px,210px 240px,320px 360px,
-    260px 300px,370px 410px,230px 260px,300px 340px,
-    250px 290px,340px 380px;
-  animation:starDrift 28s linear infinite;
-}
-
-/* Petit voile lumineux pour donner de la profondeur */
-body::after{
-  content:"";
-  position:fixed;
-  inset:0;
-  z-index:0;
-  pointer-events:none;
-  background:
-    radial-gradient(circle at 22% 20%,rgba(130,80,255,.08),transparent 25%),
-    radial-gradient(circle at 78% 35%,rgba(40,130,255,.07),transparent 28%),
-    radial-gradient(circle at 50% 80%,rgba(210,70,190,.06),transparent 30%);
+  background:#03040b url("galaxy.jpeg") center center / cover fixed no-repeat;
 }
 
 body>*{
@@ -1070,38 +1019,61 @@ main{
 
 
 /* =========================================================
-   CARTE PERSONNAGE — média + série de victoire
-   L'image devient la limite visuelle du bloc : aucun cadre
-   noir artificiel autour du visuel.
+   CARTES PERSONNAGES — visuel sans cadre noir
+   Le comportement de disparition après élimination est conservé dans app.js.
    ========================================================= */
 .character-card .portrait{
-  aspect-ratio:auto;
-  height:auto;
-  min-height:0;
-  max-height:none;
+  aspect-ratio:4 / 5;
+  height:min(62vh,650px);
+  min-height:420px;
+  max-height:650px;
   padding:0;
   margin:0 0 14px;
   border:0;
-  border-radius:21px;
-  overflow:visible;
+  border-radius:0;
+  overflow:hidden;
   background:transparent;
   box-shadow:none;
 }
 
 .character-card .portrait::after{
-  border-radius:21px;
+  display:none;
 }
 
 .character-card .portrait img{
   display:block;
   width:100% !important;
-  height:auto !important;
+  height:100% !important;
   max-width:100% !important;
-  max-height:650px !important;
+  max-height:100% !important;
   object-fit:contain !important;
   object-position:center center !important;
   margin:0 auto;
-  border-radius:21px;
+  border:0;
+  border-radius:0;
+  background:transparent;
+}
+
+/* Le nom reste dans le flux : aucun déplacement de page pendant le chargement. */
+.character-name{
+  position:relative;
+  z-index:3;
+  margin:0 12px;
+  padding:0;
+  font-size:clamp(25px,2.65vw,39px);
+  line-height:1.03;
+  letter-spacing:-1.1px;
+  text-shadow:0 3px 18px rgba(0,0,0,.8);
+}
+
+.universe{
+  position:relative;
+  z-index:3;
+  margin:3px 16px 0;
+  color:#d2d6ec;
+  font-size:13px;
+  font-weight:650;
+  text-shadow:0 2px 10px rgba(0,0,0,.8);
 }
 
 .card-record{
@@ -1151,26 +1123,19 @@ main{
   white-space:nowrap;
 }
 
-.card-streak .no-streak{
-  color:#aeb4d0;
-  font-weight:700;
-}
-
 @media(max-width:900px){
-  .character-card .portrait img{
-    max-height:620px !important;
+  .character-card .portrait{
+    min-height:400px;
+    height:min(64vh,620px);
   }
 }
 
 @media(max-width:560px){
-  .character-card .portrait,
-  .character-card .portrait img{
-    border-radius:18px;
+  .character-card .portrait{
+    min-height:360px;
+    height:min(68vh,520px);
   }
-  .card-record{
-    gap:10px;
-    margin:0 9px;
-  }
+  .card-record{gap:10px;margin:0 9px}
   .record-label{font-size:11px}
   .card-media strong{font-size:14px}
   .card-streak strong{font-size:17px}
