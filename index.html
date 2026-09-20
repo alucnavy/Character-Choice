@@ -6,6 +6,11 @@
 <meta name="theme-color" content="#090a12">
 <title>Character Choice — Ultimate Multiverse Battle</title>
 <link rel="stylesheet" href="style.css">
+<style>
+.record-line{display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.record-reset-btn{margin-left:4px;padding:1px 6px;border:1px solid rgba(255,255,255,.18);border-radius:7px;background:rgba(255,255,255,.06);color:rgba(255,255,255,.72);font-size:12px;line-height:1.2;cursor:pointer;vertical-align:middle;transition:background .15s ease,color .15s ease,transform .15s ease}
+.record-reset-btn:hover{background:rgba(255,255,255,.13);color:#fff;transform:translateY(-1px)}
+</style>
 </head>
 <body>
 <div class="site-header">
@@ -50,7 +55,7 @@
     <div class="pill">👥 RESTANTS <strong id="remaining">0</strong></div>
     <div class="progress-wrap"><div class="progress-label"><span>Progression</span><strong id="progressPercent">0%</strong></div><div class="progress"><span id="progressBar"></span></div></div>
     <div class="record">
-  <div>🏅 RECORD ABSOLU <strong id="bestRecordHolderInline">—</strong> : <strong id="bestRecord">0 VICTOIRE</strong></div>
+  <div class="record-line">🏅 RECORD ABSOLU <strong id="bestRecordHolderInline">—</strong> : <strong id="bestRecord">0 VICTOIRE</strong> <button id="resetBestRecordBtn" type="button" class="record-reset-btn" title="Remettre le record absolu à zéro" aria-label="Remettre le record absolu à zéro">↺</button></div>
   
 </div>
   </section>
