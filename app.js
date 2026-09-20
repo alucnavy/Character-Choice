@@ -351,7 +351,6 @@ function render() {
 
 async function choose(winnerId) {
   if (combatAnimating) return;
-
   const champ = getChar(state.championId);
   const challenger = getChar(state.challengerId);
   const winner = getChar(winnerId);
@@ -362,78 +361,43 @@ async function choose(winnerId) {
   const loserCardId = winnerId === state.championId ? "challengerCard" : "championCard";
   const winnerCard = $(winnerCardId);
   const loserCard = $(loserCardId);
-
-  // Phase 1 : le gagnant prend le dessus, le perdant quitte l'arène.
+  clearCombatAnimationClasses();
+  document.body.classList.add("combat-in-progress");
   winnerCard?.classList.add("combat-winner");
   loserCard?.classList.add("combat-loser");
-  document.body.classList.add("combat-in-progress");
+  await wait(220);
 
-  await wait(560);
-
-  state.lastSnapshot = JSON.parse(JSON.stringify({
-    combat: state.combat,
-    streak: state.streak,
-    championId: state.championId,
-    challengerId: state.challengerId,
-    usedIds: state.usedIds,
-    history: state.history,
-    bestRecord: state.bestRecord,
-    bestRecordHolder: state.bestRecordHolder,
-    characterStats: JSON.parse(JSON.stringify(characterStats))
-  }));
-
-  state.history.push({
-    combat: state.combat,
-    championBefore: champ.name,
-    challenger: challenger.name,
-    universe: winner.universe,
-    media: winner.media,
-    winner: winner.name
-  });
-
+  state.lastSnapshot = JSON.parse(JSON.stringify({combat:state.combat,streak:state.streak,championId:state.championId,challengerId:state.challengerId,usedIds:state.usedIds,history:state.history,bestRecord:state.bestRecord,bestRecordHolder:state.bestRecordHolder,characterStats:JSON.parse(JSON.stringify(characterStats))}));
   const loser = winnerId === state.championId ? challenger : champ;
+  state.history.push({combat:state.combat,championBefore:champ.name,challenger:challenger.name,universe:winner.universe,media:winner.media,winner:winner.name});
   updateCharacterStats(winner, loser);
 
-  if (winnerId === state.championId) {
-    state.streak += 1;
-  } else {
-    state.championId = winnerId;
-    state.streak = 1;
-  }
-
-  if (state.streak > state.bestRecord) {
-    state.bestRecord = state.streak;
-    state.bestRecordHolder = winner.name;
-  }
+  if (winnerId === state.championId) state.streak += 1;
+  else { state.championId = winnerId; state.streak = 1; }
+  if (state.streak > state.bestRecord) { state.bestRecord = state.streak; state.bestRecordHolder = winner.name; }
 
   if (state.usedIds.length >= CHARACTERS.length) {
-    state.challengerId = null;
-    save();
-    render();
-    updateStats();
-    document.body.classList.remove("combat-in-progress");
-    $("championCard")?.classList.add("champion-arrival");
-    setTimeout(() => $("championCard")?.classList.remove("champion-arrival"), 800);
-    combatAnimating = false;
-    toast("🎉 Le pool entier a été parcouru !");
-    return;
+    state.challengerId = null; save(); document.body.classList.remove("combat-in-progress"); clearCombatAnimationClasses(); render(); updateStats(); combatAnimating=false; toast("🎉 Le pool entier a été parcouru !"); return;
   }
 
   state.combat += 1;
-  state.challengerId = pickUnused(state.usedIds);
-  if (state.challengerId) state.usedIds.push(state.challengerId);
+  const nextChallengerId = pickUnused(state.usedIds);
+  state.challengerId = nextChallengerId || null;
+  if (nextChallengerId) state.usedIds.push(nextChallengerId);
+  syncBestRecord(); save();
 
-  syncBestRecord();
-  save();
-  render();
-  updateStats();
-
-  // Phase 2 : le nouveau champion entre avec une aura lumineuse.
   document.body.classList.remove("combat-in-progress");
-  const championCard = $("championCard");
-  championCard?.classList.add("champion-arrival");
-  setTimeout(() => championCard?.classList.remove("champion-arrival"), 800);
+  clearCombatAnimationClasses();
+  render(); updateStats();
+  const newChampionCard = $("championCard");
+  newChampionCard?.classList.add("champion-arrival");
+  setTimeout(() => newChampionCard?.classList.remove("champion-arrival"), 420);
   combatAnimating = false;
+}
+
+function clearCombatAnimationClasses() {
+  $("championCard")?.classList.remove("combat-winner", "combat-loser", "champion-arrival");
+  $("challengerCard")?.classList.remove("combat-winner", "combat-loser", "champion-arrival");
 }
 
 function wait(ms) {
