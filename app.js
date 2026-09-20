@@ -10,53 +10,73 @@ const state = loadState();
 let combatAnimating = false;
 
 function getImageCandidates(character) {
-  const rawName = String(character?.name || "").trim();
+  const raw = String(character?.name || "").trim();
   const id = String(character?.id ?? "").trim();
 
-  const normalize = (value) => value
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/['’]/g, "")
+  const stripAccents = (value) => String(value).normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  const clean = (value) => stripAccents(value).replace(/[\'’]/g, "");
+  const normalize = (value) => clean(value)
     .replace(/&/g, "and")
     .replace(/[^a-zA-Z0-9]+/g, "_")
     .replace(/^_+|_+$/g, "")
     .toLowerCase();
 
+  // Nouveau système : images nommées uniquement avec l'ID.
+  // Exemple : images/c417.jpg
+  const candidates = [];
+  if (id) {
+    for (const ext of [".jpg", ".jpeg", ".JPG", ".JPEG"]) {
+      candidates.push(`images/${id}${ext}`);
+    }
+  }
+
+  // Ancien système conservé intégralement : casse, espaces, underscores,
+  // accents et variantes historiques des noms de fichiers.
   const variants = [
-    rawName,
-    rawName.replace(/[-–—]/g, " "),
-    rawName.replace(/\([^)]*\)/g, "").trim()
+    raw,
+    clean(raw),
+    raw.replace(/[-–—]/g, "_"),
+    clean(raw).replace(/[-–—]/g, "_"),
+    raw.replace(/[-–—]/g, " "),
+    clean(raw).replace(/[-–—]/g, " "),
+    raw.replace(/\s+/g, "_"),
+    clean(raw).replace(/\s+/g, "_"),
+    raw.replace(/[^A-Za-zÀ-ÿ0-9_-]+/g, "_"),
+    clean(raw).replace(/[^A-Za-z0-9_-]+/g, "_"),
+    raw.replace(/[^A-Za-zÀ-ÿ0-9_-]+/g, " "),
+    clean(raw).replace(/[^A-Za-z0-9_-]+/g, " ")
   ];
 
-  const slugs = [...new Set(variants.map(normalize).filter(Boolean))];
-  const candidates = [];
+  const names = [...new Set(variants
+    .map(v => v.replace(/^_+|_+$/g, "").trim())
+    .filter(Boolean))];
 
-  // NOUVEAU SYSTÈME PRIORITAIRE :
-  // l'image portant uniquement l'ID unique est essayée en premier.
   if (id) {
-    candidates.push(`images/${id}.jpg`);
-    candidates.push(`images/${id}.jpeg`);
+    for (const name of names) {
+      for (const ext of [".jpg", ".jpeg", ".JPG", ".JPEG"]) {
+        candidates.push(`images/${id}_${name}${ext}`);
+      }
+    }
   }
 
-  // ANCIEN SYSTÈME — conservé en fallback pour ne rien casser.
-  const rawVariants = [...new Set(variants.map(v => v.trim()).filter(Boolean))];
-  for (const name of rawVariants) {
-    candidates.push(`images/${id}_${name}.jpg`);
-    candidates.push(`images/${id}_${name}.jpeg`);
+  // Compatibilité avec les anciens fichiers sans ID.
+  for (const name of names) {
+    for (const ext of [".jpg", ".jpeg", ".JPG", ".JPEG"]) {
+      candidates.push(`images/${name}${ext}`);
+    }
   }
 
-  // Variante entièrement en minuscules : c404_voldemort.jpg
-  for (const slug of slugs) {
-    candidates.push(`images/${id}_${slug}.jpg`);
-    candidates.push(`images/${id}_${slug}.jpeg`);
+  // Variante minuscule pour les fichiers comme c404_voldemort.jpg.
+  for (const name of names) {
+    const lower = name.toLowerCase();
+    for (const ext of [".jpg", ".jpeg", ".JPG", ".JPEG"]) {
+      if (id) candidates.push(`images/${id}_${lower}${ext}`);
+      candidates.push(`images/${lower}${ext}`);
+    }
   }
-
-  // Dernier fallback pour les anciens fichiers sans ID.
-  for (const slug of slugs) candidates.push(`images/${slug}.jpg`);
 
   return [...new Set(candidates)];
 }
-
 function getImagePath(character) {
   return getImageCandidates(character)[0] || "";
 }
@@ -250,7 +270,6 @@ async function loadPortrait(character, el) {
   el.dataset.characterId = character.id;
 
   const candidates = getImageCandidates(character);
-
   const tryCandidate = (index) => {
     if (index >= candidates.length) {
       el.className = "portrait unavailable";
@@ -263,11 +282,7 @@ async function loadPortrait(character, el) {
     img.alt = character.name;
     img.loading = "eager";
     img.decoding = "async";
-
-    img.onload = () => {
-      setImage(el, src, character, () => tryCandidate(index + 1), "catalogue local /images");
-    };
-
+    img.onload = () => setImage(el, src, character, () => tryCandidate(index + 1), "catalogue local /images");
     img.onerror = () => tryCandidate(index + 1);
     img.src = src;
   };
