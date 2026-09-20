@@ -288,8 +288,6 @@ async function loadPortrait(character, el) {
       el.innerHTML = "";
       const visible = document.createElement("img");
       visible.alt = character.name;
-      visible.width = img.naturalWidth || 1;
-      visible.height = img.naturalHeight || 1;
       visible.decoding = "async";
       visible.referrerPolicy = "no-referrer";
       visible.src = src;
