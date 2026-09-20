@@ -144,8 +144,12 @@ function renderCharacterStats(){
   const rows=[...CHARACTERS].map(character=>{
     const record=stats[String(character.id)]||{};
     return {name:character.name,wins:Math.max(0,Number(record.wins)||0),losses:Math.max(0,Number(record.losses)||0)};
-  }).sort((a,b)=>b.wins-a.wins||b.losses-a.losses||a.name.localeCompare(b.name,"fr"));
-  body.innerHTML=rows.map(row=>`<tr><td>${escapeCharacterHtml(row.name)}</td><td class="wins">${row.wins}</td><td class="losses">${row.losses}</td></tr>`).join("");
+  })
+  .filter(row => row.wins > 0 || row.losses > 0)
+  .sort((a,b)=>b.wins-a.wins||b.losses-a.losses||a.name.localeCompare(b.name,"fr"));
+  body.innerHTML=rows.length
+    ? rows.map(row=>`<tr><td>${escapeCharacterHtml(row.name)}</td><td class="wins">${row.wins}</td><td class="losses">${row.losses}</td></tr>`).join("")
+    : '<tr><td colspan="3" class="history-empty">Aucun personnage n’a encore joué.</td></tr>';
 }
 document.getElementById("resetCharacterStats").addEventListener("click",()=>{
   if(!confirm("Réinitialiser les victoires et défaites de tous les personnages ? Cette action est irréversible.")) return;
