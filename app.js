@@ -31,19 +31,27 @@ function getImageCandidates(character) {
   const slugs = [...new Set(variants.map(normalize).filter(Boolean))];
   const candidates = [];
 
-  // On essaie aussi les variantes avec la casse d'origine.
-  // Les fichiers images peuvent être nommés avec ou sans majuscules.
+  // NOUVEAU SYSTÈME PRIORITAIRE :
+  // l'image portant uniquement l'ID unique est essayée en premier.
+  if (id) {
+    candidates.push(`images/${id}.jpg`);
+    candidates.push(`images/${id}.jpeg`);
+  }
+
+  // ANCIEN SYSTÈME — conservé en fallback pour ne rien casser.
   const rawVariants = [...new Set(variants.map(v => v.trim()).filter(Boolean))];
   for (const name of rawVariants) {
     candidates.push(`images/${id}_${name}.jpg`);
     candidates.push(`images/${id}_${name}.jpeg`);
   }
-  // Variante entièrement en minuscules : c401_voldemort.jpg fonctionne
-  // même si le personnage s'appelle "Voldemort" dans characters.js.
+
+  // Variante entièrement en minuscules : c404_voldemort.jpg
   for (const slug of slugs) {
     candidates.push(`images/${id}_${slug}.jpg`);
     candidates.push(`images/${id}_${slug}.jpeg`);
   }
+
+  // Dernier fallback pour les anciens fichiers sans ID.
   for (const slug of slugs) candidates.push(`images/${slug}.jpg`);
 
   return [...new Set(candidates)];
@@ -241,62 +249,16 @@ async function loadPortrait(character, el) {
   el.innerHTML = "<span>Chargement du visuel…</span>";
   el.dataset.characterId = character.id;
 
-  // V4.8 corrigée :
-  // les fichiers du dossier images peuvent avoir conservé la casse et les
-  // tirets du nom du personnage. On essaie donc plusieurs conventions.
-  const raw = String(character.name || "").trim();
-  const id = String(character.id || "").trim();
-
-  const stripAccents = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-  const noApostrophe = (s) => s.replace(/['’]/g, "");
-  const clean = (s) => noApostrophe(stripAccents(s));
-
-  const variants = [
-    raw,
-    clean(raw),
-    raw.replace(/[-–—]/g, "_"),
-    clean(raw).replace(/[-–—]/g, "_"),
-    raw.replace(/\s+/g, "_"),
-    clean(raw).replace(/\s+/g, "_"),
-    raw.replace(/[^A-Za-zÀ-ÿ0-9_-]+/g, "_"),
-    clean(raw).replace(/[^A-Za-z0-9_-]+/g, "_")
-  ];
-
-  const names = [...new Set(variants.map(v => v.replace(/^_+|_+$/g, "")).filter(Boolean))];
-
-  const candidates = [];
-  for (const name of names) {
-    for (const ext of [".jpg", ".jpeg", ".JPG", ".JPEG"]) {
-      candidates.push(`images/${id}_${name}${ext}`);
-    }
-  }
-
-  // Dernier filet : certains fichiers peuvent avoir été enregistrés sans ID.
-  for (const name of names) {
-    for (const ext of [".jpg", ".jpeg", ".JPG", ".JPEG"]) {
-      candidates.push(`images/${name}${ext}`);
-    }
-  }
-
-  // Compatibilité avec les fichiers dont le nom est en minuscules,
-  // par exemple c404_voldemort.jpg alors que le personnage est "Voldemort".
-  for (const name of names) {
-    const lower = name.toLowerCase();
-    for (const ext of [".jpg", ".jpeg", ".JPG", ".JPEG"]) {
-      candidates.push(`images/${id}_${lower}${ext}`);
-    }
-  }
-
-  const uniqueCandidates = [...new Set(candidates)];
+  const candidates = getImageCandidates(character);
 
   const tryCandidate = (index) => {
-    if (index >= uniqueCandidates.length) {
+    if (index >= candidates.length) {
       el.className = "portrait unavailable";
       el.innerHTML = `<span>Visuel introuvable pour ${character.name}</span>`;
       return;
     }
 
-    const src = uniqueCandidates[index];
+    const src = candidates[index];
     const img = new Image();
     img.alt = character.name;
     img.loading = "eager";
