@@ -3,6 +3,7 @@ let IMAGE_CATALOG = {};
 const STORAGE_KEY = "characterChoiceV35";
 const BEST_KEY = "characterChoiceV35Best";
 const BEST_HOLDER_KEY = "characterChoiceV35BestHolder";
+const BEST_RESET_KEY = "characterChoiceV35BestReset";
 const CHARACTER_STATS_KEY = "characterChoiceV35CharacterStats";
 
 const $ = id => document.getElementById(id);
@@ -224,6 +225,7 @@ function getBestRecordFromHistory() {
 }
 
 function syncBestRecord() {
+  if (localStorage.getItem(BEST_RESET_KEY) === "1") return;
   const derived = getBestRecordFromHistory();
   const storedBest = Number(state.bestRecord || 0);
   if (derived.best > storedBest) {
@@ -232,6 +234,45 @@ function syncBestRecord() {
   } else if (!state.bestRecordHolder && storedBest > 0) {
     state.bestRecordHolder = derived.holder || "";
   }
+}
+
+
+function setupBestRecordResetButton() {
+  const target = $("bestRecord");
+  if (!target || $("resetBestRecordBtn")) return;
+
+  const button = document.createElement("button");
+  button.id = "resetBestRecordBtn";
+  button.type = "button";
+  button.textContent = "↺";
+  button.title = "Remettre le record absolu à zéro";
+  button.setAttribute("aria-label", "Remettre le record absolu à zéro");
+  button.style.cssText = [
+    "margin-left:8px",
+    "padding:2px 7px",
+    "border:1px solid rgba(255,255,255,.16)",
+    "border-radius:7px",
+    "background:rgba(255,255,255,.06)",
+    "color:rgba(255,255,255,.72)",
+    "font-size:13px",
+    "line-height:1.2",
+    "cursor:pointer",
+    "vertical-align:middle",
+    "transition:all .15s ease"
+  ].join(";");
+  button.onmouseenter = () => { button.style.background = "rgba(255,255,255,.12)"; button.style.color = "#fff"; };
+  button.onmouseleave = () => { button.style.background = "rgba(255,255,255,.06)"; button.style.color = "rgba(255,255,255,.72)"; };
+  button.addEventListener("click", () => {
+    if (!confirm("Remettre le record absolu à zéro ? L’historique et le tournoi actuel seront conservés.")) return;
+    state.bestRecord = 0;
+    state.bestRecordHolder = "";
+    localStorage.setItem(BEST_RESET_KEY, "1");
+    save();
+    updateStats();
+    toast("🏆 Record absolu remis à zéro");
+  });
+
+  target.insertAdjacentElement("afterend", button);
 }
 
 function updateStats() {
@@ -351,7 +392,11 @@ async function choose(winnerId) {
 
   if (winnerId === state.championId) state.streak += 1;
   else { state.championId = winnerId; state.streak = 1; }
-  if (state.streak > state.bestRecord) { state.bestRecord = state.streak; state.bestRecordHolder = winner.name; }
+  if (state.streak > state.bestRecord) {
+    state.bestRecord = state.streak;
+    state.bestRecordHolder = winner.name;
+    localStorage.removeItem(BEST_RESET_KEY);
+  }
 
   if (state.usedIds.length >= CHARACTERS.length) {
     state.challengerId = null; save(); document.body.classList.remove("combat-in-progress"); clearCombatAnimationClasses(); render(); updateStats(); combatAnimating=false; toast("🎉 Le pool entier a été parcouru !"); return;
@@ -470,4 +515,5 @@ $("resetBtn").addEventListener("click", () => {
 });
 
 // Affiche immédiatement le premier combat au chargement de la page.
+setupBestRecordResetButton();
 render();
