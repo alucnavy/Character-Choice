@@ -172,6 +172,11 @@ function loadState() {
       if (!Array.isArray(raw.history)) raw.history = [];
       if (!Number.isFinite(Number(raw.bestRecord))) raw.bestRecord = 0;
       if (typeof raw.bestRecordHolder !== "string") raw.bestRecordHolder = "";
+      // Le challenger initial doit lui aussi être marqué comme déjà utilisé.
+      // Cela évite qu'il puisse réapparaître plus tard dans le même tournoi.
+      if (raw.challengerId && !raw.usedIds.includes(raw.challengerId)) {
+        raw.usedIds.push(raw.challengerId);
+      }
       return raw;
     }
   } catch(e) {}
@@ -183,6 +188,7 @@ function createNewState() {
   const championId = ids[Math.floor(Math.random()*ids.length)];
   const usedIds = [championId];
   let challengerId = pickUnused(usedIds);
+  if (challengerId) usedIds.push(challengerId);
   return {
     combat: 1,
     streak: 0,
