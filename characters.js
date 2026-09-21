@@ -1808,7 +1808,7 @@ const CHARACTERS = [
   {
     "name":"Moon Knight",
     "universe":"Marvel",
-    "media":"Comics",
+    "media":"Comics/Séries",
     "id":"c259",
     "wiki":"Moon Knight"
   },
@@ -3177,5 +3177,110 @@ const CHARACTERS = [
   "media": "Films",
   "id": "c454",
   "wiki": "Ellen Ripley"
-}
+},
+  {
+  "name": "Flynn Carson",
+  "universe": "The Librarians",
+  "media": "Séries",
+  "id": "c455",
+  "wiki": "Flynn Carson"
+},
+{
+  "name": "Eve Baird",
+  "universe": "The Librarians",
+  "media": "Séries",
+  "id": "c456",
+  "wiki": "Eve Baird"
+},
+{
+  "name": "Mac Taylor",
+  "universe": "Les Experts : Manhattan",
+  "media": "Séries",
+  "id": "c457",
+  "wiki": "Mac Taylor"
+},
+{
+  "name": "Horatio Caine",
+  "universe": "Les Experts : Miami",
+  "media": "Séries",
+  "id": "c458",
+  "wiki": "Horatio Caine"
+},
+{
+  "name": "Sarah Williams",
+  "universe": "Labyrinthe",
+  "media": "Films",
+  "id": "c459",
+  "wiki": "Sarah Williams"
+},
+{
+  "name": "Meliodas",
+  "universe": "The Seven Deadly Sins",
+  "media": "Anime",
+  "id": "c460",
+  "wiki": "Meliodas"
+},
+{
+  "name": "Emma Swan",
+  "universe": "Once Upon a Time",
+  "media": "Séries",
+  "id": "c461",
+  "wiki": "Emma Swan"
+},
+{
+  "name": "Regina Mills",
+  "universe": "Once Upon a Time",
+  "media": "Séries",
+  "id": "c462",
+  "wiki": "Regina Mills"
+},
+{
+  "name": "Rumplestiltskin",
+  "universe": "Once Upon a Time",
+  "media": "Séries",
+  "id": "c463",
+  "wiki": "Rumplestiltskin"
+},
+{
+  "name": "Woody",
+  "universe": "Toy Story",
+  "media": "Films",
+  "id": "c464",
+  "wiki": "Woody"
+},
+{
+  "name": "Buzz l'Éclair",
+  "universe": "Toy Story",
+  "media": "Films",
+  "id": "c465",
+  "wiki": "Buzz Lightyear"
+},
+{
+  "name": "Negi Springfield",
+  "universe": "Negima!",
+  "media": "Manga",
+  "id": "c466",
+  "wiki": "Negi Springfield"
+},
+{
+  "name": "Aragorn",
+  "universe": "Le Seigneur des Anneaux",
+  "media": "Films",
+  "id": "c467",
+  "wiki": "Aragorn"
+},
+{
+  "name": "Legolas",
+  "universe": "Le Seigneur des Anneaux",
+  "media": "Films",
+  "id": "c468",
+  "wiki": "Legolas"
+},
+{
+  "name": "Hermione Granger",
+  "universe": "Harry Potter",
+  "media": "Films",
+  "id": "c469",
+  "wiki": "Hermione Granger"
+},
     ];
