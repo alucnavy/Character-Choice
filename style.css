@@ -343,31 +343,6 @@ main{
   border:1px solid #3d4267;
 }
 
-.character-card .portrait{
-  aspect-ratio:3/4;
-  min-height:400px;
-  max-height:620px;
-  padding:6px;
-  border-radius:17px;
-  overflow:hidden;
-  background:#0b0d18;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  position:relative;
-  margin-bottom:14px;
-}
-
-.character-card .portrait img{
-  width:100%;
-  height:100%;
-  max-width:100%;
-  max-height:100%;
-  object-fit:contain!important;
-  object-position:center center!important;
-  display:block;
-  background:transparent;
-}
 
 .portrait.loading span{
   padding:20px;
@@ -725,7 +700,6 @@ main{
   .history-page .history-main{padding-top:16px}
   .history-page .history-heading{align-items:stretch;flex-direction:column}
   .history-page .history-heading input{width:100%}
-  .character-card .portrait{min-height:390px}
 }
 
 @media(max-width:560px){
@@ -752,7 +726,6 @@ main{
 
   .site-header .topbar{min-height:94px}
   .character-card{padding:12px;border-radius:18px}
-  .character-card .portrait{min-height:360px}
   .mini-stats{grid-template-columns:1fr 1fr 1fr}
   .history-row{grid-template-columns:48px 1fr}
   .history-row div:nth-child(3),
@@ -855,45 +828,6 @@ main{
   backdrop-filter:blur(8px);
 }
 
-.character-card .portrait{
-  /* Le cadre est volontairement haut, mais l'image n'est JAMAIS recadrée. */
-  aspect-ratio:4 / 5;
-  min-height:470px;
-  height:min(62vh,650px);
-  max-height:650px;
-  padding:0;
-  margin:0;
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:21px;
-  overflow:hidden;
-  background:
-    radial-gradient(circle at 50% 35%,rgba(96,106,180,.18),transparent 55%),
-    linear-gradient(145deg,#0a0c19,#11152b 55%,#080a15);
-  box-shadow:inset 0 0 0 1px rgba(0,0,0,.24),0 14px 36px rgba(0,0,0,.22);
-}
-
-/* Subtle light frame, without touching the image itself. */
-.character-card .portrait::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  pointer-events:none;
-  border-radius:21px;
-  background:linear-gradient(180deg,rgba(0,0,0,0) 52%,rgba(2,3,10,.08) 68%,rgba(2,3,10,.78) 100%);
-}
-
-.character-card .portrait img{
-  /* IMPORTANT : proportions originales conservées, aucun crop. */
-  width:auto !important;
-  height:auto !important;
-  max-width:100% !important;
-  max-height:100% !important;
-  object-fit:contain !important;
-  object-position:center center !important;
-  flex:0 1 auto;
-  position:relative;
-  z-index:1;
-}
 
 .portrait.loading span,
 .portrait.unavailable span{
@@ -1001,7 +935,6 @@ main{
 
 @media(max-width:1100px){
   .arena{grid-template-columns:minmax(0,1fr) 70px minmax(0,1fr);gap:12px}
-  .character-card .portrait{min-height:420px;height:min(58vh,580px)}
   .versus{width:64px;height:64px;font-size:21px}
   .versus::before,.versus::after{width:90px}
 }
@@ -1013,14 +946,11 @@ main{
   .versus::before{top:-42px}
   .versus::after{bottom:-42px}
   .challenger-card{order:3}
-  .character-card .portrait{min-height:460px;height:min(72vh,620px)}
 }
 
 @media(max-width:560px){
   .character-card{padding:8px;border-radius:23px}
   .card-top{padding:2px 4px 7px}
-  .character-card .portrait{min-height:380px;height:min(72vh,520px);border-radius:18px}
-  .character-card .portrait::after{border-radius:18px}
   .character-name{margin:-70px 10px 0;padding-top:38px;font-size:clamp(25px,8vw,34px)}
   .universe{margin:0 13px;font-size:12px}
   .card-record{margin:0 9px}
@@ -1055,17 +985,21 @@ main{
 
 .character-card .portrait img{
   display:block;
+  position:absolute;
+  left:50%;
+  top:50%;
   width:auto !important;
   height:auto !important;
   max-width:100% !important;
   max-height:100% !important;
   object-fit:contain !important;
   object-position:center center !important;
-  flex:0 0 auto;
-  margin:0 auto;
+  transform:translate(-50%,-50%);
+  margin:0;
   border:0;
   border-radius:0;
   background:transparent;
+  z-index:1;
 }
 
 /* Le nom reste dans le flux : aucun déplacement de page pendant le chargement. */
