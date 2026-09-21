@@ -3052,4 +3052,32 @@ const CHARACTERS = [
     "id":"c436",
     "wiki":"Optimus Prime"
   },
-];
+  {
+    "name": "Marsupilami",
+    "universe": "Marsupilami",
+    "media": "BD",
+    "id": "c437",
+    "wiki": "Marsupilami"
+  },
+  {
+    "name": "Astérix",
+    "universe": "Astérix",
+    "media": "BD",
+    "id": "c438",
+    "wiki": "Asterix"
+  },
+  {
+    "name": "Tintin",
+    "universe": "Les Aventures de Tintin",
+    "media": "BD",
+    "id": "c439",
+    "wiki": "Tintin"
+  },
+  {
+    "name": "Lucky Luke",
+    "universe": "Lucky Luke",
+    "media": "BD",
+    "id": "c440",
+    "wiki": "Lucky Luke"
+  }
+  ];
