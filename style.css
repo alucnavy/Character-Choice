@@ -963,6 +963,7 @@ main{
    Le comportement de disparition après élimination est conservé dans app.js.
    ========================================================= */
 .character-card .portrait{
+  position:relative;
   aspect-ratio:4 / 5;
   height:min(72vh,720px);
   min-height:480px;
@@ -985,17 +986,15 @@ main{
 
 .character-card .portrait img{
   display:block;
-  position:absolute;
-  left:50%;
-  top:50%;
+  position:static;
   width:auto !important;
   height:auto !important;
   max-width:100% !important;
   max-height:100% !important;
   object-fit:contain !important;
   object-position:center center !important;
-  transform:translate(-50%,-50%);
-  margin:0;
+  transform:none;
+  margin:0 auto;
   border:0;
   border-radius:0;
   background:transparent;
