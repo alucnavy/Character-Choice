@@ -3114,5 +3114,68 @@ const CHARACTERS = [
     "media": "Anime",
     "id": "c445",
     "wiki": "Seiya"
-  }
+  },
+  {
+  "name": "Edmond Dantès",
+  "universe": "Le Comte de Monte-Cristo",
+  "media": "Romans / Littérature/ Films",
+  "id": "c446",
+  "wiki": "Edmond Dantès"
+},
+{
+  "name": "Dorian Gray",
+  "universe": "Le Portrait de Dorian Gray",
+  "media": "Romans / Littérature",
+  "id": "c447",
+  "wiki": "Dorian Gray"
+},
+{
+  "name": "Jay Gatsby",
+  "universe": "Gatsby le Magnifique",
+  "media": "Romans / Littérature / Films",
+  "id": "c448",
+  "wiki": "Jay Gatsby"
+},
+{
+  "name": "Geralt de Riv (Version Jeux vidéo)",
+  "universe": "The Witcher",
+  "media": "Jeux vidéo",
+  "id": "c449",
+  "wiki": "Geralt de Riv (Version Jeux vidéo)"
+},
+{
+  "name": "Solid Snake",
+  "universe": "Metal Gear",
+  "media": "Jeux vidéo",
+  "id": "c450",
+  "wiki": "Solid Snake"
+},
+{
+  "name": "Samus Aran",
+  "universe": "Metroid",
+  "media": "Jeux vidéo",
+  "id": "c451",
+  "wiki": "Samus Aran"
+},
+{
+  "name": "Rocky Balboa",
+  "universe": "Rocky",
+  "media": "Films",
+  "id": "c452",
+  "wiki": "Rocky Balboa"
+},
+{
+  "name": "Forrest Gump",
+  "universe": "Forrest Gump",
+  "media": "Films",
+  "id": "c453",
+  "wiki": "Forrest Gump"
+},
+{
+  "name": "Ellen Ripley",
+  "universe": "Alien",
+  "media": "Films",
+  "id": "c454",
+  "wiki": "Ellen Ripley"
+}
     ];
