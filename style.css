@@ -1087,3 +1087,168 @@ main{
   .card-media strong{font-size:14px}
   .card-streak strong{font-size:17px}
 }
+
+
+/* --- Header / sous-header premium --- */
+.site-header .ultimate-banner{
+  height:92px;
+  border-bottom:1px solid rgba(248,216,74,.42);
+  background:
+    radial-gradient(ellipse at 50% 35%,rgba(140,124,255,.34),transparent 42%),
+    radial-gradient(ellipse at 50% 115%,rgba(248,216,74,.10),transparent 48%),
+    linear-gradient(135deg,#120d32 0%,#11173b 48%,#070914 100%);
+  box-shadow:0 10px 35px rgba(0,0,0,.30), inset 0 -1px 0 rgba(255,255,255,.04);
+}
+
+.site-header .ultimate-banner::before{
+  background:
+    linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+  background-size:34px 34px;
+  mask-image:linear-gradient(to bottom,transparent 0%,rgba(0,0,0,.8) 45%,transparent 100%);
+}
+
+.site-header .ultimate-banner::after{
+  left:8%;
+  right:8%;
+  height:3px;
+  background:linear-gradient(90deg,transparent 0%,rgba(248,216,74,.25) 18%,var(--accent) 50%,rgba(140,124,255,.75) 72%,transparent 100%);
+  box-shadow:0 0 16px rgba(248,216,74,.28);
+}
+
+.site-header .banner-content{
+  padding:5px 14px 4px;
+}
+
+.site-header .banner-kicker{
+  margin:0 0 6px;
+  color:#f0f1ff;
+  font-size:9px;
+  letter-spacing:.28em;
+  text-shadow:0 0 14px rgba(140,124,255,.55);
+}
+
+.site-header .ultimate-banner h1{
+  gap:10px;
+  font-size:clamp(29px,4.5vw,50px);
+  line-height:.95;
+  letter-spacing:-1.8px;
+  text-shadow:
+    0 3px 0 rgba(0,0,0,.45),
+    0 0 16px rgba(140,124,255,.22),
+    0 8px 30px rgba(0,0,0,.48);
+}
+
+.site-header .ultimate-banner h1 span{
+  color:#fff;
+  font-weight:900;
+}
+
+.site-header .ultimate-banner h1 strong{
+  color:var(--accent);
+  font-weight:950;
+  text-shadow:
+    0 2px 0 rgba(90,64,0,.65),
+    0 0 12px rgba(248,216,74,.20),
+    0 8px 26px rgba(0,0,0,.35);
+}
+
+.site-header .banner-line{
+  margin:6px auto 0;
+  width:min(250px,45vw);
+  opacity:.95;
+}
+
+.site-header .ultimate-banner p{
+  margin:5px 0 0;
+  color:#cbd0e8;
+  font-size:10px;
+  font-weight:650;
+  letter-spacing:.04em;
+}
+
+.site-header .topbar{
+  min-height:70px;
+  padding:9px clamp(14px,3vw,34px);
+  background:linear-gradient(180deg,rgba(11,13,29,.96),rgba(8,10,22,.92));
+  border-top:1px solid rgba(255,255,255,.035);
+  border-bottom:1px solid rgba(140,124,255,.16);
+  box-shadow:0 10px 24px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.025);
+}
+
+.site-header .brand{
+  gap:12px;
+}
+
+.site-header .brand-mark{
+  width:44px;
+  height:44px;
+  flex-basis:44px;
+  border:1px solid rgba(248,216,74,.46);
+  border-radius:13px;
+  background:linear-gradient(145deg,rgba(248,216,74,.20),rgba(140,124,255,.16));
+  box-shadow:0 0 24px rgba(248,216,74,.12),inset 0 0 18px rgba(255,255,255,.045);
+}
+
+.site-header .brand-copy .eyebrow{
+  color:#bfc4df;
+  letter-spacing:.20em;
+}
+
+.site-header .brand h1{
+  font-size:clamp(20px,2.3vw,28px);
+  font-weight:900;
+  letter-spacing:-.9px;
+  text-shadow:0 2px 14px rgba(0,0,0,.35);
+}
+
+.site-header .actions{
+  gap:8px;
+}
+
+.site-header .actions .secondary{
+  min-height:38px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  padding:8px 12px;
+  border:1px solid rgba(111,119,171,.42);
+  border-radius:11px;
+  background:linear-gradient(180deg,rgba(31,35,66,.96),rgba(19,22,45,.96));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 4px 12px rgba(0,0,0,.16);
+  color:#f7f8ff;
+  font-size:13px;
+  font-weight:800;
+  transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease,background .16s ease;
+}
+
+.site-header .actions .secondary:hover{
+  border-color:rgba(140,124,255,.72);
+  background:linear-gradient(180deg,rgba(42,46,82,.98),rgba(22,25,52,.98));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 7px 18px rgba(0,0,0,.24),0 0 14px rgba(140,124,255,.10);
+  transform:translateY(-2px);
+}
+
+.site-header .actions .secondary:active{
+  transform:translateY(0);
+}
+
+.site-header .actions .secondary.danger{
+  border-color:rgba(248,216,74,.34);
+  color:#fff4bc;
+  background:linear-gradient(180deg,rgba(54,45,27,.94),rgba(30,27,25,.96));
+}
+
+.site-header .actions .secondary.danger:hover{
+  border-color:rgba(248,216,74,.68);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 7px 18px rgba(0,0,0,.24),0 0 16px rgba(248,216,74,.11);
+}
+
+@media(max-width:700px){
+  .site-header .ultimate-banner{height:82px}
+  .site-header .ultimate-banner h1{font-size:clamp(23px,7vw,37px);gap:6px;letter-spacing:-1.2px}
+  .site-header .banner-kicker{font-size:7px;letter-spacing:.18em}
+  .site-header .ultimate-banner p{font-size:8px;margin-top:4px}
+  .site-header .topbar{min-height:92px;padding:10px 12px}
+}

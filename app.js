@@ -142,14 +142,6 @@ function loadState() {
       if (!Array.isArray(raw.history)) raw.history = [];
       if (!Number.isFinite(Number(raw.bestRecord))) raw.bestRecord = 0;
       if (typeof raw.bestRecordHolder !== "string") raw.bestRecordHolder = "";
-
-      // Migration : l'ancien état ne comptait pas toujours le challenger
-      // initial dans usedIds. On le marque comme déjà vu pour éviter
-      // qu'il puisse ressortir plus tard dans le même tournoi.
-      if (!raw.usedIds.includes(raw.challengerId)) {
-        raw.usedIds.push(raw.challengerId);
-      }
-
       return raw;
     }
   } catch(e) {}
@@ -160,8 +152,7 @@ function createNewState() {
   const ids = CHARACTERS.map(c => c.id);
   const championId = ids[Math.floor(Math.random()*ids.length)];
   const usedIds = [championId];
-  const challengerId = pickUnused(usedIds);
-  if (challengerId) usedIds.push(challengerId);
+  let challengerId = pickUnused(usedIds);
   return {
     combat: 1,
     streak: 0,
@@ -509,14 +500,12 @@ $("chooseChampion").addEventListener("click", e => { e.stopPropagation(); choose
 $("chooseChallenger").addEventListener("click", e => { e.stopPropagation(); choose(state.challengerId); });
 $("championCard").addEventListener("click", () => choose(state.championId));
 $("challengerCard").addEventListener("click", () => choose(state.challengerId));
-$("exportBtn").addEventListener("click", exportCSV);
 $("resetBtn").addEventListener("click", () => {
   if (confirm("Commencer un nouveau tournoi ? Le record absolu du joueur sera conservé.")) {
     const best = Number(localStorage.getItem(BEST_KEY) || state.bestRecord || 0);
     const holder = localStorage.getItem(BEST_HOLDER_KEY) || state.bestRecordHolder || "";
     Object.assign(state, createNewState(), {bestRecord: best, bestRecordHolder: holder, lastSnapshot: null});
     save();
-    render();
     toast("🔄 Nouveau tournoi lancé !");
   }
 });
