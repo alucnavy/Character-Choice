@@ -3079,5 +3079,40 @@ const CHARACTERS = [
     "media": "BD",
     "id": "c440",
     "wiki": "Lucky Luke"
+  },
+  {
+    "name": "Yusuke Urameshi",
+    "universe": "Yu Yu Hakusho",
+    "media": "Anime",
+    "id": "c441",
+    "wiki": "Yusuke Urameshi"
+  },
+  {
+    "name": "Gon Freecss",
+    "universe": "Hunter × Hunter",
+    "media": "Manga",
+    "id": "c442",
+    "wiki": "Gon Freecss"
+  },
+  {
+    "name": "Vash the Stampede",
+    "universe": "Trigun",
+    "media": "Manga",
+    "id": "c443",
+    "wiki": "Vash the Stampede"
+  },
+  {
+    "name": "Spike Spiegel",
+    "universe": "Cowboy Bebop",
+    "media": "Anime",
+    "id": "c444",
+    "wiki": "Spike Spiegel"
+  },
+  {
+    "name": "Seiya",
+    "universe": "Saint Seiya",
+    "media": "Anime",
+    "id": "c445",
+    "wiki": "Seiya"
   }
-  ];
+    ];
