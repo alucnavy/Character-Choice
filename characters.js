@@ -1696,7 +1696,7 @@ const CHARACTERS = [
   {
     "name":"Sif",
     "universe":"Marvel",
-    "media":"Comics",
+    "media":"Films",
     "id":"c243",
     "wiki":"Sif"
   },
