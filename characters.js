@@ -1442,7 +1442,7 @@ const CHARACTERS = [
     "wiki":"Fuu Kasumi"
   },
   {
-    "name":"Jessica Drew",
+    "name":"Spider Woman / Jessica Drew",
     "universe":"Marvel",
     "media":"Comics",
     "id":"c207",
