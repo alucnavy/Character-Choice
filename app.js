@@ -257,6 +257,9 @@ async function loadPortrait(character, el) {
   ];
   const names = [...new Set(variants.map(v => v.replace(/^_+|_+$/g, "")).filter(Boolean))];
   const candidates = [];
+  if (id) {
+    for (const ext of [".jpg", ".jpeg", ".JPG", ".JPEG"]) candidates.push(`images/${id}${ext}`);
+  }
   for (const name of names) {
     for (const ext of [".jpg", ".jpeg", ".JPG", ".JPEG"]) candidates.push(`images/${id}_${name}${ext}`);
   }
