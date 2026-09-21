@@ -8,6 +8,25 @@ const CHARACTER_STATS_KEY = "characterChoiceV35CharacterStats";
 const $ = id => document.getElementById(id);
 const state = loadState();
 
+const IMAGE_SRC_CACHE_KEY = "characterChoiceV35ImageSrcCache";
+let imageSrcCache = loadImageSrcCache();
+const imageResolvePromises = new Map();
+
+function loadImageSrcCache() {
+  try {
+    const raw = JSON.parse(localStorage.getItem(IMAGE_SRC_CACHE_KEY) || "{}");
+    return raw && typeof raw === "object" && !Array.isArray(raw) ? raw : {};
+  } catch (e) {
+    return {};
+  }
+}
+
+function saveImageSrcCache() {
+  try {
+    localStorage.setItem(IMAGE_SRC_CACHE_KEY, JSON.stringify(imageSrcCache));
+  } catch (e) {}
+}
+
 function getImageCandidates(character) {
   const rawName = String(character?.name || "").trim();
   const id = String(character?.id ?? "").trim();
@@ -15,7 +34,7 @@ function getImageCandidates(character) {
   const normalize = (value) => value
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
-    .replace(/['’]/g, "")
+    .replace(/[\'’]/g, "")
     .replace(/&/g, "and")
     .replace(/[^a-zA-Z0-9]+/g, "_")
     .replace(/^_+|_+$/g, "")
@@ -30,61 +49,131 @@ function getImageCandidates(character) {
   const slugs = [...new Set(variants.map(normalize).filter(Boolean))];
   const candidates = [];
 
-  // On essaie aussi les variantes avec la casse d'origine.
-  // Les fichiers images peuvent être nommés avec ou sans majuscules.
+  // Priorité absolue au nom par ID : images/c001.jpg
+  if (id) {
+    for (const ext of [".jpg", ".jpeg", ".JPG", ".JPEG"]) {
+      candidates.push(`images/${id}${ext}`);
+    }
+  }
+
+  // Puis toutes les anciennes conventions déjà utilisées par le projet.
   const rawVariants = [...new Set(variants.map(v => v.trim()).filter(Boolean))];
   for (const name of rawVariants) {
-    candidates.push(`images/${id}_${name}.jpg`);
-    candidates.push(`images/${id}_${name}.jpeg`);
+    for (const ext of [".jpg", ".jpeg", ".JPG", ".JPEG"]) {
+      candidates.push(`images/${id}_${name}${ext}`);
+    }
   }
-  // Variante entièrement en minuscules : c401_voldemort.jpg fonctionne
-  // même si le personnage s'appelle "Voldemort" dans characters.js.
   for (const slug of slugs) {
-    candidates.push(`images/${id}_${slug}.jpg`);
-    candidates.push(`images/${id}_${slug}.jpeg`);
+    for (const ext of [".jpg", ".jpeg", ".JPG", ".JPEG"]) {
+      candidates.push(`images/${id}_${slug}${ext}`);
+    }
   }
-  for (const slug of slugs) candidates.push(`images/${slug}.jpg`);
+  for (const slug of slugs) {
+    for (const ext of [".jpg", ".jpeg", ".JPG", ".JPEG"]) {
+      candidates.push(`images/${slug}${ext}`);
+    }
+  }
 
   return [...new Set(candidates)];
 }
 
-function getImagePath(character) {
-  return getImageCandidates(character)[0] || "";
+function testImageSource(src, priority = "auto") {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    img.decoding = "async";
+    if ("fetchPriority" in img) img.fetchPriority = priority;
+    img.onload = async () => {
+      try {
+        if (typeof img.decode === "function") await img.decode();
+      } catch (e) {}
+      resolve(src);
+    };
+    img.onerror = () => reject(new Error("Image introuvable"));
+    img.src = src;
+  });
 }
 
+async function resolveImageSource(character) {
+  const id = String(character?.id || "");
+  if (!id) return "";
+  if (imageResolvePromises.has(id)) return imageResolvePromises.get(id);
 
-function loadCharacterImage(img, character) {
-  const candidates = getImageCandidates(character);
-  let index = 0;
-
-  const tryNext = () => {
-    if (index >= candidates.length) {
-      img.removeAttribute("src");
-      img.alt = `Visuel introuvable pour ${character?.name || "ce personnage"}`;
-      const parent = img.parentElement;
-      if (parent) {
-        parent.classList.add("image-missing");
-        parent.setAttribute("data-image-status", "missing");
+  const promise = (async () => {
+    const cached = imageSrcCache[id];
+    if (cached) {
+      try {
+        return await testImageSource(cached, "high");
+      } catch (e) {
+        delete imageSrcCache[id];
+        saveImageSrcCache();
       }
-      return;
     }
 
-    const candidate = candidates[index++];
-    img.onerror = tryNext;
-    img.onload = () => {
-      const parent = img.parentElement;
-      if (parent) {
-        parent.classList.remove("image-missing");
-        parent.classList.add("image-found");
-        parent.setAttribute("data-image-status", "found");
-      }
-    };
-    img.src = candidate;
-  };
+    const candidates = getImageCandidates(character);
+    for (let i = 0; i < candidates.length; i++) {
+      try {
+        const src = await testImageSource(candidates[i], i === 0 ? "high" : "auto");
+        imageSrcCache[id] = src;
+        saveImageSrcCache();
+        return src;
+      } catch (e) {}
+    }
+    return "";
+  })();
 
-  tryNext();
+  imageResolvePromises.set(id, promise);
+  try {
+    return await promise;
+  } finally {
+    imageResolvePromises.delete(id);
+  }
 }
 
+async function loadPortrait(character, el) {
+  const characterId = String(character?.id || "");
+  if (el.dataset.characterId === characterId && el.querySelector("img")) return;
+
+  el.className = "portrait loading";
+  el.innerHTML = "<span>Chargement du visuel…</span>";
+  el.dataset.characterId = characterId;
+
+  const src = await resolveImageSource(character);
+  if (el.dataset.characterId !== characterId) return;
+
+  if (!src) {
+    el.className = "portrait unavailable";
+    el.innerHTML = `<span>Visuel introuvable pour ${character.name}</span>`;
+    return;
+  }
+
+  const visible = new Image();
+  visible.alt = character.name;
+  visible.decoding = "async";
+  visible.loading = "eager";
+  if ("fetchPriority" in visible) visible.fetchPriority = "high";
+  visible.referrerPolicy = "no-referrer";
+  visible.src = src;
+
+  try {
+    if (typeof visible.decode === "function") await visible.decode();
+    else await new Promise((resolve, reject) => {
+      visible.onload = resolve;
+      visible.onerror = reject;
+    });
+  } catch (e) {
+    delete imageSrcCache[characterId];
+    saveImageSrcCache();
+    imageResolvePromises.delete(characterId);
+    return loadPortrait(character, el);
+  }
+
+  if (el.dataset.characterId !== characterId) return;
+
+  el.className = "portrait";
+  el.innerHTML = "";
+  visible.title = `${character.name} — visuel externe. Droits © à leurs créateurs / ayants droit. Source : catalogue local /images`;
+  el.appendChild(visible);
+}
 
 function slug(text) {
   return text.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
@@ -308,30 +397,11 @@ async function loadPortrait(character, el) {
   tryCandidate(0);
 }
 
-function setImage(el, src, character, onError, source = "") {
-  el.className = "portrait";
-  el.innerHTML = "";
-  const img = document.createElement("img");
-  img.alt = character.name;
-  img.loading = "eager";
-  img.decoding = "async";
-  img.referrerPolicy = "no-referrer";
-  img.src = src;
-  img.title = `${character.name} — visuel externe. Droits © à leurs créateurs / ayants droit. Source : ${source}`;
-  img.onerror = () => {
-    localStorage.removeItem("ccimg-v35:" + character.id);
-    if (onError) onError();
-    else el.innerHTML = "<span>Visuel indisponible</span>";
-  };
-  el.appendChild(img);
-}
-
 function renderCard(prefix, character) {
   $(prefix+"Name").textContent = character.name;
   $(prefix+"Universe").textContent = character.universe;
   $(prefix+"Media").textContent = character.media;
   const p = $(prefix+"Portrait");
-  p.dataset.characterId = character.id;
   loadPortrait(character, p);
 }
 
