@@ -240,7 +240,8 @@ async function loadPortrait(character, el) {
   const cacheKey = "ccimg-src-v36:" + characterId;
 
   // Si le même personnage est déjà affiché, on ne recharge rien.
-  if (el.dataset.characterId === characterId && el.querySelector("img")) return;
+  const existingImg = el.querySelector("img");
+  if (existingImg && existingImg.dataset.characterId === characterId) return;
 
   el.className = "portrait loading";
   el.innerHTML = "";
@@ -310,6 +311,7 @@ async function loadPortrait(character, el) {
       el.className = "portrait";
       el.innerHTML = "";
       img.title = `${character.name} — visuel externe. Droits © à leurs créateurs / ayants droit. Source : catalogue local /images`;
+      img.dataset.characterId = characterId;
       el.appendChild(img);
     };
 
