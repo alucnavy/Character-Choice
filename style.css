@@ -80,7 +80,7 @@ button{font:inherit}
   min-height:430px !important;
   margin:0 !important;
   padding:0 !important;
-  z-index:99999 !important;
+  z-index:0 !important;
   background:#020615 url("images/header-galaxy.png") center center / cover no-repeat !important;
   pointer-events:none !important;
   overflow:hidden !important;
@@ -109,6 +109,7 @@ button{font:inherit}
 /* Le bandeau fixe occupe 430 px au départ, puis la navigation reste normale. */
 .site-header .topbar{
   position:relative !important;
+  z-index:2 !important;
   margin-top:430px !important;
 }
 
@@ -118,6 +119,7 @@ button{font:inherit}
     min-height:180px !important;
   }
   .site-header .topbar{
+    z-index:2 !important;
     margin-top:180px !important;
   }
 }
