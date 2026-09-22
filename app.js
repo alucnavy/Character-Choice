@@ -142,6 +142,9 @@ function loadState() {
       if (!Array.isArray(raw.history)) raw.history = [];
       if (!Number.isFinite(Number(raw.bestRecord))) raw.bestRecord = 0;
       if (typeof raw.bestRecordHolder !== "string") raw.bestRecordHolder = "";
+      // Migration des anciennes parties : le challenger initial doit compter comme personnage vu.
+      if (!raw.usedIds.includes(raw.championId)) raw.usedIds.unshift(raw.championId);
+      if (!raw.usedIds.includes(raw.challengerId)) raw.usedIds.push(raw.challengerId);
       return raw;
     }
   } catch(e) {}
@@ -152,7 +155,8 @@ function createNewState() {
   const ids = CHARACTERS.map(c => c.id);
   const championId = ids[Math.floor(Math.random()*ids.length)];
   const usedIds = [championId];
-  let challengerId = pickUnused(usedIds);
+  const challengerId = pickUnused(usedIds);
+  if (challengerId) usedIds.push(challengerId);
   return {
     combat: 1,
     streak: 0,
@@ -506,6 +510,7 @@ $("resetBtn").addEventListener("click", () => {
     const holder = localStorage.getItem(BEST_HOLDER_KEY) || state.bestRecordHolder || "";
     Object.assign(state, createNewState(), {bestRecord: best, bestRecordHolder: holder, lastSnapshot: null});
     save();
+    render();
     toast("🔄 Nouveau tournoi lancé !");
   }
 });
