@@ -62,6 +62,19 @@
   margin-top:auto;
 }
 
+.versus{
+  align-self:center;
+  justify-self:center;
+  width:76px;
+  height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:3px solid var(--accent);
+  border-radius:50%;
+  box-shadow:0 0 22px rgba(248,216,74,.28);
+}
+
 @media(max-width:900px){
   .arena{
     grid-template-columns:1fr;
