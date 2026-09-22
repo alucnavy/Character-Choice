@@ -515,22 +515,5 @@ $("resetBtn").addEventListener("click", () => {
   }
 });
 
-function syncSiteHeaderHeight() {
-  const header = document.querySelector(".site-header");
-  if (!header) return;
-  document.documentElement.style.setProperty(
-    "--site-header-height",
-    `${Math.ceil(header.getBoundingClientRect().height)}px`
-  );
-}
-
-window.addEventListener("resize", syncSiteHeaderHeight);
-window.addEventListener("load", syncSiteHeaderHeight);
-if ("ResizeObserver" in window) {
-  const header = document.querySelector(".site-header");
-  if (header) new ResizeObserver(syncSiteHeaderHeight).observe(header);
-}
-syncSiteHeaderHeight();
-
 // Affiche immédiatement le premier combat au chargement de la page.
 render();
