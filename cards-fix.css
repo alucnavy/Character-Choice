@@ -1,0 +1,92 @@
+/* Fixe la taille et l'alignement des cartes personnages. */
+.arena{
+  grid-template-columns:minmax(0,1fr) 92px minmax(0,1fr);
+  gap:20px;
+  align-items:stretch;
+  max-width:1500px;
+  margin:0 auto;
+}
+
+.character-card{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+  min-height:100%;
+  padding:10px;
+  border-radius:28px;
+  overflow:visible;
+}
+
+.character-card .portrait{
+  position:relative;
+  width:100%;
+  aspect-ratio:4 / 5;
+  height:min(72vh,720px);
+  min-height:480px;
+  max-height:720px;
+  padding:0;
+  margin:0 0 14px;
+  border:0;
+  border-radius:0;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 auto;
+  background:transparent;
+  box-shadow:none;
+}
+
+.character-card .portrait img{
+  display:block;
+  position:static;
+  width:auto !important;
+  height:auto !important;
+  max-width:100% !important;
+  max-height:100% !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  transform:none;
+  margin:0 auto;
+  border:0;
+  border-radius:0;
+  background:transparent;
+}
+
+.character-card .character-name{
+  min-height:1.03em;
+}
+
+.character-card .choose{
+  margin-top:auto;
+}
+
+@media(max-width:900px){
+  .arena{
+    grid-template-columns:1fr;
+    gap:14px;
+  }
+
+  .versus{
+    order:2;
+    width:70px;
+    height:70px;
+    margin:0 auto;
+  }
+
+  .challenger-card{order:3}
+}
+
+@media(max-width:560px){
+  .character-card{
+    padding:8px;
+    border-radius:23px;
+  }
+
+  .character-card .portrait{
+    height:auto;
+    min-height:0;
+    aspect-ratio:4 / 5;
+  }
+}
