@@ -3283,4 +3283,74 @@ const CHARACTERS = [
   "id": "c469",
   "wiki": "Hermione Granger"
 },
-    ];
+  {
+  "name": "Thomas",
+  "universe": "Le Labyrinthe",
+  "media": "Films",
+  "id": "c470",
+  "wiki": "Thomas (Le Labyrinthe)"
+},
+{
+  "name": "Teresa",
+  "universe": "Le Labyrinthe",
+  "media": "Films",
+  "id": "c471",
+  "wiki": "Teresa (Le Labyrinthe)"
+},
+{
+  "name": "Neo",
+  "universe": "Matrix",
+  "media": "Films",
+  "id": "c472",
+  "wiki": "Neo"
+},
+{
+  "name": "Trinity",
+  "universe": "Matrix",
+  "media": "Films",
+  "id": "c473",
+  "wiki": "Trinity"
+},
+{
+  "name": "Damon Salvatore",
+  "universe": "The Vampire Diaries",
+  "media": "Séries",
+  "id": "c474",
+  "wiki": "Damon Salvatore"
+},
+{
+  "name": "Jérémie Belpois",
+  "universe": "Code Lyoko",
+  "media": "Séries/Dessin Animé",
+  "id": "c475",
+  "wiki": "Jérémie Belpois"
+},
+{
+  "name": "Sarah Connor",
+  "universe": "Terminator",
+  "media": "Films",
+  "id": "c476",
+  "wiki": "Sarah Connor"
+},
+{
+  "name": "Le Petit Prince",
+  "universe": "Le Petit Prince",
+  "media": "Romans / Littérature",
+  "id": "c477",
+  "wiki": "Le Petit Prince"
+},
+{
+  "name": "Mario",
+  "universe": "Super Mario",
+  "media": "Jeux vidéo",
+  "id": "c478",
+  "wiki": "Mario"
+},
+{
+  "name": "Alice",
+  "universe": "Resident Evil",
+  "media": "Films",
+  "id": "c479",
+  "wiki": "Alice (Resident Evil)"
+}
+];
