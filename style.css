@@ -1,10 +1,10 @@
 /*
- * Restauration du style complet précédent.
- * Le commit référencé contient tout le design du site avant l'ajout du VS.
+ * Base stylesheet restored from the last working site version.
+ * The previous file was accidentally replaced by an incomplete stylesheet.
  */
-@import url("https://raw.githubusercontent.com/alucnavy/Character-Choice/3cbe46dad01f9f48b019bc13aa8d94abd7103669/style.css");
+@import url("https://raw.githubusercontent.com/alucnavy/Character-Choice/29b40be2fd6c90199ac7ef86acda81209f45b6e8/style.css");
 
-/* VS uniquement : cercle doré centré entre les cartes. */
+/* VS enhancement only. This does not change the card dimensions. */
 .arena > .versus{
   align-self:center;
   justify-self:center;
@@ -15,13 +15,13 @@
   display:grid;
   place-items:center;
   margin:0;
-  border:2px solid var(--accent,#f8d84a);
+  border:2px solid #f8d84a;
   border-radius:50%;
   background:radial-gradient(circle,rgba(45,39,15,.98) 0%,rgba(13,15,30,.98) 68%,rgba(8,9,18,.92) 100%);
-  color:var(--accent,#f8d84a);
+  color:#f8d84a;
   font-size:24px;
   font-weight:1000;
-  letter-spacing:-1px;
+  line-height:1;
   text-shadow:0 0 22px rgba(248,216,74,.55);
   box-shadow:0 0 0 5px rgba(248,216,74,.08),0 0 28px rgba(248,216,74,.28),0 12px 30px rgba(0,0,0,.38);
 }
@@ -52,7 +52,6 @@
     width:1px;
     height:34px;
     background:linear-gradient(180deg,transparent,rgba(248,216,74,.65),transparent);
-    left:50%;
     transform:translateX(-50%);
   }
   .arena > .versus::before{top:-42px}
