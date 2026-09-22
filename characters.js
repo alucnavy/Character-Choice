@@ -3429,5 +3429,75 @@ const CHARACTERS = [
   "media": "Films",
   "id": "c490",
   "wiki": "Korben Dallas"
-}
+},
+{
+  "name": "Milo Thatch",
+  "universe": "Atlantide, l'empire perdu",
+  "media": "Films",
+  "id": "c491",
+  "wiki": "Milo Thatch"
+},
+{
+  "name": "Frank Martin",
+  "universe": "Le Transporteur",
+  "media": "Films",
+  "id": "c492",
+  "wiki": "Frank Martin"
+},
+{
+  "name": "Riddick",
+  "universe": "Les Chroniques de Riddick",
+  "media": "Films",
+  "id": "c493",
+  "wiki": "Richard B. Riddick"
+},
+{
+  "name": "Saul Goodman",
+  "universe": "Better Call Saul",
+  "media": "Séries",
+  "id": "c494",
+  "wiki": "Saul Goodman"
+},
+{
+  "name": "Raymond Reddington",
+  "universe": "The Blacklist",
+  "media": "Séries",
+  "id": "c495",
+  "wiki": "Raymond Reddington"
+},
+{
+  "name": "Alaric Saltzman",
+  "universe": "The Vampire Diaries",
+  "media": "Séries",
+  "id": "c496",
+  "wiki": "Alaric Saltzman"
+},
+{
+  "name": "Reigen Arataka",
+  "universe": "Mob Psycho 100",
+  "media": "Anime",
+  "id": "c497",
+  "wiki": "Reigen Arataka"
+},
+{
+  "name": "Guts",
+  "universe": "Berserk",
+  "media": "Manga",
+  "id": "c498",
+  "wiki": "Guts"
+},
+{
+  "name": "Lelouch Lamperouge",
+  "universe": "Code Geass",
+  "media": "Anime",
+  "id": "c499",
+  "wiki": "Lelouch Lamperouge"
+},
+{
+  "name": "Ezio Auditore",
+  "universe": "Assassin's Creed",
+  "media": "Jeux vidéo",
+  "id": "c500",
+  "wiki": "Ezio Auditore"
+}  
 ];
