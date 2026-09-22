@@ -81,7 +81,7 @@ button{font:inherit}
   margin:0 !important;
   padding:0 !important;
   z-index:99999 !important;
-  background:#020615 url("images/header-galaxy.png") center center / cover no-repeat !important;
+  background: url("images/header-galaxy.png") center center / auto 100% no-repeat; !important;
   pointer-events:none !important;
   overflow:hidden !important;
   box-sizing:border-box !important;
