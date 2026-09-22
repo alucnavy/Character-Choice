@@ -3352,5 +3352,82 @@ const CHARACTERS = [
   "media": "Films",
   "id": "c479",
   "wiki": "Alice (Resident Evil)"
+},
+{
+  "name": "Malcolm Reynolds",
+  "universe": "Firefly",
+  "media": "Séries",
+  "id": "c480",
+  "wiki": "Malcolm Reynolds"
+},
+{
+  "name": "Elliot Alderson",
+  "universe": "Mr. Robot",
+  "media": "Séries",
+  "id": "c481",
+  "wiki": "Elliot Alderson"
+},
+{
+  "name": "Walter Bishop",
+  "universe": "Fringe",
+  "media": "Séries",
+  "id": "c482",
+  "wiki": "Walter Bishop"
+},
+{
+  "name": "Dexter Morgan",
+  "universe": "Dexter",
+  "media": "Séries",
+  "id": "c483",
+  "wiki": "Dexter Morgan"
+},
+{
+  "name": "Lorne Malvo",
+  "universe": "Fargo",
+  "media": "Séries",
+  "id": "c484",
+  "wiki": "Lorne Malvo"
+},
+{
+  "name": "Rustin Cohle",
+  "universe": "True Detective",
+  "media": "Séries",
+  "id": "c485",
+  "wiki": "Rustin Cohle"
+},
+{
+  "name": "Anton Chigurh",
+  "universe": "No Country for Old Men",
+  "media": "Films",
+  "id": "c486",
+  "wiki": "Anton Chigurh"
+},
+{
+  "name": "Ash Williams",
+  "universe": "Evil Dead",
+  "media": "Films",
+  "id": "c487",
+  "wiki": "Ash Williams"
+},
+{
+  "name": "Sallah",
+  "universe": "Indiana Jones",
+  "media": "Films",
+  "id": "c488",
+  "wiki": "Sallah"
+},
+{
+  "name": "Leon Kowalski",
+  "universe": "Blade Runner",
+  "media": "Films",
+  "id": "c489",
+  "wiki": "Leon Kowalski"
+},
+{
+  "name": "Korben Dallas",
+  "universe": "Le Cinquième Élément",
+  "media": "Films",
+  "id": "c490",
+  "wiki": "Korben Dallas"
 }
 ];
