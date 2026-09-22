@@ -75,6 +75,11 @@
   box-shadow:0 0 22px rgba(248,216,74,.28);
 }
 
+.card-streak .record-label{
+  display:inline-block;
+  margin-right:8px;
+}
+
 @media(max-width:900px){
   .arena{
     grid-template-columns:1fr;
