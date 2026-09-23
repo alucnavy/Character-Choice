@@ -3499,5 +3499,75 @@ const CHARACTERS = [
   "media": "Jeux vidéo",
   "id": "c500",
   "wiki": "Ezio Auditore"
-}  
+},
+{
+  "name": "Daisy Johnson (Quake)",
+  "universe": "Marvel",
+  "media": "Séries",
+  "id": "c501",
+  "wiki": "Daisy Johnson"
+},
+{
+  "name": "Lt Roberta Warren",
+  "universe": "Z Nation",
+  "media": "Séries",
+  "id": "c502",
+  "wiki": "Roberta Warren"
+},
+{
+  "name": "Lucifer Morningstar",
+  "universe": "Lucifer",
+  "media": "Séries",
+  "id": "c503",
+  "wiki": "Lucifer Morningstar"
+},
+{
+  "name": "Deadpool",
+  "universe": "Marvel",
+  "media": "Films/Cimics",
+  "id": "c504",
+  "wiki": "Deadpool"
+},
+{
+  "name": "Katsuki Bakugo",
+  "universe": "My Hero Academia",
+  "media": "Anime/Manga",
+  "id": "c505",
+  "wiki": "Katsuki Bakugo"
+},
+{
+  "name": "Scarlet Witch",
+  "universe": "Marvel",
+  "media": "Films/Comics",
+  "id": "c506",
+  "wiki": "Wanda Maximoff"
+},
+{
+  "name": "Joshua J Cody",
+  "universe": "Animal Kingdom",
+  "media": "Séries",
+  "id": "c507",
+  "wiki": "Joshua Cody"
+},
+{
+  "name": "Rick Grimes",
+  "universe": "The Walking Dead",
+  "media": "Séries",
+  "id": "c508",
+  "wiki": "Rick Grimes"
+},
+{
+  "name": "Dream (Rêve)",
+  "universe": "The Sandman",
+  "media": "Séries",
+  "id": "c509",
+  "wiki": "Dream (The Sandman)"
+},
+{
+  "name": "Jesse Custer",
+  "universe": "Preacher",
+  "media": "Séries",
+  "id": "c510",
+  "wiki": "Jesse Custer"
+}
 ];
