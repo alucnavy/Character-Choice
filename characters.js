@@ -3569,5 +3569,82 @@ const CHARACTERS = [
   "media": "Séries",
   "id": "c510",
   "wiki": "Jesse Custer"
+},
+{
+  "name": "Bob l'Éponge",
+  "universe": "Bob l'Éponge",
+  "media": "Dessin Animé/Animation",
+  "id": "c511",
+  "wiki": "Bob l'Éponge"
+},
+{
+  "name": "Edward Cullen",
+  "universe": "Twilight",
+  "media": "Films",
+  "id": "c512",
+  "wiki": "Edward Cullen"
+},
+{
+  "name": "Timmy Turner",
+  "universe": "Mes parrains sont magiques",
+  "media": "Dessin Animé/Animation",
+  "id": "c513",
+  "wiki": "Timmy Turner"
+},
+{
+  "name": "Bugs Bunny",
+  "universe": "Looney Tunes",
+  "media": "Dessin Animé/Animation",
+  "id": "c514",
+  "wiki": "Bugs Bunny"
+},
+{
+  "name": "Stuart Little",
+  "universe": "Stuart Little",
+  "media": "Films",
+  "id": "c515",
+  "wiki": "Stuart Little"
+},
+{
+  "name": "The Mask",
+  "universe": "The Mask",
+  "media": "Films",
+  "id": "c516",
+  "wiki": "The Mask"
+},
+{
+  "name": "Indiana Jones",
+  "universe": "Indiana Jones",
+  "media": "Films",
+  "id": "c517",
+  "wiki": "Indiana Jones"
+},
+{
+  "name": "T-800",
+  "universe": "Terminator",
+  "media": "Films",
+  "id": "c518",
+  "wiki": "T-800"
+},
+{
+  "name": "Katniss Everdeen",
+  "universe": "Hunger Games",
+  "media": "Films",
+  "id": "c519",
+  "wiki": "Katniss Everdeen"
+},
+{
+  "name": "Homer Simpson",
+  "universe": "Les Simpson",
+  "media": "Séries/Animation",
+  "id": "c520",
+  "wiki": "Homer Simpson"
+},
+{
+  "name": "Blanche-Neige",
+  "universe": "Blanche-Neige et les Sept Nains",
+  "media": "Films/Animation",
+  "id": "c521",
+  "wiki": "Blanche-Neige"
 }
 ];
