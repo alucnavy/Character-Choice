@@ -3646,5 +3646,68 @@ const CHARACTERS = [
   "media": "Films/Animation",
   "id": "c521",
   "wiki": "Blanche-Neige"
+},
+{
+  "name": "Luke Skywalker",
+  "universe": "Star Wars",
+  "media": "Films",
+  "id": "c522",
+  "wiki": "Luke Skywalker"
+},
+{
+  "name": "Sacha du Bourg-Palette",
+  "universe": "Pokémon",
+  "media": "Dessin Animé/Animation",
+  "id": "c523",
+  "wiki": "Sacha (Pokémon)"
+},
+{
+  "name": "Pete Lattimer",
+  "universe": "Warehouse 13",
+  "media": "Séries",
+  "id": "c524",
+  "wiki": "Pete Lattimer"
+},
+{
+  "name": "Annalise Keating",
+  "universe": "How to Get Away with Murder",
+  "media": "Séries",
+  "id": "c525",
+  "wiki": "Annalise Keating"
+},
+{
+  "name": "Hellboy",
+  "universe": "Hellboy",
+  "media": "Films/Comics",
+  "id": "c526",
+  "wiki": "Hellboy"
+},
+{
+  "name": "Vlad Tepes (Comte Dracula)",
+  "universe": "Dracula",
+  "media": "Romans/Littérature",
+  "id": "c527",
+  "wiki": "Comte Dracula"
+},
+{
+  "name": "Shaka",
+  "universe": "Saint Seiya",
+  "media": "Manga/Anime",
+  "id": "c528",
+  "wiki": "Shaka de la Vierge"
+},
+{
+  "name": "Jacquouille la Fripouille",
+  "universe": "Les Visiteurs",
+  "media": "Films",
+  "id": "c529",
+  "wiki": "Jacquouille la Fripouille"
+},
+{
+  "name": "Rasputia Latimore-Rice",
+  "universe": "Norbit",
+  "media": "Films",
+  "id": "c530",
+  "wiki": "Raspoutia"
 }
 ];
