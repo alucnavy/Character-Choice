@@ -18,6 +18,12 @@
   overflow:visible;
 }
 
+.champion-card{
+  background:linear-gradient(180deg,rgba(92,75,24,.58),rgba(30,25,14,.72));
+  border-color:rgba(248,216,74,.72);
+  box-shadow:0 0 0 1px rgba(248,216,74,.16),0 20px 70px rgba(0,0,0,.28),0 0 30px rgba(248,216,74,.12);
+}
+
 .character-card .portrait{
   position:relative;
   width:100%;
