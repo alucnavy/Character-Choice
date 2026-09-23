@@ -3709,5 +3709,96 @@ const CHARACTERS = [
   "media": "Films",
   "id": "c530",
   "wiki": "Raspoutia"
+},
+{
+  "name": "Jessica Jones",
+  "universe": "Marvel",
+  "media": "Séries/Comics",
+  "id": "c531",
+  "wiki": "Jessica Jones"
+},
+{
+  "name": "Aslan",
+  "universe": "Le Monde de Narnia",
+  "media": "Films",
+  "id": "c532",
+  "wiki": "Aslan"
+},
+{
+  "name": "Gandalf",
+  "universe": "Le Seigneur des Anneaux",
+  "media": "Films",
+  "id": "c533",
+  "wiki": "Gandalf"
+},
+{
+  "name": "Doom Slayer",
+  "universe": "Doom",
+  "media": "Jeux vidéo",
+  "id": "c534",
+  "wiki": "Doom Slayer"
+},
+{
+  "name": "Ender Wiggin",
+  "universe": "La Stratégie Ender",
+  "media": "Films",
+  "id": "c535",
+  "wiki": "Ender Wiggin"
+},
+{
+  "name": "Leon",
+  "universe": "Léon",
+  "media": "Films",
+  "id": "c536",
+  "wiki": "Léon"
+},
+{
+  "name": "Max Payne",
+  "universe": "Max Payne",
+  "media": "Jeux vidéo",
+  "id": "c537",
+  "wiki": "Max Payne"
+},
+{
+  "name": "Dr Manhattan",
+  "universe": "Watchmen",
+  "media": "Comics/Films",
+  "id": "c538",
+  "wiki": "Dr Manhattan"
+},
+{
+  "name": "Koro Sensei",
+  "universe": "Assassination Classroom",
+  "media": "Anime/Manga",
+  "id": "c539",
+  "wiki": "Koro-sensei"
+},
+{
+  "name": "Buffy Summers",
+  "universe": "Buffy contre les vampires",
+  "media": "Séries",
+  "id": "c540",
+  "wiki": "Buffy Summers"
+},
+{
+  "name": "V",
+  "universe": "V pour Vendetta",
+  "media": "Films",
+  "id": "c541",
+  "wiki": "V (V pour Vendetta)"
+},
+{
+  "name": "Pinhead",
+  "universe": "Hellraiser",
+  "media": "Films",
+  "id": "c542",
+  "wiki": "Pinhead"
+},
+{
+  "name": "Bill Cipher",
+  "universe": "Gravity Falls",
+  "media": "Dessin Animé",
+  "id": "c543",
+  "wiki": "Bill Cipher"
 }
 ];
