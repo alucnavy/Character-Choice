@@ -2921,14 +2921,14 @@ const CHARACTERS = [
   },
   {
     "name":"Batman",
-    "universe":"DC",
+    "universe":"DC Comics",
     "media":"Films",
     "id":"c418",
     "wiki":"Batman"
   },
   {
     "name":"Wonder Woman",
-    "universe":"DC",
+    "universe":"DC Comics",
     "media":"Films",
     "id":"c419",
     "wiki":"Wonder Woman"
