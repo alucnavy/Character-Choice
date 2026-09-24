@@ -3800,5 +3800,74 @@ const CHARACTERS = [
   "media": "Dessin Animé",
   "id": "c543",
   "wiki": "Bill Cipher"
-}
+},
+{
+  "name": "Hawks",
+  "universe": "My Hero Academia",
+  "media": "Anime/Manga",
+  "id": "c544",
+  "wiki": "Hawks (My Hero Academia)"
+},
+{
+  "name": "Tom Sawyer",
+  "universe": "Tom Sawyer",
+  "media": "Romans/Dessin Animé",
+  "id": "c545",
+  "wiki": "Tom Sawyer"
+},
+{
+  "name": "Homelander (Protecteur)",
+  "universe": "The Boys",
+  "media": "Séries",
+  "id": "c546",
+  "wiki": "Homelander"
+},
+{
+  "name": "Sung Jin-woo",
+  "universe": "Solo Leveling",
+  "media": "Manga",
+  "id": "c547",
+  "wiki": "Sung Jinwoo"
+},
+{
+  "name": "Speedy (Thea Queen)",
+  "universe": "Arrow",
+  "media": "Séries",
+  "id": "c548",
+  "wiki": "Thea Queen"
+},
+{
+  "name": "Chapelier Fou",
+  "universe": "Alice au pays des merveilles",
+  "media": "Films",
+  "id": "c549",
+  "wiki": "Chapelier Fou (Alice au pays des merveilles)"
+},
+{
+  "name": "Chat du Cheshire",
+  "universe": "Alice au pays des merveilles",
+  "media": "Films",
+  "id": "c550",
+  "wiki": "Chat du Cheshire"
+},
+{
+  "name": "Danny Ocean",
+  "universe": "Ocean's",
+  "media": "Films",
+  "id": "c551",
+  "wiki": "Danny Ocean"
+},
+{
+  "name": "Ghost Rider (Johnny Blaze)",
+  "universe": "Marvel",
+  "media": "Films",
+  "id": "c552",
+  "wiki": "Ghost Rider (Johnny Blaze)"
+},
+{
+  "name": "Fallon Carrington",
+  "universe": "Dynastie",
+  "media": "Séries",
+  "id": "c553",
+  "wiki": "Fallon Carrington"
 ];
