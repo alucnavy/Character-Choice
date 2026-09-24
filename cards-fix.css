@@ -109,6 +109,33 @@
   margin-right:8px;
 }
 
+.character-rank{
+  display:inline-block;
+  margin-left:10px;
+  font-size:.38em;
+  font-weight:1000;
+  letter-spacing:.08em;
+  vertical-align:middle;
+  white-space:nowrap;
+  text-transform:uppercase;
+  text-shadow:0 0 12px currentColor;
+}
+
+.rank-novice{color:#aeb3cf}
+.rank-combattant{color:#7ed6ff}
+.rank-elite{color:#8c7cff}
+.rank-champion{color:#f8d84a}
+.rank-veteran{color:#ff9b5e}
+.rank-maitre{color:#f06cff}
+.rank-legende{color:#ff5d9e}
+.rank-immortel{
+  background:linear-gradient(120deg,#fff,#8ff7ff 30%,#b898ff 58%,#fff 82%);
+  background-clip:text;
+  -webkit-background-clip:text;
+  color:transparent;
+  filter:drop-shadow(0 0 8px rgba(143,247,255,.75));
+}
+
 @media(max-width:900px){
   .arena{
     grid-template-columns:1fr;
@@ -135,5 +162,11 @@
     height:auto;
     min-height:0;
     aspect-ratio:4 / 5;
+  }
+
+  .character-rank{
+    display:block;
+    margin:4px 0 0;
+    font-size:.34em;
   }
 }
