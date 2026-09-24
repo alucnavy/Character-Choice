@@ -1624,11 +1624,11 @@ const CHARACTERS = [
     "wiki":"Stephanie Brown"
   },
   {
-    "name":"Kate Kane",
+    "name":"Nightwing",
     "universe":"DC Comics",
-    "media":"Comics",
+    "media":"Comics/Séries",
     "id":"c233",
-    "wiki":"Kate Kane"
+    "wiki":"Nightwing"
   },
   {
     "name":"Huntress",
