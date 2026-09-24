@@ -163,10 +163,4 @@
     min-height:0;
     aspect-ratio:4 / 5;
   }
-
-  .character-rank{
-    display:block;
-    margin:4px 0 0;
-    font-size:.34em;
-  }
 }
