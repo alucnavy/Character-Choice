@@ -4136,5 +4136,54 @@ const CHARACTERS = [
   "media": "Séries",
   "id": "c591",
   "wiki": "Prue Halliwell"
+},
+{
+  "name": "Daredevil",
+  "universe": "Marvel",
+  "media": "Séries/Comics",
+  "id": "c592",
+  "wiki": "Daredevil"
+},
+{
+  "name": "Dean Winchester",
+  "universe": "Supernatural",
+  "media": "Séries",
+  "id": "c593",
+  "wiki": "Dean Winchester"
+},
+{
+  "name": "Sam Winchester",
+  "universe": "Supernatural",
+  "media": "Séries",
+  "id": "c594",
+  "wiki": "Sam Winchester"
+},
+{
+  "name": "Nathan Scott",
+  "universe": "Les Frères Scott",
+  "media": "Séries",
+  "id": "c595",
+  "wiki": "Nathan Scott"
+},
+{
+  "name": "Lucas Scott",
+  "universe": "Les Frères Scott",
+  "media": "Séries",
+  "id": "c596",
+  "wiki": "Lucas Scott"
+},
+{
+  "name": "Punisher",
+  "universe": "Marvel",
+  "media": "Séries/Comics",
+  "id": "c597",
+  "wiki": "Punisher (Marvel)"
+},
+{
+  "name": "Death",
+  "universe": "The Sandman",
+  "media": "Séries",
+  "id": "c598",
+  "wiki": "Death (The Sandman)"
 }
 ];
