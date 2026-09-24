@@ -3933,5 +3933,61 @@ const CHARACTERS = [
   "media": "Films",
   "id": "c562",
   "wiki": "Le Chat chapeauté"
+},
+{
+  "name": "Jill Valentine",
+  "universe": "Resident Evil",
+  "media": "Jeux vidéo",
+  "id": "c563",
+  "wiki": "Jill Valentine"
+},
+{
+  "name": "Albert Wesker",
+  "universe": "Resident Evil",
+  "media": "Jeux vidéo",
+  "id": "c564",
+  "wiki": "Albert Wesker"
+},
+{
+  "name": "Quentin Coldwater",
+  "universe": "The Magicians",
+  "media": "Séries/Romans",
+  "id": "c565",
+  "wiki": "Quentin Coldwater"
+},
+{
+  "name": "Spencer Reid",
+  "universe": "Esprits criminels",
+  "media": "Séries",
+  "id": "c566",
+  "wiki": "Spencer Reid"
+},
+{
+  "name": "10K",
+  "universe": "Z Nation",
+  "media": "Séries",
+  "id": "c567",
+  "wiki": "10K (Z Nation)"
+},
+{
+  "name": "Jack Reacher",
+  "universe": "Reacher",
+  "media": "Séries/Romans",
+  "id": "c568",
+  "wiki": "Jack Reacher"
+},
+{
+  "name": "Yennefer de Vengerberg",
+  "universe": "The Witcher",
+  "media": "Séries/Jeux Vidéo/Romans",
+  "id": "c569",
+  "wiki": "Yennefer de Vengerberg"
+},
+{
+  "name": "Percy Jackson",
+  "universe": "Percy Jackson",
+  "media": "Films/Romans",
+  "id": "c570",
+  "wiki": "Percy Jackson"
 }
 ];
