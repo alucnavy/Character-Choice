@@ -9,7 +9,7 @@ Character Choice est un jeu de duel basé sur un principe simple :
 À chaque combat, deux personnages sont présentés et le joueur doit choisir son favori. Le personnage sélectionné devient alors le **champion** et continue son parcours face à de nouveaux adversaires.
 
 Le jeu rassemble des personnages issus de nombreux univers : films, séries, jeux vidéo, animation, anime, littérature et bien plus encore.
-De nouveaux personnages sont ajoutés régulièrement : Dernier ajout 20/09/26 -> Pack "Ultimate Heroes"x20
+De nouveaux personnages sont ajoutés régulièrement : Dernier ajout 24/09/26 
 
 ---
 
@@ -82,7 +82,7 @@ Les autres données du jeu ne sont pas affectées.
 
 ## 📚 Base de personnages
 
-Le jeu contient actuellement **436 personnages** provenant de différents univers.
+Le jeu contient actuellement **553 personnages** provenant de différents univers.
 
 Chaque personnage possède notamment :
 
