@@ -21,7 +21,8 @@
   }
 
   function updateRank(element) {
-    if (!element || element.dataset.rankApplied === element.textContent) return;
+    if (!element || element.querySelector(".character-rank")) return;
+
     const name = element.textContent.trim();
     if (!name || name === "—") return;
 
@@ -29,15 +30,16 @@
     const record = Object.values(stats).find(item => item && item.name === name);
     const wins = Math.max(0, Number(record?.wins) || 0);
     const rank = ranks.find(item => wins >= item.min);
-    element.textContent = "";
+    if (!rank) return;
 
-    const nameNode = document.createTextNode(name);
+    element.textContent = "";
+    element.append(document.createTextNode(name));
+
     const rankNode = document.createElement("span");
     rankNode.className = `character-rank ${rank.className}`;
     rankNode.textContent = `— ${rank.label}`;
     rankNode.title = `${wins} victoire${wins === 1 ? "" : "s"}`;
-    element.append(nameNode, rankNode);
-    element.dataset.rankApplied = name;
+    element.appendChild(rankNode);
   }
 
   function updateRanks() {
