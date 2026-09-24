@@ -21,7 +21,7 @@
   }
 
   function updateRank(element) {
-    if (!element || element.querySelector(".character-rank")) return;
+    if (!element || element.id !== "championName" || element.querySelector(".character-rank")) return;
 
     const name = element.textContent.trim();
     if (!name || name === "—") return;
@@ -37,14 +37,13 @@
 
     const rankNode = document.createElement("span");
     rankNode.className = `character-rank ${rank.className}`;
-    rankNode.textContent = `— ${rank.label}`;
+    rankNode.textContent = ` — ${rank.label}`;
     rankNode.title = `${wins} victoire${wins === 1 ? "" : "s"}`;
     element.appendChild(rankNode);
   }
 
   function updateRanks() {
     updateRank(document.getElementById("championName"));
-    updateRank(document.getElementById("challengerName"));
   }
 
   const observer = new MutationObserver(updateRanks);
