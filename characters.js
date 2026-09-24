@@ -2662,7 +2662,7 @@ const CHARACTERS = [
   },
   {
     "name": "Clarice Starling",
-    "universe": "The Silence of the Lambs",
+    "universe": "Le Silence des agneaux",
     "media": "Films",
     "id": "c381",
     "wiki": "Clarice Starling"
@@ -3989,5 +3989,68 @@ const CHARACTERS = [
   "media": "Films/Romans",
   "id": "c570",
   "wiki": "Percy Jackson"
+},
+{
+  "name": "John Constantine",
+  "universe": "DC Comics",
+  "media": "Comics/Sériés",
+  "id": "c571",
+  "wiki": "John Constantine"
+},
+{
+  "name": "Thomas Shelby",
+  "universe": "Peaky Blinders",
+  "media": "Séries",
+  "id": "c572",
+  "wiki": "Thomas Shelby"
+},
+{
+  "name": "Hannibal Lecter",
+  "universe": "Le Silence des agneaux",
+  "media": "Films",
+  "id": "c573",
+  "wiki": "Hannibal Lecter"
+},
+{
+  "name": "Walter White",
+  "universe": "Breaking Bad",
+  "media": "Séries",
+  "id": "c574",
+  "wiki": "Walter White"
+},
+{
+  "name": "Spike",
+  "universe": "Buffy contre les vampires",
+  "media": "Séries",
+  "id": "c575",
+  "wiki": "Spike (Buffy)"
+},
+{
+  "name": "Arthas Menethil",
+  "universe": "Warcraft",
+  "media": "Jeux vidéo",
+  "id": "c576",
+  "wiki": "Arthas Menethil"
+},
+{
+  "name": "Kakashi Hatake",
+  "universe": "Naruto",
+  "media": "Manga/Anime",
+  "id": "c577",
+  "wiki": "Kakashi Hatake"
+},
+{
+  "name": "Jack Sparrow",
+  "universe": "Pirates des Caraïbes",
+  "media": "Films",
+  "id": "c578",
+  "wiki": "Jack Sparrow"
+},
+{
+  "name": "Mercredi Addams",
+  "universe": "La Famille Addams",
+  "media": "Séries/Films",
+  "id": "c579",
+  "wiki": "Mercredi Addams"
 }
 ];
