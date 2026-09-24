@@ -3870,4 +3870,5 @@ const CHARACTERS = [
   "media": "Séries",
   "id": "c553",
   "wiki": "Fallon Carrington"
+}
 ];
