@@ -3870,5 +3870,68 @@ const CHARACTERS = [
   "media": "Séries",
   "id": "c553",
   "wiki": "Fallon Carrington"
+},
+{
+  "name": "Leonardo",
+  "universe": "Les Tortues Ninja",
+  "media": "Séries/Comics",
+  "id": "c554",
+  "wiki": "Leonardo (Tortues Ninja)"
+},
+{
+  "name": "Satanas",
+  "universe": "Les Fous du volant",
+  "media": "Dessin Animé",
+  "id": "c555",
+  "wiki": "Satanas (Les Fous du volant)"
+},
+{
+  "name": "Panthère Rose",
+  "universe": "La Panthère Rose",
+  "media": "Dessin Animé",
+  "id": "c556",
+  "wiki": "Panthère Rose"
+},
+{
+  "name": "Atomic Betty",
+  "universe": "Atomic Betty",
+  "media": "Dessin Animé",
+  "id": "c557",
+  "wiki": "Atomic Betty"
+},
+{
+  "name": "Hélène Magnus",
+  "universe": "Sanctuary",
+  "media": "Séries",
+  "id": "c558",
+  "wiki": "Helen Magnus"
+},
+{
+  "name": "Reinhard van Astrea",
+  "universe": "Re:Zero",
+  "media": "Anime/Manga",
+  "id": "c559",
+  "wiki": "Reinhard van Astrea"
+},
+{
+  "name": "Bloom",
+  "universe": "Winx Club",
+  "media": "Dessin Animé",
+  "id": "c560",
+  "wiki": "Bloom (Winx Club)"
+},
+{
+  "name": "Le Grinch",
+  "universe": "Le Grinch",
+  "media": "Films",
+  "id": "c561",
+  "wiki": "Grinch"
+},
+{
+  "name": "Chat Chapeauté",
+  "universe": "Le Chat chapeauté",
+  "media": "Films",
+  "id": "c562",
+  "wiki": "Le Chat chapeauté"
 }
 ];
