@@ -4052,5 +4052,89 @@ const CHARACTERS = [
   "media": "Séries/Films",
   "id": "c579",
   "wiki": "Mercredi Addams"
+},
+{
+  "name": "Black Widow",
+  "universe": "Marvel",
+  "media": "Films/Comics",
+  "id": "c580",
+  "wiki": "Black Widow (Marvel)"
+},
+{
+  "name": "Hyoga",
+  "universe": "Saint Seiya",
+  "media": "Manga/Anime",
+  "id": "c581",
+  "wiki": "Hyoga du Cygne"
+},
+{
+  "name": "Shoto Todoroki",
+  "universe": "My Hero Academia",
+  "media": "Manga/Anime",
+  "id": "c582",
+  "wiki": "Shoto Todoroki"
+},
+{
+  "name": "Dagger",
+  "universe": "Marvel",
+  "media": "Comics",
+  "id": "c583",
+  "wiki": "Dagger (Marvel)"
+},
+{
+  "name": "Daimon Hellstrom",
+  "universe": "Marvel",
+  "media": "Comics",
+  "id": "c584",
+  "wiki": "Daimon Hellstrom"
+},
+{
+  "name": "Emily Prentiss",
+  "universe": "Esprits criminels",
+  "media": "Séries",
+  "id": "c585",
+  "wiki": "Emily Prentiss"
+},
+{
+  "name": "Evan Buckley",
+  "universe": "9-1-1",
+  "media": "Séries",
+  "id": "c586",
+  "wiki": "Evan Buckley"
+},
+{
+  "name": "Sœur Harriet",
+  "universe": "Hunters",
+  "media": "Séries",
+  "id": "c587",
+  "wiki": "Sœur Harriet"
+},
+{
+  "name": "Rosita Espinosa",
+  "universe": "The Walking Dead",
+  "media": "Séries/BD",
+  "id": "c588",
+  "wiki": "Rosita Espinosa"
+},
+{
+  "name": "Clarke Griffin",
+  "universe": "The 100",
+  "media": "Séries",
+  "id": "c589",
+  "wiki": "Clarke Griffin"
+},
+{
+  "name": "Liv Moore",
+  "universe": "iZombie",
+  "media": "Séries",
+  "id": "c590",
+  "wiki": "Liv Moore"
+},
+{
+  "name": "Prue Halliwell",
+  "universe": "Charmed",
+  "media": "Séries",
+  "id": "c591",
+  "wiki": "Prue Halliwell"
 }
 ];
