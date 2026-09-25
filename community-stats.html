@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090a12">
+<title>Character Choice — Statistiques de la communauté</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body{padding:0 0 40px}
+  .community-wrap{max-width:1200px;margin:40px auto 0;padding:0 18px}
+  .community-header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:20px}
+  .community-header h1{margin:0;font-size:clamp(28px,4vw,42px)}
+  .community-table{width:100%;border-collapse:collapse;background:rgba(18,21,40,.86);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+  .community-table th,.community-table td{padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.07);text-align:left}
+  .community-table th{color:var(--accent);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+  .community-table tbody tr:hover{background:rgba(248,216,74,.04)}
+  .community-table .right{text-align:right}
+  .muted{color:var(--muted)}
+  .danger-box{padding:16px;border:1px solid rgba(255,109,122,.35);border-radius:12px;background:rgba(255,109,122,.08);color:#ffdfe4}
+  @media(max-width:700px){
+    .community-header{flex-direction:column;align-items:flex-start}
+    .community-table{font-size:13px}
+    .community-table th,.community-table td{padding:10px 8px}
+  }
+</style>
+</head>
+<body>
+<div class="site-header">
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">🌍</div>
+      <div class="brand-copy">
+        <div class="eyebrow">COMMUNITY STATS</div>
+        <h1>Statistiques de la communauté</h1>
+      </div>
+    </div>
+    <div class="actions">
+      <a href="index.html" class="secondary nav-link">🏆 Tournoi</a>
+      <a href="stats.html" class="secondary nav-link">📊 Statistiques</a>
+    </div>
+  </header>
+</div>
+
+<main class="community-wrap">
+  <div class="community-header">
+    <div>
+      <div class="eyebrow">MÉTRIQUES GLOBALES</div>
+      <h1>Classement des personnages</h1>
+    </div>
+  </div>
+
+  <div id="status" class="muted">Chargement…</div>
+
+  <table class="community-table" aria-label="Statistiques communautaires">
+    <thead>
+      <tr>
+        <th>Personnage</th>
+        <th class="right">Victoires</th>
+        <th class="right">Défaites</th>
+        <th class="right">Combats</th>
+        <th class="right">% Victoires</th>
+      </tr>
+    </thead>
+    <tbody id="communityStatsBody"></tbody>
+  </table>
+</main>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="characters.js"></script>
+<script>
+  const tableBody = document.getElementById("communityStatsBody");
+  const statusEl = document.getElementById("status");
+
+  function renderRows(rows) {
+    tableBody.innerHTML = rows.map(row => `
+      <tr>
+        <td>${row.name}</td>
+        <td class="right">${row.wins}</td>
+        <td class="right">${row.losses}</td>
+        <td class="right">${row.fights}</td>
+        <td class="right">${row.winRate}%</td>
+      </tr>
+    `).join("");
+  }
+
+  function loadCommunityStats() {
+    if (!window.db) {
+      statusEl.textContent = "Firebase non disponible.";
+      statusEl.className = "danger-box";
+      return;
+    }
+
+    window.db.collection("communityCharacterStats")
+      .get()
+      .then(snapshot => {
+        const map = {};
+        snapshot.forEach(doc => {
+          const data = doc.data();
+          const key = String(data.id || doc.id);
+          map[key] = data;
+        });
+
+        const rows = CHARACTERS.map(character => {
+          const data = map[String(character.id)] || {};
+          const wins = Number(data.wins || 0);
+          const losses = Number(data.losses || 0);
+          const fights = Number(data.fights || wins + losses || 0);
+          const winRate = fights ? Math.round((wins / fights) * 100) : 0;
+
+          return {
+            name: character.name,
+            wins,
+            losses,
+            fights,
+            winRate
+          };
+        }).sort((a, b) => b.wins - a.wins || b.losses - a.losses || a.name.localeCompare(b.name, "fr"));
+
+        renderRows(rows);
+        statusEl.textContent = `${rows.length} personnages chargés.`;
+        statusEl.className = "muted";
+      })
+      .catch(() => {
+        statusEl.textContent = "Impossible de charger les statistiques communautaires.";
+        statusEl.className = "danger-box";
+      });
+  }
+
+  loadCommunityStats();
+</script>
+</body>
+</html>
