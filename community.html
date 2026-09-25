@@ -89,11 +89,9 @@
 
 <script>
 /*
-  community.html
-  - Récupère collection communityCharacterStats
-  - Associe characterId → CHARACTERS
-  - Recherche & tri & affichage responsive
-  - N'affiche que les champs existants : wins, losses, fights
+  community.html - corrected
+  - fix: use CHARACTERS (global) instead of window.CHARACTERS
+  - small debug log at load
 */
 
 const statusEl = document.getElementById("status");
@@ -110,8 +108,20 @@ let mapped = []; // rows enrichies avec character info
 
 function safeNumber(v){ return Number(v) >= 0 ? Number(v) : 0; }
 
+/* === Robust character access ===
+   characters.js exposes CHARACTERS (top-level const). In some environments
+   CHARACTERS is available as a global but not as window.CHARACTERS,
+   so prefer CHARACTERS when present and fall back to window.CHARACTERS.
+*/
+function getCharacterArray(){
+  if (typeof CHARACTERS !== "undefined" && Array.isArray(CHARACTERS)) return CHARACTERS;
+  if (window && window.CHARACTERS && Array.isArray(window.CHARACTERS)) return window.CHARACTERS;
+  return [];
+}
+
 function getCharacterById(id){
-  return (window.CHARACTERS || []).find(c => String(c.id) === String(id));
+  const arr = getCharacterArray();
+  return arr.find(c => String(c.id) === String(id));
 }
 
 function slugify(s){
@@ -120,7 +130,7 @@ function slugify(s){
 
 function getImageCandidates(item){
   const id = String(item.id || item.characterId || "");
-  const name = String(item.name || "").trim();
+  const name = String(item.name || item.displayName || "").trim();
   const names = [];
   if(name) names.push(name);
   if(name) names.push(slugify(name));
@@ -129,7 +139,6 @@ function getImageCandidates(item){
   for(const n of names){
     if(n) candidates.push(`images/${id}_${n}.jpg`, `images/${id}_${n}.jpeg`, `images/${n}.jpg`, `images/${n}.jpeg`);
   }
-  // fallback small list
   candidates.push(`images/${id}_portrait.jpg`, `images/${id}_thumb.jpg`);
   return [...new Set(candidates)];
 }
@@ -139,14 +148,12 @@ function createPortraitElement(item){
   container.className = "portrait";
   const img = document.createElement("img");
   img.alt = item.displayName || item.name || item.id || "";
-  // Try candidates sequentially using onerror
   const candidates = getImageCandidates(item);
   let i = 0;
   img.onerror = () => {
     i++;
     if(i < candidates.length) img.src = candidates[i];
     else {
-      // no image found: show first letter as fallback
       container.textContent = (item.displayName || item.name || item.id || "").slice(0,1).toUpperCase();
       container.style.fontWeight = "900";
       container.style.color = "#fff";
@@ -200,13 +207,11 @@ function renderGrid(list){
     const statsRow = document.createElement("div");
     statsRow.className = "stat-row";
 
-    // victoires (always show even if zero)
     const winsBadge = document.createElement("div");
     winsBadge.className = "badge";
     winsBadge.textContent = `🏆 ${item.wins}`;
     statsRow.appendChild(winsBadge);
 
-    // pertes if exists
     if (item.losses !== null && item.losses !== undefined) {
       const lossesBadge = document.createElement("div");
       lossesBadge.className = "badge";
@@ -214,7 +219,6 @@ function renderGrid(list){
       statsRow.appendChild(lossesBadge);
     }
 
-    // combats if exists
     if (item.fights !== null && item.fights !== undefined) {
       const fightsBadge = document.createElement("div");
       fightsBadge.className = "badge";
@@ -222,7 +226,6 @@ function renderGrid(list){
       statsRow.appendChild(fightsBadge);
     }
 
-    // win rate if calculable
     if (item.winRate !== null && item.winRate !== undefined) {
       const rateBadge = document.createElement("div");
       rateBadge.className = "badge";
@@ -269,6 +272,7 @@ function renderSummary(){
 
 /* Load from Firestore */
 function loadCommunityStats(){
+  console.log("community: loadCommunityStats start", {firebase: !!window.firebase, firebaseApp: !!window.firebaseApp, db: !!window.db});
   if(!window.db){
     statusEl.textContent = "Firebase non disponible.";
     statusEl.className = "danger-box";
@@ -280,12 +284,10 @@ function loadCommunityStats(){
       rows = [];
       snapshot.forEach(doc => {
         const data = doc.data() || {};
-        // Use exact fields present in Firestore; do not invent others.
         const id = String(data.id || doc.id || "");
         rows.push(Object.assign({}, data, { _docId: doc.id, characterId: id }));
       });
 
-      // Map each doc to character if possible
       mapped = rows.map(r => {
         const char = getCharacterById(r.characterId);
         const displayName = r.name || (char && char.name) || (r.characterId || "");
@@ -301,7 +303,6 @@ function loadCommunityStats(){
         }, r);
       });
 
-      // Default sort (wins)
       mapped = sortList(mapped, sortEl.value);
 
       statusEl.style.display = "none";
@@ -310,19 +311,15 @@ function loadCommunityStats(){
       applyFiltersAndRender();
     })
     .catch(err => {
-      console.error(err);
+      console.error("community: firestore error", err);
       statusEl.textContent = "Impossible de charger les statistiques communautaires.";
       statusEl.className = "danger-box";
     });
 }
 
 /* Events */
-searchEl.addEventListener("input", () => {
-  applyFiltersAndRender();
-});
-sortEl.addEventListener("change", () => {
-  applyFiltersAndRender();
-});
+searchEl.addEventListener("input", () => applyFiltersAndRender());
+sortEl.addEventListener("change", () => applyFiltersAndRender());
 
 loadCommunityStats();
 </script>
