@@ -4185,5 +4185,124 @@ const CHARACTERS = [
   "media": "Séries",
   "id": "c598",
   "wiki": "Death (The Sandman)"
+},
+{
+  "name": "Daffy Duck",
+  "universe": "Looney Tunes",
+  "media": "Dessin Animé",
+  "id": "c599",
+  "wiki": "Daffy Duck"
+},
+{
+  "name": "L'Âne",
+  "universe": "Shrek",
+  "media": "Films",
+  "id": "c600",
+  "wiki": "L'Âne (Shrek)"
+},
+{
+  "name": "Mickey Mouse",
+  "universe": "Disney",
+  "media": "Séries",
+  "id": "c601",
+  "wiki": "Mickey Mouse"
+},
+{
+  "name": "James Bond",
+  "universe": "James Bond",
+  "media": "Films",
+  "id": "c602",
+  "wiki": "James Bond"
+},
+{
+  "name": "Freddy Krueger",
+  "universe": "Les Griffes de la nuit",
+  "media": "Films",
+  "id": "c603",
+  "wiki": "Freddy Krueger"
+},
+{
+  "name": "Spock",
+  "universe": "Star Trek",
+  "media": "Séries",
+  "id": "c604",
+  "wiki": "Spock"
+},
+{
+  "name": "Casper",
+  "universe": "Casper",
+  "media": "Films/Animation/BD",
+  "id": "c605",
+  "wiki": "Casper"
+},
+{
+  "name": "Ursula",
+  "universe": "La Petite Sirène/Disney",
+  "media": "Films",
+  "id": "c606",
+  "wiki": "Ursula (Disney)"
+},
+{
+  "name": "Davy Jones",
+  "universe": "Pirates des Caraïbes",
+  "media": "Films",
+  "id": "c607",
+  "wiki": "Davy Jones"
+},
+{
+  "name": "Phineas Flynn",
+  "universe": "Phineas et Ferb",
+  "media": "Dessin Animé",
+  "id": "c608",
+  "wiki": "Phineas Flynn"
+},
+{
+  "name": "Willy Wonka",
+  "universe": "Charlie et la Chocolaterie",
+  "media": "Films",
+  "id": "c609",
+  "wiki": "Willy Wonka"
+},
+{
+  "name": "Dorothée (Dorothy) Gale",
+  "universe": "Le Magicien d'Oz",
+  "media": "Romans/Littérature",
+  "id": "c610",
+  "wiki": "Dorothée Gale"
+},
+{
+  "name": "Judge Dredd",
+  "universe": "Judge Dredd",
+  "media": "Comics/Films",
+  "id": "c611",
+  "wiki": "Judge Dredd"
+},
+{
+  "name": "Kefka Palazzo",
+  "universe": "Final Fantasy",
+  "media": "Jeux vidéo",
+  "id": "c612",
+  "wiki": "Kefka Palazzo"
+},
+{
+  "name": "Tomura Shigaraki",
+  "universe": "My Hero Academia",
+  "media": "Manga/Anime",
+  "id": "c613",
+  "wiki": "Tomura Shigaraki"
+},
+{
+  "name": "Pac-Man",
+  "universe": "Pac-Man",
+  "media": "Jeux vidéo",
+  "id": "c614",
+  "wiki": "Pac-Man"
+},
+{
+  "name": "Nico Minoru",
+  "universe": "Marvel",
+  "media": "Comics/Séries",
+  "id": "c615",
+  "wiki": "Nico Minoru"
 }
 ];
