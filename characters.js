@@ -4304,5 +4304,75 @@ const CHARACTERS = [
   "media": "Comics/Séries",
   "id": "c615",
   "wiki": "Nico Minoru"
+},
+{
+  "name": "RoboCop",
+  "universe": "RoboCop",
+  "media": "Films",
+  "id": "c616",
+  "wiki": "RoboCop"
+},
+{
+  "name": "Beatrix Kiddo",
+  "universe": "Kill Bill",
+  "media": "Films",
+  "id": "c617",
+  "wiki": "Beatrix Kiddo"
+},
+{
+  "name": "Ethan Hunt",
+  "universe": "Mission: Impossible",
+  "media": "Films",
+  "id": "c618",
+  "wiki": "Ethan Hunt"
+},
+{
+  "name": "Joel Barish",
+  "universe": "Eternal Sunshine of the Spotless Mind",
+  "media": "Films",
+  "id": "c619",
+  "wiki": "Joel Barish"
+},
+{
+  "name": "Nina Sayers",
+  "universe": "Black Swan",
+  "media": "Films",
+  "id": "c620",
+  "wiki": "Nina Sayers"
+},
+{
+  "name": "Marty Byrde",
+  "universe": "Ozark",
+  "media": "Séries",
+  "id": "c621",
+  "wiki": "Marty Byrde"
+},
+{
+  "name": "Tony Soprano",
+  "universe": "Les Soprano",
+  "media": "Séries",
+  "id": "c622",
+  "wiki": "Tony Soprano"
+},
+{
+  "name": "Albus Dumbledore",
+  "universe": "Harry Potter",
+  "media": "Films/Romans",
+  "id": "c623",
+  "wiki": "Albus Dumbledore"
+},
+{
+  "name": "Harry Potter",
+  "universe": "Harry Potter",
+  "media": "Films/Romans",
+  "id": "c624",
+  "wiki": "Harry Potter"
+},
+{
+  "name": "Captain America",
+  "universe": "Marvel",
+  "media": "Films/Comics",
+  "id": "c625",
+  "wiki": "Captain America"
 }
 ];
