@@ -471,8 +471,86 @@ function toast(message) {
   setTimeout(() => el.classList.remove("show"), 1800);
 }
 
-$("undoBtn").addEventListener("click", () => {
+// Révocation / décrémentation des stats communautaires (dans Firestore).
+// Si Firestore n'est pas disponible, on ignore silencieusement.
+async function revertCommunityStats(winnerId, loserId) {
+  if (!window.db || !window.firebase || !window.firebase.firestore) return Promise.resolve();
+
+  const db = window.db;
+  const winnerRef = db.collection("communityCharacterStats").doc(String(winnerId));
+  const loserRef = db.collection("communityCharacterStats").doc(String(loserId));
+
+  try {
+    await db.runTransaction(async (tx) => {
+      const [wSnap, lSnap] = await Promise.all([tx.get(winnerRef), tx.get(loserRef)]);
+      const wData = wSnap.exists ? wSnap.data() : {};
+      const lData = lSnap.exists ? lSnap.data() : {};
+
+      // Récupère les valeurs actuelles (ou 0 par défaut)
+      const wWins = Math.max(0, Number(wData.wins || 0));
+      const wFights = Math.max(0, Number(wData.fights || (wData.wins || 0) + (wData.losses || 0) || 0));
+      const lLosses = Math.max(0, Number(lData.losses || 0));
+      const lFights = Math.max(0, Number(lData.fights || (lData.wins || 0) + (lData.losses || 0) || 0));
+
+      // Décrémente en évitant les valeurs négatives
+      const newWWins = Math.max(0, wWins - 1);
+      const newWFights = Math.max(0, wFights - 1);
+      const newLLosses = Math.max(0, lLosses - 1);
+      const newLFights = Math.max(0, lFights - 1);
+
+      tx.set(winnerRef, { wins: newWWins, fights: newWFights, name: wData.name || undefined }, { merge: true });
+      tx.set(loserRef, { losses: newLLosses, fights: newLFights, name: lData.name || undefined }, { merge: true });
+    });
+  } catch (err) {
+    // Ne pas bloquer l'UX : log et continuer. L'utilisateur garde ses stats locales restaurées.
+    console.error("revertCommunityStats transaction failed:", err);
+  }
+}
+
+// Remplacement de l'écouteur d'undo pour gérer aussi Firestore
+$("undoBtn").addEventListener("click", async () => {
   if (!state.lastSnapshot) return;
+
+  // Avant de restaurer localement, récupère le dernier combat (celui à annuler)
+  const lastFight = Array.isArray(state.history) && state.history.length
+    ? state.history[state.history.length - 1]
+    : null;
+
+  // Tenter d'identifier les IDs winner/loser à partir des noms du dernier combat
+  let winnerIdToRevert = null;
+  let loserIdToRevert = null;
+
+  if (lastFight && lastFight.winner) {
+    const winnerName = String(lastFight.winner);
+    // Les champs sauvegardés dans history : championBefore (name), challenger (name).
+    const championBeforeName = String(lastFight.championBefore || "");
+    const challengerName = String(lastFight.challenger || "");
+
+    // Déduire le loser par comparaison des noms
+    const loserName = (winnerName === championBeforeName) ? challengerName : championBeforeName;
+
+    // Trouver les personnages dans CHARACTERS par nom (approx. exact match)
+    const chars = (typeof CHARACTERS !== "undefined" && Array.isArray(CHARACTERS)) ? CHARACTERS
+                  : (window.CHARACTERS && Array.isArray(window.CHARACTERS) ? window.CHARACTERS : []);
+
+    const winnerChar = chars.find(c => String(c.name) === winnerName);
+    const loserChar = chars.find(c => String(c.name) === loserName);
+
+    if (winnerChar) winnerIdToRevert = String(winnerChar.id);
+    if (loserChar) loserIdToRevert = String(loserChar.id);
+  }
+
+  // Si on a trouvé des IDs, on essaie de décrémenter les compteurs cloud.
+  if (winnerIdToRevert && loserIdToRevert) {
+    try {
+      await revertCommunityStats(winnerIdToRevert, loserIdToRevert);
+    } catch (e) {
+      console.error("Erreur lors de la réversion des stats communautaires :", e);
+      // On continue quand même à restaurer localement
+    }
+  }
+
+  // Restaurer l'état local depuis le snapshot (comportement existant)
   const snap = state.lastSnapshot;
   state.combat = snap.combat;
   state.streak = snap.streak;
