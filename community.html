@@ -19,6 +19,10 @@
   .summary-pill strong{display:block;color:var(--accent);font-size:20px}
   .stats-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin-top:18px}
   .stat-card{background:rgba(18,21,40,.86);border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;gap:10px;align-items:center}
+  .ranking-position{min-width:34px;font-size:18px;font-weight:1000;color:var(--muted);text-align:center}
+  .ranking-position-1{color:#f8d84a}
+  .ranking-position-2{color:#cfd5e8}
+  .ranking-position-3{color:#d89062}
   .portrait{width:64px;height:80px;flex:0 0 64px;border-radius:6px;background:#0b0d1a;display:flex;align-items:center;justify-content:center;overflow:hidden}
   .portrait img{width:100%;height:100%;object-fit:cover;display:block}
   .stat-info{flex:1;min-width:0}
@@ -27,6 +31,10 @@
   .stat-row .badge{background:rgba(255,255,255,.03);padding:4px 8px;border-radius:8px;font-weight:900;color:#fff}
   .no-stats{color:var(--muted);padding:20px;text-align:center}
   .loading{color:var(--muted);padding:18px}
+  .metric-display{background:rgba(18,21,40,.86);border:1px solid var(--line);border-radius:12px;padding:20px;margin-top:18px;text-align:center;display:none}
+  .metric-display.active{display:block}
+  .metric-display h3{margin:0 0 10px;color:var(--accent);font-size:28px}
+  .metric-display p{color:var(--muted);margin:0}
   @media(max-width:700px){
     .community-header{align-items:flex-start}
     .controls input[type="search"]{min-width:140px;width:100%}
@@ -68,6 +76,11 @@
         <option value="winRate">Trier : Taux de victoire (desc)</option>
         <option value="name">Trier : Nom (A→Z)</option>
       </select>
+      <select id="metric" aria-label="Afficher une métrique spéciale">
+        <option value="ranking">Classement général</option>
+        <option value="topWins">Personnage le plus victorieux</option>
+        <option value="topRate">Meilleur taux de victoire</option>
+      </select>
     </div>
   </div>
 
@@ -79,6 +92,18 @@
     <div class="summary-pill"><small>Personnages avec stats</small><strong id="charactersWithStats">0</strong></div>
   </div>
 
+  <div id="metricTopWins" class="metric-display">
+    <div class="eyebrow">Personnage le plus victorieux</div>
+    <h3 id="topWinsName">—</h3>
+    <p id="topWinsDetail">—</p>
+  </div>
+
+  <div id="metricTopRate" class="metric-display">
+    <div class="eyebrow">Meilleur taux de victoire</div>
+    <h3 id="topRateName">—</h3>
+    <p id="topRateDetail">—</p>
+  </div>
+
   <div id="grid" class="stats-grid" aria-live="polite"></div>
 </main>
 
@@ -88,31 +113,28 @@
 <script src="characters.js"></script>
 
 <script>
-/*
-  community.html - corrected
-  - fix: use CHARACTERS (global) instead of window.CHARACTERS
-  - small debug log at load
-*/
-
 const statusEl = document.getElementById("status");
 const gridEl = document.getElementById("grid");
 const searchEl = document.getElementById("search");
 const sortEl = document.getElementById("sort");
+const metricEl = document.getElementById("metric");
 const summaryEl = document.getElementById("summary");
 const totalFightsEl = document.getElementById("totalFights");
 const totalWinsEl = document.getElementById("totalWins");
 const charactersWithStatsEl = document.getElementById("charactersWithStats");
 
-let rows = []; // données brutes
-let mapped = []; // rows enrichies avec character info
+const metricTopWins = document.getElementById("metricTopWins");
+const metricTopRate = document.getElementById("metricTopRate");
+const topWinsNameEl = document.getElementById("topWinsName");
+const topWinsDetailEl = document.getElementById("topWinsDetail");
+const topRateNameEl = document.getElementById("topRateName");
+const topRateDetailEl = document.getElementById("topRateDetail");
+
+let rows = [];
+let mapped = [];
 
 function safeNumber(v){ return Number(v) >= 0 ? Number(v) : 0; }
 
-/* === Robust character access ===
-   characters.js exposes CHARACTERS (top-level const). In some environments
-   CHARACTERS is available as a global but not as window.CHARACTERS,
-   so prefer CHARACTERS when present and fall back to window.CHARACTERS.
-*/
 function getCharacterArray(){
   if (typeof CHARACTERS !== "undefined" && Array.isArray(CHARACTERS)) return CHARACTERS;
   if (window && window.CHARACTERS && Array.isArray(window.CHARACTERS)) return window.CHARACTERS;
@@ -125,7 +147,7 @@ function getCharacterById(id){
 }
 
 function slugify(s){
-  return String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/['’]/g,"").replace(/[^a-zA-Z0-9]+/g,"_").replace(/^_+|_+$/g,"").toLowerCase();
+  return String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/['']/g,"").replace(/[^a-zA-Z0-9]+/g,"_").replace(/^_+|_+$/g,"").toLowerCase();
 }
 
 function getImageCandidates(item){
@@ -189,9 +211,14 @@ function renderGrid(list){
     return;
   }
   const frag = document.createDocumentFragment();
-  for(const item of list){
+  for(const [index, item] of list.entries()){
     const card = document.createElement("article");
     card.className = "stat-card";
+
+    const ranking = document.createElement("div");
+    ranking.className = `ranking-position ranking-position-${index + 1}`;
+    ranking.textContent = `#${index + 1}`;
+    card.appendChild(ranking);
 
     const portrait = createPortraitElement(item);
     card.appendChild(portrait);
@@ -240,7 +267,6 @@ function renderGrid(list){
   gridEl.appendChild(frag);
 }
 
-/* Sorting helpers */
 function sortList(list, key){
   const copy = [...list];
   if(key === "wins") return copy.sort((a,b) => (b.wins||0) - (a.wins||0) || (b.fights||0) - (a.fights||0) || (a.displayName||"").localeCompare(b.displayName||"","fr"));
@@ -270,9 +296,35 @@ function renderSummary(){
   summaryEl.setAttribute("aria-hidden", charactersWithStats ? "false" : "true");
 }
 
-/* Load from Firestore */
+function getTopWins(){
+  return [...mapped].sort((a,b) => (b.wins||0) - (a.wins||0) || (b.fights||0) - (a.fights||0))[0] || null;
+}
+
+function getTopRate(){
+  return [...mapped].sort((a,b) => (b.winRate||0) - (a.winRate||0) || (b.wins||0) - (a.wins||0))[0] || null;
+}
+
+function updateMetricDisplay(){
+  const metric = metricEl.value;
+  const topWins = getTopWins();
+  const topRate = getTopRate();
+
+  metricTopWins.classList.toggle("active", metric === "topWins");
+  metricTopRate.classList.toggle("active", metric === "topRate");
+  gridEl.style.display = metric === "ranking" ? "grid" : "none";
+
+  if(metric === "topWins" && topWins){
+    topWinsNameEl.textContent = topWins.displayName || topWins.name || "—";
+    topWinsDetailEl.textContent = `${topWins.wins} victoire${topWins.wins > 1 ? "s" : ""} en ${topWins.fights} combats`;
+  }
+
+  if(metric === "topRate" && topRate){
+    topRateNameEl.textContent = topRate.displayName || topRate.name || "—";
+    topRateDetailEl.textContent = `${topRate.winRate}% de victoires — ${topRate.wins} victoires en ${topRate.fights} combats`;
+  }
+}
+
 function loadCommunityStats(){
-  console.log("community: loadCommunityStats start", {firebase: !!window.firebase, firebaseApp: !!window.firebaseApp, db: !!window.db});
   if(!window.db){
     statusEl.textContent = "Firebase non disponible.";
     statusEl.className = "danger-box";
@@ -309,6 +361,7 @@ function loadCommunityStats(){
       statusEl.className = "";
       renderSummary();
       applyFiltersAndRender();
+      updateMetricDisplay();
     })
     .catch(err => {
       console.error("community: firestore error", err);
@@ -317,9 +370,9 @@ function loadCommunityStats(){
     });
 }
 
-/* Events */
 searchEl.addEventListener("input", () => applyFiltersAndRender());
 sortEl.addEventListener("change", () => applyFiltersAndRender());
+metricEl.addEventListener("change", updateMetricDisplay);
 
 loadCommunityStats();
 </script>
