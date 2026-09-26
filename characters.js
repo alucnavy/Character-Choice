@@ -4374,5 +4374,40 @@ const CHARACTERS = [
   "media": "Films/Comics",
   "id": "c625",
   "wiki": "Captain America"
+},
+{
+  "name": "Blade",
+  "universe": "Marvel",
+  "media": "Films/Comics",
+  "id": "c626",
+  "wiki": "Blade (Marvel)"
+},
+{
+  "name": "Izuku Midoriya",
+  "universe": "My Hero Academia",
+  "media": "Manga/Anime",
+  "id": "c627",
+  "wiki": "Izuku Midoriya"
+},
+{
+  "name": "Madame Frédéric",
+  "universe": "Warehouse 13",
+  "media": "Séries",
+  "id": "c628",
+  "wiki": "Madame Frédéric"
+},
+{
+  "name": "Aiolia",
+  "universe": "Saint Seiya",
+  "media": "Manga/Anime",
+  "id": "c629",
+  "wiki": "Aiolia du Lion"
+},
+{
+  "name": "Elena Gilbert",
+  "universe": "The Vampire Diaries",
+  "media": "Séries",
+  "id": "c630",
+  "wiki": "Elena Gilbert"
 }
 ];
