@@ -517,6 +517,15 @@ $("resetBtn").addEventListener("click", () => {
 
 // Affiche immédiatement le premier combat au chargement de la page.
 render();
+// Persist l'état initial tout de suite pour éviter qu'un reload / changement d'onglet
+// (cas fréquent sur mobile) ne recrée un combat aléatoire différent.
+save();
+// Sauvegarde supplémentaire à la fermeture / mise en arrière-plan (utile sur mobile).
+window.addEventListener("pagehide", save);           // couvre navigation/fermeture sur mobile
+window.addEventListener("beforeunload", save);       // fallback navigateur
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "hidden") save();
+});
 
 function syncCommunityStats(winner, loser) {
   if (!window.db || !window.firestoreReady) return Promise.resolve();
